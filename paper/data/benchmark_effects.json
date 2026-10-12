@@ -1,0 +1,2170 @@
+{
+  "description": "Corrected measurement of fixed interventions; source estimators and selected receiver-native comparators.",
+  "main_plot_intervals": "Pointwise 95%; companion retains original multiplicity adjustments.",
+  "models": {
+    "source_m1": "Qwen3.5-9B",
+    "source_m3": "Ministral-3-8B",
+    "source_m5": "Llama-3.1-8B",
+    "receiver_m1": "Qwen3.5-27B",
+    "receiver_m3": "Ministral-3-14B",
+    "receiver_m5": "Llama-3.1-70B"
+  },
+  "bfcl_baselines": {
+    "source_m1": 92.5601750547046,
+    "source_m3": 85.66739606126916,
+    "source_m5": 91.2472647702407,
+    "receiver_m1": 93.8730853391685,
+    "receiver_m3": 86.98030634573304,
+    "receiver_m5": 95.84245076586433
+  },
+  "rows": [
+    {
+      "model_key": "source_m1",
+      "model": "Qwen3.5-9B",
+      "estimator": "native",
+      "sign": "plus",
+      "alpha": 8,
+      "status": "measured",
+      "lumen": {
+        "component": "main",
+        "context": "ethical",
+        "target_language": "all",
+        "left": "native_pooled_plus",
+        "right": "baseline",
+        "metric": "semantic_unsafe",
+        "confirmatory_main": false,
+        "delta_pp": 76.50753768844221,
+        "paired_resolved": 796,
+        "paired_total": 800,
+        "paired_missing": 4,
+        "ci95_pp": [
+          68.40923295304076,
+          81.15952748477832
+        ],
+        "multiplicity": 18,
+        "bonferroni_ci_pp": [
+          62.54641736401674,
+          83.01726184751507
+        ],
+        "all_response_delta_bounds_pp": [
+          76.125,
+          76.625
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19,
+        "predefined_main_contrast": true,
+        "qwen_rule_revision_after_prior_inspection": true
+      },
+      "bfcl": {
+        "condition": "native_pooled_plus",
+        "actual_condition": "native_pooled_plus",
+        "stratum": "tool_required",
+        "metric": "official_valid",
+        "positive": 820,
+        "resolved": 914,
+        "total": 914,
+        "missing": 0,
+        "rate_percent": 89.71553610503283,
+        "coverage_percent": 100.0,
+        "all_response_bounds_percent": [
+          89.71553610503283,
+          89.71553610503283
+        ],
+        "ci95_percent": [
+          87.6243093922652,
+          91.67580024567027
+        ],
+        "bootstrap_undefined": 0,
+        "families": 622,
+        "degenerate_interval": false,
+        "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+        "delta_pp": -2.8446389496717726,
+        "paired_resolved": 914,
+        "paired_total": 914,
+        "paired_missing": 0,
+        "ci95_pp": [
+          -4.767304540634338,
+          -1.0010567914281385
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          -2.8446389496717726,
+          -2.8446389496717726
+        ],
+        "exact_baseline_alias": false,
+        "delta_bootstrap_undefined": 0,
+        "delta_degenerate_interval": false,
+        "delta_families": 622,
+        "accuracy_percent": 89.71553610503283
+      },
+      "soda": {
+        "key": "source_m1",
+        "condition": "native_plus",
+        "reference": "baseline",
+        "valid_pairs": 400,
+        "missing_pairs": 0,
+        "scenario_clusters": 80,
+        "baseline_unsafe_paired": 114.0,
+        "treated_unsafe_paired": 270.0,
+        "delta_pp": 39.0,
+        "ci95_pp": [
+          32.75,
+          45.25
+        ],
+        "simultaneous_ci_pp": [
+          30.250000000000004,
+          48.00000000000001
+        ],
+        "multiplicity_family_size": 10,
+        "missing_label_bounds_pp": [
+          39.000000000000014,
+          39.000000000000014
+        ],
+        "bootstrap_draws": 10000,
+        "seed": 20261002,
+        "status": "measured"
+      }
+    },
+    {
+      "model_key": "source_m1",
+      "model": "Qwen3.5-9B",
+      "estimator": "shadow",
+      "sign": "plus",
+      "alpha": 8,
+      "status": "measured",
+      "lumen": {
+        "component": "main",
+        "context": "ethical",
+        "target_language": "all",
+        "left": "shadow_pooled_plus",
+        "right": "baseline",
+        "metric": "semantic_unsafe",
+        "confirmatory_main": false,
+        "delta_pp": 78.16813048933501,
+        "paired_resolved": 797,
+        "paired_total": 800,
+        "paired_missing": 3,
+        "ci95_pp": [
+          66.5413748323505,
+          83.94192500902
+        ],
+        "multiplicity": 18,
+        "bonferroni_ci_pp": [
+          58.77637802437693,
+          85.74119112897604
+        ],
+        "all_response_delta_bounds_pp": [
+          77.875,
+          78.25
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19,
+        "predefined_main_contrast": true,
+        "qwen_rule_revision_after_prior_inspection": true
+      },
+      "bfcl": {
+        "condition": "shadow_pooled_plus",
+        "actual_condition": "shadow_pooled_plus",
+        "stratum": "tool_required",
+        "metric": "official_valid",
+        "positive": 824,
+        "resolved": 914,
+        "total": 914,
+        "missing": 0,
+        "rate_percent": 90.15317286652079,
+        "coverage_percent": 100.0,
+        "all_response_bounds_percent": [
+          90.15317286652079,
+          90.15317286652079
+        ],
+        "ci95_percent": [
+          88.02130354330473,
+          92.14835622913418
+        ],
+        "bootstrap_undefined": 0,
+        "families": 622,
+        "degenerate_interval": false,
+        "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+        "delta_pp": -2.4070021881838075,
+        "paired_resolved": 914,
+        "paired_total": 914,
+        "paired_missing": 0,
+        "ci95_pp": [
+          -4.338400532543699,
+          -0.5524861878453038
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          -2.4070021881838075,
+          -2.4070021881838075
+        ],
+        "exact_baseline_alias": false,
+        "delta_bootstrap_undefined": 0,
+        "delta_degenerate_interval": false,
+        "delta_families": 622,
+        "accuracy_percent": 90.15317286652079
+      },
+      "soda": {
+        "key": "source_m1",
+        "condition": "shadow_plus",
+        "reference": "baseline",
+        "valid_pairs": 400,
+        "missing_pairs": 0,
+        "scenario_clusters": 80,
+        "baseline_unsafe_paired": 114.0,
+        "treated_unsafe_paired": 270.0,
+        "delta_pp": 39.0,
+        "ci95_pp": [
+          32.25000000000001,
+          45.75
+        ],
+        "simultaneous_ci_pp": [
+          29.25,
+          48.5
+        ],
+        "multiplicity_family_size": 10,
+        "missing_label_bounds_pp": [
+          39.0,
+          39.0
+        ],
+        "bootstrap_draws": 10000,
+        "seed": 20261002,
+        "status": "measured"
+      }
+    },
+    {
+      "model_key": "source_m1",
+      "model": "Qwen3.5-9B",
+      "estimator": "native",
+      "sign": "minus",
+      "alpha": 0.0,
+      "status": "no_selected_dose",
+      "lumen": {
+        "component": "main",
+        "context": "neutral",
+        "target_language": "all",
+        "left": "native_pooled_minus",
+        "right": "baseline",
+        "metric": "semantic_unsafe",
+        "confirmatory_main": false,
+        "delta_pp": 0.0,
+        "paired_resolved": 800,
+        "paired_total": 800,
+        "paired_missing": 0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "multiplicity": 18,
+        "bonferroni_ci_pp": [
+          0.0,
+          0.0
+        ],
+        "all_response_delta_bounds_pp": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": true,
+        "degenerate_interval": true,
+        "families": 19,
+        "predefined_main_contrast": true,
+        "qwen_rule_revision_after_prior_inspection": true
+      },
+      "bfcl": {
+        "condition": "native_pooled_minus",
+        "actual_condition": "baseline",
+        "stratum": "tool_required",
+        "metric": "official_valid",
+        "positive": 846,
+        "resolved": 914,
+        "total": 914,
+        "missing": 0,
+        "rate_percent": 92.5601750547046,
+        "coverage_percent": 100.0,
+        "all_response_bounds_percent": [
+          92.5601750547046,
+          92.5601750547046
+        ],
+        "ci95_percent": [
+          90.76433121019109,
+          94.21841541755889
+        ],
+        "bootstrap_undefined": 0,
+        "families": 622,
+        "degenerate_interval": false,
+        "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+        "delta_pp": 0.0,
+        "paired_resolved": 914,
+        "paired_total": 914,
+        "paired_missing": 0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          0.0,
+          0.0
+        ],
+        "exact_baseline_alias": true,
+        "delta_bootstrap_undefined": 0,
+        "delta_degenerate_interval": true,
+        "delta_families": 622,
+        "accuracy_percent": 92.5601750547046
+      },
+      "soda": {
+        "status": "no_selected_dose"
+      }
+    },
+    {
+      "model_key": "source_m1",
+      "model": "Qwen3.5-9B",
+      "estimator": "shadow",
+      "sign": "minus",
+      "alpha": 0.0,
+      "status": "no_selected_dose",
+      "lumen": {
+        "component": "main",
+        "context": "neutral",
+        "target_language": "all",
+        "left": "shadow_pooled_minus",
+        "right": "baseline",
+        "metric": "semantic_unsafe",
+        "confirmatory_main": false,
+        "delta_pp": 0.0,
+        "paired_resolved": 800,
+        "paired_total": 800,
+        "paired_missing": 0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "multiplicity": 18,
+        "bonferroni_ci_pp": [
+          0.0,
+          0.0
+        ],
+        "all_response_delta_bounds_pp": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": true,
+        "degenerate_interval": true,
+        "families": 19,
+        "predefined_main_contrast": true,
+        "qwen_rule_revision_after_prior_inspection": true
+      },
+      "bfcl": {
+        "condition": "shadow_pooled_minus",
+        "actual_condition": "baseline",
+        "stratum": "tool_required",
+        "metric": "official_valid",
+        "positive": 846,
+        "resolved": 914,
+        "total": 914,
+        "missing": 0,
+        "rate_percent": 92.5601750547046,
+        "coverage_percent": 100.0,
+        "all_response_bounds_percent": [
+          92.5601750547046,
+          92.5601750547046
+        ],
+        "ci95_percent": [
+          90.76433121019109,
+          94.21841541755889
+        ],
+        "bootstrap_undefined": 0,
+        "families": 622,
+        "degenerate_interval": false,
+        "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+        "delta_pp": 0.0,
+        "paired_resolved": 914,
+        "paired_total": 914,
+        "paired_missing": 0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          0.0,
+          0.0
+        ],
+        "exact_baseline_alias": true,
+        "delta_bootstrap_undefined": 0,
+        "delta_degenerate_interval": true,
+        "delta_families": 622,
+        "accuracy_percent": 92.5601750547046
+      },
+      "soda": {
+        "status": "no_selected_dose"
+      }
+    },
+    {
+      "model_key": "source_m3",
+      "model": "Ministral-3-8B",
+      "estimator": "native",
+      "sign": "plus",
+      "alpha": 1,
+      "status": "measured",
+      "lumen": {
+        "component": "main",
+        "context": "ethical",
+        "target_language": "all",
+        "left": "native_pooled_plus",
+        "right": "baseline",
+        "metric": "semantic_unsafe",
+        "confirmatory_main": true,
+        "delta_pp": 6.265664160401002,
+        "paired_resolved": 798,
+        "paired_total": 800,
+        "paired_missing": 2,
+        "ci95_pp": [
+          1.9305019305019304,
+          10.651731788487611
+        ],
+        "multiplicity": 18,
+        "bonferroni_ci_pp": [
+          0.5434782608695652,
+          13.726026462475518
+        ],
+        "all_response_delta_bounds_pp": [
+          6.25,
+          6.5
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19,
+        "predefined_main_contrast": true,
+        "qwen_rule_revision_after_prior_inspection": true
+      },
+      "bfcl": {
+        "condition": "native_pooled_plus",
+        "actual_condition": "native_pooled_plus",
+        "stratum": "tool_required",
+        "metric": "official_valid",
+        "positive": 791,
+        "resolved": 914,
+        "total": 914,
+        "missing": 0,
+        "rate_percent": 86.54266958424508,
+        "coverage_percent": 100.0,
+        "all_response_bounds_percent": [
+          86.54266958424508,
+          86.54266958424508
+        ],
+        "ci95_percent": [
+          84.1878837125316,
+          88.85239200232421
+        ],
+        "bootstrap_undefined": 0,
+        "families": 622,
+        "degenerate_interval": false,
+        "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+        "delta_pp": 0.87527352297593,
+        "paired_resolved": 914,
+        "paired_total": 914,
+        "paired_missing": 0,
+        "ci95_pp": [
+          -0.5452711518955393,
+          2.2876003948490147
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          0.87527352297593,
+          0.87527352297593
+        ],
+        "exact_baseline_alias": false,
+        "delta_bootstrap_undefined": 0,
+        "delta_degenerate_interval": false,
+        "delta_families": 622,
+        "accuracy_percent": 86.54266958424508
+      },
+      "soda": {
+        "key": "source_m3",
+        "condition": "native_plus",
+        "reference": "baseline",
+        "valid_pairs": 400,
+        "missing_pairs": 0,
+        "scenario_clusters": 80,
+        "baseline_unsafe_paired": 133.0,
+        "treated_unsafe_paired": 198.0,
+        "delta_pp": 16.25,
+        "ci95_pp": [
+          12.250000000000002,
+          20.25
+        ],
+        "simultaneous_ci_pp": [
+          10.75,
+          22.249999999999996
+        ],
+        "multiplicity_family_size": 10,
+        "missing_label_bounds_pp": [
+          16.249999999999996,
+          16.249999999999996
+        ],
+        "bootstrap_draws": 10000,
+        "seed": 20261002,
+        "status": "measured"
+      }
+    },
+    {
+      "model_key": "source_m3",
+      "model": "Ministral-3-8B",
+      "estimator": "shadow",
+      "sign": "plus",
+      "alpha": 1,
+      "status": "measured",
+      "lumen": {
+        "component": "main",
+        "context": "ethical",
+        "target_language": "all",
+        "left": "shadow_pooled_plus",
+        "right": "baseline",
+        "metric": "semantic_unsafe",
+        "confirmatory_main": true,
+        "delta_pp": 6.900878293601004,
+        "paired_resolved": 797,
+        "paired_total": 800,
+        "paired_missing": 3,
+        "ci95_pp": [
+          2.6156100658286188,
+          11.773946675444371
+        ],
+        "multiplicity": 18,
+        "bonferroni_ci_pp": [
+          0.9941810344827587,
+          15.191093581043583
+        ],
+        "all_response_delta_bounds_pp": [
+          6.875000000000001,
+          7.249999999999999
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19,
+        "predefined_main_contrast": true,
+        "qwen_rule_revision_after_prior_inspection": true
+      },
+      "bfcl": {
+        "condition": "shadow_pooled_plus",
+        "actual_condition": "shadow_pooled_plus",
+        "stratum": "tool_required",
+        "metric": "official_valid",
+        "positive": 794,
+        "resolved": 914,
+        "total": 914,
+        "missing": 0,
+        "rate_percent": 86.87089715536105,
+        "coverage_percent": 100.0,
+        "all_response_bounds_percent": [
+          86.87089715536105,
+          86.87089715536105
+        ],
+        "ci95_percent": [
+          84.53035577137477,
+          89.14473684210526
+        ],
+        "bootstrap_undefined": 0,
+        "families": 622,
+        "degenerate_interval": false,
+        "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+        "delta_pp": 1.2035010940919038,
+        "paired_resolved": 914,
+        "paired_total": 914,
+        "paired_missing": 0,
+        "ci95_pp": [
+          -0.11198522137803243,
+          2.5612472160356345
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          1.2035010940919038,
+          1.2035010940919038
+        ],
+        "exact_baseline_alias": false,
+        "delta_bootstrap_undefined": 0,
+        "delta_degenerate_interval": false,
+        "delta_families": 622,
+        "accuracy_percent": 86.87089715536105
+      },
+      "soda": {
+        "key": "source_m3",
+        "condition": "shadow_plus",
+        "reference": "baseline",
+        "valid_pairs": 400,
+        "missing_pairs": 0,
+        "scenario_clusters": 80,
+        "baseline_unsafe_paired": 133.0,
+        "treated_unsafe_paired": 205.0,
+        "delta_pp": 18.0,
+        "ci95_pp": [
+          13.750000000000002,
+          22.5
+        ],
+        "simultaneous_ci_pp": [
+          11.75,
+          24.25
+        ],
+        "multiplicity_family_size": 10,
+        "missing_label_bounds_pp": [
+          17.999999999999996,
+          17.999999999999996
+        ],
+        "bootstrap_draws": 10000,
+        "seed": 20261002,
+        "status": "measured"
+      }
+    },
+    {
+      "model_key": "source_m3",
+      "model": "Ministral-3-8B",
+      "estimator": "native",
+      "sign": "minus",
+      "alpha": -0.25,
+      "status": "measured",
+      "lumen": {
+        "component": "main",
+        "context": "neutral",
+        "target_language": "all",
+        "left": "native_pooled_minus",
+        "right": "baseline",
+        "metric": "semantic_unsafe",
+        "confirmatory_main": true,
+        "delta_pp": -6.007509386733417,
+        "paired_resolved": 799,
+        "paired_total": 800,
+        "paired_missing": 1,
+        "ci95_pp": [
+          -10.746909453703845,
+          -0.9522520780978175
+        ],
+        "multiplicity": 18,
+        "bonferroni_ci_pp": [
+          -12.337202130585304,
+          -0.21499360613812293
+        ],
+        "all_response_delta_bounds_pp": [
+          -6.0,
+          -5.875
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19,
+        "predefined_main_contrast": true,
+        "qwen_rule_revision_after_prior_inspection": true
+      },
+      "bfcl": {
+        "condition": "native_pooled_minus",
+        "actual_condition": "native_pooled_minus",
+        "stratum": "tool_required",
+        "metric": "official_valid",
+        "positive": 779,
+        "resolved": 914,
+        "total": 914,
+        "missing": 0,
+        "rate_percent": 85.22975929978118,
+        "coverage_percent": 100.0,
+        "all_response_bounds_percent": [
+          85.22975929978118,
+          85.22975929978118
+        ],
+        "ci95_percent": [
+          82.70925110132158,
+          87.66975839219853
+        ],
+        "bootstrap_undefined": 0,
+        "families": 622,
+        "degenerate_interval": false,
+        "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+        "delta_pp": -0.437636761487965,
+        "paired_resolved": 914,
+        "paired_total": 914,
+        "paired_missing": 0,
+        "ci95_pp": [
+          -1.2074974970145111,
+          0.32398283812970624
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          -0.437636761487965,
+          -0.437636761487965
+        ],
+        "exact_baseline_alias": false,
+        "delta_bootstrap_undefined": 0,
+        "delta_degenerate_interval": false,
+        "delta_families": 622,
+        "accuracy_percent": 85.22975929978118
+      },
+      "soda": {
+        "key": "source_m3",
+        "condition": "native_minus",
+        "reference": "baseline",
+        "valid_pairs": 400,
+        "missing_pairs": 0,
+        "scenario_clusters": 80,
+        "baseline_unsafe_paired": 133.0,
+        "treated_unsafe_paired": 125.0,
+        "delta_pp": -2.0,
+        "ci95_pp": [
+          -4.25,
+          0.49999999999999994
+        ],
+        "simultaneous_ci_pp": [
+          -5.250000000000001,
+          1.7499999999999996
+        ],
+        "multiplicity_family_size": 10,
+        "missing_label_bounds_pp": [
+          -1.9999999999999998,
+          -1.9999999999999998
+        ],
+        "bootstrap_draws": 10000,
+        "seed": 20261002,
+        "status": "measured"
+      }
+    },
+    {
+      "model_key": "source_m3",
+      "model": "Ministral-3-8B",
+      "estimator": "shadow",
+      "sign": "minus",
+      "alpha": -0.25,
+      "status": "measured",
+      "lumen": {
+        "component": "main",
+        "context": "neutral",
+        "target_language": "all",
+        "left": "shadow_pooled_minus",
+        "right": "baseline",
+        "metric": "semantic_unsafe",
+        "confirmatory_main": true,
+        "delta_pp": -5.625,
+        "paired_resolved": 800,
+        "paired_total": 800,
+        "paired_missing": 0,
+        "ci95_pp": [
+          -10.090994854202401,
+          -0.813953488372093
+        ],
+        "multiplicity": 18,
+        "bonferroni_ci_pp": [
+          -11.625860969387755,
+          0.0
+        ],
+        "all_response_delta_bounds_pp": [
+          -5.625,
+          -5.625
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19,
+        "predefined_main_contrast": true,
+        "qwen_rule_revision_after_prior_inspection": true
+      },
+      "bfcl": {
+        "condition": "shadow_pooled_minus",
+        "actual_condition": "shadow_pooled_minus",
+        "stratum": "tool_required",
+        "metric": "official_valid",
+        "positive": 776,
+        "resolved": 914,
+        "total": 914,
+        "missing": 0,
+        "rate_percent": 84.9015317286652,
+        "coverage_percent": 100.0,
+        "all_response_bounds_percent": [
+          84.9015317286652,
+          84.9015317286652
+        ],
+        "ci95_percent": [
+          82.35294117647058,
+          87.38940478962893
+        ],
+        "bootstrap_undefined": 0,
+        "families": 622,
+        "degenerate_interval": false,
+        "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+        "delta_pp": -0.7658643326039387,
+        "paired_resolved": 914,
+        "paired_total": 914,
+        "paired_missing": 0,
+        "ci95_pp": [
+          -1.6835194045720363,
+          0.1092896174863388
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          -0.7658643326039387,
+          -0.7658643326039387
+        ],
+        "exact_baseline_alias": false,
+        "delta_bootstrap_undefined": 0,
+        "delta_degenerate_interval": false,
+        "delta_families": 622,
+        "accuracy_percent": 84.9015317286652
+      },
+      "soda": {
+        "key": "source_m3",
+        "condition": "shadow_minus",
+        "reference": "baseline",
+        "valid_pairs": 400,
+        "missing_pairs": 0,
+        "scenario_clusters": 80,
+        "baseline_unsafe_paired": 133.0,
+        "treated_unsafe_paired": 131.0,
+        "delta_pp": -0.49999999999999994,
+        "ci95_pp": [
+          -2.5,
+          1.7499999999999998
+        ],
+        "simultaneous_ci_pp": [
+          -3.4999999999999996,
+          2.7500000000000004
+        ],
+        "multiplicity_family_size": 10,
+        "missing_label_bounds_pp": [
+          -0.5000000000000001,
+          -0.5000000000000001
+        ],
+        "bootstrap_draws": 10000,
+        "seed": 20261002,
+        "status": "measured"
+      }
+    },
+    {
+      "model_key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "estimator": "native",
+      "sign": "plus",
+      "alpha": 4,
+      "status": "measured",
+      "lumen": {
+        "component": "main",
+        "context": "ethical",
+        "target_language": "all",
+        "left": "native_pooled_plus",
+        "right": "baseline",
+        "metric": "semantic_unsafe",
+        "confirmatory_main": true,
+        "delta_pp": 19.670050761421322,
+        "paired_resolved": 788,
+        "paired_total": 800,
+        "paired_missing": 12,
+        "ci95_pp": [
+          7.495667414538831,
+          34.5331646509058
+        ],
+        "multiplicity": 18,
+        "bonferroni_ci_pp": [
+          3.395318869900268,
+          39.27807659208261
+        ],
+        "all_response_delta_bounds_pp": [
+          18.625,
+          20.125
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19,
+        "predefined_main_contrast": true,
+        "qwen_rule_revision_after_prior_inspection": true
+      },
+      "bfcl": {
+        "condition": "native_pooled_plus",
+        "actual_condition": "native_pooled_plus",
+        "stratum": "tool_required",
+        "metric": "official_valid",
+        "positive": 823,
+        "resolved": 914,
+        "total": 914,
+        "missing": 0,
+        "rate_percent": 90.04376367614879,
+        "coverage_percent": 100.0,
+        "all_response_bounds_percent": [
+          90.04376367614879,
+          90.04376367614879
+        ],
+        "ci95_percent": [
+          87.9998898678414,
+          92.02595940672065
+        ],
+        "bootstrap_undefined": 0,
+        "families": 622,
+        "degenerate_interval": false,
+        "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+        "delta_pp": -1.2035010940919038,
+        "paired_resolved": 914,
+        "paired_total": 914,
+        "paired_missing": 0,
+        "ci95_pp": [
+          -2.6767073263995105,
+          0.22222840192806814
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          -1.2035010940919038,
+          -1.2035010940919038
+        ],
+        "exact_baseline_alias": false,
+        "delta_bootstrap_undefined": 0,
+        "delta_degenerate_interval": false,
+        "delta_families": 622,
+        "accuracy_percent": 90.04376367614879
+      },
+      "soda": {
+        "key": "source_m5",
+        "condition": "native_plus",
+        "reference": "baseline",
+        "valid_pairs": 400,
+        "missing_pairs": 0,
+        "scenario_clusters": 80,
+        "baseline_unsafe_paired": 238.0,
+        "treated_unsafe_paired": 260.0,
+        "delta_pp": 5.500000000000001,
+        "ci95_pp": [
+          0.0,
+          11.25
+        ],
+        "simultaneous_ci_pp": [
+          -2.2500000000000004,
+          13.999999999999998
+        ],
+        "multiplicity_family_size": 10,
+        "missing_label_bounds_pp": [
+          5.500000000000001,
+          5.500000000000001
+        ],
+        "bootstrap_draws": 10000,
+        "seed": 20261002,
+        "status": "measured"
+      }
+    },
+    {
+      "model_key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "estimator": "shadow",
+      "sign": "plus",
+      "alpha": 4,
+      "status": "measured",
+      "lumen": {
+        "component": "main",
+        "context": "ethical",
+        "target_language": "all",
+        "left": "shadow_pooled_plus",
+        "right": "baseline",
+        "metric": "semantic_unsafe",
+        "confirmatory_main": true,
+        "delta_pp": 17.916137229987296,
+        "paired_resolved": 787,
+        "paired_total": 800,
+        "paired_missing": 13,
+        "ci95_pp": [
+          5.144611874788187,
+          33.451836768617014
+        ],
+        "multiplicity": 18,
+        "bonferroni_ci_pp": [
+          0.9923718785391793,
+          37.954839232415765
+        ],
+        "all_response_delta_bounds_pp": [
+          16.875,
+          18.625
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19,
+        "predefined_main_contrast": true,
+        "qwen_rule_revision_after_prior_inspection": true
+      },
+      "bfcl": {
+        "condition": "shadow_pooled_plus",
+        "actual_condition": "shadow_pooled_plus",
+        "stratum": "tool_required",
+        "metric": "official_valid",
+        "positive": 820,
+        "resolved": 914,
+        "total": 914,
+        "missing": 0,
+        "rate_percent": 89.71553610503283,
+        "coverage_percent": 100.0,
+        "all_response_bounds_percent": [
+          89.71553610503283,
+          89.71553610503283
+        ],
+        "ci95_percent": [
+          87.6243093922652,
+          91.71151776103336
+        ],
+        "bootstrap_undefined": 0,
+        "families": 622,
+        "degenerate_interval": false,
+        "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+        "delta_pp": -1.5317286652078774,
+        "paired_resolved": 914,
+        "paired_total": 914,
+        "paired_missing": 0,
+        "ci95_pp": [
+          -2.931669620076323,
+          -0.1117256154904929
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          -1.5317286652078774,
+          -1.5317286652078774
+        ],
+        "exact_baseline_alias": false,
+        "delta_bootstrap_undefined": 0,
+        "delta_degenerate_interval": false,
+        "delta_families": 622,
+        "accuracy_percent": 89.71553610503283
+      },
+      "soda": {
+        "key": "source_m5",
+        "condition": "shadow_plus",
+        "reference": "baseline",
+        "valid_pairs": 400,
+        "missing_pairs": 0,
+        "scenario_clusters": 80,
+        "baseline_unsafe_paired": 238.0,
+        "treated_unsafe_paired": 264.0,
+        "delta_pp": 6.5,
+        "ci95_pp": [
+          1.25,
+          12.249999999999998
+        ],
+        "simultaneous_ci_pp": [
+          -1.0006250000000003,
+          14.500000000000002
+        ],
+        "multiplicity_family_size": 10,
+        "missing_label_bounds_pp": [
+          6.499999999999999,
+          6.499999999999999
+        ],
+        "bootstrap_draws": 10000,
+        "seed": 20261002,
+        "status": "measured"
+      }
+    },
+    {
+      "model_key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "estimator": "native",
+      "sign": "minus",
+      "alpha": -4,
+      "status": "measured",
+      "lumen": {
+        "component": "main",
+        "context": "neutral",
+        "target_language": "all",
+        "left": "native_pooled_minus",
+        "right": "baseline",
+        "metric": "semantic_unsafe",
+        "confirmatory_main": true,
+        "delta_pp": -26.512226512226512,
+        "paired_resolved": 777,
+        "paired_total": 800,
+        "paired_missing": 23,
+        "ci95_pp": [
+          -31.624046657694034,
+          -20.44373033655235
+        ],
+        "multiplicity": 18,
+        "bonferroni_ci_pp": [
+          -34.3021978021978,
+          -16.371087742977643
+        ],
+        "all_response_delta_bounds_pp": [
+          -27.750000000000004,
+          -24.875
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19,
+        "predefined_main_contrast": true,
+        "qwen_rule_revision_after_prior_inspection": true
+      },
+      "bfcl": {
+        "condition": "native_pooled_minus",
+        "actual_condition": "native_pooled_minus",
+        "stratum": "tool_required",
+        "metric": "official_valid",
+        "positive": 811,
+        "resolved": 914,
+        "total": 914,
+        "missing": 0,
+        "rate_percent": 88.7308533916849,
+        "coverage_percent": 100.0,
+        "all_response_bounds_percent": [
+          88.7308533916849,
+          88.7308533916849
+        ],
+        "ci95_percent": [
+          86.48641223641225,
+          90.82776521190996
+        ],
+        "bootstrap_undefined": 0,
+        "families": 622,
+        "degenerate_interval": false,
+        "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+        "delta_pp": -2.516411378555799,
+        "paired_resolved": 914,
+        "paired_total": 914,
+        "paired_missing": 0,
+        "ci95_pp": [
+          -4.090419806243272,
+          -0.9944476967546013
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          -2.516411378555799,
+          -2.516411378555799
+        ],
+        "exact_baseline_alias": false,
+        "delta_bootstrap_undefined": 0,
+        "delta_degenerate_interval": false,
+        "delta_families": 622,
+        "accuracy_percent": 88.7308533916849
+      },
+      "soda": {
+        "key": "source_m5",
+        "condition": "native_minus",
+        "reference": "baseline",
+        "valid_pairs": 400,
+        "missing_pairs": 0,
+        "scenario_clusters": 80,
+        "baseline_unsafe_paired": 238.0,
+        "treated_unsafe_paired": 167.0,
+        "delta_pp": -17.750000000000004,
+        "ci95_pp": [
+          -23.75,
+          -12.0
+        ],
+        "simultaneous_ci_pp": [
+          -26.5,
+          -9.5
+        ],
+        "multiplicity_family_size": 10,
+        "missing_label_bounds_pp": [
+          -17.750000000000004,
+          -17.750000000000004
+        ],
+        "bootstrap_draws": 10000,
+        "seed": 20261002,
+        "status": "measured"
+      }
+    },
+    {
+      "model_key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "estimator": "shadow",
+      "sign": "minus",
+      "alpha": -4,
+      "status": "measured",
+      "lumen": {
+        "component": "main",
+        "context": "neutral",
+        "target_language": "all",
+        "left": "shadow_pooled_minus",
+        "right": "baseline",
+        "metric": "semantic_unsafe",
+        "confirmatory_main": true,
+        "delta_pp": -25.097024579560156,
+        "paired_resolved": 773,
+        "paired_total": 800,
+        "paired_missing": 27,
+        "ci95_pp": [
+          -30.756034497069905,
+          -18.14656493227922
+        ],
+        "multiplicity": 18,
+        "bonferroni_ci_pp": [
+          -33.53785130468989,
+          -13.258198067051291
+        ],
+        "all_response_delta_bounds_pp": [
+          -26.5,
+          -23.125
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19,
+        "predefined_main_contrast": true,
+        "qwen_rule_revision_after_prior_inspection": true
+      },
+      "bfcl": {
+        "condition": "shadow_pooled_minus",
+        "actual_condition": "shadow_pooled_minus",
+        "stratum": "tool_required",
+        "metric": "official_valid",
+        "positive": 814,
+        "resolved": 914,
+        "total": 914,
+        "missing": 0,
+        "rate_percent": 89.05908096280088,
+        "coverage_percent": 100.0,
+        "all_response_bounds_percent": [
+          89.05908096280088,
+          89.05908096280088
+        ],
+        "ci95_percent": [
+          86.91978444525527,
+          91.07730882063917
+        ],
+        "bootstrap_undefined": 0,
+        "families": 622,
+        "degenerate_interval": false,
+        "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+        "delta_pp": -2.1881838074398248,
+        "paired_resolved": 914,
+        "paired_total": 914,
+        "paired_missing": 0,
+        "ci95_pp": [
+          -3.733031674208145,
+          -0.7502679528403001
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          -2.1881838074398248,
+          -2.1881838074398248
+        ],
+        "exact_baseline_alias": false,
+        "delta_bootstrap_undefined": 0,
+        "delta_degenerate_interval": false,
+        "delta_families": 622,
+        "accuracy_percent": 89.05908096280088
+      },
+      "soda": {
+        "key": "source_m5",
+        "condition": "shadow_minus",
+        "reference": "baseline",
+        "valid_pairs": 400,
+        "missing_pairs": 0,
+        "scenario_clusters": 80,
+        "baseline_unsafe_paired": 238.0,
+        "treated_unsafe_paired": 166.0,
+        "delta_pp": -18.0,
+        "ci95_pp": [
+          -23.5,
+          -12.5
+        ],
+        "simultaneous_ci_pp": [
+          -25.999999999999996,
+          -10.25
+        ],
+        "multiplicity_family_size": 10,
+        "missing_label_bounds_pp": [
+          -18.0,
+          -18.0
+        ],
+        "bootstrap_draws": 10000,
+        "seed": 20261002,
+        "status": "measured"
+      }
+    },
+    {
+      "model_key": "receiver_m1",
+      "model": "Qwen3.5-27B",
+      "estimator": "transported",
+      "sign": "plus",
+      "alpha": 8,
+      "status": "measured",
+      "lumen": {
+        "component": "main",
+        "context": "ethical",
+        "target_language": "all",
+        "left": "transported_native_plus",
+        "right": "baseline",
+        "metric": "semantic_unsafe",
+        "confirmatory_main": true,
+        "delta_pp": 76.00502512562815,
+        "paired_resolved": 796,
+        "paired_total": 800,
+        "paired_missing": 4,
+        "ci95_pp": [
+          65.1204858264659,
+          82.77124204285178
+        ],
+        "multiplicity": 6,
+        "bonferroni_ci_pp": [
+          61.23454003791641,
+          84.47884521618148
+        ],
+        "all_response_delta_bounds_pp": [
+          75.625,
+          76.125
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19,
+        "predefined_main_contrast": true,
+        "qwen_rule_revision_after_prior_inspection": true
+      },
+      "bfcl": {
+        "condition": "transported_native_plus",
+        "actual_condition": "transported_native_plus",
+        "stratum": "tool_required",
+        "metric": "official_valid",
+        "positive": 838,
+        "resolved": 914,
+        "total": 914,
+        "missing": 0,
+        "rate_percent": 91.68490153172867,
+        "coverage_percent": 100.0,
+        "all_response_bounds_percent": [
+          91.68490153172867,
+          91.68490153172867
+        ],
+        "ci95_percent": [
+          89.62556727850846,
+          93.60529217199559
+        ],
+        "bootstrap_undefined": 0,
+        "families": 622,
+        "degenerate_interval": false,
+        "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+        "delta_pp": -2.1881838074398248,
+        "paired_resolved": 914,
+        "paired_total": 914,
+        "paired_missing": 0,
+        "ci95_pp": [
+          -3.825136612021858,
+          -0.6417112299465241
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          -2.1881838074398248,
+          -2.1881838074398248
+        ],
+        "exact_baseline_alias": false,
+        "delta_bootstrap_undefined": 0,
+        "delta_degenerate_interval": false,
+        "delta_families": 622,
+        "accuracy_percent": 91.68490153172867
+      },
+      "soda": {
+        "status": "not_evaluated"
+      }
+    },
+    {
+      "model_key": "receiver_m1",
+      "model": "Qwen3.5-27B",
+      "estimator": "native",
+      "sign": "plus",
+      "alpha": 4,
+      "status": "measured",
+      "lumen": {
+        "key": "receiver_m1",
+        "phase": "native_final",
+        "context": "ethical",
+        "condition": "selected_receiver_native_plus",
+        "reference": "baseline",
+        "delta_pp": 0.8750000000000001,
+        "paired_resolved": 800,
+        "paired_total": 800,
+        "paired_missing": 0,
+        "ci95_pp": [
+          0.2222222222222222,
+          1.8518518518518516
+        ],
+        "multiplicity": 174,
+        "bonferroni_ci_pp": [
+          0.0,
+          3.2671760710554456
+        ],
+        "all_response_delta_bounds_pp": [
+          0.8750000000000001,
+          0.8750000000000001
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19
+      },
+      "bfcl": {
+        "delta_pp": -0.2188183807439825,
+        "paired_resolved": 914,
+        "paired_total": 914,
+        "paired_missing": 0,
+        "ci95_pp": [
+          -1.2685050391254624,
+          0.7874459604612551
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          -0.2188183807439825,
+          -0.2188183807439825
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 622,
+        "accuracy_percent": 93.6542669584245
+      },
+      "soda": {
+        "status": "not_evaluated"
+      }
+    },
+    {
+      "model_key": "receiver_m1",
+      "model": "Qwen3.5-27B",
+      "estimator": "transported",
+      "sign": "minus",
+      "alpha": 0.0,
+      "status": "no_selected_dose",
+      "lumen": {
+        "component": "main",
+        "context": "neutral",
+        "target_language": "all",
+        "left": "transported_native_minus",
+        "right": "baseline",
+        "metric": "semantic_unsafe",
+        "confirmatory_main": true,
+        "delta_pp": 0.0,
+        "paired_resolved": 800,
+        "paired_total": 800,
+        "paired_missing": 0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "multiplicity": 6,
+        "bonferroni_ci_pp": [
+          0.0,
+          0.0
+        ],
+        "all_response_delta_bounds_pp": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": true,
+        "degenerate_interval": true,
+        "families": 19,
+        "predefined_main_contrast": true,
+        "qwen_rule_revision_after_prior_inspection": true
+      },
+      "bfcl": {
+        "condition": "transported_native_minus",
+        "actual_condition": "baseline",
+        "stratum": "tool_required",
+        "metric": "official_valid",
+        "positive": 858,
+        "resolved": 914,
+        "total": 914,
+        "missing": 0,
+        "rate_percent": 93.8730853391685,
+        "coverage_percent": 100.0,
+        "all_response_bounds_percent": [
+          93.8730853391685,
+          93.8730853391685
+        ],
+        "ci95_percent": [
+          92.14830970556162,
+          95.45454545454545
+        ],
+        "bootstrap_undefined": 0,
+        "families": 622,
+        "degenerate_interval": false,
+        "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+        "delta_pp": 0.0,
+        "paired_resolved": 914,
+        "paired_total": 914,
+        "paired_missing": 0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          0.0,
+          0.0
+        ],
+        "exact_baseline_alias": true,
+        "delta_bootstrap_undefined": 0,
+        "delta_degenerate_interval": true,
+        "delta_families": 622,
+        "accuracy_percent": 93.8730853391685
+      },
+      "soda": {
+        "status": "not_evaluated"
+      }
+    },
+    {
+      "model_key": "receiver_m1",
+      "model": "Qwen3.5-27B",
+      "estimator": "native",
+      "sign": "minus",
+      "alpha": 0.0,
+      "status": "no_selected_dose",
+      "lumen": {
+        "key": "receiver_m1",
+        "phase": "native_final",
+        "context": "neutral",
+        "condition": "selected_receiver_native_minus",
+        "reference": "baseline",
+        "delta_pp": 0.0,
+        "paired_resolved": 800,
+        "paired_total": 800,
+        "paired_missing": 0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "multiplicity": 174,
+        "bonferroni_ci_pp": [
+          0.0,
+          0.0
+        ],
+        "all_response_delta_bounds_pp": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": true,
+        "degenerate_interval": true,
+        "families": 19
+      },
+      "bfcl": {
+        "delta_pp": 0.0,
+        "paired_resolved": 914,
+        "paired_total": 914,
+        "paired_missing": 0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": true,
+        "degenerate_interval": true,
+        "families": 622,
+        "accuracy_percent": 93.8730853391685
+      },
+      "soda": {
+        "status": "not_evaluated"
+      }
+    },
+    {
+      "model_key": "receiver_m3",
+      "model": "Ministral-3-14B",
+      "estimator": "transported",
+      "sign": "plus",
+      "alpha": 2,
+      "status": "measured",
+      "lumen": {
+        "component": "main",
+        "context": "ethical",
+        "target_language": "all",
+        "left": "transported_native_plus",
+        "right": "baseline",
+        "metric": "semantic_unsafe",
+        "confirmatory_main": true,
+        "delta_pp": 3.6249999999999996,
+        "paired_resolved": 800,
+        "paired_total": 800,
+        "paired_missing": 0,
+        "ci95_pp": [
+          1.2120601173020529,
+          7.656250000000001
+        ],
+        "multiplicity": 6,
+        "bonferroni_ci_pp": [
+          0.45454545454545453,
+          9.545454545454547
+        ],
+        "all_response_delta_bounds_pp": [
+          3.6249999999999996,
+          3.6249999999999996
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19,
+        "predefined_main_contrast": true,
+        "qwen_rule_revision_after_prior_inspection": true
+      },
+      "bfcl": {
+        "condition": "transported_native_plus",
+        "actual_condition": "transported_native_plus",
+        "stratum": "tool_required",
+        "metric": "official_valid",
+        "positive": 796,
+        "resolved": 914,
+        "total": 914,
+        "missing": 0,
+        "rate_percent": 87.08971553610503,
+        "coverage_percent": 100.0,
+        "all_response_bounds_percent": [
+          87.08971553610503,
+          87.08971553610503
+        ],
+        "ci95_percent": [
+          84.72659958230491,
+          89.35939196525516
+        ],
+        "bootstrap_undefined": 0,
+        "families": 622,
+        "degenerate_interval": false,
+        "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+        "delta_pp": 0.10940919037199125,
+        "paired_resolved": 914,
+        "paired_total": 914,
+        "paired_missing": 0,
+        "ci95_pp": [
+          -1.4130434782608696,
+          1.5435501653803747
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          0.10940919037199125,
+          0.10940919037199125
+        ],
+        "exact_baseline_alias": false,
+        "delta_bootstrap_undefined": 0,
+        "delta_degenerate_interval": false,
+        "delta_families": 622,
+        "accuracy_percent": 87.08971553610503
+      },
+      "soda": {
+        "status": "not_evaluated"
+      }
+    },
+    {
+      "model_key": "receiver_m3",
+      "model": "Ministral-3-14B",
+      "estimator": "native",
+      "sign": "plus",
+      "alpha": 2,
+      "status": "measured",
+      "lumen": {
+        "key": "receiver_m3",
+        "phase": "native_final",
+        "context": "ethical",
+        "condition": "selected_receiver_native_plus",
+        "reference": "baseline",
+        "delta_pp": 7.375,
+        "paired_resolved": 800,
+        "paired_total": 800,
+        "paired_missing": 0,
+        "ci95_pp": [
+          2.619047619047619,
+          13.333333333333334
+        ],
+        "multiplicity": 174,
+        "bonferroni_ci_pp": [
+          0.5359697773490877,
+          19.47694749216313
+        ],
+        "all_response_delta_bounds_pp": [
+          7.375,
+          7.375
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19
+      },
+      "bfcl": {
+        "delta_pp": 1.2035010940919038,
+        "paired_resolved": 914,
+        "paired_total": 914,
+        "paired_missing": 0,
+        "ci95_pp": [
+          -0.2173972181482708,
+          2.6106913081015115
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          1.2035010940919038,
+          1.2035010940919038
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 622,
+        "accuracy_percent": 88.18380743982495
+      },
+      "soda": {
+        "status": "not_evaluated"
+      }
+    },
+    {
+      "model_key": "receiver_m3",
+      "model": "Ministral-3-14B",
+      "estimator": "transported",
+      "sign": "minus",
+      "alpha": -1,
+      "status": "measured",
+      "lumen": {
+        "component": "main",
+        "context": "neutral",
+        "target_language": "all",
+        "left": "transported_native_minus",
+        "right": "baseline",
+        "metric": "semantic_unsafe",
+        "confirmatory_main": true,
+        "delta_pp": -7.65370138017566,
+        "paired_resolved": 797,
+        "paired_total": 800,
+        "paired_missing": 3,
+        "ci95_pp": [
+          -12.633302518418915,
+          -1.9384701380677203
+        ],
+        "multiplicity": 6,
+        "bonferroni_ci_pp": [
+          -13.786375284738039,
+          -1.0249324200194219
+        ],
+        "all_response_delta_bounds_pp": [
+          -8.0,
+          -7.625
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19,
+        "predefined_main_contrast": true,
+        "qwen_rule_revision_after_prior_inspection": true
+      },
+      "bfcl": {
+        "condition": "transported_native_minus",
+        "actual_condition": "transported_native_minus",
+        "stratum": "tool_required",
+        "metric": "official_valid",
+        "positive": 788,
+        "resolved": 914,
+        "total": 914,
+        "missing": 0,
+        "rate_percent": 86.2144420131291,
+        "coverage_percent": 100.0,
+        "all_response_bounds_percent": [
+          86.2144420131291,
+          86.2144420131291
+        ],
+        "ci95_percent": [
+          83.78665117783724,
+          88.57481739924351
+        ],
+        "bootstrap_undefined": 0,
+        "families": 622,
+        "degenerate_interval": false,
+        "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+        "delta_pp": -0.7658643326039387,
+        "paired_resolved": 914,
+        "paired_total": 914,
+        "paired_missing": 0,
+        "ci95_pp": [
+          -1.7525124421129492,
+          0.2173972181482707
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          -0.7658643326039387,
+          -0.7658643326039387
+        ],
+        "exact_baseline_alias": false,
+        "delta_bootstrap_undefined": 0,
+        "delta_degenerate_interval": false,
+        "delta_families": 622,
+        "accuracy_percent": 86.2144420131291
+      },
+      "soda": {
+        "status": "not_evaluated"
+      }
+    },
+    {
+      "model_key": "receiver_m3",
+      "model": "Ministral-3-14B",
+      "estimator": "native",
+      "sign": "minus",
+      "alpha": -0.25,
+      "status": "measured",
+      "lumen": {
+        "key": "receiver_m3",
+        "phase": "native_final",
+        "context": "neutral",
+        "condition": "selected_receiver_native_minus",
+        "reference": "baseline",
+        "delta_pp": -2.7603513174404015,
+        "paired_resolved": 797,
+        "paired_total": 800,
+        "paired_missing": 3,
+        "ci95_pp": [
+          -4.761904761904762,
+          -0.4895811200258566
+        ],
+        "multiplicity": 174,
+        "bonferroni_ci_pp": [
+          -6.246051002701082,
+          0.0
+        ],
+        "all_response_delta_bounds_pp": [
+          -2.875,
+          -2.5
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19
+      },
+      "bfcl": {
+        "delta_pp": -0.6564551422319475,
+        "paired_resolved": 914,
+        "paired_total": 914,
+        "paired_missing": 0,
+        "ci95_pp": [
+          -1.2972972972972971,
+          -0.10834236186348861
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          -0.6564551422319475,
+          -0.6564551422319475
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 622,
+        "accuracy_percent": 86.32385120350109
+      },
+      "soda": {
+        "status": "not_evaluated"
+      }
+    },
+    {
+      "model_key": "receiver_m5",
+      "model": "Llama-3.1-70B",
+      "estimator": "transported",
+      "sign": "plus",
+      "alpha": 4,
+      "status": "measured",
+      "lumen": {
+        "component": "main",
+        "context": "ethical",
+        "target_language": "all",
+        "left": "transported_native_plus",
+        "right": "baseline",
+        "metric": "semantic_unsafe",
+        "confirmatory_main": true,
+        "delta_pp": 27.500000000000004,
+        "paired_resolved": 800,
+        "paired_total": 800,
+        "paired_missing": 0,
+        "ci95_pp": [
+          22.142857142857142,
+          33.90625
+        ],
+        "multiplicity": 6,
+        "bonferroni_ci_pp": [
+          20.294117647058822,
+          36.875
+        ],
+        "all_response_delta_bounds_pp": [
+          27.500000000000004,
+          27.500000000000004
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19,
+        "predefined_main_contrast": true,
+        "qwen_rule_revision_after_prior_inspection": true
+      },
+      "bfcl": {
+        "condition": "transported_native_plus",
+        "actual_condition": "transported_native_plus",
+        "stratum": "tool_required",
+        "metric": "official_valid",
+        "positive": 877,
+        "resolved": 914,
+        "total": 914,
+        "missing": 0,
+        "rate_percent": 95.95185995623632,
+        "coverage_percent": 100.0,
+        "all_response_bounds_percent": [
+          95.95185995623632,
+          95.95185995623632
+        ],
+        "ci95_percent": [
+          94.65472886866834,
+          97.15854749803134
+        ],
+        "bootstrap_undefined": 0,
+        "families": 622,
+        "degenerate_interval": false,
+        "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+        "delta_pp": 0.10940919037199125,
+        "paired_resolved": 914,
+        "paired_total": 914,
+        "paired_missing": 0,
+        "ci95_pp": [
+          -0.4405286343612335,
+          0.6651884700665188
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          0.10940919037199125,
+          0.10940919037199125
+        ],
+        "exact_baseline_alias": false,
+        "delta_bootstrap_undefined": 0,
+        "delta_degenerate_interval": false,
+        "delta_families": 622,
+        "accuracy_percent": 95.95185995623632
+      },
+      "soda": {
+        "status": "not_evaluated"
+      }
+    },
+    {
+      "model_key": "receiver_m5",
+      "model": "Llama-3.1-70B",
+      "estimator": "native",
+      "sign": "plus",
+      "alpha": 8,
+      "status": "measured",
+      "lumen": {
+        "key": "receiver_m5",
+        "phase": "native_final",
+        "context": "ethical",
+        "condition": "selected_receiver_native_plus",
+        "reference": "baseline",
+        "delta_pp": 76.8170426065163,
+        "paired_resolved": 798,
+        "paired_total": 800,
+        "paired_missing": 2,
+        "ci95_pp": [
+          70.93411122171135,
+          81.27853881278538
+        ],
+        "multiplicity": 174,
+        "bonferroni_ci_pp": [
+          64.09093614830267,
+          83.93303096486024
+        ],
+        "all_response_delta_bounds_pp": [
+          76.625,
+          76.875
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19
+      },
+      "bfcl": {
+        "delta_pp": -0.3282275711159737,
+        "paired_resolved": 914,
+        "paired_total": 914,
+        "paired_missing": 0,
+        "ci95_pp": [
+          -0.8888888888888888,
+          0.22026431718061676
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          -0.3282275711159737,
+          -0.3282275711159737
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 622,
+        "accuracy_percent": 95.51422319474835
+      },
+      "soda": {
+        "status": "not_evaluated"
+      }
+    },
+    {
+      "model_key": "receiver_m5",
+      "model": "Llama-3.1-70B",
+      "estimator": "transported",
+      "sign": "minus",
+      "alpha": -4,
+      "status": "measured",
+      "lumen": {
+        "component": "main",
+        "context": "neutral",
+        "target_language": "all",
+        "left": "transported_native_minus",
+        "right": "baseline",
+        "metric": "semantic_unsafe",
+        "confirmatory_main": true,
+        "delta_pp": -35.145385587863466,
+        "paired_resolved": 791,
+        "paired_total": 800,
+        "paired_missing": 9,
+        "ci95_pp": [
+          -46.525557149354505,
+          -23.224501562267523
+        ],
+        "multiplicity": 6,
+        "bonferroni_ci_pp": [
+          -49.84232993197279,
+          -19.871398572329575
+        ],
+        "all_response_delta_bounds_pp": [
+          -35.875,
+          -34.75
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19,
+        "predefined_main_contrast": true,
+        "qwen_rule_revision_after_prior_inspection": true
+      },
+      "bfcl": {
+        "condition": "transported_native_minus",
+        "actual_condition": "transported_native_minus",
+        "stratum": "tool_required",
+        "metric": "official_valid",
+        "positive": 876,
+        "resolved": 914,
+        "total": 914,
+        "missing": 0,
+        "rate_percent": 95.84245076586433,
+        "coverage_percent": 100.0,
+        "all_response_bounds_percent": [
+          95.84245076586433,
+          95.84245076586433
+        ],
+        "ci95_percent": [
+          94.51608294930875,
+          97.08851713036259
+        ],
+        "bootstrap_undefined": 0,
+        "families": 622,
+        "degenerate_interval": false,
+        "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+        "delta_pp": 0.0,
+        "paired_resolved": 914,
+        "paired_total": 914,
+        "paired_missing": 0,
+        "ci95_pp": [
+          -0.5624455304573415,
+          0.6423982869379015
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          0.0,
+          0.0
+        ],
+        "exact_baseline_alias": false,
+        "delta_bootstrap_undefined": 0,
+        "delta_degenerate_interval": false,
+        "delta_families": 622,
+        "accuracy_percent": 95.84245076586433
+      },
+      "soda": {
+        "status": "not_evaluated"
+      }
+    },
+    {
+      "model_key": "receiver_m5",
+      "model": "Llama-3.1-70B",
+      "estimator": "native",
+      "sign": "minus",
+      "alpha": -4,
+      "status": "measured",
+      "lumen": {
+        "key": "receiver_m5",
+        "phase": "native_final",
+        "context": "neutral",
+        "condition": "selected_receiver_native_minus",
+        "reference": "baseline",
+        "delta_pp": -29.924242424242426,
+        "paired_resolved": 792,
+        "paired_total": 800,
+        "paired_missing": 8,
+        "ci95_pp": [
+          -39.20710940084623,
+          -20.146812919856348
+        ],
+        "multiplicity": 174,
+        "bonferroni_ci_pp": [
+          -47.34517136620891,
+          -14.793260098045232
+        ],
+        "all_response_delta_bounds_pp": [
+          -30.625000000000004,
+          -29.625
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19
+      },
+      "bfcl": {
+        "delta_pp": 0.437636761487965,
+        "paired_resolved": 914,
+        "paired_total": 914,
+        "paired_missing": 0,
+        "ci95_pp": [
+          -0.11086474501108648,
+          1.0799427937656874
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          0.437636761487965,
+          0.437636761487965
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 622,
+        "accuracy_percent": 96.2800875273523
+      },
+      "soda": {
+        "status": "not_evaluated"
+      }
+    }
+  ]
+}

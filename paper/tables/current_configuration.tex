@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering\scriptsize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrr}
+\toprule
+Model & Layer & BA (\%) & $a_+$ & $a_-$ \\
+\midrule
+Qwen3.5-9B & 18 & 96.91 & $8$ & $0$ \\
+Ministral-3-8B & 21 & 85.29 & $1$ & $-0.25$ \\
+Llama-3.1-8B & 26 & 73.66 & $4$ & $-4$ \\
+Qwen3.5-27B & 40 & 74.41 & $8$ & $0$ \\
+Ministral-3-14B & 20 & 85.84 & $2$ & $-1$ \\
+Llama-3.1-70B & 78 & 78.70 & $4$ & $-4$ \\
+\bottomrule
+\end{tabular}
+\caption{Selected layers (zero-based) and strengths. Rows 1--3: sources
+(native and shadow share $a_\pm$); rows 4--6: receivers with the
+transported direction. BA: probe balanced accuracy on Validation I.
+Qwen has $a_-=0$ (no eligible neutral calls in Validation II, 0/340).}
+\label{tab:current-configuration}
+\end{table}

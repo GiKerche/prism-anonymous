@@ -1,0 +1,7618 @@
+[
+  {
+    "blind_item_id": "18388b3fc11ae32b3a7edd144246823c8425deb6a5fd4b997921b79e39836a25",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "c1743a058691003d7f098b4892a620d5419782c02990978e9003670299cabcf1",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ffe67714116649ce954ed5fd1208556f5c531fe7c61ac31df3b23ebda1ff159d",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "709ffd3d99bfb7fdc1b9b1ed8f99affbb59615ac1d0cc8ac79a0da7f6e62a29c",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "fa6bee83548828190c270ef1f6035b044b8f9c7dd83282a4f1a2213b38eb816a",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "6cb2bbb2ac98bfc5bd71321948310ed7e0ed0653604334e950073293cb3a065c",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e012b2a84c9a434e27c1b10fba63463dc21a6d918501557b685f514be1de8c7f",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0df5edc770b926cd5d46b3ddc048a8651f0d6c58bf522755cce67fa6744f84c5",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a52f41b091fc198a760bdbcb56b9b3da886e3639e74756280d7bdab1b3c6ed2c",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "655904542b8bb168b40bbd1bf8ad285e0a2c9a5533fa7a16b390f7a3a3f0dc94",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "eb8b77fe52cb4a11893db43e8d9ccce36e861ffbb60a48cdb592d0beb0e02d78",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "48fe766642fd8179e6fe9c7b23c53822c77dc6e3d5f1c1c6c325602d3f1179ff",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a9edd9091331c81330c73ea8c8d2d4feed8c8fe892053b4c537d9186f743326d",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "87935033335ae3ba4a43a31baa56d6158b89ec47f33493831a86cfd71eced0fe",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "01e31ea15502d953733b616f3e136a9600c38ac67ed5b706c7579b665bce18f5",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c326721e76688194ee62e401fe72b703d1c1dc177c3d93f2881918e2ec896111",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "75b28a16c09cbd4845999a70d745745b6383bd6252af7e9f9b6570ba309e9fcf",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b11f014dbf833ffe17522c662e6e2758b82ad75608437c6d52db1010091be613",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "e68d94ee6eae0970e8badee64ba8b04a2973a62d7ada12b5550622306ee1718b",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "7a92c93be8c2336fd79164b6aa1408dd5162eddb76c5fb33c46fedb0181b6bc6",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ef86851f952bd7027c5675a3574ddde2a28c56e2247a0894969f6886bfd4e783",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "de020bb6f92442a407c4affc788400b9b17bbdf4f44c4db2f80c22d0e3c0e34f",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d9a9921379050d86b6de2840d72ed16fa5746de8bb65bc48a27262b7997b448d",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7cd15aa08ab11c30f4306ee11819ec099377d95f1d288679806e76d4b34d35e6",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "03339fe3f250304b3f994bd329f8b18aeac7f3f8e70cf200f29941ddd4d74b20",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "01fe9a92d56907de73aa77305930b01aae9b8e6dcc0d26b6e4f9ff99a862acb7",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b6c99d04f7caf0c1c0482adc42d571ba287975176e8431c0525234e394a9d5ac",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "0cb285484c493cbe6ec6e1533f31c04ccb30adc2d424a9b307c20b41229da5c9",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d4abb351dffc480c88e8ba3f90a81f8676229a86d986c526a5a6d428ade2f986",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a82ceb4f843a2725c73739bc1f1246cb322b0f8cc4393388f3f0c2b5fe2ab925",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "24e43ffad38a55fc2d403333427e3a3006b8c97a225a6261f8cb3b505b101528",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7e54b3372cc50d485c3d53db61d9b6c9ae38f5ba628a53d85be05f99a8a12834",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "31669c44fb58a24ed4e4cb4d6b6ed88e86c27bd21a976aa27688431c88ffb8ea",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "7a62ed610168ad7f6e56d87027aac689947d912dcde81f4e6eb8194694ec0ec6",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a334e9fa66912eec4344abe0708c5c352b07a90c2a2b93bfae7adb256dd559a3",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "650893c0c4e43b492a515ae61c7025dc6cab0bd0da79cda6514fcff7665b3718",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "08e971ed548128bd55adb7849bcb1401556885a62b08f1252229c4162e4a798a",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "c1533f645e0508fccfff0cc028515dde491226eb658b1f4d2e7ffd47cf901974",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e1835229d196beaf3a243078676bab48b8162379c6c45cdf6d65a86bfd86a838",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "1fe2e7a0ab29d40fedf5f59943b3003bdfb21fcd238960140b65ce1f396e4c32",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7155fcf7f89285c15a67fb139c93e7a9de52a54909d7e7e779043d39e720ada0",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "16d5015a50846599be4ae5e7481ee30eddb16e58652d44850147fbc3f5092458",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "1aefb079196ec76bdab2b0b7c0e084d44213366b7ea1675b6d181c5d2f31e6f0",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4d5454e000d877b2f9c1d94f6e4064ecf0e1496df64e449dd2ba624161cc5ce7",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "9d74c84d4ce4c0519d1a593050a589ca8d1dace1c0d6a45143ec33f150647001",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "77d3b6af52ad1cfc4d1f4287e09c4fae2d89828ef2bb95ea1b8ac4f98b1be8bd",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "2eda58ac123ff1efb2fe0d17a42b41f29954fe6d41ae77694dbadc81aafd167a",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 0,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "dfa9144d93dd572246dd4e4b5e5e9d4cf95b4bcc60702cd4086da7d44d0813a1",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4eb812be5566e3816ebb5514502581b46952449e86e857be216723f85eece646",
+    "context": "ethical",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "19a1fa66bcd9f809d1629102cee9d1182c0bf7a2c88f4b2d567607d9536635b0",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "ba1184df46016568ece95f8f756326302ae0b30abbb9ac78afb5f1fe5d9fb00c",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "6aeb513817fd826feeaed26016e12a5f3fb12b7e5b4dd61fc6b453025660fa76",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b9484c7f310ce4508e4e290907b2ac2f94cf06c308bcfe4450bfc6ca1e0abd06",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a98897148f11ef51a59f3692ba429b06a118319a4442e1d8570047766e6a914d",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "d9a38ad60993e90034d0c241fd4eb7fd051e01191789b626b5d8e7ab7881fb43",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "10f3b841d2fcb78faf49e63848d39f7c24155f070e19f85790bee288057cd3ec",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0743997a987c53e0a620ab5dc23bcce775016b0650e27c728ab11dbb101ea90b",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "29099fd95a6b1e845d9efc9d2e996cc5584f9df7b6e91304b598a2cb7b89fc02",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0b257f357a68a45f0222c4e6c1e1b752b19a9a4c7e4839ad3287530ef706c709",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "9f9b08b08928f71e5fd7717c6a6856c7a7187b287af8f33a6b59f29232b773a8",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "5703cade48fe3c58ddc6aa8b1c397cbbdd21fc4557669aa1811abd35b08d59ae",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e0c4481a08b9f690e1d2e31f162dff4121892347e5c33815b5399cce937278b9",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8fc6b7efefe41ee2db9aa926cf3b9bf13cfd8a5a2747a53d251df7694daa2516",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "67cebe50adc707af5e7db92d81a3837b659f5f97bc7418a13092a36e060b8cb5",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "064d12482a60da918edc5702b17be0b81ab110bd4b47d3b559abd67290c78c4a",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "55e8216d8882c179e38c154e9baed6844b5367942fb4eb77811e3f2460a9667f",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "a56722bcb1e793854a728dace39736600b0d973d99deb7540072bb5701c604a7",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f5d650610a3508b3ae387478634baabbc5d81b0db072b3cb838d8c534d7df588",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "12297a01e3147802a6fe601d3381ea8f90aeb902c89a53557f623a581bc1e31a",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "d90da781e4c3e25f97e1b9d20b91493b58f3369f4907930a6fb9e4976b775721",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "389c241a349b1ad8db968182f36f46373ef88264a5dffc643dbb968d285372ff",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8d4fd26aed1730a17bafe4390e5719f2b0b11899a05d670bf0d4be313ea998f8",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "e79999e19827c65513c23fedaad80e3abfd82035eff5fd22f1b4244f99390931",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "cefbf234491a5b4333e44948c5306d61cb202f861832d038d6f95cf27b49516e",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "501482e98131e0ae783cd331779ca36f88307ac7603df861e5b6a9794ae438d8",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d1505d3dc9700b1a78ab74de194f97b2edd56ec5216d001a4137a15e72448d63",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f92098bd0b4e3e4f807efc01c9c2d466a94cecd713f5e9ecd536fe0c049e3684",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0132fa3c07cb10edd222d0a4e061aed34eb010551256b5d17df277f18056adf5",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7f35ffef9627afd9f74a3aece67de8ce32d70e3aa054fe5f36f01473a11638be",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "ca7974d5d091e195e4fa294c25e177eaf69bc42dfcc52a3360e359c9a6b3b771",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2d85ada8812a6859b89a475ea819b86f23ff5aec9dd3bcd011294d05054c4d76",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e88351a03b393c32109b5a35585d0aa94f510cdd730c692586ac2978807e9867",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "525009d01c925d4fdc3209fb9a9128ff4eb2fc82f52e7740695399f71d7a530f",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "24143df67df96d2af04cf522a25a276d285659239cf55daf54998b1d0e24d22d",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "059dd130dd378a7920626ed772da2e3caf07da1fdca478e62d1a2449fffc9216",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "5694c317a3d307c86200d3ac27a7304b488c56521907350ac796f7da2be5f7a7",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0363ebcc2d3dab9908cea497d6fdebf57eb77c84fe804379e51d582a7eb00ae8",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "65bb614828470f6e328e7fce83ff88d6bca3ddf4f9b7275c418f957eea091a9b",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "19a9835a79e39f290c6172bbbc9bd46ed309a8a3fa662083fcbc7fe5bb928227",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "920b0ded2ab52e67b42af8cf6f07d0d2e3cf45218f5c5ec51c09ec414cd6a22b",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "682165bada3d4e5af188b4985aee7b741bd82d0a08a3bde7b961892215c8d7e1",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "836c2998ece548ccb787f50f07137e3ea4f1a5c5f2515b17170a21bd1ed6bcd1",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "14a72154bfe0714fe3f533ffbba29cff2f20d2a7dc3cf79a89557d9d09390255",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "208a4ae68cbb17e6caa106ba5722987b79f58f7e9b24e778218422d468dd8e0b",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "bde8d59bf5b64528b89e006aa35ce3c4e32bfa044ad41596ca99e8395c49917b",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "40ab56b368c566a8b356fcf18b9a4ea93da16873de3c460d4d9e41b5d7c8e493",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c9ce5ef64e2d8ffb74830d3d7bcabe6f7d7551780b4fea8c3871fb4593cf4135",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4dc924ba2a7450a15ba79dda7054bf3d2c812bc5a1078005d36ed9f1d5b74ba6",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b56cf94b1f6565eba9a1c6be395f515a2de75d9b6ac3b9ae40fc80f9f0632f10",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "7e19847f3ca79c3c95218d93c2a5f73f9cf82586accde003b85b9f0cd46d14cb",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e8bf4b663a68728a646e096707244f41df5b294bbed85273f9814870809ae08a",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b9700aca4c679aeb14b6bfd1e72a39c39eb2253ac52ee7c61c3dfd517fb29b7e",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8983ded6294cde1bf3bd004ff398f3e16379530eb8ae1047b35158812ae93c71",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b2b8b7b4928c2a3a9b016f1da5e50394e4e4dd583a9e3bd4521a2f47dedca47c",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "185de677c3e474e7c5b62fba9d71ac21f1f2fa9b1bd507c7fdf3dc4ac5e70d1c",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3bf775c6efadb648fae08e242a8d6fa140a66fc6d2d4bd925c6e7266518899de",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "3375914c7c2a56c3a87c113e82f87ec4edc98b8a8666552eb4f9df6b32e9283d",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4e3d8e8af7564559c05aedff2d43b8d022e988084863191a1b6d5d6bc5594771",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0e4dcd773ca1ac15dc4a07b645ce8cca5b8e42e5e59dc222377f83964c671502",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3d8bd675d444d8635b848bb31e6b48b81b45e1841f37c1202d5d5405b182aa70",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e52a6656a343731b43f81811ccc0329d74bb806f67fb4371277d03e6745785a4",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "86c6afdd6226c27c3ad3cf9ffca8ffbf6310a9be45f10533cf5938f76c009454",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8dc14288e667087cc753891ec202ad5676dd0017ef31969c2cddf46ed99b56d0",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "ef4de8161e34c497525c527b94abe35ef03a387e184ad950375facd5b2479e2b",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "59c3f4b868228fc01e977f63d5a6a9a65a9305642957a6197a3c867fb8bb619e",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "df7d7082a994cfb0dcbef7148e75df5a513ac70639d0aca81650740dd02904ae",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "633caaec95624b8470a5fb093538051e32ba7b18c7f9445047c9e7c453c9bac5",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f70faeac0d48d4f499f74c8d17050aaa1e55c1d9a8653bb28a9db17198e2c8be",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a80c03049756783d3a969eb56e9ac34d59a8a37657551bd13c8e7ed79fc40e64",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "1768a78cc92c40016c9cfc135e8ba52f447bf941788a73b32d4a79fcf5709de6",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "dd2ffbd2d129e425fb2483bedb6c61a38ee2dc8eb5f92b2403f786b4c5c01e34",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3a8f25422310827230fb44f888fc2500942d72aecebf94657ac73a5130e558b5",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "916ebdf2cbe9b1ac2b6308a73aa8581cc841840f19e486796daeb22666cfa0b6",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d92767939cc8b4c2cafc8779fefc667842478d44e36813d814adbcf30540cdb8",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d12f5bd65d33a3c366c51c3784107016eaca3eca0fcdeb896146740982eea94d",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "9e5305efde0091cfa98e7c7d52018300bc377486b1c19b7e9ddcd5f07e31875d",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8cfaf75159fe77a2bec48e089b0b0e3efec98b7ea0799cfa2172ca6e7d6e2fc5",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0fe8deaf96da92ed45c8d40113223763d4014aba3e352364f4f985c4c67d093c",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": null
+  },
+  {
+    "blind_item_id": "83396abc858cc3b42d97bea4458507a045d6afa3415c558d973b96e9cd7f859c",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "2381efd36e2c46c18abb94b38432912331e09acaf22d90ab84cadb4a424bf41c",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8f9bee6729ae3c66590db126fbf78192434d51e3f5ceb1914f501b8c2f799428",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "6789fa5d6c46b2b29ae6f4713b4b0d963899ba35ca0973d70641df61451ec0f6",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f10fddb288bfe956f0dc140279cb4d3575a9f00dbf602675351c39fbb33381dc",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "b0684a04a12edd92a00516b45eb286240e66615b62210902bd29d531a04cdd9d",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "d3139e286357a5defe76f7e26ccfb2e3a52cecb4b0195e83ff7ae8395dbb9061",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "120b992c4059cc39b35856e4895f97a92f740dd9a24dd6f5510e2c3a6eb8204b",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "44715cc855abd42e8cc50d861721f4ae89060e929466e954a94bca039cff0754",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2048631b32c6ca36ae9671ed6f847d47d53a29bd042089b7f38a1c6db866427a",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "124a0b949b052ef9d0f3bf46118a20163db62158173202812fa93d4f34d91be4",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "e3e8042925d6ea0faf3cfd9d82c2ebef43fb8240810ce11cf67806bbe3738678",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8861a609cfb1450af7aff0e10bbab39f27762bbd76a4fd746e2da1f41d65ec21",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "46364497f9a0b7e69d6b481f7edd21e5dbfc25b7e628642c44691c72cccb2420",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "fd2e71acf58cb6779eac201c97bc8b6360a99cb980daae76b557be80f3e3bf9e",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8ae3e07fd29d02af3dd0ae8edaf2666fb634d9f881c483073cd1028f0f9b4471",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3aae5fdc13882d744f0ec79d8988fd4bc56195166f640e7e7b85720970a7f049",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "6728a4d81c6e6d327566abb0d49d4b7864096cc5b5a178532c5cdd9cb5b02d44",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "17832628f34da14adb8b44d5e24560088b4797e43c2674ffbe03a4c3fd01f114",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e33312dbcaf8d2c1dc2f5f2f29b9d96e28dbc3c63b938d17ff993b8fe14a83ee",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "28ecae0ad0890dd484a26da73adc822b8283531e3a8d97250084c724a52de3cd",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d19b489b505afb58c0c133848209e505409806b993c3ca57fddb5c576db8a4ce",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4446f9d145de62660c1629d0bab14ce4894794cc87437b9e6fe11bdea9bad113",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8b86b95451a062a3432a28e5f5680919fff0b0913ae9850e06020edd320c87b8",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0fe99bf5d44b9cde0e2d67f7b14d8050bf98734a8b75cc51643c8e26ef56d0a0",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "14508121643f3724386ac82ca282c3f1cd1293fdc1b3ee1ada3be8454b62585d",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "87c1072d03a89df893de563473bebe649738af6e76a502d52f4d2bb5db8dd763",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "c1489e2154cfdc436fbf7dfab07eed6a8c65c715350675532e2a2a4ac30351fa",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3dfaecd8e732e7e93c64422ffa099f277ac3d951cb0efcb84022c01ca0807f30",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2d774312c3b8d8227e835dcee8bcbb5a08839a734fb4e77697631155367cb479",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "7de2847f10122cf69c107ce45e46ae41c4e9460b236ca928409c1e8d2cbf77bc",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e03514b53c1ef4685efb0ef581e863a02d99b2efe19ae210ff3ac361220247d8",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "129216dd537901699897451977a1337070686f462b8228ffb84a37ef13a1730b",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0395ad9934a8b059ea9736231513f24605c3977be78ed89e1a67344f16b7f159",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f04435968e59b2dac7698bbe05466cb1e39f0b355515994e5f2f14cfedb9d87d",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "4246d6e3e1c5b7733608c8844b0f93b68207f73d39e6797d272b12f367286925",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "65b561650e0f316e6d2401935fa96fdc530c41405203f1d1e42fc0ea62245eb3",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e696bb5d0f7897b2f0c0ec1b9c3ae03e4399e3b65c42c19f0c913f2f87a21874",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "182c5f91c3a7a239b079cb5d3380a7ffa9da083f843f991b40f7aa6c8761753b",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "5969dd8145fa01611a0999025594abbae704580ec56dc7f2a16cefcc22b70279",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "521d281ab41477e8ac6a6cd13a92326e27faeab6ff4ae27d4a611337b06e51af",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e31019c26fecad161ba5693cd6556c59432f204d621d9014ad4cfba599aeab6e",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c63fa6f0b9043d9594f7ad29eb158917fba4381b2867b38fa769f9638724e687",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "6dff38557a49452fef56b9c7b1d8e6a5ef569e7840df6b2a3cd5362e3752689a",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "0fa962eed8cdaed808ec8cf7d5f7218d6a4e373d43dca7a5c0735b4769b79094",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "5faf2595c8e0fa546a30758bd7abf4a364d7a83d1c1f13010c72c184daec8699",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "2c0ee55a9a6aa2e4404fecf8df19ca851f562c93593262066046bf8e577de07b",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d8e6a77c6341cfaac6885d52d518d6edb7a3cb6d0197c2d2c1a85611e02126b2",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "374289161b7fadb7b70be874786b64c470fc356c9dedbd2dfae269e770baf0e4",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "101b8fca7b09de887c400fca1c5c026442dca60d378784f7499f7bb13b434f11",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "2cb8c46aeac569245daa4220426732ed57ecf4380593d8c1627b47882ec3861a",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "bd883dc9d73d2e1a4f4de0f8e198fd03a8b90ed829bba15660dadb7873798471",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "9cc957fbfd5193ba6627d64ed58d9934d00109501250e12da7fafec1e27e48a1",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4617f009e8d3ec51c490e91f5e79f247f18909baf149eebd6287371fbd46ade3",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "e6d0463b85525a593a15d99793c320ac6205af74b6f413866ad345243454abaf",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "5effb8af9eeb69db0df69001470f586d5f786b9b2cb47470d24719fe43b46682",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8d93232a28d13f5118161bb32b7f82e99d7a22eaf335d57b954a2cf40d1ad6dd",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "01b566526235a34f6ffee9200c24eacad304478afd8c4c1b4c02449e2bd413d9",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f48f1c2626607f0497b897451426daf8c8d9ce81b4fa710fa21c08d92a7166bc",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "1b3313c7f6be2d8aa4ac12c49adf44cf4267abcb8bf0c80946c4ca68cb4217e4",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "7295384a0f6214323f9b56d980e79231ffd452b0d01aa5d21467c28fcbbbf2d6",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "13fd976075afb940e666ba149d37ccdab338e9dd766b45c2b85684304b226f03",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "811b3aba3f926599688773c0d938dc37ac56627da6c87c4d14af375fbd0d5017",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a9f16df21e09899c5a9269bcf7ad8c1159e311da78faab9f6a5fc5152819a5cb",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f8fdac20e292f2ff284ae037a30fb087e432d938a27cf3acd5f4c985766efcde",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "eeb078569bfdf7ecf7ecf89c19e9ff28f07dde4967ed716c099852af3702e052",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e4d28016e70e293a6a20892b68b1b791c5a4e1a8434dbaf3cffebe65f0cedab7",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "6a077a01b6a6e85668a909dfc94d9159557e29c7fadd1f53bffa2a90697636d5",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7115de425afea32b320f122b36186069b7756547580b1dd67408c8ddbc3501a3",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "775bd19d46ba257444d7762b83457934bb2aaf31c7a446d0fa1d156d29fb151d",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0931d79ac588fe9bc39b4109d83cdf2c025665c71d633a5e516fa21c1d622222",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d1d75dcae9f1a8d2059ddffb51d037e04e8c9e54232431f252e49f439eb6654a",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ce3f42f26e1b5c7c4b8c0b9e6501be26c5d93e502ca16b2c262e9a6ac73cde60",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "6b0c622a7e1f0c46757efeb1ce3db8970299c7b19fb488acb8fdf11a1b5acd6d",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0073a35e94c0fab488c0281be576aa634696658141fdd6acba7368a809539c25",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "45463b5751a7591dd2b97cdcb51e0aa6313d166956f1cbd39b073fc36f2337bc",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f40638f907e2343e3fea2f4097ce33d35c9417b33116450bd25f426376782280",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d5db06ca8c81488647bcec93c2ba422ddb1db47118ad558e1c883ecb512afdbf",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "1d2668de8b2bdd8d1d0b67788a88c028a8f606491065c0ed336f8bc5cd5cf613",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "536832b77fbca159bed0c7c220a93bdf7442d340069f252c8cddc71883e257c5",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "c47aed781dc79d13b8c572ed3ad8b0fa8177ceca45da3fc02fa971982cf8d52d",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f1257fbebe94c2dbacc2a980bcd3d48cacb6d196990f222b414fb88b97d2ff86",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ec087dbcf0473786e0483ebc0b814489e596723eb3c97a1d762e44569b5cced4",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "df89dd8dd2b8459b42d847107855d54f8803366102c696f990abd22d2e0eadeb",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a0775cc6d390fda1f25b6a99c1847b71c8788919931c6e1e76ab9cd918b128ad",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f5f19483994d6ac8ab9fd1dcd8dc9ac955f652003b26e54f0707ad3cbb467df4",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "bb638c008d7b599004cc478c95e3ebbbfd70d029abf1bfeac652dc6ed69d0b9e",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e064013ca45c74245a9df2af1b237f84337c29fa5ec076a68a21935f480a1e7d",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "859a1e5bfa478050d63844d31879cd63b6e60e19e004c018401ee98a5326c211",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "b53866ed4ba7362e8e32222a85ff0f1e9735c10a9e1328c4e9f2ea585f27ac8c",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "b9d210d162f64a8a05abeefbbf430559bf47044d3f0dba66ea276722c66504ba",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "79770ce6d02bfb711de0317147f4297e26f2b6e28131f47e98f2586e46f4c497",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "78fedbd04f4b209fd8947172112eb312801e666b49b2bdd8319deeeaf4512fab",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c5c62fd77953e4ece18f0fa50edc30b5024f287725398ff284cea3776938ac2f",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "649fe4776d8a7ac398bfba7d016d46cb449e12813b7c5e0312c3c92a14f5b2b1",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "63f08d83de7bcd2e95a537f21b3f156ab0993ddecda8e7c5bb406f53dd682c26",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "bc185e8d83d60946978082988e74b597b377f0bfaec910a424bb6fc99bfd1be3",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d99bfe9b9b53ec35cc34c6436138d30566a92479231c7f9f1fa38a4a5fd934c1",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "8d6dff7f253d9833221efe8103ed74e5a9175dcb2b45a2245fbe2903d774a811",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "1e7c7211e59cdd999edb3602479d917e117844bea6ffaefc6640e0eabb965b00",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "22cc69820b5caeb965019dd581155d2b95404b4937adc2d644ddc0647ec72023",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "5fdcea5367dd9be2b52f699d3e9f42f151ccb28dea5d5ea8d79c869fb6d344fc",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b77f63c99fabaf06d7d8668828e792de6c944faa08f6fcf4e6735683d96cceb2",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "229dde6864bde8154292c0b698ac71b47a6dc905d563846ca1e8cd553fe1a595",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "503bf8b0f9d9bebf4ec4c289fec4a432c9ba11de14534a397cad8419122aa171",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "944d3d467a113fc748675c63471d91c64eba2d1358f6b0715b744d6a432b6cc8",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "79b40e66947f8ded1d77eafae96c4db1b8e3d32c98147911bc1229ba67028d89",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "572e850c2ace51748684c07eb82fd7405524952e0fbdabeb6712568de60f3f34",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "6f755f1881d3783a4a37ca3c898d06da4b8c86650959265aee51b0bbe8c73b9c",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "1d510aeb1d1e6272c6b96247a3160369234f7ec97899569c74b8884f8e43bf9a",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a13e1b6dbc3ec454c43b670b388412b227e45e2388bc5fa9f7bb9d3dce2ba691",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f91de48d652273b6dbd7360e0247614a6c503aba5b6ee59118505e7383b2233d",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e8bc10cbe8f4e837fcac5b1c50d5a8f86255e9b80670b1b817b7faf5b2012b4b",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "6ec9cfc04fc83d340656bb2cbee87b65edc1adb597634d59e858a50c639650fd",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c0aea64f751e62e4b730ea5061011d67d9a90b9ba25bc9b7f2a63f3b0b567405",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "1a614bf2bb6cd443c3738598caad4fafe18455aa38c14897d72adfd053777a87",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "565bebe7324a8250c9bb48040283c3c560b7091e7ae917fe3098ead86ccb5035",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "8e91d79f025b68b24f6276f016ed6da063fd1a92600ad08dc3872d8f40fef685",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "962c617dceb76a994935c23fdd7a9802ac22e8cec856e8169bac873a720204f0",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f56e6a964385643960b8c730954da5f59702d8d189731d4b0217fe20149accfe",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "1e1b8013771dee628f5cb44b7632efec414ce112ff68c49d0b6c16f0c521e782",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "1a541dc55d347efd92632f2841ebe48f35b71d0f6fb88d7d226109451efb9360",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "1c16d711ccd79c93c108aa91fadc6f372ca596ec453fd458c3fe1418e61f329f",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "96cc34e8b597befb6949eeb271b33e00fbcbb819f14432fbcbc02a4b4266e756",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "78a2cf44c1f0a030c5daabc3f78c0d49c27fc70ffa92bd7a66df064ab31e8859",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7259e0c3defb5447f0b7630e1a51b0da025e5a8a30559d0c195d6d2a91dd0146",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "60e6bccce24286d9a7889a0807d5019bf48e3514a7f59fda37065275035ee884",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "be06525421d92bdf8ecb75def4d9698b99d10acc28dab0ec2af0445ae26fdaae",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d7939f76555b24115c2f62ec450c94ede717a491cccb6dbd7d799e7318550228",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a585432ce0e15c790698ef70cd4ac6ec867a630bce3ee79700032f09d7526396",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8adb5bf105ea2f08b08fee7d236a4136f8c81f7eb01fd44f9631ca21458954d8",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d10220689736220cbaf16d8b34556f741866b8902a9fe79cfc9a7bc8ce4a4988",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "1f3fa60a62566b5e736ccde46403f26746d8029506af9a3d08b10105fd6b6928",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "18cc4302ad6dda298149b5e49c3ef7546e5b8c99f7fc0e4e6d6253d642bada2f",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0a779e2417c2ca8ccfd663f127f06bc540b62568cc967757fae448aba05d1800",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b3cb35f595ed41da47855b0438ace8a26db60cdd7e6699ed03881e2338349ef0",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "dae74e93c8792d6c293768706a1cefc07e00ab7cd5659d1e97b07e82270c6aee",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "899b63ee304db6b89f3ef18fc55037102821e93a3116dfa7cfc6e081d2adfc32",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2347257d2c2a7f6dd6299a7fff6eb8b9790ace98e7aea72cc08661657fe985b6",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "da80a17d5f806260bff08a33472b26e1d5a20e9da69617a1f0dc04d230324869",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3f21a70be5e98db38d630484bebbabcc227563e57e8919cb658480d4f144d345",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "13aaf9b47562f576530b15e12525af7d57395b2cf5183b36fe188dc5b782b105",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c9cce7e2d1d4eea3b39e739f5e12bbf90f24229e47503882c4f7658b19c08f78",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d6c362640f8317e6a27c50f937fdfe25cc9748482c7157e483018e7d1106ecfb",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "bff42ba30828f9fdebb433ce2dbba04e1daff45d53564df1d534d57a2a247269",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "fe91bf44733ced73df1d6c2d9dff4e1fe1ff5d61b70443bbcaf415156c18de9e",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ca1f25079257ee89d2c3bc7697fa32512f912162a9b07c45e6abd25297248608",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f21bd7579f6b0eef783a4e0a0af25980d12601b5f4507a73c8d0ac7eac0101c6",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "5b85dff879cc37e1e0ff14a47d1d5ff913c78145943d5c6956e9bde535f4489b",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b470788be2b8a22cf56bec1ccbeb46dc310ce90fd43faf5896e89d7e2427373a",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "adcd4c0f949f2dacfbffb6ab3acd07be9d24473fcbf008feeca00f8119a30203",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "19631342d2a25b8236f6350ff357888c81087802b1afbf0cd9bd4ad304962d8c",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "15b690b96894abcaf9bd53d218d6d248566b957bafd17852c105d84e308dd18e",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "47bc8800feab5ac144d9dea1c8dcbab205550d1093640e64005715830bc52c89",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "1692d5d8bcbf44b594a438fe22dc987da705ab96b67efee9179fa8da30614e67",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "1634a84db26d588a17dacb5a11c1eada3ed41dfcdb84a72983a9493b58371ee7",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e00a63ea4f4b60299b616dda833f69e9b6dd8026d9e58896946fb97239e8f20d",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "bca5dbdeca8079922c80f52eef872847cb69449cb0b7204eddd98af28a2abe7a",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "39667621ef7fd4b823e5554338f96a30a11caa043acd78828fd20f2d43335b17",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "dfdea4807fe6f023b062026ffb3b4aedf72ee26394aa2a1d4a1007f3c12cd591",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "1902de252c4f8c31bea0bdf25a033ae14653a521d66caddbcee590598d24fd02",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "fe14e8a7c5280ff9247bd0763e17c7b24064ffd3fdc16b11387506d58051fb03",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ba457fe5af005144f313eae126d0e00393fff239e88e6646d28ac1015f8a0d8e",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f4f10c0c10d6a7d0020454484b8db53ab232ae584fbc094a20cea19cdbff9ce4",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "9b33ccbe7eddf9530e02744cc564d0138687ed21f75198ea757877549de324eb",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2b9aa05e4a6af174a1cccb3d103dcf495b9773f24b5bd5596b40e969ad45df68",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "6d477bf4f64665a3529a9b2af4c798f2396fc05c8db5d8073a63e4c24c424618",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4b05205e31234a4e14d247d1dc665b03daa3999477e7b72d23b6be717a9dced0",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "874722debc740911fb0407da95c9b499229031904c17d6d53d5d581c68081600",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "acec8eb33f3abca1a0941b9287bd03edf48c5d840eb20dbc36d607a8114d9864",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "95fb9f37006b0260ea70c90fc869d8755502cbfd76b08ad9f7e17d89c49d5863",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "6b890e5360cbb394060d15078d6b1c730a8b8cc0d6ebb198fd6ba1fb2430b683",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d3f2cf4d6bb1265371daefb457e50c211af10993f0bc08e45083a44cdd47bc0d",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "da039d95cae2fa963dae0a92dc47eb8b8d5594c168d730200949eb88a597d50e",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "537b1b0a3e9c5abd784712caed9d109b0322e43f50feda242e85147e78e2ca62",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b28df446cd3390830831cec13e65f882a6a3641d004f123d5fe1201ab1c311f7",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b54937074d28d74b12ab57132c114f89e3a767c249d88d8630485a357d035c57",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "76017eb76a425a71c935598c164656d5c8e0d170ddd27f1d68fb90a4e78e9f83",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "1e7d5fea2c9997b7965e4ed9792e59c946e11d7d1cad314ed95f484b11fe9ec2",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "fb0a79f04d1d410b01dce6b5a3b4f2a648087e84c11de0b4ecc91ebbfdee9935",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a6c50662a77b7d40f6c3a8e6cfdbd449f667fdf1ddbed721d642e8467542f079",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2cbddf819aa088afcdfb4611ea20561072b45ef1d0409c7768dc64eaf9b6be0a",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "032782a44a0f57764311bb6543312681ad70be3a29d232badde8695cb96a9d4e",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "a28764a3499497e954903a35e180dc19d8333d8c6596ebeb7c40f758ef306fd4",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8838448edd537281c25ad4f88a210b0cf614497431b67ff9182bf42ed9849273",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d36df5e90528880ee399ba6448c4f3387d4718d568a44dd05f087af6e5512f99",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "598c176b76d7eb1287940facfe75349e53e44d8fde97e78fb3124ce4b315b93a",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "756e16a74f8c8d849cb6a8e936ba149ec582f1e75b3f36519c5d090261601a6a",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "98b2559d54e980320035f6c0e530165998ee65c50ceb2c5eefe7987f05145673",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3a10a7322d2354ce1869cbdcebfa3feb244b9c5c6ba3358af5b37a595d5b3351",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3f5b1139ead9e5c8ae1c3cf0f5a56cf7c4c360643a99ea3858d2df7b91ed56e7",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "624a8ebb0e5821767f7ddc6e694a4a38810e311d98680a3bda84c65aeb6ae6e0",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0fca753d8e4d8df0f8f5a3305e8deef727593e79feb41b6b24cf326c65ebf675",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "3ecdafcd3ce18492ca2dee26b960d632c157c3ca954ef937709dddf850abd4b8",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "9decd4741e2b29e5191676d4d6135fb8e3e33f90d1bd1ccdb3a8b6d7532509d9",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f41ff531d11198afc7eb65764b944268e5fa0181badddd2157a846f0e56a3c47",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "58dc9b12c1b497d56b269c2a8a69260f59ff275f272211282d56baa2cd3b9fed",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4216b1c0d33c193580e1bd5a33dbd36f55117232d869f3c7c196e524a05f3e31",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "362cde6ec46c1b5baa2bd884fd9c195df2c2ed959d72d2e5784ce36454112afa",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2375bdcf3c8e5486f69583b75b69cbdf41ca7af1820ff43d8218843646f531ed",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "931d4274bd625f0717a38a1eade7b73fc8efe2fd951ff00498cbf281a35e2a02",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "2351172f518aebe763eb4d949ba9dcde3bded91f88b2be97962d8837700f121d",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f2cb79a99e7766b421f9c77da1ea04c9da5f65470ccc9e4cbd137aa1a56198f3",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "20c5cdb7dbcc15b6c95a8dae7e9f12f45368ea6e8a1f872af17a6bca981ff48c",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7df8cf3d133d47d59b8d43960dc820d7f72acaad61a06eab28bd45d37a3b5a72",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "62b81037ac50c29f988967743ef1c8ec6d0a83ae7c1abf3744429433340f9a68",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "a6952456886dd89193901e2ba080a37f9f93440d6f458780cf78f22f4205636b",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b317369d7519bc9ec26dfb691da45da44fca692f27d4062454b2fa31d90577cb",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "a83fa1eac00e364a61c444ff928ecdd268920504702f1901ee63b0cf7fefff60",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "cc127adf2073721f8def9c76903909dc36080c406fc999fb50fa1100f16020c2",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7f19990f51954ee404368eb8600cf46b9a9555d2a96d7e0ad50385d5aa91baf8",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "684608ff726e2dad8d66cfb04afc310a200f7fd74f49d239c66c606b5b1b0a4a",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": null
+  },
+  {
+    "blind_item_id": "d13aa39da4c07530efff27d30e964377d14951f18afaceba07d8c1ceb2b9a827",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b8424db5ec81aaa80347324ef11e77a34df915871824b5dcae68bf4573dacb1d",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d5ddd03df1f556d1d63e6770328b20e738b146f148319ac074e0a83a96b26b5e",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "6cc2664c47ff661747d6254f66d96b4792b114e694ccfb5de48be0d3902ddf08",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "638e7c0494df487493c2daa1111c2caf1faa4f21af8dd1c45e44cd63b79d9168",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a446be9a776c10adaf3009558fc5d907bcff47c6ed1b043590829dc412bdaabc",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "995caec29fd8442f52a07fc23ade1bb7f699f71cd343e2d7d8e0b2713c1c2e93",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f2abba6473b203f09bd860cfd1792aff6918dc42c0322fdc74b0ae3140b3046c",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7c9bdca99594aa402b505c6730174a5f04963ac84bd29202e30273140819792a",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "32c2ac3fd69a5fbaca67489a566303c50ba033536501a50025ee1096c6b02810",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a48a3ca4513d89310ca712f2d3281de013f78d27e23ad8cb4c8a18ee358da4f5",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c966cc83cf71c857c1d3672a6ae4e2221013fc85308c4ef1c911f5bf57997b7b",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c7dc743ad7777fa1890ccaa817bb10449d800799d974f0cc5c1d5736d2fb0f31",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b18712ec59d727e32ea1987bb2ebcc0a92429dd449c850c9bd1c61d006d4d555",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "09e53614e3877fc896a2cbce6bf16911b63943a34958d6c31eef59a4780cdb46",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "30a158a055615fd8f8f7490cb0a5eec0b50f8d12cb4d3813a0858247f3133b95",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "c17849265f51e9ec91c22f2e24017f5d4ce7299cd8411ae0c94594057f03bb17",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "aa8a4f3a1cdef0aa973d96819d5b993b14b8b66df81f0998abcfe271d29e7183",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "bfe5eadc0e0ed7645700a198e1058ccb1e8378e18c064d9736d5da63ae45cdd1",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c4098ac659956695b3d5cbf374d38e50ed2250cf54b1f6b865ccd0090b6db8bb",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "faff96498ac261937d96e91ce81af243b51053768facab16b7bed938cae8a475",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "141897b2b6c7920a5a56d7959c57fb4ec4488095d41efca1ce1d05e75d5e7bf9",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b6eba1b118ea08bb06c9e744595fffa2ebeb3eb9c6460a15f7ac3042b6efc1fe",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7c4d69fb9c8dd90c88578954859f35303b7c536372821603969871bdc2fb826e",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "1b505eaf9174d27d983d90ceaf284ddd055dbfde45636d784293f49b9dad3dbf",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a7a522b85f7f2b2d8ef32c754c4ca38e7eabf821a3faaaacea613762df9269c2",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "062216036941817c205e96a69fd236c4f232cd7b0972ce23e88842d500213b40",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "1704c89f99ae1838737e6170b876967d6b978d79165f7ca1a4cc29ead2805054",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "cd85d9cdd08390aa206e2078155233e700612035b4a8b6534ad0f54c2311024f",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "bba6e1936bb1594292a24f37c66de960485ae0e3e19a46b325e3e559c75648fe",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "e8cdbd344cca19034d55b4a83d5ad8fb09b27b063f5c3e5ba1620ad026fdac53",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "145a8c7e3141eb7624fbc7ec3cd7f009d87372cc9695cbce9123d8e214c17c93",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "5970e02071100e1e5fb3edfecd980ad6890e42736c71196372000c3b08e39b36",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0f81b6f85f960159f29354fc3827e4f59b488c2f7c87247bbe4323d271031f14",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e6504032a34f98dd5d232cbcfc226e39b4529f8303601d47072ca75a6a74e51c",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "02b07db97af5bdc46f793861fdc151b134a04048ee1a0322d3d9f9a3b7428d49",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "24f0980fae1513d953eddbab1ab156a9f93200f5f5ac73c38fca7ac315ab2b3e",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "aa75b354f124ca14f7995410ae37e89ac4eeaaa979a78b94cb0ac6e6871b5db6",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "466e41f8b8d20319cdf70790927da4776ab756196b471447c66f098728c75a46",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2d05dab7cbb6a58edb6673a19a4d2bbf5abf5387d74bc51842e0c24703411dc8",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "815f8ec649493009137c4820675ae1586516f32c74e24cb5b2656f1bca93f748",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7763006f9db23bc09a6e26005a9a580b6be52441d5681015f0607310ecc7175e",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b253ab7dc0b05008ed47b5ec7ebfceef02229b289b15d75a4cd06153937304be",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "87976ed6d196bb39b6a4d377b4b7776e7e26475677700f654afea17a2510728a",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "66eb2052f20ad711561010dc38dbfcb68bc84b25df3c9b94dd0abc305d1439e5",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c5f6b20ac962d307e61fad3dafa7a3366375a70abc667cd3f6ae422eef013d19",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "49403a30e0647e1413bc764d2e65c81b769251b9a74c19ceae5fca9e4fcdb982",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c282b27459bd24e6e5c257e071dc947ade87fcd27f8d6c55b26038f26310dfe7",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7381d9a547aaadf44f0926b32d40b1f6ef13cdf3d620d0933985e2629055f04e",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2644658c9f2fa366407766a858e55d054d3b9cb5f4313dea55f2a0bfc9933610",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "07104f18bea888e084d3f51c44f908fddef210d91c5a10ddd6911ab6f07b645f",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "76797b4090fe9638bf823ada712fbff65ac2bff7d4d0c3966ca812aaf699c6be",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "1ecb09dd671ddc05c7154af4cb279b4f114ea2daac54a94677bd323b58a755aa",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "9ab2c2044872772a57084c80a94bed94b2709e54104806992b33433f18d9b6d5",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "216e187a7716fb8d95d81bf716deed26631bb711f16e5e2166f131b30e6e4ce0",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "bd293dc984f62e389db8e0622781d057d129525a3164d792f2e8f5b3875c5c2f",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "72476ee881f35583fa87c4d09c8ed37a3d150445d6a70db722084929402b2df7",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7251bd9ab90ba8bfd0dda5503e312bbb1fe055b4d935dc3a8fbb8cae9afdded1",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "db7f7cc3787be9e8225b585f1364a6ed435e9320dc0d476d8d1386d18f05e832",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "98c55e5e38d9c08563626c1703cd3ff0ef98f4d8ca6ff161fd47f038556c2761",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "6b88afa12d1563d16fbff6262e2183be70863aafa3b22ba8de233c61936b23bf",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8d862ee382fe7b989fe65235732d8053662eb45248dc0019cb0156b18ec490d4",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4b6be92c67356e6f111c53fcdf002003568e59af6dad04e9033cf05f3d390c54",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a6ce0021cbdeaa5ca783672df42cb0bf27f591c068b8165ba7a49f13500c09e2",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4324c5fe92dd118cfab12bffba8dc1047243785743d23f6023f24bdc6ac4fd87",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b6d048b6a9d3d2fa0c93e32d454bac062c0cf0b640749f0d560cdfc7c900fdcc",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "96fb1f8dd44872baed62ac6d633c9a6128f91f9712440fc67d7dd81ddae4f790",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a331ed2255777bdbe574c5131708defbb54c52d19842303b5aaddfa168aac8de",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "49b9c7a83bd2ca42791829d6145911d6881471baea5efbc34bb8e609a57a40d1",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b77f885bed4cb17cf162b1160e01291ade49945e7930962d5f5f21a699aa07f5",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "9206f7c4535450f44659278afec6d87c74c85a7dd34c074328f1365d4b4866ae",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "de076336ce28ebb25a33d9abebab9398f9818a9ec84137347e0ba0d78b1d092d",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2b6967059b491f98fa4ba01aa8d0ca64f7238d0cb96ca85eb09d968719658c65",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "44a237805fe45ce01ed5c7078fc83ffdcc5c854b7441759919a358b3295afb2a",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3393531bb1be79866aff2fb433a286af2f6cafe202a0e338d36d0fdaadae8b0a",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "53f12c5ff581c3429f401a384ecee26cb8cf90665004156e85c06590d37ba51c",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e270cb69dcf368fbce8b29ff427684e8d2f486c43b8fa600d9c46b10452866f0",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "2777e20775c3f53a217d4f434e3a34f8edd8a5dd1275abd9273129256890f106",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2423e049ba543c3e0de2a6426988e2f0f28db9a0dba548a6390fab414e139aa2",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2bd2db7eae178034d45e242af8d97ab135005a9b6f1cfc0cf5ba8ffe81bb9985",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": null
+  },
+  {
+    "blind_item_id": "86e1c7264b37115ae5f431b51d9a8fe3c9981ad5de82be16e7daa39431bdc4b4",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ef4e098ca280c12241f3fb2513afc2bba5584e67f8786cd90f1b838fefde6880",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e438e070445adf20632e0b4d90dbcb0c77a8455099fc804ee1c70ef841ee1756",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "df59a7360845881aca6882644500da8329d3f97b1898a122acd7d36dd5c271de",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "cc1500211147c7d84aabe45a97ccc941384383cd7f3e3e175bd25b2f49b59613",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e47fe40601c109cfa248afb1269cca3dbabe3422635b8d40fb93f84f46533a04",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2fd06f726d9cf71f8523b88101fa2754aaad91c28299322bbac977e728a506c2",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "6980feecb742f07bd810984518d6c5478f1fd3d5cc37171d0a29504751ab60ef",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "89d07f458cf59b1d4cafb26c212c185c4c566dab9c49491d4526a423e825e920",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "61f736f2b2396800499e588e56d3532cc0879d93029087aaa93cb09957d0bdd7",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "69947cfe5fd45b06ff10a5f4fd3ed4d201cfd67efab5b05b5ac5651cefcd2ab1",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": null
+  },
+  {
+    "blind_item_id": "c3dbe61d6f21746cacf88de427bf0422dbc6c0bf46774df1516aeb8b5f65fff9",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "65d5e1dffeee07511409dbece322a903c6ec84e8403bb111d8f09eb6136c420d",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "9c108104c4b9accda8d9c91052893d5f86f6d354d73c35b27719b990da996fbe",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c3ba6b979af28e7181f26c023b22ba85be8450b5a7a4d099c61d4a3a372c94ba",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a1aaddac9542f92c5857d837a2535657b611de99e4fea5f95709efc63e818927",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "36cbde2b5808b2e7d75be6b024cef51a9d5c06757e959f9f7482422dbc208a2f",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "68dbf59d00d0b487ab2cbafda1e1f9cb58ed31d40bf67cb1230a98e5cb091bb6",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "bbac53cc5214b045636de7297e7f112b18cf298101fa6e04077bb02805f1ce60",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f6056b7f030831eeaf20f262c495741d9ac2134350371d18f54ad5041554076b",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "53cda5925121651a6717afba529c1ba71a9a313f2500c1b34a8ff7a67ff16cda",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "9a099c50f28c7922b923ae355e96c9b3d18561310cab7804b34e22e00c05cd5a",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "562766fa81c146454f902a87ad64394fa258757e39f6c917326cf87a42a6a63f",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4d72f85749fd1f42c163c1c27eda0911a6040d0384171ec9e564a50941b8b130",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b2fcc189a84b957a4c8e412e236ea9664f8722bb7a3a0c6dce79c1b2f519cc80",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "0551322cc9fd88f78eb178e49d57c7fafd0571a4f4c42fc51b7d6f848b70a651",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "5903affdd8da6c5667ff7a627cdc9b111994ac681b1e450807227f661d6573d4",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e54d56d0236a81a199094d0672fc09fc74664bad76687fe8261c08acd4d2b408",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "22cb33d74d99a214dc023072421b3fb273d4a19501f7b43e1b389790aa7461f4",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f8f9a464298025695f3549d449694227f4d0e7546632929b2bff844a34c03ff9",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "1af990748d15c08793ce0f31a8d1cec1aab043f1a47eb56ed0aa9b79d911fa55",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8714bb5ae59b561ebbe2fd0dcf2bb57bc098a8dc574382b30df0dfb1423e2582",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3f83a0af01507256610923414dae8ceaeabd3fad37ea632ff3b152319852e6f9",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4085658549ea24a6fbc33ea5885cfe011d954f113dac8d4bcee7e9972a948673",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "60c09464a182c3d18664ed362c9c6406f2ae6465c71de6ca2978fe9158bb5b94",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "51bc1e5984222e3e3c87a89dbfbf8d4a9398f6eb46bd1c2acc014c3f90b21057",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": null
+  },
+  {
+    "blind_item_id": "032532e1749855e3923a655ec4990c2dedec625659e9718716660ad067eb7d2b",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": null
+  },
+  {
+    "blind_item_id": "fa056ed323fb18b0a2c5beb2cf0aba7cee86308a17d7843b3b5c93e57bf931cb",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "fa284c2f0ec3a66f51e5149195b8b3fdc185108ccbf6debcd2518b3674ff96a1",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "76ef8f475133d740d0df63fb0ef1e9966f460b167a9f7bfbc396b0ec5a8700ec",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c59b288a6f643b8dfdc2602f0fa13db8fb2be8a11fed98c10f8f42a6a9c5d0e3",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ab110695c684317767cc6b7161d1ff43333744dc00f867e0ed947f2b54e340cb",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3a75b8b74c55da082120979ead0a4fe82b8df9f735a6365a544f498e980b79b1",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c166bce43dc2fa4724042034323c466436f0aeec1c4ccd6fbc2af71886cc52e6",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "480edc0372e3a230737ebdb4121fdd74641b6ba72ad208b094f95a4aecc74228",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7e7a689ef79101a65fab57b5312dc6096a8b49247b3a2347b170dc60718ed3ea",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "68fc940d67e571132229fceca999d5c015161d1a955d697594badd282933b11d",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "aa91f74e5ff0d4191e97ea36c60155dce107dc553c04b32430d193cd3d40daa4",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "295ef5e601884c43a06081482bc9f224679ae04a6a527a42f92782a358592f44",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8959f85dc8a9d2614001354cc2fc45fd50fb58c584e3071c7a3c9de68f3f64ae",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ea10bc06255a7b647fdad617c36ba661d00c84ed9697eca89df617b1ade4484d",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "12d02a5e6e78e95596da9f9f3b0576daf93a384048a3f852e6cc7c00970ea8a8",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "d8df469c2a3fcc2562d052a4318639342b9252fc63e4159cead45f30158be048",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "73f6c2bc61067c41e19a60ef6375541c6400ee8c6d2f0eb54e1fe886cd8e9276",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "30f11d011055c72aabd8d5b1a9cff0be1f1c6e7b69e656c8e09f4b43fc463d7a",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a3e0688777fb9929f84bc3b3a98225136dcb507a50ee22ce817423cfddd265fa",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": null
+  },
+  {
+    "blind_item_id": "d26c60a34cd19c8e617fe743bd198f104bc25a099e3909fb56b2329ed6a481a2",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "744d537237857689780d61fcd65def3f9bf70899a0660f62ffe1a480884bf5d0",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "de96b77af0e56c6a1f027e6811b79b87956e72e48dd001970c8044392c59c2a3",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "94e0a728c68a9085d6cb0c8e2f570bf7b444405f168b4fb0306ec5d5d8b4e8b7",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "516099ddc1c0e7cce9ee6ba2a17d39643cef90a71ea70ff4f015b87e33259470",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "92c2802d4482b7c5591e1d7ab7563a9b5978a993b9c5eab9dec80cfffa0de6fa",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "5eaef71bcb145e3d75506c94e6567425d2eea95ae1c6225c3a33dcee73e02e3b",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2baf854ab2e18a0700e7350b44b0ac4acadd8239784eea234c60ed41967de3df",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4c79aa4c606ab5d1476b0e392925a252942e1911615ee53e5b4d7d8f4870e749",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ec5329d9111bf4f24bd493f52e396e4142bfd4f7f99a4f55d73e226ec8da147d",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "d7b9a89c40e3557f22a05562af2a4ca0ebeb637f30065f3fc6c6e7f32d008afa",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "0dfe8d43ee08efb2b3ca1c7ff61d8c071819ad8251ae029d0df6e378887e6d84",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0f10786ed679be4f4565004fdc0576b7887d7d67c058ace51052a596464f81c1",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "816a4be2dc2cd22d26147438041525330251b4bc4406298b5d20f18d4f659080",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b0b7c23912d2d0556fb93107014027e854b3b00fbf590005a1332426304a801f",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e62a60666f4eb3e88e73c4ab8e6458ca21fd61e94676c1b1dda3b028c8dcebb4",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "1b60c708c52a91fb007ebb3087d306c83550812631028bd40789fbfaa714d32b",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "698ac0ef3c41d9fadce068b4d4e1e86bf6486ce7949ccbe23f7bda85ea3bbf94",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "dbf906d5437bf49edc8232d227b28e2bd6e8239522cdd015fb5e5ef252c84cdb",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b796920da07a4d191091752d0bd98847faf1438bbf88986ce9b49d04751e1b77",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f0727cb6a02cf51da3624b0ff37f896b1e60adf644e7f9de0a08dde42a05f22f",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "9d4077d1e774563eb52214716955061f959687f4bb0fad8ef36e0639ba8d9783",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "cfd341ec64caeb8b8ae5a6b6d981e6a2e314e2d997bf221c406bc946678e8a5b",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "f828bd9089b1e2b177d0ba45356f107a904ac7b357425a1aca9f139f47a9bd24",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4d7005dc8c0dcb689f5efd3d50571bd7d0f913b52c21166cc8a745333086b615",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": null
+  },
+  {
+    "blind_item_id": "263de8164fa1f09b9dcc815e189de186ce92953b782ce2621f36fbb74bf45fde",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 0,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "7c5880727834655cf9ff719a84f2a3f7109f13771d655de3eb8870bc57225cc1",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "fe0fd95b8d11e12da1888e5566df610cd030e27b300e3c40c47057a1a474ec36",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "94adb9fe2c282d9d203aaecbff68a7f64fbb9a34567b3faed56011b8d20c76ef",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "c4a1188b2a6886d72ef931242ea7cfb127ff1cd055e9f73d8959b7eef8837d0f",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "bd6de0099205678b05f0a7c4efddf7caf7d1b035daf449fc1e24679e5dd7251e",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0faa6a60b26fd7c0dc11be3bd29f98c220f10a7f4ae56af2d2f0c766c0f0ed69",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "46fcc5fa06c7633cdc4fb258ce76145edb527447846e79ff135618a6df8ff854",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c4284bc656fda8e80f4bdde0e76a566a85ff834217a754c34fd6a719b199bdb2",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a85eed0800cea60490974c36428c1608a56cb71730d879da7cc3f60f96f60b42",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c7b885ce976e6b48883a8a3a721198284286cb264884d8ad5e2d8d8c64d54dd5",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8eed2d36643e94ad3d0b9ac72491f762602604734da915cc3dd525588b643a84",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f26dd0949f124692b0aaf91e81bd66d67a83298960374a121aec2ff27d89a9fe",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "03bc2914412f48750d84571ce7a3a91f11e9a3fb155084ae3e9b07625cacf799",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "967123d07c629da9833be6786768cb1f686d6a89c0ed0357d131060f76f2b461",
+    "context": "neutral",
+    "condition": "baseline",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "98b390fa6636c88b807236c02a2cce9335de202b28dbecc3556710fbbbab8fc9",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7596c143469eef070781160991e7c3cd628caa578eb19043ee43468671399845",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8cce32718eeca637faeb1978645bcd66d3c05e92e201b21255a6d1b163472508",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "23151bc62aae555d1dac8d22ee1f247cc27ca0f5c6ed7a31ddf2a6e2c82b0a15",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4bc79cd50d5775950f900137f5bd67b0efa19e8cee8c7bb64acf3c742bf27941",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f412fd802f7e3bc2838e24798a3ca351a68a67b1757e64f5c9b593b3a4fdba7e",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f9700c1d892b18d92e7da529453f9c0e4bf1286fd54f2c08de6eef16dec1b112",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "c823a7a01a4ae2e89b74359f105d4d39fd23e15ce7834d0a404fb5bb6a25c2fe",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a60e6e20e8c3530077c5a0ded5bf385462c7799ff054a959a23e4c6a5d367f93",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "730a843b1e42f6a5c00ecea6d15a48afc3788939655c60734ee85294809baa5c",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f6a6a1febe5e78a81c4808ad8d6dfeb8d0f065ebe3b70acefef5f13e8f5613a5",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 0,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "84d7dc92deb1ba705c4cfd89cdab29bd0e78254e6b782e2ac47bea0ee5d882c5",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2c8f24de0eaff4ffd624d05e48fa691f1637de05acb966abf229949959d88593",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2819efd2858e45671f6a61bf74a840f2f91bdaaf31cedb58e387a7d09e0978f3",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "dee9b3d47bcdede83e604730ac0ed85e002756deb52fedc8959aa0d3369aa9cf",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "9fe6a82f88334e3ca96ca22ab8de170bc8005d36acec6cc7734f7108582fc190",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "56c97c030b51e6f150bd636c938865736872ceb77a8f5e9bfdaf6a15017c644c",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "3e2a79d56b150b471072155bd3eedc3431881526cb705a35ab76555681863f0b",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "dfbdd98b49578b9408451856def89369cefeaf2cf3c89cb999f0bb878671961e",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "391a09a451a3545d7f0782c34ffd862d6842395dd17ad18e127a79bbfbef2348",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "6e11c47d8557ac359ec3c50afb2d2e503b0eecb4de3e8716c679290f046bcf73",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2f90080607bed236f4b0ad48c8cf349adf8f17d12ae0bf1137461a013be2e34f",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f843d60abc544691e0848e9dc34008af8d2221eae83607bcd26aca6475ffe65b",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3f98e00b3960625ccbef268d14246d45e355b4fc5145ba9fb80f0cda0864f901",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e6b916bcaba0f5a3347a809db10ac346ab20b2f219b2a24e35f8c55bdc682502",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8c6597d6f397850c7116d0ecb7fdca44c9d5167f15d57aaff0b295ac5b0fff53",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "616bedc6997f0fc6a16fff817194d164435ca282fc9bfb32fa683324c31e50e3",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e49d978b1df688d8311cb2f0a96dcf3aaaf961a5015fa2d37b63cd8d207fb708",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "529fcddc6de30fe72b1bbfb50914bba66c6fbc27ca1d1afece0d8b42c1292c8e",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "015211e9a9171b9b9585928916d1b58831034b96a3652b5522b9995fac7a15d9",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "6421e1bf601dc62b4abfdf87e85392871caea1dc536b626d850b9fb49d9fe90b",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d0491cbc4d062ec9236bf95534e642d5bb9d29aff9fb69146c7607085863882f",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "05a885bfe8e9c6998eb48313dde7da08eedf59bf4b54b5781fe2b631b7dbbe72",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "5b92330bfe78ab52cde268e525058cfb94918cf965deba368e2558163fb438b0",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8d0941a94bdc4f2185494c010e87b50ccb5934c78d186e3176eab8e0d6844825",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2b077b4d42be7528afcb96a98870638a28fc7c037d4eae47803d20edf8174c31",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "6c89adb58e720654983584edd50c373464f1833c4b1816cf24b6008a1b5b4ca4",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "036e3b8d5e1c6ac2dde0eaf44c8805c56c86146cac805f8250a15bcc879afe19",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a969c3375d41eadd242526a1c9fe6ddb533ac318202e6f025f10830a08a86975",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "5ecbe7249461eab4d8741e62f7d09f325a461af6a9f80b24767692cf7404d8a0",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "5e0edab0c1c4ee8a349af78bba3bad345d01e8d51e5ef3cee07aba0840b12213",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "cac8866e204219238afbc791c96161fcc6d8c90dfdd688ed17c0c5ab6821f809",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "beabca043518f5ab605f0e44e6dee9a61fe205b310edb499292b72f00ff95734",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "23548e7e887aa87ba8808d26ad017b5f702ca554646e571f0417703cedae32a1",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "305418ba0cc3d2662b46a49d68c6e7865a84e8ae299ee8f58abf21c8ae793398",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2599371cc71e2622583c4e2995891835dedc811dc7e01e0b35b019f2ac6e2668",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8eaf7443b82c1654236a273c3cb86961d72439e8900067cf5bec166b53b51ab0",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0dd1eab7f7c7e18949549566f4ea70d8a27f6b638cc6df45a0ae9112e3bb173f",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b5474c2b2f539042ec51197862f7cac7f781cdbee58455cd7e4208ad603272bd",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "457b499f42c9425116511a4a201c0cb2d3d97c4505a6ac18750d5dba5f12ec0a",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "48bd827c1a51465dc987cd002087cce9d142875c77a07d97ba3590926acf6ef0",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "b16fed26de75e6272bd6198e0ec560f5752e26f76edabf3d78086dda05e4782a",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d291c9c94f260bb9257cb6c24be049b43cc77be57ae6bc0c9b58cb484de89a83",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e051e94eae613e1729902fba2a967de2c0a1bdd9a008c7c563c72e3eff6ea2bd",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "e4d3455a0a7b07f07aa672e05292d0795b5dbc84553db8d9bd6c76da74fad60c",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f9e209538d5a77c8b99bf7fde301078f5b14f8a6d8a8819eadca37c9d7fab7b2",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 0,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7c977dd14fff31fd301be039072f54c0f87771cd624f0208feb354e811d52f62",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "18632992e5696f89482c616e72bfdd09d21edbaabe30810783f8fb4322fdab66",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "2e1ca4f02802418a45009992a657c306bb0d4e044d8c36f121fc0e725a677ac3",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "78beea632424bcf3edf3c927874851be2134f63104c23bc12ecc976228b6b89a",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "393fa8a4872ae320ce2b7d9e1640d908467dc6fb67b11194fda183921ef49842",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "772bdaacb4820da4cf9ec46a26a5bdec8888c2d9a05b722c0d770fea7a5402fb",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0f3e6f14f6ff6becddf166ab960e783f9b95b5cb7900492a4d5cae93efb0007b",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4dd1a73fd18939c4e48466feaa23013cfcfd3d1f9eeae0b89385e927c3249794",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "72d283bcd42ab045419f645f834dcdd62fe3258cac56abe52fab3201c80522b8",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a242f1a2f02c26aef0f64e3df599f11a505dad9e0bfe58c920ba8447ceb5307d",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "5057b21f7001c46b4ad65e5730c8aa7b452c239ea08bee3629d246676332c837",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b4f43e3a48e8c5393f513d3570f35800ae920c4586fabd4d28030d6f5d9450ef",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "6b16f740514cea3ddca8a18c56563a6d0e0e845abde230b28614ca893b52d7cf",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "04b92401e20345cbd2c8bd75f15bd5e230a1024dc24f8f214df292223878d279",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c664f2957bcf144ad9f811bf467211c6aa1876780debdedf273a9dc1bdf5fca0",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f270a732cb852307ea75807bf5ea66ab26d9c3df73f22faf0caaf45657a8145c",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8c13a9f7092ec9a5b6aac17ea2c50d2f15c8a4cb0e51c124ce48d41f284370b2",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "31063abfafd495ff91a01db5d05f56aecbcb5b6cb0d547e5b4b91d73f0d33f1f",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d261121f21d38a2dfd2a2f43caf1c2169c635bd40b96ae3ee07e5d6705015547",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f2b121dd1ee9bb01a38d26588199f0f15269d4793850021dada5d2af5eddd18a",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d2616d133c84ba1e356ca4054dc513e1bcc82585a81719390d7fd2e2d0d27f5f",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7517224d8fa5be368ff8b7d96c062f08704103e8b1e94fe8442d1e9025b081b1",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "fae357b743d9326e4ea32a27233abcd684cd4948cefad5a92a460fa919e94285",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2eb4c20bb12d77c8f8cf9afb8d2dc685195fa74eab9fc091ad37c969ee651c72",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "91945fda286db2ab5128fd765452c3250b7901d8d918e085fb16231d6d98f16f",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "22038839f00b700626fcba4470363fde9be25fa5903291c64eb1d479eea25659",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "66306db0ed581d294f08c44d8f93c5cbf50c85c39475dd1e6234bf7c85f09e69",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3ce5ccfe57b785d7bbc72c340d9e8d1e81cd37e218fa7927bbc22285ea6eac52",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "d82b4302e7398761c4c662e79a91cf31005742fa694d0139f551137694949f4e",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ffa2227e0cde4fa0a54a00e725e57c62074bcfc575d82623f796c65573fdfa57",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "1537a7a55416d634cb5f5491690605ae34f6c22ea41515dea44c8aaf7a9f000c",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "28e6b78c08687c06fee5d5f31967cb6520209fc797c5c3b494c7cc14f2a2c2df",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "65fca2b31019e603cb49bef526a8a07a714530af1646e6c87540960f2b5f5fdf",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "3d4b39f3a1245c18397d46a9564d06baafd943a992fca21cce5c070e55a5044a",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a5d442af7d8a30a40eaf2b55a958b6974428054352e4c572825a9911e601d98a",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "961292e5f0a5dc88d2eec2112b4db2a0d885955cd03ee311f0d885fd00e7a02e",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ad4783c653bf8fd471b86bbb56ae447e182d98a132f957379ad97c4105c38300",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4813bfebf59c0480cd8f7303ce430e969f24403f6f76a7805c4ee0df286c9564",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0705cdc3d78ea1e7c8c8ca5fc2917278f4bf93281b2dbbd95227a7b9bffa0ae0",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b7bcf3c218b577499192de9f8801fc56ffcdd9a373c88358eae6e3591f44ed8e",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "fce81e3651d87db00cad8c6f4ecb66a3910b7aca3604f0fd7d4c939b9a5d8d11",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "95a71b57aa47bb847c587ad1659c3615a7bc65411ef8868f886c7fd7f4e4d9e6",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3397581cb5bd4cea52ee1480ff05533468fd61abceb470e2340ac24dc6dcc903",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "fab6c7c3a1125f0a84b5f70aa9e8d8f9ddef66902aa14dc103181f4f319646ae",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "16c696d188c55414e10fa94bdb338653446bdc5825ed52e01b0e9b187e1f29e3",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "564224cb61f823ff28fae293981b7c27c28a5f7a7c0cc9a12e65df7fc65d42c9",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "d17ee0035e64e2a92b59419322278caf44a8da32788cf6a3da72c33298cfbe3e",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "85ba0485aea3451232d305223bc8b79abe2c8fc6731e173c9e04b6c0f7209542",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "786a70f168796cd277bf14a912ec06b4c75cdc2fca536dd4d89f773a343793fa",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c335c9a73a903262c6764304395f344b4b2c1da8309068b69f4d958a7d0d6868",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0d936fd6ba68b42c07e62f2625c1df5f7a030a47240e4d4fefd78b0920adf9e2",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "28044955490cf3f73b21788c577d35b3719d77ca20ff628027c17c18312ff7fa",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "698ef3517cd37755e413d421a24307456de43af076f267a42f735f18785d3cb1",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "3018d88d7b68c25cc969e002cef2b111737447e800d581662ce7c1a55662b49f",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4072296f2771da40217e0a4daf9754ad7f5b1aba206c33136f6faed1a8fcd234",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "eb73630b6b66eb51d39cb9e45e6fbc0984614d9ad6eb48994bb72aea3ef98cba",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f984772e96eb979690e38d91972606250b04793a892c56e81ed6fb030fb2708c",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "db01bf651d0d33975033451ef01fe877c1eafc8a834089d441ecf36bbd26528e",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "296e8ddcf6e6818bf258c1c582f074c05763e0966a3ee6d0d1ece6f43edb586d",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "acabd4e048d634a3670bd447ecabf51148f8d1697b73d81a45f818808884da6e",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "b4529ad9e60e079a16b0b1b05f20a4a37c7e9ff577280dd996dea4d7551d149f",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "9c9094d78706e0c7ff4456be8ff17b2690f1baff36287318288748df682f3c54",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "55dc8145cce9d3ace6dea9253f12ea4b3e5bc0d7b9371ee89be95761a1a9eaa6",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b53209a51c9b61441bc571a1bed31aadb2a32104d550e28d2993a828c3fdd36d",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ee64dbd6f6d6b3f6831e314e94dc39b3aa3b63135314c9ca2e653afb7890fb22",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "96ab49663661e63f6703b518e2b982ace267c1416da06d22b606bd1951c1ef30",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "013a13496b1e6ee1ec8f37b85d15e867b4e3730a456a6dc87b17820af2e7b923",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 0,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "73ab4c813a5c5ef83d5306fe0d6c4b72927a033a5c436b6cfffbd46786089ba1",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "2b67709d55a5680341b812e4b7195417381f97138f22252d82f2b5b030ffb012",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e4850c9f9cc72d737c913a80f591ab3ff851266503a466014798703ce36ccb8d",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a4d4c8da3e0bc43cc88a8caddef8af30e5e11ccac1b1e310be7c5a7090c7ba4f",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f98e885ecd11921fc40a25e5760ea287c62389beba4658c9bd64f29b09bcff2d",
+    "context": "neutral",
+    "condition": "transported_native_minus",
+    "a": 1,
+    "b": 1,
+    "c": null
+  },
+  {
+    "blind_item_id": "343607a590780564936248d716f45d6e6e42bac8ff7c704b48e1950215411d9c",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "9214464526d087acbdebdb8c8d6734b2ccc008fdd7816abe5575e5fc306404b1",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "5513ae4963ee5c72f4251d243ced153112a29216fd9e28fc9af4204d07df547d",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "064bf4f251b31d3f7f71ad5c2b96368bd4b3b87dee1c7b05f5025ad9db8bd7c8",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "258580729c5e0cde2e97b0001a7aece9c2b331ad642507faea75ed2a3250c634",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "da2d1d6c15e9786c47bbda5cb3e0198e0b10a945a62f6943ed1b9e6614b72ceb",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "fe6e23919e5d8bb56d76c24078f7921aade68d61b508080989b70d73eb9f5be8",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "5e4d2f57ff86ba625f6ad803acce2b6ec88d94c98154f8747bc72e1ea7113d2e",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d6f7bc23bdcf755eeb4feb28a10ed4ad1ab5ff8d12cf47da7a809bea9b3bfb49",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8a554e820f2edaf47ef9eb46b5495fdc5736b05865364d89512fa24c45a1d984",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e48005da78a49fd83663db3b64c8e8acf211902d615a02b748f82debba56b43f",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "be97453a8059563175e82198a9d51eeac809c33c242002907414c5432d220707",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "040d4723cd5607a79419e4e918b6c88997224cb8bd4c7b8839710a8fe611d422",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "07966789743029f3e9a04e3c6a291e1c0b7a653dceb548516bf5122c86968eb8",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ecd4317f0322021a063a15f91d98cac21d748974ca7d27058b055bedd0e327c6",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "84126325e17ff044ca7da3648e1dd08c788c922a698a5535c666071beb717403",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "57ad899d2412e9c2dc7e88dac2d3f8d13cf99c2f9a879b693eb3575f60d05587",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "5141b5f5d802faa09273233f00cf9585793c44c56b18469a9cf25563ccbdf679",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "03b39d64aac7cf255bd24757e0405badb77b18e3b6fad22ff73d284638dbe58e",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4b9207f2d42bc7a04f1a02be93fb991c612071e1c33b7f898b970d7544d2db9a",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "e5016c0deb646436a198f3a9d751d33154845d1a30d8e278e0e8edba7590e5e0",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "fce4de5f6a0c8c5f8692113d70e033f2e27cfaac2688165c47b202fd24e946ac",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a9dd2ef5c4c3326f58b2b7afe61d54dfec63f0e968c8b87271e421d27b5fb842",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b117ac36102d77d135665b303f9e15a506975cadc46602299836eef648a2495d",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "06155220500c7189911556675fba301b3c2fa0291a9f2afe1b24499d8ee7cf95",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ba58289c5bca1078ca99185c17d10874aefe56268a054435ff602076c2fafc26",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3c67f97842defdec91e49a9b3fc8dcee1085270207d81d69b128c88d049a5812",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "5d6391aaf82283be0f7f76554304f2be581b3c7b985a418422a5ef3d9d308fd9",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "b25e23b49f48abb2a9b4aa85c03a86e69ac7896bfc3ef5a46003f0ba79b938cd",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "c25354517869ea1c67544c86ff0b2724b9e0595bc8012a7f756f6c493e610879",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "df9acaf6d62e357dba92a27574de88e3b67f49e6d4646a3aceba41433178f317",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "da6bed04cbd95ed1757bb9b30b10ab65c403f781f4fae16ef9ad925a1750d498",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "70275bdf3aa9633bef87526e0d02e50f9841f03867a5adfaabe1300897cb0aa0",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "adf09acb55b196e76bcec2f8f0599d095367c197d58109e513172ea517e3d018",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e494dce9a3af5c67af312793bce637a72b0489876f4d9c915620e9e31b1baf07",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "dc66a4a60982359e69c05c63a992df28891a39d54202a86e0c3eb886c288c5d3",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "251dc9a8828d7a80cd99ef2f3cb52fba9ed88e8b0e9a795d63271ecfe81643a2",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ad03cec54d0fac3ffcbe225de70fe5e8cdb7f77e6341d2f83c44a12678ac7304",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "1fad7547901ed1b6d5585202f0cd1eb51e2370fb685a80fe148a2383b15300fa",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "211aa326fad99d16eb41dfe8fdc6a1f92bfbd65552681195fb5f4a929db31cde",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "b0249b7ced5c8cd2dfb851ed1ba657f81d621eaa9dff711b34794a955049c1c5",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "e20768f0bcfb247f2d5799e67cd88f9fdf76d53fa74f78508fc745d90cf16c2d",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b76a38c385245021b465f79832fd2f94109ccf50b2a31738dad44bf7b2ee904d",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7dac98f695492eb0f63c4040b88ab54b9dec4649214c14de948abc66bc0cea06",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3a9e59c925e24a5a8e0a72aa4c0738b75e352fe0b3f56854e6723c0867ba4b6c",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "87f450c10386ece7505496329ea5105a65e10cead6360a9e50e14286811c4123",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b7c508bc99ac56203239a33800a93e17222d19ceac1e5deb16896dfe2ecad1d8",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "5008f407e5b3384feb148697c0edf38714367abcb6852453505ae7173efccd97",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "52d31c97aa5ab06062e4f5f954c24c1c78e375ab35dee14fa61a80186c3d2166",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "836107896a74383209496dee6083ea171a52f61e30674a1826cede0e549cff20",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ae1a972b9fe46520804f7785deee76756e7375cf1c4dfe474ed9ade9a91d4ca6",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f0d0b02b46d6c0d12704de9975954cfca92a680fb94fb453e59a711c9e7fa7a8",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "ac6f2e755b8ef1ecd164100274047a554b7267934f7b54a848766eaf4b2b45ba",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8177f641b028147f3aeea2327c9147b72945b3b567c3e87254b7b9eac6a0b9b8",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "43f70acce6869a65c5af8488e455f0a79c61635fdb6055b701c98957809e84d5",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "46c19ae164fde9c3163c054e37b7beba813d396dbf15223b10d5875120660113",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "49c1b49ecc3ed56127f52f21653679c1178155b0e01da6501e73c68bae22cc08",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "51aedf2a971f7edbdc009bd69f47436e0941d3da317e0901a262ae52cfbdaaf9",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4e16acde8ef151ad9de3e2e3e57bb32af1c1f60501f0631a5c8eb4856feac3f5",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "5cd2091d2efaddbc1059cc40ed5914bf09e4770b8f347bc5f1108f246ca2f1f5",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b9d60677c364f934bf24553933da9719e615c94009e043be6f64fed0a44e48cd",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "41aa551e0433750d1bc86f2f348b7df9c00d238ec3431dd0d10d91e8d51be093",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "364fea755a215b560f38188faa1da52448c947a78ef3e455bcc1c089df6d1d17",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "5cd9a0eadb8015d10b0ca470180d4161475c186104a8110e338c8cc85ae556b0",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "67ef3586bd9704fc25d8cdadb2a6a683c02b5f41d8f6f27f0804f39287860c66",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7e64face80ae647ebf551645a4cb8879a72d1d1f4fee799866dcef3d42097aae",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "6a386b8db4d88d9812ee62a03acedb1a92b76627731a9b833610d3d7e0cd8742",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d47d302426543d7eafe80a5500c51cd05406573aaef911f62bca842a28039311",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0b7aa85d3370d3fad0737c17bc21273f4fd4d0df4e9cbb93a9d0e6f41db90268",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "3764fde8b420e86c82a03ea703f45eba960df117d4095736de784faaa2219a1b",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0dbbe856d72b8dab374173b9b202a8c6b14a35c7d87f2c2dfdd39c0be023f61b",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "879ca75e749b26114b42e88e3ae2b77811532d7a1d58d468d75585308091a752",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "198f1543c4e3dc8a7d5a581c57fc2bcd8c32db33cadfedfd2a0df9692509a3d9",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a6bff9310d9dcae01fdeba126372b566cd96ab488c16e76b90273a1bebe9e661",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f3c04974e608fded69b5236bb7ba5056f705d56f14115512627bbbe27cf67514",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a2ef3908dbde0dfb8bf1a5bded5589fc03ee3cbcd0b8c519fb2025d85b5c48ca",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "525895f650fd4ec3bc7691de3a1b46d9cdc1e7b9bba883211869613b3609a1a0",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "72f1e397461bfa1689a4e7925dbcaee341c7bb2d5d0d1225ce989ab00ffe19fd",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0e935b01978142dafed313791f33035423de27e611377e830ffe3a1b794a32b2",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2db91f3bc5e764f5404cc81faa6ee5097aa49859191a5b10e2ec0de05983a4e1",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4959049f7d76c83a01a57427eb51b2ffa626359da8d9e3013a1d22df37cbc0f3",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3b6ce389316fc3953ce6847405241aea986482bf67f085477d92f71db28f79a0",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "9aeabdc728f13534018b30cd40ac8ddc19c234b399ba665df4e3aedaf96fce68",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "5c70ad7d4972c90fe9e75813324a26171755151c6058b5c0d8c946dfa028bb84",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f7cc711db22c52c819d2794d578388407afc76e5bbe296ff56ab4ccd39a0dff3",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "416c372c762ff20b53de7a6a122bcf0e4a597b221c03e53543d6e5eb0590cd95",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8a95fb3a052366e46450b5fbf56680cbe430d82b47ec1353b440af24ba4c45db",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "b15269b845ac9d1afe3d5fe7658b34bbee3bfc034ff89672477bc6c6c68b2f11",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d524256932fffdfee97453a14570f06954ca0ba98a6b36a5f351b3b5977ad7dc",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "56d46f46046787559d896df79f2aa6937312a40adb880691ed8fd6a919770c6d",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e0b2a0eb53c91fcb249685a67e670d7fa5f5ddf7abd867fc195f92032b2cffb4",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3a57ba0269cde812a0648c3cc308fedb8cb70b8699db1f83297ef315ab1748a3",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "019a6554c215e3e86ae70f1835300d73ed2b146fe6b92665ab6c994f14106567",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "767a43ac2858ebf6c8c0bb26b6b51a84dedf1649ffdc99579b1a45da3d5d3137",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8d8a4e1c3a2b6c266b8edc753428879dbcadc88e61ba449787e757e2c80bee46",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "f48f397992ca7242f5788d309f394c0dbede63d8dc9394a1dfbf2b3ac6e1caf0",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b593e83678c013abc22f434e3e4f0a54ae24b2ae095b4bf699e427547c0748cd",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "8f17dfaadd045c5387ca1810f798a5cf37e4ca1a1ffb8e37b847ce51e2123c1c",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a6b8310f8694b78d4b68d4af47fd7c8174e3f02a9d9f580ad41325f14618e841",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7c32da65fc6e69551dc52e2fd96cc5389e6f76761ecd065fcead6d798a7846d0",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b0598c22bc88bd420349790a8b7bd35e7d899ea750304216b20e352247aa6cd9",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "dc464ed0311cd331748c0123d567c42e4ecaccef58031bbeb5a570e73e7ad3c8",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "655f39a9899981d4489d40e2b8f7230a1a2f0f2150faf4476243b9e031630451",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b4a023ecb52c24fac5a2e29746b9217e1357e441e1436c502ffcf2ea27b944b9",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "df0c60c2e90410672ee415484fb1fed7749118b4906f2e03e440c0f49b8a0ed1",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ea7b85c1e0cb43bdf36682c3fa8ae4afbe050433e44d51bc78c3e7912f9f2892",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e6b7b757cc206cf9c788a49039c3643ebf36c6c07c63576d6f6f191bbafc6fa6",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3dd716d01b330299639569ea3bb7f247f8db88492f1655d46bd4bc5feb52f082",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "52afa6b91c5b791529c748b53ca29839a8f6f7b8506e3a53285dd38d0fb556b3",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "1423533d2e0172fadda5079ef3c345812c737a8884d1931d0a31dc5f184e2a2d",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7d725003749f5bd3233cf0a5d2049195a738dc1310563f66a83c70fa8dcd45e1",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "1b15be34968fc882cfc3cb5d38f4ca618f907ac51d580f43a0bda653882f73d5",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4a87b42f3ee201762794e5343ef5285d0dd8ea68db4fec2a1ba6efa2e0547643",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "bf012f421a4e438830e30c14e3f73d98b1383bfff066319acd9afa8dc8837927",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "1597aaae0f5d8e77feb8d11405ec212f99c5b25f2eb5846691a0e720c48aaede",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "7147003c8b97d45db1f7dc28ae70f869253195fb20638433ffbd908553c77bc4",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4b91a88a369ba6a8c7b47ba6fee9de0cafb65117706f9d5b5b93716c1f9b40c6",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "5e95a6e9a6206f1caa4ddb64e348cfb7985ecca0e17721960fd7e7154d74a0d5",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "6b1ad45b0fef4b9b93a5194f69e78fb3c6d0ad17ccac4a3cab76e85557cee372",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "40668039a363a2e8634920b0bc872717fffc11963d8a9e879dd3d5beaf1fbf1c",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d21c60db33308f65f0d8d6b8c11ed7e1b2f7482c832ac705c5ca006e83a69b45",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "04edf7a952b797d756602bf9a37092d997dac39e34db4950a738163bba582174",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "6b978665aabda56b8c71e76ca69c541b7a07d8f93605809b37e1b3f8dea68952",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b145f435268849e9f225e9c839d8ddd96e706f02077b78bd145235aed00fcbc7",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "25ea1a3e8e82e193bce5c51627e4c668ca3269620380cabe2461c5616a026c9c",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ad740a8bb86e0303e3d2e425646f6b9df759b67beaac8a3fe90b48a11e660877",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "85158961029dc72898359e690802f53c9c4481ee0cbcf8388728ba01fd489caa",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "504e2e3a0e1780e826f677d040340fb873c56858322f4bb5453b4f8a00ae69c8",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "31501fd010164f1667faa956761869ac0d26f13ac265f4614a2662bd638b1a83",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0d1e095983f6a45020702c1e69d16445dcd6ceb2844954dee1a70c3e57c65bcb",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ff358713fb1d7338a45fe43762899a02872ab1167057bdc79c0a954e637d84dd",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "99f8f297dfa5b7eb00d870556b4c4cd62f4a347eea3b5071da5834c3418f6bfb",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ada77b9435f782167a42820d28fba363b281d5b35dffbf044b9c8850c73498d5",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a2fa6d3ee464edb21cabc9ebff868b6fac6df988332d9efe2995c933ca554b77",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "99a6bfbc935b588bdd2cc324ffa0f3c48426a5459ca48b4c40c6d1d90f6b952c",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ee18cf259f21f2f867958a9b54413436028c2d4c78e84621ba756f00db66d959",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "ed2fbb0ea74f9fe8bb94872f5ac8d2009bf1da786863349a81305f65e01d8fc3",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0cfed5fd04236a3f0ba6cbc58e7b5bfc757179ba0a565906b1d7136f8f35fe80",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3e075ba1909931e7c305f953861bc31584c494968dbe9fd4e05c9eba3176bb5c",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "ebb470a0c6b5713e811d90449395e697ed3f8486440474ab8ea8db53508ba8b2",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "03e433d48d8c0b3e94af87ae8acbab409c1f73d5372eeeb0513d47d6eb766412",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "cc43fca476fd204782826223fd9c3802fa0d1a7317ee7d14923a877602109eca",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d4b79f2bc58ce5060c83c98455eed43f7ff2f84d841ef38dcc83aecccd0ce6ac",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7a523e7571490c1f2db313ffd2f1f1af19807b1274c13f71599d69b1ee1a52e5",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "bfe55c6de69495fff17f9a8bbdb53f09bdd172d1c7cc71d0921c0749b6b2ad74",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c058ffeb9ed8a9c08f9e0df8681637da9f4a2d8c2cf14b642d484cb78d94c67e",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "1091bec3b379592f7f3d07fd8b7b7efa9d0db1caa751fc1e0ce27347252e1407",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "188890889f8947355c227c8b995cd251a18cf5a3fff98cd53c0377369b156b43",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "dd03981f9c017dd7f0f0818c2fc9aeb3c2c558feb119114a418baf0c87a74e18",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "901a6f8d54d615a57b6ac10cbe270093fda59e4350a8904cdefef8adcd9b35cc",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "92684f791f3c35a3f81e4146e44cc5d4e0170bd756bcfa3d0d7b73f3e0b3039d",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "92657472d1fd2d6deb7459c218437bb25df22d8e2d61ccdda88a30191a342def",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "baed91916b5f76c80bd408c0d0a847ee685467fa4fd4278f40d38b9600451f62",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c3d15d34bba98e542248e45ae68c015b4446e9c3348016872699f9de4ac9224b",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3d6bdab25c1518b290c65f5289f211e82d4e3dbae6d51f3169c28760ca31fdd6",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ae4534365640de32a725ae7d2bc73db1f5bf059ec92810c3451d6ce8de0681bf",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2f9ddc69b6bff03f239899b1c77ae82f8310fa6b00cb16a527a6a670dc358f2e",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "9a1d806b77fe01266d142ebcf93de511263eb5180263bc0638f0704d21d85fd7",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "ba2765a65f58ec05128c9855c7ec5dc4be5c314c66f21af7eeda013e711594f8",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c71cb6f477cce4ec58bc9747db0b16e98e12e79a6efa94a691d5a572c18c3f3b",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2a4d9807d78d079363804a0f815bdea01dd78f614cf26f1c31960cdec7448f1e",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7787b97a80b83697ef2234f38b51e41b66b1a112639b788fbc3bd4c0745bca45",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ee72663f93bca1a2ccd3cd63e894c0c616cab5ed7bb22d6a1c564ff5635306b8",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a17d163bff16e19f5ab926e1a08ab45360e1b847a673ac14845811260c99d705",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ef43879928a2789b64cc3ac5e82fea4ec058482c3e221c907379f57b81c6ea1e",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "bf4c464f35a34a5ce920651518730a9e5a0dd14c9622c2df6e1d52a9f01bea67",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "000880e87f0203049eb5562a3a85735d55d9ada655a1a1aeeeed3434fc2d26b6",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "09d9d5cc4d9f883c633583626783853f9cabb239f852ab2f8bb00541b16730ec",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "25865924361e9bbe9c20ea3f4275ba8e91cf81d80254b04fa4fc8c96bb78f4a2",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2d383171b28f0b89a271fe7114ee62af08b9351bec1d91bd22759605731eb316",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "1b637f51fcb155cb59fe37bc4222480dfdd74040e5b4ede12b7e312b8f3f1674",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7c3bf39c6270c66005c36b0b2fe0c8dc62a642a50cb469841a228a0c04780f04",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f9e374a1b0331a38c0a22cc94b928fe69d521ba5a76bd9c3ce8b4a15b0975d58",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "208606f9f0ee69e649ccf0821d0486ca472baf449f1f6200b61d60b06fdc5ae2",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "85f7177a10a2a5d7e66ead55867235c33fe026b466931c0fa15842d5e753c3d4",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "5880c8708240ddd76c2e43ed4f749a2a6e03fa11aabe69ecf18ba07209e4bc7c",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "68b49113ee8a9e290e19f0b483a693ec755e7baf75f818e34dda37a594e4946f",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ed897685e0cccbfe886550d7f687348abcc03623b9f566d1b1096b68a38f14e3",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "acaf2725c7df964ec2332f5e3b86355b6eaa83c7c1ce5d05f0f353148c0f8bac",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "125fc6fce5ce22d06f947aae448dbaab288a1bee74192fc644b36e60a1124399",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "6e877c67cc0e3c16fc83405cb42b193c730c5286b20dcd75d127a70731437503",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a40dcb1547618fa4f91c6c196d7d9b9afab3de16fd6758f3dad4e1ea1e9882fb",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "781a9f21fdf927ef5a558d2927e780d9c3b583d23ada33345a0079db6b1e1d6d",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "badf7ae81eceb620b21fde7db5267e188cd4af0e305c987854d93c12f30e7edc",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "fb3c24ecb04601797efb8aec522f97c91da35ed27ee93da79acc6d8f7a1c4a11",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b46beb8028742c7b347a6e00995ef728a7cc114810bf27d779c9644aac65fd2d",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "ed28035fd68feb9481ce35676e34ac67e4d61b38a5a5d23ffc1061db72d12371",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "863fb497ad08df04dd06092e04a1449644bdda5f1f5d958c9af0495bcaf6f332",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "44b5fa4eacaf7a858e1c8b5687a95bab49bd066a02f7715807c0b96d093e4be2",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b5314c01a6cf331d69ba2bad0998b8892935063844450f16ea8286770c873480",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "78a2112fab85839e21e393fbbecc6f20f400e1c21482b6693eeed64232e46ea0",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ac6b4449a7b4942bfca383692bb361b55c4986a1540c2912d5476b6bbecdb22f",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "773253963990294ebd3f1b703f8c1c8972d73abe0f3b40e224866e56749ce316",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7563b9a286764435bc7b4f33792aa9b7634ab7bfb02b3b9f28db209b1811176a",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2bd5c2357d6ea120a76d14ca03064095135d9855fad11e29939325b39c596235",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "45a218c32676cf11f057d8c911ee8ab4a9f98f57d4e00fef99201621657bf6dd",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7940863d138fc047501d7568af4116f3da6c4a506f3c472c9ed30c8dbe574ac4",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "861eab40369c5b0ee82381b91a505ffdc9c876396f49c40fa51fd923e6e3999f",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4d95a36dffcc9ba7f7f681ec9d244f67be8684e8abb13c6425d03b366f57b7ef",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ae39d4dab00a9ae7ab2ab9f98505c4dc4af2089138a470b662cb0c463ba01417",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "1152cae0e2d2fd624907c8ecbd4ed80646a12d68e089516e91ebeeef2c471a56",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "87bc651b6ed79cb0268347ae2356889b3dadcb83bd2500ba53fd5a769c1145fe",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "676c97c8f7ec388082174792ddfda5fec6286236e5718a2cf9640badaaa317ff",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b72867b91c96710849b7b98409252ca09d38e4a440256024d60336b7df50cbc9",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "9a298c41d15683e3aae59e028014c55f0618b2c20e251cd4c42d94837f57403f",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "f88fcd9324a61a5ac1cffb7a78584144665f7fb8bfc4eb7a222483b34f1bac5b",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e4759c8fc133ad68aa0ec74d2a37c9f0fcf86add1efe83053502e1a90cea0487",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "370ba59eb8261b8fb2d3fb10dab493fea18a8296dfa00640382d737bafd145eb",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2cc130315d0aa7761f9f62f6695fbe2bbaef637884cb5f848f94a88ef3407391",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d1526680b53d2919c41b489fcd56602d8bc30db46f74e520ab630f7e4523e364",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "44e7470e4f6ac8f7835c416a31a413dbcc3ab8614a989b16b42f00b26a390785",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "228c90bd343da5c53a08c01fbd678a1dd32e188022be936d3ef902b7138c7815",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4fa9a4d8eb2b180093efe299cff61acb829a3cea86dfea4c3534dd2f1ce7eb48",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ee749017c56b5ba10f680975e42312f3dab1e8ea0017473d4086164ad8c8945c",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "75bad1c9df3022fd96a5016842e89c2a09b66638a51324fc5075f7ce216bfb92",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "ad1c0a6fcff1f0114518f96da645e23f9b6404f54afb1e2f9d94de26086eecc6",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b38b63dd5bf4a73a197c70101cda36dcb4ca78ed8f66e55d6a2a1f79b12409b0",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e9306264303dced9b47f940862ed2f6e871b646226a5751187faec954f547453",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3c6207eac61a7087c081c0e26e0877a4548668687d9ce46bcc213cbe500cc5eb",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4d9b8df6783ee0ee2242c5e855f6265768d76faf845aa05a0ca457bfae178a40",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "e1b5a8f1153e7e6f09cd6a99cbb3e31de3368ed2d93e1a766a83b84caec6b4cc",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "bca8167dbe3eb3a4ace503b6d8604986ef737bee96a34319fb322221182c5114",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "888ce711208b208a78f4fdc71d29043e00ab10a9b85dee7ce7ee43b6481e9050",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "13adb237850e001ad439e6bd5ae0f3d33f65cc03d5660be3384e93464542525f",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c06f076ba80ae0d6b506e0a11725066070b4112ee96b2ddabecad8b18bff31df",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "350c6fc40d7eb43851d4005d2e2d832dbed097ecca30cb681d9bfb7059f332cf",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ff60266609b870f374a33a46ecd6787361351dfff3ebbc40a78ade4a7fd1d7bd",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "43245d44164be320daaf6c858cafa88604ede6da328f2cdc78fba68cd91aa034",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "c6b12db5165263febb62aa464b5c504960f20281ebd46e8f442bf48c17403a8a",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "f8ea2c1ce4d655a744efd0184148328473d6794054c7b9f7e14c4052c3558c1b",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a3f6be84afc699f4bbfba92ff663eadf7fd526af1842fe8ce7beb64631133765",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "58f671357e3d2a9b9aa69d46caf9e953ff875b06d5ab856e78821e339d965696",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "b4714b62316f9de968e54e56aea489e3ee2bda49924d815159f61174f418c980",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "1cc8f2f97e69872049e2e9ac1cd238ce7ef4259b92ae2faad9df3e0206cc2a75",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "12e130c9721705137477be98a88aad6417ed8fd28ebdb14bc9e868160eb84b07",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ab17c8a0db6851bbbc60b4a343e8367f216362d28855dae9569b6e3b1994318f",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "5bf9572b4461297c5af233849d285b5ee6192e915bc487846bd5554b1bc81844",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ebe47cbe99341f250ac147682fbccfc55ab231a8bcf490b921d5a740e098f6e6",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "5ae4c44d798138f3d67b424c1de1aeae9d9aa0b3f990512dc6cfde6ba3155d27",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "2cddca72261a4166c4981ea49a9c8dc08d3adf11d11a4d0ee7c317e9df0d124d",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "5d9db9b4530144cec172fdf83778026bcca04ec9524ce59e55ba262a97ea4095",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "6f3ba3dda49149534c740bfe9728b0d6581d368cbd9a512bd0d4f1fc73803c7d",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d21da41322669afe822be3fdc8d7fba76d46eb942b683aca30bed22a4ebef63e",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "05742c2ce6671bb83a3972644269398a86ddfc4814c03c2bdcda04eff79b74a4",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "cdee3591161d4305691c821618019d0a7a4384bc4a2f2dbee5121f17dd40a883",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "0e47fce2bf22e2d667c03de6577316a7585d93d6a6ef10417430b0453dae2db5",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "35db2ece0e839c36466a1d28e1424b1649a5fe2c2a2c1857bd74c3b7efb9bfeb",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "78e7bfb02465051cce10cb38ab7dd7ea2533b21ef750978135157bc9896070fa",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "19dff116beb4570448dd97cddc0eb9607f0f8ff72a13b96262b61ce42b051169",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4be63a67a3a2f740e17aa47eb07e26aa56f8497bf7c8f1d46816eb1f61064bd8",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7f924d91b4284981891835a4102a0b9db6a0fc3cc1e337b57ae8195f34013f64",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3feea26f3684025821959afa8581b1815ca935c6dfd278a965190eeaaa1bfff4",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "de901ef86e5a3e2b8aa65c24692eb667b196f84374e5e7e79e3b4294da256d7a",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "6cf6cdcd1f77d438cd0d57e5cd0f97afefa224fe9b66f185ddb7dc3af812f2d9",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d51485857525826fced8bfcd12f78300611e29da65f90a0d2ba5173bd07551cc",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "cb626a4d8a9b2d7d3a953a73583ade2cc3e051910521bef4e8b043fbaa07c349",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "993a5b66dd392673b15357defaa48f80d90e1daa28e2240bc88fef032fb501db",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "42d87f21f43e714756141b171abb6ea840112babfd0af9f81b4dab5b646b8694",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a3358aeb5a282acf18c5cc24161c3dbf86cffffe243b13fca981ddfcdc04f900",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3432c59a1ec2e93d64d0736b64772dd34c623e9908322ce7c548579835607c53",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a3db93fb920296071bba7920763ed561316f56a76708aed5a10ecf433540aa8c",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "9617235c502f5b290e29e9d8e33544f2cf55beab643e433d946040ad84d24af3",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c05859612cc68015792a25a6a20e1c3ca676d16283b7a2033a01e4259a6b5e59",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "96227750ac351976b16031e274401553191c100ea5976ce1ce39abd85bc320bc",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "a9d3793baa0cc0ddaf411cc5f486c39b06935f7fec6d428e56596fb037b3f727",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "d3dabe9aa06b128702c4dda07b1856e6acecda17214bee72e5abb4a1fb549937",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "30999d92bab0c33a5efab1fbca3a1272d4a3021b17a6a0f2675c8138882163c5",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "37c9e368ee7e7c26e2512367e566a6d14bad2d4f3f68016061df4b85fdeb5fbf",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a65455feb83ec184402c48c243d695119253feb01de7e735c5d6ad1c0ef8b14f",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "198f3efcfb54440f1b35c35d03de107a46b3c7a4e032ef224073d66bceb5730a",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d9da15c48d833804aa3665abd86e3c74a71762914dea8b7ffc95b0fd694a9849",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c22b9d1f7dae7e7e16b3eaa73d82d97a54c0667d762c83727108e6e54d27d94a",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "a9aaf887d5b0c9ba59cafe54cdc523839b31a7d86158a6449aaafba323d275b6",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "465064a04fa6930fe2db2960012b0ff893b40ef85df87976e432eeab926b6723",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "64491adf2cb50f8310014645bd1cda1840e326acf2145ad34de93047f196b26c",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a320dcf056a82c4ce48b419d1a5eacc3a4c04e28b9f1ab8b199d6fdc148f0a0c",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "c4573315d4a9e86e4ecb8406ec3139b249fed007d7601c275b34f3a16430870b",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "eed3ba45c581fb913e8550eae248c4581adc8595cba7131a9c068a3901189598",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "147010409f4714f1386b784d75b4fc8b8dbb5703fc76b8bacf9514ac534bafed",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3d94958ea5787330f520a6f52255447ada3620522253c3b9ccfc7e5e04574255",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c320e42079df345cb94b7ed32350271ca5f0cd711c31e55fe7a5905c01738026",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "063f29031f1b11040df7f223346ebbb194191441c6857ba6d294ff0c27d735fc",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "534c6547d473cee5b7d21d54fae392d2b75a8c5b896894d5345c2df85e823ff2",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "ac4893ed943dfc83db2d3035449a478c2d10576a73c4f48f28ddaccadce9f3ab",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "99ace2158511ed5aee06d373f9ed82fef808d2048aab573224122a1d37b1eb74",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "16c8ce7b7dd7cc06d065a7efd9d4d892200b9126969f281d060fab366f45b06a",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "f68e69555efbaa809e5d9cb5b909655f1b2e4d48d535d7fd5cffe4c2522365de",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "6f99c8929e2af66117e115b5d1e2f1c39f16eaa1391d9dc978ebdfcc608f8823",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "828580b8bfc5d19b4e4e0de18f7dfe5a4aad9de29dd195c85699faf452a31c3e",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3b1afcee0c86bb16d423baafa4c75ef8027a4d32db8afad6f42880efcb45de1f",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "3235d3807da60714f25dc571e8255d1385844bf8dbf68c2e7f6d4c64600badf7",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "9ef3cc084c18bb1ef6bfd8b7ce277efe00b0fc21e3f22fc2c558e44a3cef1683",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d84c431045de16d05317b79ec16dd0a3fba01aa86535f9b47bc8e241ec474f73",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4d7f1ae0cd1322aed5f7f33fba8811ec032ca4216732cd0b16588a03aa8013f0",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "bedff33942b051621764d37a7b4d9ff9b5c82a60f9c26ddcf00d14caedc54da7",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "e5f3358b33b29ae769f68b30d4a89bf9c142333d33be4db3ef32dd4b86fd4e82",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 0
+  },
+  {
+    "blind_item_id": "139fb1b7f18fc0a26677176f30ae5a53f19430bb0acd315919fcbc653f4ce8d8",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "a4f5519c064e1361b1f7793093db6924b5f9c9b9b3e8e16ccec4d3fe76c9c57d",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "c169d54f5e6867fb5e49f4a6d48f3c7b1f0e16a82c89b64b1e9e7f9c95b70b9e",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "66ae9788f17c9cc00bddebf433ad9ffc7beace82033dd87347e9d3c96454b052",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "bbfc72aef94866409059a4bc5afac849669f3066f1021f44bccbd6ecb22146fd",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  {
+    "blind_item_id": "5f6240f0271e6779749a026a2698a18f3e37eb21d398ea80f2390f65106ae76c",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 1,
+    "c": 1
+  },
+  {
+    "blind_item_id": "aae6c809b89e0e2ddd62de0292a712adb57690ff71a5a126bd6c50db697a02ae",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "4da3474b84de9a8c086e0e3ed2a098812f514ae8a7abebee30d11661e1c0d95d",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "94607fb1cf47694f690eb3cbc5ac1ac08c69ce5d269e22a927d69c9ec38e8fa3",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "d03b8661351c0ecaaead0d240e3b6d8ec9b13af36db57c2ac93bdcf18d0d6fa4",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "7d5e188678beaa1534194f379aebcfc2fd842fe0fd12e149c4f516761b376f70",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 1,
+    "b": 0,
+    "c": 1
+  },
+  {
+    "blind_item_id": "6efb6ceb78aea08f080308a85e9d0c3ab671cec81b7a0b405c2745e08bc3ef2d",
+    "context": "ethical",
+    "condition": "transported_native_plus",
+    "a": 0,
+    "b": 0,
+    "c": 0
+  }
+]

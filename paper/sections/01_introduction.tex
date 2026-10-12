@@ -1,0 +1,19 @@
+\section{Introduction}
+\label{sec:introduction}
+
+A model's textual refusal does not guarantee that it has refrained from harmful tool use \citep{andriushchenko2025agentharm,cartagena2026gap}. Verbal refusal and prohibited tool calls can occur within the same interaction \citep{cartagena2026gap}. In executable environments, this discrepancy can persist even when the harmful operation has already completed \citep{zhang2026litmus}. These findings motivate investigating which internal representations influence harmful tool-call generation and whether interventions on them preserve performance on legitimate tasks \citep{zou2024improving,rodriguez2026tool}. We study this vulnerability through proposed tool calls, without executing them.
+
+Prior work already locates latent directions that mediate refusal
+\citep{arditi2024refusal,panickssery2024steering} and uses internal
+representations to steer agent behavior \citep{luo2026agentlens}. A practical obstacle to estimating directions from observed behavior is obtaining enough unsafe examples. Unsafe generations can be rare in well-aligned models \citep{davidov2025calibrated}, and too few examples of compliance with harmful requests can prevent stable
+estimation of behavior-conditioned refusal directions \citep{rodriguez2026tool}. We hypothesize that geometry associated with unsafe actions can be shared, or connected by learned mappings, despite differences in their observable behavior. Cross-language refusal transfer and cross-model intervention transfer provide precedents for this hypothesis \citep{wang2025refusaluniversal,oozeer2025activation}. This suggests that configurations with weaker alignment can be used as sources of behavioral contrast. This behavioral variation can provide supervision for identifying candidate behavioral directions and testing their causal effects in the original-precision, larger models, or other languages. 
+
+PRISM (Probing Refusal Internals for Safety Mechanisms) tests this idea across precision, language, and model scale. The \emph{native} estimator pairs activations from the original 16-bit (BF16) model with its own response labels. The \emph{shadow} estimator uses the same activations with labels from a 4-bit (NF4) copy; both directions are applied in BF16. To examine transfer across languages and model scales, we estimate language-specific directions alongside a multilingual direction that aggregates activation–label associations across the five construction languages, and transport directions from smaller to larger models through mappings learned from their activations on the same benign inputs. Construction, layer selection, and dose selection use separate scenario-family partitions, with candidate doses considered admissible only if the observed accuracy loss on benign BFCL tasks requiring tool use does not exceed five percentage points. This work makes three main contributions:
+
+\begin{itemize}[nosep,leftmargin=*]
+\item \textbf{Cross-precision supervision for causal interventions.} We introduce a setting in which behavioral labels from a paired NF4 copy are used to identify directions that are fitted and causally tested in the corresponding BF16 model, allowing unsafe behavior exposed by the quantized model to supervise interventions in the original-precision model.
+
+\item \textbf{Transfer of behavioral directions across languages and model scales.} We evaluate whether directions associated with unsafe tool use generalize across five construction languages, to held-out Arabic without fitting or tuning, and across model sizes using mappings learned from paired benign activations.
+
+\item \textbf{Evaluation of behavioral effects and costs.} We evaluate whether the interventions reduce unsafe tool actions while preserving benign function-calling performance, with uncertainty estimated at the scenario-family level. 
+\end{itemize}

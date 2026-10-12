@@ -1,0 +1,25 @@
+\begin{tikzpicture}[
+  node distance=2mm and 2mm,
+  box/.style={draw,rounded corners=2pt,align=center,minimum height=6mm,
+    inner xsep=3pt,inner ysep=2pt,font=\footnotesize},
+  bf/.style={box,draw=prismblue,fill=prismblue!7},
+  nf/.style={box,draw=prismorange,fill=prismorange!8},
+  endpoint/.style={box,draw=prismteal,fill=prismteal!8},
+  arrow/.style={-{Latex[length=1.5mm]},semithick},
+  label/.style={font=\tiny,align=center,inner sep=1pt}
+]
+  \node[box,text width=.80\linewidth] (items) {Paired inputs: same scenario, language, prompt, tools, seed};
+  \node[bf,text width=.38\linewidth] (bf16) at ([xshift=-.24\linewidth,yshift=-10mm]items.center) {Original \bfsixteen{} model\\Record activations, label outputs};
+  \node[nf,text width=.38\linewidth] (nf4) at ([xshift=.24\linewidth,yshift=-10mm]items.center) {Quantized \nfour{} copy\\Label outputs};
+  \node[bf,text width=.38\linewidth,below=of bf16] (native) {\native{} direction\\\bfsixteen{} activations, \bfsixteen{} labels};
+  \node[nf,text width=.38\linewidth,below=of nf4] (shadow) {\shadow{} direction\\\bfsixteen{} activations, \nfour{} labels};
+  \node[endpoint,text width=.80\linewidth,below=6mm of $(native)!0.5!(shadow)$] (steer) {Add or subtract a fixed dose of either direction in \bfsixteen{};\\compare tool behavior with the unsteered baseline};
+
+  \draw[arrow] (items) -- (bf16);
+  \draw[arrow] (items) -- (nf4);
+  \draw[arrow] (bf16) -- (native);
+  \draw[arrow] (bf16.east) -- node[label,above,sloped]{activations} (shadow.west);
+  \draw[arrow] (nf4) -- node[label,right]{labels} (shadow);
+  \draw[arrow] (native) -- (steer);
+  \draw[arrow] (shadow) -- (steer);
+\end{tikzpicture}

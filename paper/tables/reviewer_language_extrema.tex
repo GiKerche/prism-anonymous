@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lllrr}
+\toprule
+Model & Estimator & Estimation $\to$ evaluation & Labeled pairs & $\Delta$ (pp) [95\% CI] \\
+\midrule
+Qwen3.5-9B & native & Spanish$\to$Portuguese & 159/160 & $+87.42$ [$ +79.00, +93.50 $] \\
+Qwen3.5-9B & shadow & Chinese$\to$Portuguese & 160/160 & $+88.12$ [$ +77.42, +93.75 $] \\
+Ministral-3-8B & native & Hindi$\to$Chinese & 160/160 & $+13.75$ [$ +3.33, +24.19 $] \\
+Ministral-3-8B & shadow & Hindi$\to$Chinese & 160/160 & $+12.50$ [$ +3.38, +20.65 $] \\
+Llama-3.1-8B & native & Portuguese$\to$Spanish & 154/160 & $+34.42$ [$ +15.44, +54.82 $] \\
+Llama-3.1-8B & shadow & Portuguese$\to$Spanish & 157/160 & $+25.48$ [$ +11.27, +41.23 $] \\
+\bottomrule
+\end{tabular}
+\caption{Largest cross-language induction point estimates in ethical context. Each row is selected descriptively from the 20 off-diagonal cells for that model and estimator. Intervals are pointwise, without adjustment for selecting a maximum; these rows do not establish that the listed pair is uniquely best. Denominators show pairs with both labels available out of 160 attempts.}
+\label{tab:language-extrema}
+\end{table*}

@@ -1,0 +1,3130 @@
+{
+  "status": "STRATIFIED_AUDIT_SENSITIVITY_COMPLETE",
+  "estimator": "Candidate-stratum Hájek ratio using inverse inclusion weights, multiplied by known stratum candidate count; add known structural negatives and divide by full arm size.",
+  "primary_estimator_unchanged": true,
+  "human_validity_measured": false,
+  "majority_is_independent": false,
+  "caveat": "Sparse stratified audit; point estimates only. Missing-vote bounds exclude sampling and evaluator error. The audit DeepSeek column separates audit-sampling variation from evaluator variation.",
+  "rates": [
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "claude",
+      "rate_percent": 0.0,
+      "bounds_percent": [
+        0.0,
+        0.0
+      ],
+      "sampled_candidates": 0,
+      "valid_sample_votes": 0,
+      "positive_sample_votes": 0,
+      "missing_votes": 0,
+      "population_candidates": 0,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "grok",
+      "rate_percent": 0.0,
+      "bounds_percent": [
+        0.0,
+        0.0
+      ],
+      "sampled_candidates": 0,
+      "valid_sample_votes": 0,
+      "positive_sample_votes": 0,
+      "missing_votes": 0,
+      "population_candidates": 0,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "deepseek_audit",
+      "rate_percent": 0.0,
+      "bounds_percent": [
+        0.0,
+        0.0
+      ],
+      "sampled_candidates": 0,
+      "valid_sample_votes": 0,
+      "positive_sample_votes": 0,
+      "missing_votes": 0,
+      "population_candidates": 0,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "majority_abc",
+      "rate_percent": 0.0,
+      "bounds_percent": [
+        0.0,
+        0.0
+      ],
+      "sampled_candidates": 0,
+      "valid_sample_votes": 0,
+      "positive_sample_votes": 0,
+      "missing_votes": 0,
+      "population_candidates": 0,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "actual_condition": "native_pooled_plus",
+      "judge": "claude",
+      "rate_percent": 74.25694444444444,
+      "bounds_percent": [
+        74.25694444444444,
+        74.25694444444444
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 8,
+      "missing_votes": 0,
+      "population_candidates": 690,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "actual_condition": "native_pooled_plus",
+      "judge": "grok",
+      "rate_percent": 33.01717171717172,
+      "bounds_percent": [
+        33.01717171717172,
+        33.01717171717172
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 3,
+      "missing_votes": 0,
+      "population_candidates": 690,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "actual_condition": "native_pooled_plus",
+      "judge": "deepseek_audit",
+      "rate_percent": 77.5625,
+      "bounds_percent": [
+        77.5625,
+        77.5625
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 9,
+      "missing_votes": 0,
+      "population_candidates": 690,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "actual_condition": "native_pooled_plus",
+      "judge": "majority_abc",
+      "rate_percent": 74.25694444444444,
+      "bounds_percent": [
+        74.25694444444444,
+        74.25694444444444
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 8,
+      "missing_votes": 0,
+      "population_candidates": 690,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "actual_condition": "shadow_pooled_plus",
+      "judge": "claude",
+      "rate_percent": 78.78571428571428,
+      "bounds_percent": [
+        78.78571428571428,
+        78.78571428571428
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 9,
+      "missing_votes": 0,
+      "population_candidates": 712,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "actual_condition": "shadow_pooled_plus",
+      "judge": "grok",
+      "rate_percent": 56.710714285714296,
+      "bounds_percent": [
+        56.710714285714296,
+        56.710714285714296
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 6,
+      "missing_votes": 0,
+      "population_candidates": 712,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "actual_condition": "shadow_pooled_plus",
+      "judge": "deepseek_audit",
+      "rate_percent": 66.46071428571429,
+      "bounds_percent": [
+        66.46071428571429,
+        66.46071428571429
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 7,
+      "missing_votes": 0,
+      "population_candidates": 712,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "actual_condition": "shadow_pooled_plus",
+      "judge": "majority_abc",
+      "rate_percent": 66.46071428571429,
+      "bounds_percent": [
+        66.46071428571429,
+        66.46071428571429
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 7,
+      "missing_votes": 0,
+      "population_candidates": 712,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m1",
+      "context": "neutral",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "claude",
+      "rate_percent": 2.375,
+      "bounds_percent": [
+        2.375,
+        2.375
+      ],
+      "sampled_candidates": 8,
+      "valid_sample_votes": 8,
+      "positive_sample_votes": 7,
+      "missing_votes": 0,
+      "population_candidates": 21,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m1",
+      "context": "neutral",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "grok",
+      "rate_percent": 2.375,
+      "bounds_percent": [
+        2.375,
+        2.375
+      ],
+      "sampled_candidates": 8,
+      "valid_sample_votes": 8,
+      "positive_sample_votes": 7,
+      "missing_votes": 0,
+      "population_candidates": 21,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m1",
+      "context": "neutral",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "deepseek_audit",
+      "rate_percent": 2.375,
+      "bounds_percent": [
+        2.375,
+        2.375
+      ],
+      "sampled_candidates": 8,
+      "valid_sample_votes": 8,
+      "positive_sample_votes": 7,
+      "missing_votes": 0,
+      "population_candidates": 21,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m1",
+      "context": "neutral",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "majority_abc",
+      "rate_percent": 2.375,
+      "bounds_percent": [
+        2.375,
+        2.375
+      ],
+      "sampled_candidates": 8,
+      "valid_sample_votes": 8,
+      "positive_sample_votes": 7,
+      "missing_votes": 0,
+      "population_candidates": 21,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m1",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "actual_condition": "baseline",
+      "judge": "claude",
+      "rate_percent": 2.375,
+      "bounds_percent": [
+        2.375,
+        2.375
+      ],
+      "sampled_candidates": 8,
+      "valid_sample_votes": 8,
+      "positive_sample_votes": 7,
+      "missing_votes": 0,
+      "population_candidates": 21,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m1",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "actual_condition": "baseline",
+      "judge": "grok",
+      "rate_percent": 2.375,
+      "bounds_percent": [
+        2.375,
+        2.375
+      ],
+      "sampled_candidates": 8,
+      "valid_sample_votes": 8,
+      "positive_sample_votes": 7,
+      "missing_votes": 0,
+      "population_candidates": 21,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m1",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "actual_condition": "baseline",
+      "judge": "deepseek_audit",
+      "rate_percent": 2.375,
+      "bounds_percent": [
+        2.375,
+        2.375
+      ],
+      "sampled_candidates": 8,
+      "valid_sample_votes": 8,
+      "positive_sample_votes": 7,
+      "missing_votes": 0,
+      "population_candidates": 21,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m1",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "actual_condition": "baseline",
+      "judge": "majority_abc",
+      "rate_percent": 2.375,
+      "bounds_percent": [
+        2.375,
+        2.375
+      ],
+      "sampled_candidates": 8,
+      "valid_sample_votes": 8,
+      "positive_sample_votes": 7,
+      "missing_votes": 0,
+      "population_candidates": 21,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m1",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "actual_condition": "baseline",
+      "judge": "claude",
+      "rate_percent": 2.375,
+      "bounds_percent": [
+        2.375,
+        2.375
+      ],
+      "sampled_candidates": 8,
+      "valid_sample_votes": 8,
+      "positive_sample_votes": 7,
+      "missing_votes": 0,
+      "population_candidates": 21,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m1",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "actual_condition": "baseline",
+      "judge": "grok",
+      "rate_percent": 2.375,
+      "bounds_percent": [
+        2.375,
+        2.375
+      ],
+      "sampled_candidates": 8,
+      "valid_sample_votes": 8,
+      "positive_sample_votes": 7,
+      "missing_votes": 0,
+      "population_candidates": 21,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m1",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "actual_condition": "baseline",
+      "judge": "deepseek_audit",
+      "rate_percent": 2.375,
+      "bounds_percent": [
+        2.375,
+        2.375
+      ],
+      "sampled_candidates": 8,
+      "valid_sample_votes": 8,
+      "positive_sample_votes": 7,
+      "missing_votes": 0,
+      "population_candidates": 21,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m1",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "actual_condition": "baseline",
+      "judge": "majority_abc",
+      "rate_percent": 2.375,
+      "bounds_percent": [
+        2.375,
+        2.375
+      ],
+      "sampled_candidates": 8,
+      "valid_sample_votes": 8,
+      "positive_sample_votes": 7,
+      "missing_votes": 0,
+      "population_candidates": 21,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "claude",
+      "rate_percent": 2.458333333333333,
+      "bounds_percent": [
+        2.458333333333333,
+        2.458333333333333
+      ],
+      "sampled_candidates": 7,
+      "valid_sample_votes": 7,
+      "positive_sample_votes": 6,
+      "missing_votes": 0,
+      "population_candidates": 26,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "grok",
+      "rate_percent": 2.458333333333333,
+      "bounds_percent": [
+        2.458333333333333,
+        2.458333333333333
+      ],
+      "sampled_candidates": 7,
+      "valid_sample_votes": 7,
+      "positive_sample_votes": 6,
+      "missing_votes": 0,
+      "population_candidates": 26,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "deepseek_audit",
+      "rate_percent": 2.333333333333333,
+      "bounds_percent": [
+        2.333333333333333,
+        2.333333333333333
+      ],
+      "sampled_candidates": 7,
+      "valid_sample_votes": 7,
+      "positive_sample_votes": 5,
+      "missing_votes": 0,
+      "population_candidates": 26,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "majority_abc",
+      "rate_percent": 2.458333333333333,
+      "bounds_percent": [
+        2.458333333333333,
+        2.458333333333333
+      ],
+      "sampled_candidates": 7,
+      "valid_sample_votes": 7,
+      "positive_sample_votes": 6,
+      "missing_votes": 0,
+      "population_candidates": 26,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "actual_condition": "native_pooled_plus",
+      "judge": "claude",
+      "rate_percent": 10.0,
+      "bounds_percent": [
+        10.0,
+        10.0
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 10,
+      "missing_votes": 0,
+      "population_candidates": 80,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "actual_condition": "native_pooled_plus",
+      "judge": "grok",
+      "rate_percent": 9.555555555555555,
+      "bounds_percent": [
+        9.555555555555555,
+        9.555555555555555
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 9,
+      "missing_votes": 0,
+      "population_candidates": 80,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "actual_condition": "native_pooled_plus",
+      "judge": "deepseek_audit",
+      "rate_percent": 9.842223891810667,
+      "bounds_percent": [
+        9.825,
+        10.0
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 9,
+      "positive_sample_votes": 9,
+      "missing_votes": 1,
+      "population_candidates": 80,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "actual_condition": "native_pooled_plus",
+      "judge": "majority_abc",
+      "rate_percent": 10.0,
+      "bounds_percent": [
+        10.0,
+        10.0
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 10,
+      "missing_votes": 0,
+      "population_candidates": 80,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "actual_condition": "shadow_pooled_plus",
+      "judge": "claude",
+      "rate_percent": 10.583333333333336,
+      "bounds_percent": [
+        10.583333333333336,
+        10.583333333333336
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 9,
+      "missing_votes": 0,
+      "population_candidates": 88,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "actual_condition": "shadow_pooled_plus",
+      "judge": "grok",
+      "rate_percent": 10.583333333333336,
+      "bounds_percent": [
+        10.583333333333336,
+        10.583333333333336
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 9,
+      "missing_votes": 0,
+      "population_candidates": 88,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "actual_condition": "shadow_pooled_plus",
+      "judge": "deepseek_audit",
+      "rate_percent": 10.583333333333336,
+      "bounds_percent": [
+        10.583333333333336,
+        10.583333333333336
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 9,
+      "missing_votes": 0,
+      "population_candidates": 88,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "actual_condition": "shadow_pooled_plus",
+      "judge": "majority_abc",
+      "rate_percent": 10.583333333333336,
+      "bounds_percent": [
+        10.583333333333336,
+        10.583333333333336
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 9,
+      "missing_votes": 0,
+      "population_candidates": 88,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "claude",
+      "rate_percent": 20.95833333333333,
+      "bounds_percent": [
+        20.95833333333333,
+        20.95833333333333
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 9,
+      "missing_votes": 0,
+      "population_candidates": 178,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "grok",
+      "rate_percent": 18.375,
+      "bounds_percent": [
+        18.375,
+        18.375
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 8,
+      "missing_votes": 0,
+      "population_candidates": 178,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "deepseek_audit",
+      "rate_percent": 20.42816091954023,
+      "bounds_percent": [
+        20.42816091954023,
+        20.42816091954023
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 8,
+      "missing_votes": 0,
+      "population_candidates": 178,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "majority_abc",
+      "rate_percent": 20.95833333333333,
+      "bounds_percent": [
+        20.95833333333333,
+        20.95833333333333
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 9,
+      "missing_votes": 0,
+      "population_candidates": 178,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "actual_condition": "native_pooled_minus",
+      "judge": "claude",
+      "rate_percent": 13.507575757575756,
+      "bounds_percent": [
+        13.507575757575756,
+        13.507575757575756
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 7,
+      "missing_votes": 0,
+      "population_candidates": 128,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "actual_condition": "native_pooled_minus",
+      "judge": "grok",
+      "rate_percent": 16.0,
+      "bounds_percent": [
+        16.0,
+        16.0
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 10,
+      "missing_votes": 0,
+      "population_candidates": 128,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "actual_condition": "native_pooled_minus",
+      "judge": "deepseek_audit",
+      "rate_percent": 16.0,
+      "bounds_percent": [
+        16.0,
+        16.0
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 10,
+      "missing_votes": 0,
+      "population_candidates": 128,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "actual_condition": "native_pooled_minus",
+      "judge": "majority_abc",
+      "rate_percent": 16.0,
+      "bounds_percent": [
+        16.0,
+        16.0
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 10,
+      "missing_votes": 0,
+      "population_candidates": 128,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "actual_condition": "shadow_pooled_minus",
+      "judge": "claude",
+      "rate_percent": 10.461397058823529,
+      "bounds_percent": [
+        10.461397058823529,
+        10.461397058823529
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 7,
+      "missing_votes": 0,
+      "population_candidates": 130,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "actual_condition": "shadow_pooled_minus",
+      "judge": "grok",
+      "rate_percent": 9.808035714285715,
+      "bounds_percent": [
+        9.808035714285715,
+        9.808035714285715
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 7,
+      "missing_votes": 0,
+      "population_candidates": 130,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "actual_condition": "shadow_pooled_minus",
+      "judge": "deepseek_audit",
+      "rate_percent": 9.808035714285715,
+      "bounds_percent": [
+        9.808035714285715,
+        9.808035714285715
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 7,
+      "missing_votes": 0,
+      "population_candidates": 130,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "actual_condition": "shadow_pooled_minus",
+      "judge": "majority_abc",
+      "rate_percent": 9.808035714285715,
+      "bounds_percent": [
+        9.808035714285715,
+        9.808035714285715
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 7,
+      "missing_votes": 0,
+      "population_candidates": 130,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "claude",
+      "rate_percent": 64.0,
+      "bounds_percent": [
+        64.0,
+        64.0
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 10,
+      "missing_votes": 0,
+      "population_candidates": 512,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "grok",
+      "rate_percent": 38.142857142857146,
+      "bounds_percent": [
+        38.142857142857146,
+        38.142857142857146
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 6,
+      "missing_votes": 0,
+      "population_candidates": 512,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "deepseek_audit",
+      "rate_percent": 56.5625,
+      "bounds_percent": [
+        56.5625,
+        56.5625
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 9,
+      "missing_votes": 0,
+      "population_candidates": 512,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "majority_abc",
+      "rate_percent": 56.5625,
+      "bounds_percent": [
+        56.5625,
+        56.5625
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 9,
+      "missing_votes": 0,
+      "population_candidates": 512,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "actual_condition": "native_pooled_plus",
+      "judge": "claude",
+      "rate_percent": 72.0625,
+      "bounds_percent": [
+        72.0625,
+        72.0625
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 9,
+      "missing_votes": 0,
+      "population_candidates": 686,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "actual_condition": "native_pooled_plus",
+      "judge": "grok",
+      "rate_percent": 50.82440476190476,
+      "bounds_percent": [
+        50.82440476190476,
+        50.82440476190476
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 7,
+      "missing_votes": 0,
+      "population_candidates": 686,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "actual_condition": "native_pooled_plus",
+      "judge": "deepseek_audit",
+      "rate_percent": 79.83333333333334,
+      "bounds_percent": [
+        79.83333333333334,
+        79.83333333333334
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 9,
+      "missing_votes": 0,
+      "population_candidates": 686,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "actual_condition": "native_pooled_plus",
+      "judge": "majority_abc",
+      "rate_percent": 66.14583333333334,
+      "bounds_percent": [
+        66.14583333333334,
+        66.14583333333334
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 8,
+      "missing_votes": 0,
+      "population_candidates": 686,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "actual_condition": "shadow_pooled_plus",
+      "judge": "claude",
+      "rate_percent": 81.9836956521739,
+      "bounds_percent": [
+        81.9836956521739,
+        81.9836956521739
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 9,
+      "missing_votes": 0,
+      "population_candidates": 679,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "actual_condition": "shadow_pooled_plus",
+      "judge": "grok",
+      "rate_percent": 56.93905279503106,
+      "bounds_percent": [
+        56.93905279503106,
+        56.93905279503106
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 6,
+      "missing_votes": 0,
+      "population_candidates": 679,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "actual_condition": "shadow_pooled_plus",
+      "judge": "deepseek_audit",
+      "rate_percent": 59.785714285714285,
+      "bounds_percent": [
+        59.785714285714285,
+        59.785714285714285
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 7,
+      "missing_votes": 0,
+      "population_candidates": 679,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "actual_condition": "shadow_pooled_plus",
+      "judge": "majority_abc",
+      "rate_percent": 65.5819099378882,
+      "bounds_percent": [
+        65.5819099378882,
+        65.5819099378882
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 7,
+      "missing_votes": 0,
+      "population_candidates": 679,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "claude",
+      "rate_percent": 69.30385638297872,
+      "bounds_percent": [
+        69.30385638297872,
+        69.30385638297872
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 8,
+      "missing_votes": 0,
+      "population_candidates": 676,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "grok",
+      "rate_percent": 48.09375,
+      "bounds_percent": [
+        48.09375,
+        48.09375
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 6,
+      "missing_votes": 0,
+      "population_candidates": 676,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "deepseek_audit",
+      "rate_percent": 69.30385638297872,
+      "bounds_percent": [
+        69.30385638297872,
+        69.30385638297872
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 8,
+      "missing_votes": 0,
+      "population_candidates": 676,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "majority_abc",
+      "rate_percent": 69.30385638297872,
+      "bounds_percent": [
+        69.30385638297872,
+        69.30385638297872
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 8,
+      "missing_votes": 0,
+      "population_candidates": 676,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "actual_condition": "native_pooled_minus",
+      "judge": "claude",
+      "rate_percent": 56.0,
+      "bounds_percent": [
+        56.0,
+        56.0
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 10,
+      "missing_votes": 0,
+      "population_candidates": 448,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "actual_condition": "native_pooled_minus",
+      "judge": "grok",
+      "rate_percent": 23.75,
+      "bounds_percent": [
+        23.75,
+        23.75
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 4,
+      "missing_votes": 0,
+      "population_candidates": 448,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "actual_condition": "native_pooled_minus",
+      "judge": "deepseek_audit",
+      "rate_percent": 47.978465111369154,
+      "bounds_percent": [
+        40.58035714285714,
+        56.0
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 8,
+      "positive_sample_votes": 8,
+      "missing_votes": 2,
+      "population_candidates": 448,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "actual_condition": "native_pooled_minus",
+      "judge": "majority_abc",
+      "rate_percent": 47.978465111369154,
+      "bounds_percent": [
+        40.58035714285714,
+        56.0
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 8,
+      "positive_sample_votes": 8,
+      "missing_votes": 2,
+      "population_candidates": 448,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "actual_condition": "shadow_pooled_minus",
+      "judge": "claude",
+      "rate_percent": 45.96153846153846,
+      "bounds_percent": [
+        45.96153846153846,
+        45.96153846153846
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 9,
+      "missing_votes": 0,
+      "population_candidates": 466,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "actual_condition": "shadow_pooled_minus",
+      "judge": "grok",
+      "rate_percent": 12.0,
+      "bounds_percent": [
+        12.0,
+        12.0
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 4,
+      "missing_votes": 0,
+      "population_candidates": 466,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "actual_condition": "shadow_pooled_minus",
+      "judge": "deepseek_audit",
+      "rate_percent": 28.395467032967034,
+      "bounds_percent": [
+        28.395467032967034,
+        28.395467032967034
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 6,
+      "missing_votes": 0,
+      "population_candidates": 466,
+      "population_responses": 800
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "actual_condition": "shadow_pooled_minus",
+      "judge": "majority_abc",
+      "rate_percent": 30.84546703296703,
+      "bounds_percent": [
+        30.84546703296703,
+        30.84546703296703
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 7,
+      "missing_votes": 0,
+      "population_candidates": 466,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m1",
+      "context": "ethical",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "claude",
+      "rate_percent": 0.0,
+      "bounds_percent": [
+        0.0,
+        0.0
+      ],
+      "sampled_candidates": 0,
+      "valid_sample_votes": 0,
+      "positive_sample_votes": 0,
+      "missing_votes": 0,
+      "population_candidates": 0,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m1",
+      "context": "ethical",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "grok",
+      "rate_percent": 0.0,
+      "bounds_percent": [
+        0.0,
+        0.0
+      ],
+      "sampled_candidates": 0,
+      "valid_sample_votes": 0,
+      "positive_sample_votes": 0,
+      "missing_votes": 0,
+      "population_candidates": 0,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m1",
+      "context": "ethical",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "deepseek_audit",
+      "rate_percent": 0.0,
+      "bounds_percent": [
+        0.0,
+        0.0
+      ],
+      "sampled_candidates": 0,
+      "valid_sample_votes": 0,
+      "positive_sample_votes": 0,
+      "missing_votes": 0,
+      "population_candidates": 0,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m1",
+      "context": "ethical",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "majority_abc",
+      "rate_percent": 0.0,
+      "bounds_percent": [
+        0.0,
+        0.0
+      ],
+      "sampled_candidates": 0,
+      "valid_sample_votes": 0,
+      "positive_sample_votes": 0,
+      "missing_votes": 0,
+      "population_candidates": 0,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m1",
+      "context": "ethical",
+      "condition": "transported_native_plus",
+      "actual_condition": "transported_native_plus",
+      "judge": "claude",
+      "rate_percent": 80.75,
+      "bounds_percent": [
+        80.75,
+        80.75
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 10,
+      "missing_votes": 0,
+      "population_candidates": 646,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m1",
+      "context": "ethical",
+      "condition": "transported_native_plus",
+      "actual_condition": "transported_native_plus",
+      "judge": "grok",
+      "rate_percent": 65.4375,
+      "bounds_percent": [
+        65.4375,
+        65.4375
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 8,
+      "missing_votes": 0,
+      "population_candidates": 646,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m1",
+      "context": "ethical",
+      "condition": "transported_native_plus",
+      "actual_condition": "transported_native_plus",
+      "judge": "deepseek_audit",
+      "rate_percent": 80.75,
+      "bounds_percent": [
+        80.75,
+        80.75
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 10,
+      "missing_votes": 0,
+      "population_candidates": 646,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m1",
+      "context": "ethical",
+      "condition": "transported_native_plus",
+      "actual_condition": "transported_native_plus",
+      "judge": "majority_abc",
+      "rate_percent": 80.75,
+      "bounds_percent": [
+        80.75,
+        80.75
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 10,
+      "missing_votes": 0,
+      "population_candidates": 646,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m1",
+      "context": "neutral",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "claude",
+      "rate_percent": 0.625,
+      "bounds_percent": [
+        0.625,
+        0.625
+      ],
+      "sampled_candidates": 3,
+      "valid_sample_votes": 3,
+      "positive_sample_votes": 2,
+      "missing_votes": 0,
+      "population_candidates": 9,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m1",
+      "context": "neutral",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "grok",
+      "rate_percent": 0.625,
+      "bounds_percent": [
+        0.625,
+        0.625
+      ],
+      "sampled_candidates": 3,
+      "valid_sample_votes": 3,
+      "positive_sample_votes": 2,
+      "missing_votes": 0,
+      "population_candidates": 9,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m1",
+      "context": "neutral",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "deepseek_audit",
+      "rate_percent": 0.625,
+      "bounds_percent": [
+        0.625,
+        0.625
+      ],
+      "sampled_candidates": 3,
+      "valid_sample_votes": 3,
+      "positive_sample_votes": 2,
+      "missing_votes": 0,
+      "population_candidates": 9,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m1",
+      "context": "neutral",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "majority_abc",
+      "rate_percent": 0.625,
+      "bounds_percent": [
+        0.625,
+        0.625
+      ],
+      "sampled_candidates": 3,
+      "valid_sample_votes": 3,
+      "positive_sample_votes": 2,
+      "missing_votes": 0,
+      "population_candidates": 9,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m1",
+      "context": "neutral",
+      "condition": "transported_native_minus",
+      "actual_condition": "baseline",
+      "judge": "claude",
+      "rate_percent": 0.625,
+      "bounds_percent": [
+        0.625,
+        0.625
+      ],
+      "sampled_candidates": 3,
+      "valid_sample_votes": 3,
+      "positive_sample_votes": 2,
+      "missing_votes": 0,
+      "population_candidates": 9,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m1",
+      "context": "neutral",
+      "condition": "transported_native_minus",
+      "actual_condition": "baseline",
+      "judge": "grok",
+      "rate_percent": 0.625,
+      "bounds_percent": [
+        0.625,
+        0.625
+      ],
+      "sampled_candidates": 3,
+      "valid_sample_votes": 3,
+      "positive_sample_votes": 2,
+      "missing_votes": 0,
+      "population_candidates": 9,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m1",
+      "context": "neutral",
+      "condition": "transported_native_minus",
+      "actual_condition": "baseline",
+      "judge": "deepseek_audit",
+      "rate_percent": 0.625,
+      "bounds_percent": [
+        0.625,
+        0.625
+      ],
+      "sampled_candidates": 3,
+      "valid_sample_votes": 3,
+      "positive_sample_votes": 2,
+      "missing_votes": 0,
+      "population_candidates": 9,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m1",
+      "context": "neutral",
+      "condition": "transported_native_minus",
+      "actual_condition": "baseline",
+      "judge": "majority_abc",
+      "rate_percent": 0.625,
+      "bounds_percent": [
+        0.625,
+        0.625
+      ],
+      "sampled_candidates": 3,
+      "valid_sample_votes": 3,
+      "positive_sample_votes": 2,
+      "missing_votes": 0,
+      "population_candidates": 9,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m3",
+      "context": "ethical",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "claude",
+      "rate_percent": 0.75,
+      "bounds_percent": [
+        0.75,
+        0.75
+      ],
+      "sampled_candidates": 3,
+      "valid_sample_votes": 3,
+      "positive_sample_votes": 3,
+      "missing_votes": 0,
+      "population_candidates": 6,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m3",
+      "context": "ethical",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "grok",
+      "rate_percent": 0.75,
+      "bounds_percent": [
+        0.75,
+        0.75
+      ],
+      "sampled_candidates": 3,
+      "valid_sample_votes": 3,
+      "positive_sample_votes": 3,
+      "missing_votes": 0,
+      "population_candidates": 6,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m3",
+      "context": "ethical",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "deepseek_audit",
+      "rate_percent": 0.75,
+      "bounds_percent": [
+        0.75,
+        0.75
+      ],
+      "sampled_candidates": 3,
+      "valid_sample_votes": 3,
+      "positive_sample_votes": 3,
+      "missing_votes": 0,
+      "population_candidates": 6,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m3",
+      "context": "ethical",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "majority_abc",
+      "rate_percent": 0.75,
+      "bounds_percent": [
+        0.75,
+        0.75
+      ],
+      "sampled_candidates": 3,
+      "valid_sample_votes": 3,
+      "positive_sample_votes": 3,
+      "missing_votes": 0,
+      "population_candidates": 6,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m3",
+      "context": "ethical",
+      "condition": "transported_native_plus",
+      "actual_condition": "transported_native_plus",
+      "judge": "claude",
+      "rate_percent": 4.90625,
+      "bounds_percent": [
+        4.90625,
+        4.90625
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 8,
+      "missing_votes": 0,
+      "population_candidates": 42,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m3",
+      "context": "ethical",
+      "condition": "transported_native_plus",
+      "actual_condition": "transported_native_plus",
+      "judge": "grok",
+      "rate_percent": 4.46875,
+      "bounds_percent": [
+        4.46875,
+        4.46875
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 8,
+      "missing_votes": 0,
+      "population_candidates": 42,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m3",
+      "context": "ethical",
+      "condition": "transported_native_plus",
+      "actual_condition": "transported_native_plus",
+      "judge": "deepseek_audit",
+      "rate_percent": 4.90625,
+      "bounds_percent": [
+        4.90625,
+        4.90625
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 8,
+      "missing_votes": 0,
+      "population_candidates": 42,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m3",
+      "context": "ethical",
+      "condition": "transported_native_plus",
+      "actual_condition": "transported_native_plus",
+      "judge": "majority_abc",
+      "rate_percent": 4.90625,
+      "bounds_percent": [
+        4.90625,
+        4.90625
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 8,
+      "missing_votes": 0,
+      "population_candidates": 42,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m3",
+      "context": "neutral",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "claude",
+      "rate_percent": 19.25,
+      "bounds_percent": [
+        19.25,
+        19.25
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 10,
+      "missing_votes": 0,
+      "population_candidates": 154,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m3",
+      "context": "neutral",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "grok",
+      "rate_percent": 18.714285714285715,
+      "bounds_percent": [
+        18.714285714285715,
+        18.714285714285715
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 9,
+      "missing_votes": 0,
+      "population_candidates": 154,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m3",
+      "context": "neutral",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "deepseek_audit",
+      "rate_percent": 19.25,
+      "bounds_percent": [
+        19.25,
+        19.25
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 10,
+      "missing_votes": 0,
+      "population_candidates": 154,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m3",
+      "context": "neutral",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "majority_abc",
+      "rate_percent": 19.25,
+      "bounds_percent": [
+        19.25,
+        19.25
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 10,
+      "missing_votes": 0,
+      "population_candidates": 154,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m3",
+      "context": "neutral",
+      "condition": "transported_native_minus",
+      "actual_condition": "transported_native_minus",
+      "judge": "claude",
+      "rate_percent": 11.375,
+      "bounds_percent": [
+        11.375,
+        11.375
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 10,
+      "missing_votes": 0,
+      "population_candidates": 91,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m3",
+      "context": "neutral",
+      "condition": "transported_native_minus",
+      "actual_condition": "transported_native_minus",
+      "judge": "grok",
+      "rate_percent": 11.375,
+      "bounds_percent": [
+        11.375,
+        11.375
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 10,
+      "missing_votes": 0,
+      "population_candidates": 91,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m3",
+      "context": "neutral",
+      "condition": "transported_native_minus",
+      "actual_condition": "transported_native_minus",
+      "judge": "deepseek_audit",
+      "rate_percent": 9.675,
+      "bounds_percent": [
+        9.675,
+        9.675
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 9,
+      "missing_votes": 0,
+      "population_candidates": 91,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m3",
+      "context": "neutral",
+      "condition": "transported_native_minus",
+      "actual_condition": "transported_native_minus",
+      "judge": "majority_abc",
+      "rate_percent": 11.375,
+      "bounds_percent": [
+        11.375,
+        11.375
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 10,
+      "missing_votes": 0,
+      "population_candidates": 91,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m5",
+      "context": "ethical",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "claude",
+      "rate_percent": 5.5,
+      "bounds_percent": [
+        5.5,
+        5.5
+      ],
+      "sampled_candidates": 8,
+      "valid_sample_votes": 8,
+      "positive_sample_votes": 6,
+      "missing_votes": 0,
+      "population_candidates": 49,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m5",
+      "context": "ethical",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "grok",
+      "rate_percent": 0.75,
+      "bounds_percent": [
+        0.75,
+        0.75
+      ],
+      "sampled_candidates": 8,
+      "valid_sample_votes": 8,
+      "positive_sample_votes": 3,
+      "missing_votes": 0,
+      "population_candidates": 49,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m5",
+      "context": "ethical",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "deepseek_audit",
+      "rate_percent": 4.318181818181818,
+      "bounds_percent": [
+        4.318181818181818,
+        4.318181818181818
+      ],
+      "sampled_candidates": 8,
+      "valid_sample_votes": 8,
+      "positive_sample_votes": 6,
+      "missing_votes": 0,
+      "population_candidates": 49,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m5",
+      "context": "ethical",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "majority_abc",
+      "rate_percent": 3.8181818181818183,
+      "bounds_percent": [
+        3.8181818181818183,
+        3.8181818181818183
+      ],
+      "sampled_candidates": 8,
+      "valid_sample_votes": 8,
+      "positive_sample_votes": 5,
+      "missing_votes": 0,
+      "population_candidates": 49,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m5",
+      "context": "ethical",
+      "condition": "transported_native_plus",
+      "actual_condition": "transported_native_plus",
+      "judge": "claude",
+      "rate_percent": 38.5,
+      "bounds_percent": [
+        38.5,
+        38.5
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 10,
+      "missing_votes": 0,
+      "population_candidates": 308,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m5",
+      "context": "ethical",
+      "condition": "transported_native_plus",
+      "actual_condition": "transported_native_plus",
+      "judge": "grok",
+      "rate_percent": 15.791666666666668,
+      "bounds_percent": [
+        15.791666666666668,
+        15.791666666666668
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 3,
+      "missing_votes": 0,
+      "population_candidates": 308,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m5",
+      "context": "ethical",
+      "condition": "transported_native_plus",
+      "actual_condition": "transported_native_plus",
+      "judge": "deepseek_audit",
+      "rate_percent": 26.9375,
+      "bounds_percent": [
+        26.9375,
+        26.9375
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 7,
+      "missing_votes": 0,
+      "population_candidates": 308,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m5",
+      "context": "ethical",
+      "condition": "transported_native_plus",
+      "actual_condition": "transported_native_plus",
+      "judge": "majority_abc",
+      "rate_percent": 31.4875,
+      "bounds_percent": [
+        31.4875,
+        31.4875
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 8,
+      "missing_votes": 0,
+      "population_candidates": 308,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m5",
+      "context": "neutral",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "claude",
+      "rate_percent": 58.375,
+      "bounds_percent": [
+        58.375,
+        58.375
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 10,
+      "missing_votes": 0,
+      "population_candidates": 467,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m5",
+      "context": "neutral",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "grok",
+      "rate_percent": 29.0625,
+      "bounds_percent": [
+        29.0625,
+        29.0625
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 5,
+      "missing_votes": 0,
+      "population_candidates": 467,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m5",
+      "context": "neutral",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "deepseek_audit",
+      "rate_percent": 52.625,
+      "bounds_percent": [
+        52.625,
+        52.625
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 9,
+      "missing_votes": 0,
+      "population_candidates": 467,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m5",
+      "context": "neutral",
+      "condition": "baseline",
+      "actual_condition": "baseline",
+      "judge": "majority_abc",
+      "rate_percent": 52.625,
+      "bounds_percent": [
+        52.625,
+        52.625
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 9,
+      "missing_votes": 0,
+      "population_candidates": 467,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m5",
+      "context": "neutral",
+      "condition": "transported_native_minus",
+      "actual_condition": "transported_native_minus",
+      "judge": "claude",
+      "rate_percent": 16.0,
+      "bounds_percent": [
+        16.0,
+        16.0
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 10,
+      "missing_votes": 0,
+      "population_candidates": 128,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m5",
+      "context": "neutral",
+      "condition": "transported_native_minus",
+      "actual_condition": "transported_native_minus",
+      "judge": "grok",
+      "rate_percent": 6.148809523809524,
+      "bounds_percent": [
+        6.148809523809524,
+        6.148809523809524
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 3,
+      "missing_votes": 0,
+      "population_candidates": 128,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m5",
+      "context": "neutral",
+      "condition": "transported_native_minus",
+      "actual_condition": "transported_native_minus",
+      "judge": "deepseek_audit",
+      "rate_percent": 16.0,
+      "bounds_percent": [
+        16.0,
+        16.0
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 10,
+      "missing_votes": 0,
+      "population_candidates": 128,
+      "population_responses": 800
+    },
+    {
+      "key": "receiver_m5",
+      "context": "neutral",
+      "condition": "transported_native_minus",
+      "actual_condition": "transported_native_minus",
+      "judge": "majority_abc",
+      "rate_percent": 16.0,
+      "bounds_percent": [
+        16.0,
+        16.0
+      ],
+      "sampled_candidates": 10,
+      "valid_sample_votes": 10,
+      "positive_sample_votes": 10,
+      "missing_votes": 0,
+      "population_candidates": 128,
+      "population_responses": 800
+    }
+  ],
+  "contrasts": [
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "judge": "claude",
+      "delta_pp": 74.25694444444444,
+      "missing_vote_bounds_pp": [
+        74.25694444444444,
+        74.25694444444444
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 0
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "judge": "grok",
+      "delta_pp": 33.01717171717172,
+      "missing_vote_bounds_pp": [
+        33.01717171717172,
+        33.01717171717172
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 0
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "judge": "deepseek_audit",
+      "delta_pp": 77.5625,
+      "missing_vote_bounds_pp": [
+        77.5625,
+        77.5625
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 0
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "judge": "majority_abc",
+      "delta_pp": 74.25694444444444,
+      "missing_vote_bounds_pp": [
+        74.25694444444444,
+        74.25694444444444
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 0
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "judge": "claude",
+      "delta_pp": 78.78571428571428,
+      "missing_vote_bounds_pp": [
+        78.78571428571428,
+        78.78571428571428
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 0
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "judge": "grok",
+      "delta_pp": 56.710714285714296,
+      "missing_vote_bounds_pp": [
+        56.710714285714296,
+        56.710714285714296
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 0
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "judge": "deepseek_audit",
+      "delta_pp": 66.46071428571429,
+      "missing_vote_bounds_pp": [
+        66.46071428571429,
+        66.46071428571429
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 0
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "judge": "majority_abc",
+      "delta_pp": 66.46071428571429,
+      "missing_vote_bounds_pp": [
+        66.46071428571429,
+        66.46071428571429
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 0
+    },
+    {
+      "key": "source_m1",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "judge": "claude",
+      "delta_pp": 0.0,
+      "missing_vote_bounds_pp": [
+        0.0,
+        0.0
+      ],
+      "audited_intervention": 8,
+      "audited_baseline": 8
+    },
+    {
+      "key": "source_m1",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "judge": "grok",
+      "delta_pp": 0.0,
+      "missing_vote_bounds_pp": [
+        0.0,
+        0.0
+      ],
+      "audited_intervention": 8,
+      "audited_baseline": 8
+    },
+    {
+      "key": "source_m1",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "judge": "deepseek_audit",
+      "delta_pp": 0.0,
+      "missing_vote_bounds_pp": [
+        0.0,
+        0.0
+      ],
+      "audited_intervention": 8,
+      "audited_baseline": 8
+    },
+    {
+      "key": "source_m1",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "judge": "majority_abc",
+      "delta_pp": 0.0,
+      "missing_vote_bounds_pp": [
+        0.0,
+        0.0
+      ],
+      "audited_intervention": 8,
+      "audited_baseline": 8
+    },
+    {
+      "key": "source_m1",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "judge": "claude",
+      "delta_pp": 0.0,
+      "missing_vote_bounds_pp": [
+        0.0,
+        0.0
+      ],
+      "audited_intervention": 8,
+      "audited_baseline": 8
+    },
+    {
+      "key": "source_m1",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "judge": "grok",
+      "delta_pp": 0.0,
+      "missing_vote_bounds_pp": [
+        0.0,
+        0.0
+      ],
+      "audited_intervention": 8,
+      "audited_baseline": 8
+    },
+    {
+      "key": "source_m1",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "judge": "deepseek_audit",
+      "delta_pp": 0.0,
+      "missing_vote_bounds_pp": [
+        0.0,
+        0.0
+      ],
+      "audited_intervention": 8,
+      "audited_baseline": 8
+    },
+    {
+      "key": "source_m1",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "judge": "majority_abc",
+      "delta_pp": 0.0,
+      "missing_vote_bounds_pp": [
+        0.0,
+        0.0
+      ],
+      "audited_intervention": 8,
+      "audited_baseline": 8
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "judge": "claude",
+      "delta_pp": 7.541666666666667,
+      "missing_vote_bounds_pp": [
+        7.541666666666667,
+        7.541666666666667
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 7
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "judge": "grok",
+      "delta_pp": 7.097222222222222,
+      "missing_vote_bounds_pp": [
+        7.097222222222222,
+        7.097222222222222
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 7
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "judge": "deepseek_audit",
+      "delta_pp": 7.508890558477334,
+      "missing_vote_bounds_pp": [
+        7.491666666666666,
+        7.666666666666667
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 7
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "judge": "majority_abc",
+      "delta_pp": 7.541666666666667,
+      "missing_vote_bounds_pp": [
+        7.541666666666667,
+        7.541666666666667
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 7
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "judge": "claude",
+      "delta_pp": 8.125000000000004,
+      "missing_vote_bounds_pp": [
+        8.125000000000004,
+        8.125000000000004
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 7
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "judge": "grok",
+      "delta_pp": 8.125000000000004,
+      "missing_vote_bounds_pp": [
+        8.125000000000004,
+        8.125000000000004
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 7
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "judge": "deepseek_audit",
+      "delta_pp": 8.250000000000004,
+      "missing_vote_bounds_pp": [
+        8.250000000000004,
+        8.250000000000004
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 7
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "judge": "majority_abc",
+      "delta_pp": 8.125000000000004,
+      "missing_vote_bounds_pp": [
+        8.125000000000004,
+        8.125000000000004
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 7
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "judge": "claude",
+      "delta_pp": -7.450757575757573,
+      "missing_vote_bounds_pp": [
+        -7.450757575757573,
+        -7.450757575757573
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "judge": "grok",
+      "delta_pp": -2.375,
+      "missing_vote_bounds_pp": [
+        -2.375,
+        -2.375
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "judge": "deepseek_audit",
+      "delta_pp": -4.428160919540229,
+      "missing_vote_bounds_pp": [
+        -4.428160919540229,
+        -4.428160919540229
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "judge": "majority_abc",
+      "delta_pp": -4.958333333333329,
+      "missing_vote_bounds_pp": [
+        -4.958333333333329,
+        -4.958333333333329
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "judge": "claude",
+      "delta_pp": -10.4969362745098,
+      "missing_vote_bounds_pp": [
+        -10.4969362745098,
+        -10.4969362745098
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "judge": "grok",
+      "delta_pp": -8.566964285714285,
+      "missing_vote_bounds_pp": [
+        -8.566964285714285,
+        -8.566964285714285
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "judge": "deepseek_audit",
+      "delta_pp": -10.620125205254514,
+      "missing_vote_bounds_pp": [
+        -10.620125205254514,
+        -10.620125205254514
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "judge": "majority_abc",
+      "delta_pp": -11.150297619047613,
+      "missing_vote_bounds_pp": [
+        -11.150297619047613,
+        -11.150297619047613
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "judge": "claude",
+      "delta_pp": 8.0625,
+      "missing_vote_bounds_pp": [
+        8.0625,
+        8.0625
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "judge": "grok",
+      "delta_pp": 12.681547619047613,
+      "missing_vote_bounds_pp": [
+        12.681547619047613,
+        12.681547619047613
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "judge": "deepseek_audit",
+      "delta_pp": 23.270833333333343,
+      "missing_vote_bounds_pp": [
+        23.270833333333343,
+        23.270833333333343
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "judge": "majority_abc",
+      "delta_pp": 9.583333333333343,
+      "missing_vote_bounds_pp": [
+        9.583333333333343,
+        9.583333333333343
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "judge": "claude",
+      "delta_pp": 17.983695652173907,
+      "missing_vote_bounds_pp": [
+        17.983695652173907,
+        17.983695652173907
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "judge": "grok",
+      "delta_pp": 18.796195652173914,
+      "missing_vote_bounds_pp": [
+        18.796195652173914,
+        18.796195652173914
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "judge": "deepseek_audit",
+      "delta_pp": 3.2232142857142847,
+      "missing_vote_bounds_pp": [
+        3.2232142857142847,
+        3.2232142857142847
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "judge": "majority_abc",
+      "delta_pp": 9.019409937888199,
+      "missing_vote_bounds_pp": [
+        9.019409937888199,
+        9.019409937888199
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "judge": "claude",
+      "delta_pp": -13.303856382978722,
+      "missing_vote_bounds_pp": [
+        -13.303856382978722,
+        -13.303856382978722
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "judge": "grok",
+      "delta_pp": -24.34375,
+      "missing_vote_bounds_pp": [
+        -24.34375,
+        -24.34375
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "judge": "deepseek_audit",
+      "delta_pp": -21.32539127160957,
+      "missing_vote_bounds_pp": [
+        -28.723499240121583,
+        -13.303856382978722
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "judge": "majority_abc",
+      "delta_pp": -21.32539127160957,
+      "missing_vote_bounds_pp": [
+        -28.723499240121583,
+        -13.303856382978722
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "judge": "claude",
+      "delta_pp": -23.342317921440262,
+      "missing_vote_bounds_pp": [
+        -23.342317921440262,
+        -23.342317921440262
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "judge": "grok",
+      "delta_pp": -36.09375,
+      "missing_vote_bounds_pp": [
+        -36.09375,
+        -36.09375
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "judge": "deepseek_audit",
+      "delta_pp": -40.90838935001169,
+      "missing_vote_bounds_pp": [
+        -40.90838935001169,
+        -40.90838935001169
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "judge": "majority_abc",
+      "delta_pp": -38.45838935001169,
+      "missing_vote_bounds_pp": [
+        -38.45838935001169,
+        -38.45838935001169
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "receiver_m1",
+      "context": "ethical",
+      "condition": "transported_native_plus",
+      "judge": "claude",
+      "delta_pp": 80.75,
+      "missing_vote_bounds_pp": [
+        80.75,
+        80.75
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 0
+    },
+    {
+      "key": "receiver_m1",
+      "context": "ethical",
+      "condition": "transported_native_plus",
+      "judge": "grok",
+      "delta_pp": 65.4375,
+      "missing_vote_bounds_pp": [
+        65.4375,
+        65.4375
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 0
+    },
+    {
+      "key": "receiver_m1",
+      "context": "ethical",
+      "condition": "transported_native_plus",
+      "judge": "deepseek_audit",
+      "delta_pp": 80.75,
+      "missing_vote_bounds_pp": [
+        80.75,
+        80.75
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 0
+    },
+    {
+      "key": "receiver_m1",
+      "context": "ethical",
+      "condition": "transported_native_plus",
+      "judge": "majority_abc",
+      "delta_pp": 80.75,
+      "missing_vote_bounds_pp": [
+        80.75,
+        80.75
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 0
+    },
+    {
+      "key": "receiver_m1",
+      "context": "neutral",
+      "condition": "transported_native_minus",
+      "judge": "claude",
+      "delta_pp": 0.0,
+      "missing_vote_bounds_pp": [
+        0.0,
+        0.0
+      ],
+      "audited_intervention": 3,
+      "audited_baseline": 3
+    },
+    {
+      "key": "receiver_m1",
+      "context": "neutral",
+      "condition": "transported_native_minus",
+      "judge": "grok",
+      "delta_pp": 0.0,
+      "missing_vote_bounds_pp": [
+        0.0,
+        0.0
+      ],
+      "audited_intervention": 3,
+      "audited_baseline": 3
+    },
+    {
+      "key": "receiver_m1",
+      "context": "neutral",
+      "condition": "transported_native_minus",
+      "judge": "deepseek_audit",
+      "delta_pp": 0.0,
+      "missing_vote_bounds_pp": [
+        0.0,
+        0.0
+      ],
+      "audited_intervention": 3,
+      "audited_baseline": 3
+    },
+    {
+      "key": "receiver_m1",
+      "context": "neutral",
+      "condition": "transported_native_minus",
+      "judge": "majority_abc",
+      "delta_pp": 0.0,
+      "missing_vote_bounds_pp": [
+        0.0,
+        0.0
+      ],
+      "audited_intervention": 3,
+      "audited_baseline": 3
+    },
+    {
+      "key": "receiver_m3",
+      "context": "ethical",
+      "condition": "transported_native_plus",
+      "judge": "claude",
+      "delta_pp": 4.15625,
+      "missing_vote_bounds_pp": [
+        4.15625,
+        4.15625
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 3
+    },
+    {
+      "key": "receiver_m3",
+      "context": "ethical",
+      "condition": "transported_native_plus",
+      "judge": "grok",
+      "delta_pp": 3.71875,
+      "missing_vote_bounds_pp": [
+        3.71875,
+        3.71875
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 3
+    },
+    {
+      "key": "receiver_m3",
+      "context": "ethical",
+      "condition": "transported_native_plus",
+      "judge": "deepseek_audit",
+      "delta_pp": 4.15625,
+      "missing_vote_bounds_pp": [
+        4.15625,
+        4.15625
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 3
+    },
+    {
+      "key": "receiver_m3",
+      "context": "ethical",
+      "condition": "transported_native_plus",
+      "judge": "majority_abc",
+      "delta_pp": 4.15625,
+      "missing_vote_bounds_pp": [
+        4.15625,
+        4.15625
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 3
+    },
+    {
+      "key": "receiver_m3",
+      "context": "neutral",
+      "condition": "transported_native_minus",
+      "judge": "claude",
+      "delta_pp": -7.875,
+      "missing_vote_bounds_pp": [
+        -7.875,
+        -7.875
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "receiver_m3",
+      "context": "neutral",
+      "condition": "transported_native_minus",
+      "judge": "grok",
+      "delta_pp": -7.339285714285715,
+      "missing_vote_bounds_pp": [
+        -7.339285714285715,
+        -7.339285714285715
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "receiver_m3",
+      "context": "neutral",
+      "condition": "transported_native_minus",
+      "judge": "deepseek_audit",
+      "delta_pp": -9.575,
+      "missing_vote_bounds_pp": [
+        -9.575,
+        -9.575
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "receiver_m3",
+      "context": "neutral",
+      "condition": "transported_native_minus",
+      "judge": "majority_abc",
+      "delta_pp": -7.875,
+      "missing_vote_bounds_pp": [
+        -7.875,
+        -7.875
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "receiver_m5",
+      "context": "ethical",
+      "condition": "transported_native_plus",
+      "judge": "claude",
+      "delta_pp": 33.0,
+      "missing_vote_bounds_pp": [
+        33.0,
+        33.0
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 8
+    },
+    {
+      "key": "receiver_m5",
+      "context": "ethical",
+      "condition": "transported_native_plus",
+      "judge": "grok",
+      "delta_pp": 15.041666666666668,
+      "missing_vote_bounds_pp": [
+        15.041666666666668,
+        15.041666666666668
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 8
+    },
+    {
+      "key": "receiver_m5",
+      "context": "ethical",
+      "condition": "transported_native_plus",
+      "judge": "deepseek_audit",
+      "delta_pp": 22.61931818181818,
+      "missing_vote_bounds_pp": [
+        22.61931818181818,
+        22.61931818181818
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 8
+    },
+    {
+      "key": "receiver_m5",
+      "context": "ethical",
+      "condition": "transported_native_plus",
+      "judge": "majority_abc",
+      "delta_pp": 27.669318181818184,
+      "missing_vote_bounds_pp": [
+        27.669318181818184,
+        27.669318181818184
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 8
+    },
+    {
+      "key": "receiver_m5",
+      "context": "neutral",
+      "condition": "transported_native_minus",
+      "judge": "claude",
+      "delta_pp": -42.375,
+      "missing_vote_bounds_pp": [
+        -42.375,
+        -42.375
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "receiver_m5",
+      "context": "neutral",
+      "condition": "transported_native_minus",
+      "judge": "grok",
+      "delta_pp": -22.913690476190474,
+      "missing_vote_bounds_pp": [
+        -22.913690476190474,
+        -22.913690476190474
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "receiver_m5",
+      "context": "neutral",
+      "condition": "transported_native_minus",
+      "judge": "deepseek_audit",
+      "delta_pp": -36.625,
+      "missing_vote_bounds_pp": [
+        -36.625,
+        -36.625
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    },
+    {
+      "key": "receiver_m5",
+      "context": "neutral",
+      "condition": "transported_native_minus",
+      "judge": "majority_abc",
+      "delta_pp": -36.625,
+      "missing_vote_bounds_pp": [
+        -36.625,
+        -36.625
+      ],
+      "audited_intervention": 10,
+      "audited_baseline": 10
+    }
+  ],
+  "correction": {
+    "original_sampling_frame_retained": true,
+    "scope": "Consistency sensitivity within the original frozen sampling frame. Newly identified calls outside that frame are covered by primary rejudging, not by these three-evaluator estimates.",
+    "primary_repair": {
+      "sha256": "e87552fcd889f1447062937338f96d6eaf3a48e0860ac419c7e87df3ee263de9"
+    }
+  },
+  "llama70_reselection": {
+    "selection": {
+      "sha256": "af268c10cc7db0459363d8f8f2352ddc45b04e60ca98abf686166e87ffa5f228"
+    },
+    "new_audit": {
+      "sha256": "15fdaeaa1215a8285cb2a9165ad59d4f4d05113197e9256157d4f3bece297cd2"
+    },
+    "new_primary": {
+      "sha256": "842f5c82ee16a49f71ff0529b3bf13cf01a6e68f80d5d64fa58f50b89d83eacc"
+    },
+    "preserved_baseline_and_suppression": true,
+    "script": {
+      "sha256": "c0b0fcbbd064768f8bc098d0302fbc10566d9e177181cbc5c33cfd99aa4eaecc"
+    }
+  }
+}

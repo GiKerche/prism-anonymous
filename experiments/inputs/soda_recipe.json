@@ -1,0 +1,14 @@
+{
+  "status": "MODEL_RECIPE_AUTHORIZED",
+  "generation": {
+    "do_sample": false,
+    "max_new_tokens": 2048
+  },
+  "batch_size": 4,
+  "max_rounds_per_turn": 5,
+  "enable_thinking": true,
+  "template_has_thinking_switch": false,
+  "protocol": {
+    "sha256": "d522c76d11b73cf9e35606aaca0022936a8ce4273a4309642c50f26b0b46ad59"
+  }
+}

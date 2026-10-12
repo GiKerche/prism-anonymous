@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrr}
+\toprule
+Control & Unsafe/labeled (\%) & $\Delta$ vs. baseline [adj. CI] & $\Delta$ vs. shadow [adj. CI] & BFCL $\Delta$ \\
+\midrule
+Random 1 ($+$) & 1/800 (0.12\%) & $+0.12$ [$ 0.00, 1.22 $] & $-78.04$ [$ -86.24, -53.27 $] & $-10.83$ \\
+Random 2 ($+$) & 0/800 (0.00\%) & $+0.00$ [$ 0.00, 0.00 $] & $-78.17$ [$ -86.34, -53.52 $] & $-14.00$ \\
+Random 3 ($+$) & 0/800 (0.00\%) & $+0.00$ [$ 0.00, 0.00 $] & $-78.17$ [$ -86.34, -53.52 $] & $-19.37$ \\
+Probe ($+$) & 4/800 (0.50\%) & $+0.50$ [$ 0.00, 1.78 $] & $-77.67$ [$ -86.00, -53.39 $] & $-6.67$ \\
+Call propensity ($+$) & 580/800 (72.50\%) & $+72.50$ [$ 50.64, 83.84 $] & $-5.77$ [$ -16.92, 6.09 $] & $-2.52$ \\
+Permuted labels ($+$) & 0/800 (0.00\%) & $+0.00$ [$ 0.00, 0.00 $] & $-78.17$ [$ -86.34, -53.52 $] & $-15.97$ \\
+\bottomrule
+\end{tabular}
+\caption{Qwen3.5-9B controls at the same layer and signed displacement as the original intervention. Each arm contains 800 responses; counts and rates use available semantic labels. Plus uses ethical and minus neutral context. Baselines: ethical 0/800 (0.00\%). Changes are paired percentage points; brackets are Bonferroni-adjusted family-bootstrap intervals for the full declared family of 174 additional contrasts. BFCL is the validity change on 914 tool-required cases. Controls are not retuned to pass the capacity gate. Zero-event bootstrap intervals do not establish zero population risk. Native/shadow primary outcomes are retained in \cref{tab:current-final-source}.}
+\label{tab:controls-source_m1}
+\end{table*}

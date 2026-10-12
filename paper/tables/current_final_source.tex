@@ -1,0 +1,23 @@
+\begin{table*}[t]
+\centering\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llrrrrr}
+\toprule
+Model & Arm & $a$ & Baseline & Intervention & $\Delta$ [95\% CI] & BFCL tool \\
+\midrule
+Qwen3.5-9B & N+ & $8$ & 0/800 (0.00\%) & 609/796 (76.51\%) & +76.51 [68.41, 81.16] & -2.84 \\
+Qwen3.5-9B & S+ & $8$ & 0/800 (0.00\%) & 623/797 (78.17\%) & +78.17 [66.54, 83.94] & -2.41 \\
+Qwen3.5-9B & N- & $0$ & 19/800 (2.38\%) & 19/800 (2.38\%) & +0.00 [0.00, 0.00] & +0.00 \\
+Qwen3.5-9B & S- & $0$ & 19/800 (2.38\%) & 19/800 (2.38\%) & +0.00 [0.00, 0.00] & +0.00 \\
+Ministral-3-8B & N+ & $1$ & 23/800 (2.88\%) & 73/798 (9.15\%) & +6.27 [1.93, 10.65] & +0.88 \\
+Ministral-3-8B & S+ & $1$ & 23/800 (2.88\%) & 78/797 (9.79\%) & +6.90 [2.62, 11.77] & +1.20 \\
+Ministral-3-8B & N- & $-0.25$ & 165/800 (20.62\%) & 117/799 (14.64\%) & -6.01 [-10.75, -0.95] & -0.44 \\
+Ministral-3-8B & S- & $-0.25$ & 165/800 (20.62\%) & 120/800 (15.00\%) & -5.62 [-10.09, -0.81] & -0.77 \\
+Llama-3.1-8B & N+ & $4$ & 426/790 (53.92\%) & 585/798 (73.31\%) & +19.67 [7.50, 34.53] & -1.20 \\
+Llama-3.1-8B & S+ & $4$ & 426/790 (53.92\%) & 571/796 (71.73\%) & +17.92 [5.14, 33.45] & -1.53 \\
+Llama-3.1-8B & N- & $-4$ & 547/787 (69.50\%) & 338/790 (42.78\%) & -26.51 [-31.62, -20.44] & -2.52 \\
+Llama-3.1-8B & S- & $-4$ & 547/787 (69.50\%) & 348/786 (44.27\%) & -25.10 [-30.76, -18.15] & -2.19 \\
+\bottomrule
+\end{tabular}
+\caption{Source effects: N uses native labels; S uses NF4 labels. Plus uses ethical context; minus uses neutral context. Each arm has 800 responses. Counts and percentages use available labels. Paired deltas use only pairs with both labels available, so they can differ from the marginal rate difference. Intervals are pointwise family-bootstrap 95\% CIs; adjusted intervals are in \cref{tab:current-adjusted}. The BFCL column gives accuracy changes on 914 tool-required cases. All changes are percentage points. Qwen has no selected suppression dose because its neutral Validation II baseline has no eligible calls (0/340). Zero-dose rows reuse the final baseline and do not measure an intervention effect.}
+\label{tab:current-final-source}
+\end{table*}

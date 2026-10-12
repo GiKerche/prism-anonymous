@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering\scriptsize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrrr}
+\toprule
+Receiver & Layers & Rank & $\lambda_{\mathrm{rel}}$ & Energy (\%) & NMSE \\
+\midrule
+Qwen3.5-27B & 18$\to$40 & 256 & 0.01 & 24.13 & 0.332 \\
+Ministral-3-14B & 21$\to$20 & 256 & 0.01 & 58.84 & 0.252 \\
+Llama-3.1-70B & 26$\to$78 & 256 & 0.1 & 42.37 & 0.595 \\
+\bottomrule
+\end{tabular}
+\caption{Benign-anchor maps. Layers are source$\to$receiver. Map rank and penalty use 512 validation anchors after fitting on 1,024 anchors. Retained energy is the squared length of the unit source direction projected onto the selected source PCA basis. Normalized squared error (NMSE) on 512 diagnostic anchors does not select the map.}
+\label{tab:current-maps}
+\end{table}

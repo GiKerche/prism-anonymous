@@ -1,0 +1,85 @@
+\subsection{Controls at matched displacement and opposite-context tests}
+\label{app:source-controls}
+The completed source-control extension reports every declared condition for Qwen9B, Ministral8B, and Llama8B. These are additional comparisons on the existing final scenarios, with no new layer or dose selection. All data-dependent directions
+use construction activations and labels only. Each direction is normalized in activation coordinates and receives the original signed displacement $a\sigma_\ell$ at the selected layer; controls receive no dose optimization of their own. Consequently they need not satisfy the Validation II capability gate at that displacement.
+
+\paragraph{Direction definitions.}
+Three isotropic Gaussian unit vectors (seeds 202610011, 202610012, and 202610013) provide concrete norm-matched comparators, not a calibrated random-direction significance test. The probe control is its frozen logistic coefficient divided coordinatewise by the construction scaler, then normalized in activation coordinates. Calling propensity uses the same centered-fraction estimator as the native direction, with the fraction of any parsed calls replacing semantic unsafe labels. It includes read-only calls and is fitted on the same neutral harmful-request corpus. The permuted-label control uses seed 202610014 to permute families within family-size strata, keeping each scenario's languages and seeds together. Strata without an exchangeable counterpart stay fixed.
+
+\input{tables/current_controls}
+
+\paragraph{Pairing, capability, and uncertainty.}
+Each semantic arm contains the same 40 evaluation scenarios, five languages, and four seeds: 800 responses. Missing labels remain missing. The 914 tool-required BFCL cases are scored by the same official correctness rule. The tables display all random draws, the probe, calling propensity, and permuted labels; no direction was retained because its outcome was favorable.
+
+Paired bootstrap uses the original 19 reviewed final families and 10,000 draws. The conservative Bonferroni family contains all 174 declared additional semantic comparisons across sources and receivers. 
+
+\paragraph{Both signs in both contexts.}
+Llama8B additionally receives the original $+4$ intervention in neutral context and $-4$ in ethical context, for both estimators. Negative doses reduce ethical-context unsafe actions by 36.96 pp (native) and 33.80 pp (shadow), with adjusted intervals excluding zero. Positive doses in neutral
+context give 8.39 and 8.92 pp; their intervals cross zero after the common 174-contrast adjustment. These tests qualify the asymmetric operating points in the main evaluation without choosing a new context or dose from the additional outcomes. Identical intervention settings reuse BFCL results.
+
+\input{tables/current_cross_context}
+
+\subsection{Receiver controls and direct receiver estimation}
+\label{app:receiver-controls}
+The receiver comparison asks whether transporting a smaller model's direction provides useful interventions relative to fitting a direction directly in the larger model. Receiver-native directions use the same centered-fraction estimator, receiver BF16 activations, and receiver-native behavioral labels from the construction partition. They use the already
+selected receiver layers: 40 for Qwen3.5-27B, 20 for Ministral-3-14B, and 78 for Llama-3.1-70B. 
+
+In the matched-displacement comparison, each control receives the same signed displacement as the transported vector, holding the intervention layer and magnitude fixed while varying direction. For every receiver, controls include three random directions, the probe normal, calling propensity, and permuted-label directions, with receiver-native directions additionally included for Ministral and Llama. All controls follow the same definitions as in the source experiments. We also evaluate receiver-native directions with independently selected doses, using the same Validation II scenarios, signed grid, one-standard-error rule, and 5-pp tool-required capacity tolerance. This comparison allows doses to differ according to the intervention selected by each selection procedure.
+
+
+\input{tables/current_receiver_controls}
+
+\paragraph{Comparisons at fixed displacement.}
+All three random directions give changes of at most 1.63 pp in absolute value. The fitted controls behave differently across receivers. In Qwen3.5-27B, calling propensity increases unsafe responses by 19.00 pp, compared with 76.01 pp for transport; the probe and permuted-label controls yield no unsafe responses. In Ministral-3-14B, calling propensity
+changes the rate by $+8.00/-10.29$ pp, compared with $+3.62/-7.65$ pp for transport. In Llama-3.1-70B, suppression is $-14.77$ pp for the probe, $-17.55$ pp for permuted labels, and $-28.41$ pp for calling propensity, compared with $-35.15$ pp for transport. At $a=+4$, Llama-3.1-70B induction is $+46.50$ pp with permuted labels and $+27.50$ pp with transport. These arms share the same layer, scale, inputs, seeds, and positive dose; the difference is not due to a dose or condition mismatch. These controls support a direction-dependent effect on harmful actions; their overlap also shows that the effect is not exclusive to directions fitted from unsafe labels. The three random draws are concrete comparators, not an exhaustive random-direction null distribution.
+
+\paragraph{Receiver-native directions with selected doses.}
+The Llama70B results use the Validation II-selected doses $+4/-4$ for
+transport and $+8/-4$ for receiver-native steering, evaluated with
+Prompt/Python capability controls. Positive controls use the same $+4$
+displacement as transport. Earlier final outcomes had been inspected;
+these corrected measurements are not an independent replication.
+
+The native doses are $+4/0$ for Qwen3.5-27B, $+2/-.25$ for Ministral-3-14B, and $+8/-4$ for Llama-3.1-70B. The neutral Qwen Validation II baseline has no eligible events, so no negative native intervention is selected. Ministral $+2$ and Llama $-4$ coincide with already evaluated native controls and reuse those observations. Qwen's zero-dose row reuses baseline. Llama's native $+4$ control matched to transport reuses the verified $+4$ responses; its independently selected comparator uses $+8$. Reused observations do not add independent replicates.
+
+\input{tables/current_receiver_native}
+
+At their selected doses, transport induces more unsafe actions than receiver-native estimation in Qwen3.5-27B, whereas receiver-native estimation induces more in Ministral-3-14B and Llama-3.1-70B. The paired native-minus-transport differences are $-75.13$, $+3.75$, and $+49.37$ pp, respectively, with adjusted intervals shown in \cref{tab:receiver-native-selected}. Transport produces the larger estimated reduction in Ministral-3-14B ($-7.65$ versus $-2.76$ pp). In Llama-3.1-70B, the estimates are $-35.15$ and $-29.92$ pp; the adjusted interval for the native-minus-transport difference is $[+0.08,+12.40]$ pp. Native-direction tool-required BFCL changes range from $-.66$ to $+1.20$ pp at the selected doses. Thus direct receiver fitting is a competitive option, and transport's value depends on the receiver and intervention objective.  All 80 receiver contrasts use the original 174-comparison adjustment shared with the 94 source-control contrasts, retaining missing-label bounds and the original primary results.
+
+\subsection{Fixed interventions on executable SODA trajectories}
+\label{app:soda-current}
+We retain the original SODA task texts, tools, executable environments, and interaction history \citep{sun2026soda}. The evaluation contains 400 tasks in 80 scenarios across 16 environments. The source models use layers 18/21/26, their current native/shadow vectors, and the LUMEN-selected doses.
+All three current construction-only Qwen LoRA adapters are also evaluated. SODA is excluded from vector fitting, layer selection, dose selection, and adapter training; earlier SODA screening means this is not an entirely unseen benchmark. No SODA result selects a new intervention.
+
+\paragraph{Interaction and endpoint.}
+The retained SODA recipe uses greedy decoding, at most 2,048 new tokens per model response, and up to five tool-interaction rounds per user turn. Tools execute against benchmark states; their original feedback is appended to the dialogue. Qwen keeps the authorized non-thinking mode. This differs from the temperature-$.7$ single-response LUMEN experiment, so the two
+benchmarks' outcome rates are not pooled. The protocol in \path{data/current_soda_protocol.json} records the input budgets, EOS policy, model revisions, and intervention settings.
+
+An unsafe trajectory requires an actually executed, coherent, consequential event whose successful result or state change materially advances the task's harm criterion. Failed, no-op, read-only, protective, and harm-opposing events are negatives. A proposed call alone is insufficient. DeepSeek V4 Flash 0731
+FP8 judges structurally eligible trajectories from blinded event and state records; other trajectories are structural negatives. Invalid decisions remain missing. The exact rubric and schema are supplied
+in \path{task/soda_semantic_rubric.txt} and
+\path{task/soda_semantic_response_schema.json}. There is no human or
+additional multi-judge SODA audit.
+
+\paragraph{Counts and inference.}
+There are 6,400 trajectories: 1,200 Qwen, 2,000 Ministral, 2,000 Llama, and 400 for each of three LoRA replicas. Each arm covers the same 400 tasks. Task-paired changes first average valid pairs within each of 80 scenarios, then give scenarios equal weight. Bootstrap resamples the 80 scenarios 10,000 times with seed 20261002. Ten nonzero steering contrasts share a Bonferroni family; the six replica and two replica-mean contrasts form a separate eight-member family. 
+
+\input{tables/current_soda}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=.96\linewidth]{figures/current_soda_effects.pdf}
+\caption{SODA changes in executed unsafe trajectories relative to the same
+model's baseline. Intervals adjust over ten steering or eight LoRA contrasts.
+The LoRA mean uses shared task pairs across all three replicas. No layer,
+dose, or adapter is selected using these outcomes.}
+\label{fig:current-soda}
+\end{figure*}
+
+Qwen induction and Ministral induction retain positive adjusted intervals; Llama suppression retains negative adjusted intervals. Ministral suppression and Llama induction intervals include zero. Qwen's zero-dose negative arms
+reuse baseline and do not demonstrate failed or successful suppression on SODA. Every SODA trajectory has a resolved action label.
+
+\input{tables/current_soda_lora}
+
+The three-adapter mean increases unsafe trajectories by 13.17 pp relative to Qwen baseline and lies 25.83 pp below shadow $+8$, using 400 shared valid tasks. This extends the LoRA comparison to executed trajectories. It does not establish overall steering superiority: no benign SODA partition or
+native-label LoRA control was evaluated. Evidence for benign tool-required capability remains the separate BFCL evaluation.

@@ -1,0 +1,21 @@
+{
+  "main_settings": 24,
+  "language_cells": 300,
+  "dose_points": 84,
+  "matched_download": true,
+  "arabic": true,
+  "deep_link": true,
+  "mobile_widths": [
+    360,
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "browser_errors": [],
+  "response_records_verified": 66304,
+  "response_shards": 33,
+  "primary_rates_match": true,
+  "anonymous_pdf_pages": 31,
+  "display_name_redactions": 1
+}

@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering\scriptsize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrr}
+\toprule
+Model & Audited & A/B disagree & C agrees when A=B \\
+\midrule
+Qwen3.5-9B & 133 & 27/133 (20.30\%) & 104/106 (98.11\%) \\
+Ministral-3-8B & 264 & 23/264 (8.71\%) & 230/238 (96.64\%) \\
+Llama-3.1-8B & 272 & 92/272 (33.82\%) & 156/178 (87.64\%) \\
+Qwen3.5-27B & 13 & 2/13 (15.38\%) & 11/11 (100.00\%) \\
+Ministral-3-14B & 33 & 3/33 (9.09\%) & 29/30 (96.67\%) \\
+Llama-3.1-70B & 38 & 22/38 (57.89\%) & 14/16 (87.50\%) \\
+\bottomrule
+\end{tabular}
+\caption{Stratified final audit. A is Claude Sonnet 4.6, B is Grok 4.5, and C is DeepSeek V4 Flash 0731 FP8. Counts aggregate all components within each model. C agreement conditions on valid A and B votes agreeing and a valid C vote. These raw sample fractions are descriptive; inclusion-weighted summaries and missingness are exported. They are not human-validated accuracy, and no audit vote replaces a primary label.}
+\label{tab:current-judge-audit}
+\end{table*}

@@ -1,0 +1,15 @@
+\begin{table*}[t]
+\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrr}
+\toprule
+Adapter & Unsafe/labeled (\%) & Pairs & $\Delta$ vs. baseline [adj. CI] & $\Delta$ vs. shadow [adj. CI] \\
+\midrule
+Replica 1 & 161/400 (40.25\%) & 400 & $+11.75$ [$ 6.75, 17.00 $] & $-27.25$ [$ -35.50, -19.00 $] \\
+Replica 2 & 166/400 (41.50\%) & 400 & $+13.00$ [$ 8.25, 18.25 $] & $-26.00$ [$ -35.00, -17.50 $] \\
+Replica 3 & 173/400 (43.25\%) & 400 & $+14.75$ [$ 9.75, 20.25 $] & $-24.25$ [$ -32.75, -15.75 $] \\
+Mean & -- & 400 & $+13.17$ [$ 8.85, 17.83 $] & $-25.83$ [$ -34.08, -17.77 $] \\
+\bottomrule
+\end{tabular}
+\caption{All three current Qwen9B LoRA replicas on SODA, with the same 400 tasks. Training seeds are 26082701, 26082702, and 26082703. Baseline and shadow $+8$ counts appear in \cref{tab:current-soda}. The mean comparison uses tasks with all three adapter labels and resamples shared scenarios. Intervals adjust over eight replica/mean contrasts. Changes are percentage points. This comparison measures unsafe trajectories, not benign SODA task preservation.}
+\label{tab:current-soda-lora}
+\end{table*}

@@ -1,0 +1,18 @@
+{
+  "prior_baseline_valid": 876,
+  "repeated_baseline_valid": 876,
+  "n": 914,
+  "mismatched_metrics_by_field": {
+    "official_valid": 0,
+    "malformed": 0,
+    "truncated": 0,
+    "parser_invalid": 0,
+    "quality_alert": 0,
+    "any_call": 0,
+    "unknown_tool": 0
+  },
+  "rule": "Reuse the pre-existing Prompt/Python baseline for all contrasts; the new baseline is a runtime replication, never selected by its score.",
+  "rule_frozen_before_new_bfcl_results": {
+    "sha256": "a03ab45c4ff65543ce5e0b31f24c9815653f6dd29a5a7fca0f74d9a7bf2b2aab"
+  }
+}

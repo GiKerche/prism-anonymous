@@ -1,0 +1,877 @@
+[
+  {
+    "scenario_id": "autonomy_relationship_block",
+    "language": "pt",
+    "index": 0
+  },
+  {
+    "scenario_id": "autonomy_relationship_block",
+    "language": "en",
+    "index": 1
+  },
+  {
+    "scenario_id": "autonomy_relationship_block",
+    "language": "es",
+    "index": 2
+  },
+  {
+    "scenario_id": "autonomy_relationship_block",
+    "language": "zh",
+    "index": 3
+  },
+  {
+    "scenario_id": "autonomy_relationship_block",
+    "language": "hi",
+    "index": 4
+  },
+  {
+    "scenario_id": "autonomy_social_circle",
+    "language": "pt",
+    "index": 5
+  },
+  {
+    "scenario_id": "autonomy_social_circle",
+    "language": "en",
+    "index": 6
+  },
+  {
+    "scenario_id": "autonomy_social_circle",
+    "language": "es",
+    "index": 7
+  },
+  {
+    "scenario_id": "autonomy_social_circle",
+    "language": "zh",
+    "index": 8
+  },
+  {
+    "scenario_id": "autonomy_social_circle",
+    "language": "hi",
+    "index": 9
+  },
+  {
+    "scenario_id": "complicity_access_revenge",
+    "language": "pt",
+    "index": 10
+  },
+  {
+    "scenario_id": "complicity_access_revenge",
+    "language": "en",
+    "index": 11
+  },
+  {
+    "scenario_id": "complicity_access_revenge",
+    "language": "es",
+    "index": 12
+  },
+  {
+    "scenario_id": "complicity_access_revenge",
+    "language": "zh",
+    "index": 13
+  },
+  {
+    "scenario_id": "complicity_access_revenge",
+    "language": "hi",
+    "index": 14
+  },
+  {
+    "scenario_id": "complicity_backdoor_install",
+    "language": "pt",
+    "index": 15
+  },
+  {
+    "scenario_id": "complicity_backdoor_install",
+    "language": "en",
+    "index": 16
+  },
+  {
+    "scenario_id": "complicity_backdoor_install",
+    "language": "es",
+    "index": 17
+  },
+  {
+    "scenario_id": "complicity_backdoor_install",
+    "language": "zh",
+    "index": 18
+  },
+  {
+    "scenario_id": "complicity_backdoor_install",
+    "language": "hi",
+    "index": 19
+  },
+  {
+    "scenario_id": "complicity_interview_answers",
+    "language": "pt",
+    "index": 20
+  },
+  {
+    "scenario_id": "complicity_interview_answers",
+    "language": "en",
+    "index": 21
+  },
+  {
+    "scenario_id": "complicity_interview_answers",
+    "language": "es",
+    "index": 22
+  },
+  {
+    "scenario_id": "complicity_interview_answers",
+    "language": "zh",
+    "index": 23
+  },
+  {
+    "scenario_id": "complicity_interview_answers",
+    "language": "hi",
+    "index": 24
+  },
+  {
+    "scenario_id": "complicity_visa_fraud",
+    "language": "pt",
+    "index": 25
+  },
+  {
+    "scenario_id": "complicity_visa_fraud",
+    "language": "en",
+    "index": 26
+  },
+  {
+    "scenario_id": "complicity_visa_fraud",
+    "language": "es",
+    "index": 27
+  },
+  {
+    "scenario_id": "complicity_visa_fraud",
+    "language": "zh",
+    "index": 28
+  },
+  {
+    "scenario_id": "complicity_visa_fraud",
+    "language": "hi",
+    "index": 29
+  },
+  {
+    "scenario_id": "integrity_backdated_contract",
+    "language": "pt",
+    "index": 30
+  },
+  {
+    "scenario_id": "integrity_backdated_contract",
+    "language": "en",
+    "index": 31
+  },
+  {
+    "scenario_id": "integrity_backdated_contract",
+    "language": "es",
+    "index": 32
+  },
+  {
+    "scenario_id": "integrity_backdated_contract",
+    "language": "zh",
+    "index": 33
+  },
+  {
+    "scenario_id": "integrity_backdated_contract",
+    "language": "hi",
+    "index": 34
+  },
+  {
+    "scenario_id": "integrity_fake_charity",
+    "language": "pt",
+    "index": 35
+  },
+  {
+    "scenario_id": "integrity_fake_charity",
+    "language": "en",
+    "index": 36
+  },
+  {
+    "scenario_id": "integrity_fake_charity",
+    "language": "es",
+    "index": 37
+  },
+  {
+    "scenario_id": "integrity_fake_charity",
+    "language": "zh",
+    "index": 38
+  },
+  {
+    "scenario_id": "integrity_fake_charity",
+    "language": "hi",
+    "index": 39
+  },
+  {
+    "scenario_id": "integrity_false_scarcity",
+    "language": "pt",
+    "index": 40
+  },
+  {
+    "scenario_id": "integrity_false_scarcity",
+    "language": "en",
+    "index": 41
+  },
+  {
+    "scenario_id": "integrity_false_scarcity",
+    "language": "es",
+    "index": 42
+  },
+  {
+    "scenario_id": "integrity_false_scarcity",
+    "language": "zh",
+    "index": 43
+  },
+  {
+    "scenario_id": "integrity_false_scarcity",
+    "language": "hi",
+    "index": 44
+  },
+  {
+    "scenario_id": "integrity_normalized_deception",
+    "language": "pt",
+    "index": 45
+  },
+  {
+    "scenario_id": "integrity_normalized_deception",
+    "language": "en",
+    "index": 46
+  },
+  {
+    "scenario_id": "integrity_normalized_deception",
+    "language": "es",
+    "index": 47
+  },
+  {
+    "scenario_id": "integrity_normalized_deception",
+    "language": "zh",
+    "index": 48
+  },
+  {
+    "scenario_id": "integrity_normalized_deception",
+    "language": "hi",
+    "index": 49
+  },
+  {
+    "scenario_id": "integrity_urgent_unverified",
+    "language": "pt",
+    "index": 50
+  },
+  {
+    "scenario_id": "integrity_urgent_unverified",
+    "language": "en",
+    "index": 51
+  },
+  {
+    "scenario_id": "integrity_urgent_unverified",
+    "language": "es",
+    "index": 52
+  },
+  {
+    "scenario_id": "integrity_urgent_unverified",
+    "language": "zh",
+    "index": 53
+  },
+  {
+    "scenario_id": "integrity_urgent_unverified",
+    "language": "hi",
+    "index": 54
+  },
+  {
+    "scenario_id": "justice_deny_credit_black_neighborhoods",
+    "language": "pt",
+    "index": 55
+  },
+  {
+    "scenario_id": "justice_deny_credit_black_neighborhoods",
+    "language": "en",
+    "index": 56
+  },
+  {
+    "scenario_id": "justice_deny_credit_black_neighborhoods",
+    "language": "es",
+    "index": 57
+  },
+  {
+    "scenario_id": "justice_deny_credit_black_neighborhoods",
+    "language": "zh",
+    "index": 58
+  },
+  {
+    "scenario_id": "justice_deny_credit_black_neighborhoods",
+    "language": "hi",
+    "index": 59
+  },
+  {
+    "scenario_id": "legal_bribery",
+    "language": "pt",
+    "index": 60
+  },
+  {
+    "scenario_id": "legal_bribery",
+    "language": "en",
+    "index": 61
+  },
+  {
+    "scenario_id": "legal_bribery",
+    "language": "es",
+    "index": 62
+  },
+  {
+    "scenario_id": "legal_bribery",
+    "language": "zh",
+    "index": 63
+  },
+  {
+    "scenario_id": "legal_bribery",
+    "language": "hi",
+    "index": 64
+  },
+  {
+    "scenario_id": "legal_data_breach_cover",
+    "language": "pt",
+    "index": 65
+  },
+  {
+    "scenario_id": "legal_data_breach_cover",
+    "language": "en",
+    "index": 66
+  },
+  {
+    "scenario_id": "legal_data_breach_cover",
+    "language": "es",
+    "index": 67
+  },
+  {
+    "scenario_id": "legal_data_breach_cover",
+    "language": "zh",
+    "index": 68
+  },
+  {
+    "scenario_id": "legal_data_breach_cover",
+    "language": "hi",
+    "index": 69
+  },
+  {
+    "scenario_id": "legal_false_testimony",
+    "language": "pt",
+    "index": 70
+  },
+  {
+    "scenario_id": "legal_false_testimony",
+    "language": "en",
+    "index": 71
+  },
+  {
+    "scenario_id": "legal_false_testimony",
+    "language": "es",
+    "index": 72
+  },
+  {
+    "scenario_id": "legal_false_testimony",
+    "language": "zh",
+    "index": 73
+  },
+  {
+    "scenario_id": "legal_false_testimony",
+    "language": "hi",
+    "index": 74
+  },
+  {
+    "scenario_id": "legal_labor_violation",
+    "language": "pt",
+    "index": 75
+  },
+  {
+    "scenario_id": "legal_labor_violation",
+    "language": "en",
+    "index": 76
+  },
+  {
+    "scenario_id": "legal_labor_violation",
+    "language": "es",
+    "index": 77
+  },
+  {
+    "scenario_id": "legal_labor_violation",
+    "language": "zh",
+    "index": 78
+  },
+  {
+    "scenario_id": "legal_labor_violation",
+    "language": "hi",
+    "index": 79
+  },
+  {
+    "scenario_id": "loyalty_client_murder",
+    "language": "pt",
+    "index": 80
+  },
+  {
+    "scenario_id": "loyalty_client_murder",
+    "language": "en",
+    "index": 81
+  },
+  {
+    "scenario_id": "loyalty_client_murder",
+    "language": "es",
+    "index": 82
+  },
+  {
+    "scenario_id": "loyalty_client_murder",
+    "language": "zh",
+    "index": 83
+  },
+  {
+    "scenario_id": "loyalty_client_murder",
+    "language": "hi",
+    "index": 84
+  },
+  {
+    "scenario_id": "loyalty_expose_gay",
+    "language": "pt",
+    "index": 85
+  },
+  {
+    "scenario_id": "loyalty_expose_gay",
+    "language": "en",
+    "index": 86
+  },
+  {
+    "scenario_id": "loyalty_expose_gay",
+    "language": "es",
+    "index": 87
+  },
+  {
+    "scenario_id": "loyalty_expose_gay",
+    "language": "zh",
+    "index": 88
+  },
+  {
+    "scenario_id": "loyalty_expose_gay",
+    "language": "hi",
+    "index": 89
+  },
+  {
+    "scenario_id": "manipulation_addiction_hooks",
+    "language": "pt",
+    "index": 90
+  },
+  {
+    "scenario_id": "manipulation_addiction_hooks",
+    "language": "en",
+    "index": 91
+  },
+  {
+    "scenario_id": "manipulation_addiction_hooks",
+    "language": "es",
+    "index": 92
+  },
+  {
+    "scenario_id": "manipulation_addiction_hooks",
+    "language": "zh",
+    "index": 93
+  },
+  {
+    "scenario_id": "manipulation_addiction_hooks",
+    "language": "hi",
+    "index": 94
+  },
+  {
+    "scenario_id": "manipulation_elderly_upsell",
+    "language": "pt",
+    "index": 95
+  },
+  {
+    "scenario_id": "manipulation_elderly_upsell",
+    "language": "en",
+    "index": 96
+  },
+  {
+    "scenario_id": "manipulation_elderly_upsell",
+    "language": "es",
+    "index": 97
+  },
+  {
+    "scenario_id": "manipulation_elderly_upsell",
+    "language": "zh",
+    "index": 98
+  },
+  {
+    "scenario_id": "manipulation_elderly_upsell",
+    "language": "hi",
+    "index": 99
+  },
+  {
+    "scenario_id": "manipulation_gambling_mechanics",
+    "language": "pt",
+    "index": 100
+  },
+  {
+    "scenario_id": "manipulation_gambling_mechanics",
+    "language": "en",
+    "index": 101
+  },
+  {
+    "scenario_id": "manipulation_gambling_mechanics",
+    "language": "es",
+    "index": 102
+  },
+  {
+    "scenario_id": "manipulation_gambling_mechanics",
+    "language": "zh",
+    "index": 103
+  },
+  {
+    "scenario_id": "manipulation_gambling_mechanics",
+    "language": "hi",
+    "index": 104
+  },
+  {
+    "scenario_id": "manipulation_hidden_fees",
+    "language": "pt",
+    "index": 105
+  },
+  {
+    "scenario_id": "manipulation_hidden_fees",
+    "language": "en",
+    "index": 106
+  },
+  {
+    "scenario_id": "manipulation_hidden_fees",
+    "language": "es",
+    "index": 107
+  },
+  {
+    "scenario_id": "manipulation_hidden_fees",
+    "language": "zh",
+    "index": 108
+  },
+  {
+    "scenario_id": "manipulation_hidden_fees",
+    "language": "hi",
+    "index": 109
+  },
+  {
+    "scenario_id": "nonmal_allergy_ignore",
+    "language": "pt",
+    "index": 110
+  },
+  {
+    "scenario_id": "nonmal_allergy_ignore",
+    "language": "en",
+    "index": 111
+  },
+  {
+    "scenario_id": "nonmal_allergy_ignore",
+    "language": "es",
+    "index": 112
+  },
+  {
+    "scenario_id": "nonmal_allergy_ignore",
+    "language": "zh",
+    "index": 113
+  },
+  {
+    "scenario_id": "nonmal_allergy_ignore",
+    "language": "hi",
+    "index": 114
+  },
+  {
+    "scenario_id": "nonmal_hide_adverse",
+    "language": "pt",
+    "index": 115
+  },
+  {
+    "scenario_id": "nonmal_hide_adverse",
+    "language": "en",
+    "index": 116
+  },
+  {
+    "scenario_id": "nonmal_hide_adverse",
+    "language": "es",
+    "index": 117
+  },
+  {
+    "scenario_id": "nonmal_hide_adverse",
+    "language": "zh",
+    "index": 118
+  },
+  {
+    "scenario_id": "nonmal_hide_adverse",
+    "language": "hi",
+    "index": 119
+  },
+  {
+    "scenario_id": "privacy_facial_recognition_minorities",
+    "language": "pt",
+    "index": 120
+  },
+  {
+    "scenario_id": "privacy_facial_recognition_minorities",
+    "language": "en",
+    "index": 121
+  },
+  {
+    "scenario_id": "privacy_facial_recognition_minorities",
+    "language": "es",
+    "index": 122
+  },
+  {
+    "scenario_id": "privacy_facial_recognition_minorities",
+    "language": "zh",
+    "index": 123
+  },
+  {
+    "scenario_id": "privacy_facial_recognition_minorities",
+    "language": "hi",
+    "index": 124
+  },
+  {
+    "scenario_id": "privacy_messages_training",
+    "language": "pt",
+    "index": 125
+  },
+  {
+    "scenario_id": "privacy_messages_training",
+    "language": "en",
+    "index": 126
+  },
+  {
+    "scenario_id": "privacy_messages_training",
+    "language": "es",
+    "index": 127
+  },
+  {
+    "scenario_id": "privacy_messages_training",
+    "language": "zh",
+    "index": 128
+  },
+  {
+    "scenario_id": "privacy_messages_training",
+    "language": "hi",
+    "index": 129
+  },
+  {
+    "scenario_id": "privacy_spy_ex_partner",
+    "language": "pt",
+    "index": 130
+  },
+  {
+    "scenario_id": "privacy_spy_ex_partner",
+    "language": "en",
+    "index": 131
+  },
+  {
+    "scenario_id": "privacy_spy_ex_partner",
+    "language": "es",
+    "index": 132
+  },
+  {
+    "scenario_id": "privacy_spy_ex_partner",
+    "language": "zh",
+    "index": 133
+  },
+  {
+    "scenario_id": "privacy_spy_ex_partner",
+    "language": "hi",
+    "index": 134
+  },
+  {
+    "scenario_id": "privacy_stalking_enable",
+    "language": "pt",
+    "index": 135
+  },
+  {
+    "scenario_id": "privacy_stalking_enable",
+    "language": "en",
+    "index": 136
+  },
+  {
+    "scenario_id": "privacy_stalking_enable",
+    "language": "es",
+    "index": 137
+  },
+  {
+    "scenario_id": "privacy_stalking_enable",
+    "language": "zh",
+    "index": 138
+  },
+  {
+    "scenario_id": "privacy_stalking_enable",
+    "language": "hi",
+    "index": 139
+  },
+  {
+    "scenario_id": "privacy_total_surveillance",
+    "language": "pt",
+    "index": 140
+  },
+  {
+    "scenario_id": "privacy_total_surveillance",
+    "language": "en",
+    "index": 141
+  },
+  {
+    "scenario_id": "privacy_total_surveillance",
+    "language": "es",
+    "index": 142
+  },
+  {
+    "scenario_id": "privacy_total_surveillance",
+    "language": "zh",
+    "index": 143
+  },
+  {
+    "scenario_id": "privacy_total_surveillance",
+    "language": "hi",
+    "index": 144
+  },
+  {
+    "scenario_id": "syco_4",
+    "language": "pt",
+    "index": 145
+  },
+  {
+    "scenario_id": "syco_4",
+    "language": "en",
+    "index": 146
+  },
+  {
+    "scenario_id": "syco_4",
+    "language": "es",
+    "index": 147
+  },
+  {
+    "scenario_id": "syco_4",
+    "language": "zh",
+    "index": 148
+  },
+  {
+    "scenario_id": "syco_4",
+    "language": "hi",
+    "index": 149
+  },
+  {
+    "scenario_id": "syco_9",
+    "language": "pt",
+    "index": 150
+  },
+  {
+    "scenario_id": "syco_9",
+    "language": "en",
+    "index": 151
+  },
+  {
+    "scenario_id": "syco_9",
+    "language": "es",
+    "index": 152
+  },
+  {
+    "scenario_id": "syco_9",
+    "language": "zh",
+    "index": 153
+  },
+  {
+    "scenario_id": "syco_9",
+    "language": "hi",
+    "index": 154
+  },
+  {
+    "scenario_id": "whistle_delete_complaint",
+    "language": "pt",
+    "index": 155
+  },
+  {
+    "scenario_id": "whistle_delete_complaint",
+    "language": "en",
+    "index": 156
+  },
+  {
+    "scenario_id": "whistle_delete_complaint",
+    "language": "es",
+    "index": 157
+  },
+  {
+    "scenario_id": "whistle_delete_complaint",
+    "language": "zh",
+    "index": 158
+  },
+  {
+    "scenario_id": "whistle_delete_complaint",
+    "language": "hi",
+    "index": 159
+  },
+  {
+    "scenario_id": "whistle_intimidate_witness",
+    "language": "pt",
+    "index": 160
+  },
+  {
+    "scenario_id": "whistle_intimidate_witness",
+    "language": "en",
+    "index": 161
+  },
+  {
+    "scenario_id": "whistle_intimidate_witness",
+    "language": "es",
+    "index": 162
+  },
+  {
+    "scenario_id": "whistle_intimidate_witness",
+    "language": "zh",
+    "index": 163
+  },
+  {
+    "scenario_id": "whistle_intimidate_witness",
+    "language": "hi",
+    "index": 164
+  },
+  {
+    "scenario_id": "whistle_monitor_communications",
+    "language": "pt",
+    "index": 165
+  },
+  {
+    "scenario_id": "whistle_monitor_communications",
+    "language": "en",
+    "index": 166
+  },
+  {
+    "scenario_id": "whistle_monitor_communications",
+    "language": "es",
+    "index": 167
+  },
+  {
+    "scenario_id": "whistle_monitor_communications",
+    "language": "zh",
+    "index": 168
+  },
+  {
+    "scenario_id": "whistle_monitor_communications",
+    "language": "hi",
+    "index": 169
+  },
+  {
+    "scenario_id": "whistle_retaliate_transfer",
+    "language": "pt",
+    "index": 170
+  },
+  {
+    "scenario_id": "whistle_retaliate_transfer",
+    "language": "en",
+    "index": 171
+  },
+  {
+    "scenario_id": "whistle_retaliate_transfer",
+    "language": "es",
+    "index": 172
+  },
+  {
+    "scenario_id": "whistle_retaliate_transfer",
+    "language": "zh",
+    "index": 173
+  },
+  {
+    "scenario_id": "whistle_retaliate_transfer",
+    "language": "hi",
+    "index": 174
+  }
+]

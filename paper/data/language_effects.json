@@ -1,0 +1,276 @@
+{
+  "status": "LANGUAGE_DIAGONAL_OFF_DIAGONAL_COMPLETE",
+  "posthoc_descriptive": true,
+  "rows": [
+    {
+      "slot": "m1",
+      "estimator": "native",
+      "context": "ethical",
+      "diagonal_mean_cell_delta_pp": 59.39082278481012,
+      "off_diagonal_mean_cell_delta_pp": 63.715723923305234,
+      "min_off_diagonal_delta_pp": 20.0,
+      "max_off_diagonal_delta_pp": 87.42138364779875,
+      "paired_same_minus_other": {
+        "delta_pp": -4.086845466155811,
+        "ci95_pp": [
+          -8.307725947521865,
+          0.5129889975550097
+        ],
+        "paired_resolved": 783,
+        "paired_total": 800,
+        "paired_missing": 17,
+        "bootstrap_undefined": 0,
+        "families": 19
+      },
+      "averaging": "Five equally weighted diagonal cells, 20 off-diagonal cells; paired same-minus-other uses complete response tuples across all five vectors."
+    },
+    {
+      "slot": "m1",
+      "estimator": "native",
+      "context": "neutral",
+      "diagonal_mean_cell_delta_pp": 0.0,
+      "off_diagonal_mean_cell_delta_pp": 0.0,
+      "min_off_diagonal_delta_pp": 0.0,
+      "max_off_diagonal_delta_pp": 0.0,
+      "paired_same_minus_other": {
+        "delta_pp": 0.0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "paired_resolved": 800,
+        "paired_total": 800,
+        "paired_missing": 0,
+        "bootstrap_undefined": 0,
+        "families": 19
+      },
+      "averaging": "Five equally weighted diagonal cells, 20 off-diagonal cells; paired same-minus-other uses complete response tuples across all five vectors."
+    },
+    {
+      "slot": "m1",
+      "estimator": "shadow",
+      "context": "ethical",
+      "diagonal_mean_cell_delta_pp": 62.45518867924528,
+      "off_diagonal_mean_cell_delta_pp": 64.21350313654082,
+      "min_off_diagonal_delta_pp": 21.25,
+      "max_off_diagonal_delta_pp": 88.125,
+      "paired_same_minus_other": {
+        "delta_pp": -1.9961977186311788,
+        "ci95_pp": [
+          -4.642419125348611,
+          2.4313182103879774
+        ],
+        "paired_resolved": 789,
+        "paired_total": 800,
+        "paired_missing": 11,
+        "bootstrap_undefined": 0,
+        "families": 19
+      },
+      "averaging": "Five equally weighted diagonal cells, 20 off-diagonal cells; paired same-minus-other uses complete response tuples across all five vectors."
+    },
+    {
+      "slot": "m1",
+      "estimator": "shadow",
+      "context": "neutral",
+      "diagonal_mean_cell_delta_pp": 0.0,
+      "off_diagonal_mean_cell_delta_pp": 0.0,
+      "min_off_diagonal_delta_pp": 0.0,
+      "max_off_diagonal_delta_pp": 0.0,
+      "paired_same_minus_other": {
+        "delta_pp": 0.0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "paired_resolved": 800,
+        "paired_total": 800,
+        "paired_missing": 0,
+        "bootstrap_undefined": 0,
+        "families": 19
+      },
+      "averaging": "Five equally weighted diagonal cells, 20 off-diagonal cells; paired same-minus-other uses complete response tuples across all five vectors."
+    },
+    {
+      "slot": "m3",
+      "estimator": "native",
+      "context": "ethical",
+      "diagonal_mean_cell_delta_pp": 8.023584905660377,
+      "off_diagonal_mean_cell_delta_pp": 6.0387608470663166,
+      "min_off_diagonal_delta_pp": 1.875,
+      "max_off_diagonal_delta_pp": 13.750000000000002,
+      "paired_same_minus_other": {
+        "delta_pp": 1.978643216080402,
+        "ci95_pp": [
+          0.4706769314153152,
+          4.207581784576721
+        ],
+        "paired_resolved": 796,
+        "paired_total": 800,
+        "paired_missing": 4,
+        "bootstrap_undefined": 0,
+        "families": 19
+      },
+      "averaging": "Five equally weighted diagonal cells, 20 off-diagonal cells; paired same-minus-other uses complete response tuples across all five vectors."
+    },
+    {
+      "slot": "m3",
+      "estimator": "native",
+      "context": "neutral",
+      "diagonal_mean_cell_delta_pp": -5.140723270440253,
+      "off_diagonal_mean_cell_delta_pp": -4.944832101510235,
+      "min_off_diagonal_delta_pp": -10.0,
+      "max_off_diagonal_delta_pp": -1.875,
+      "paired_same_minus_other": {
+        "delta_pp": -0.5044136191677175,
+        "ci95_pp": [
+          -1.3130314805005097,
+          0.7225494966772835
+        ],
+        "paired_resolved": 793,
+        "paired_total": 800,
+        "paired_missing": 7,
+        "bootstrap_undefined": 0,
+        "families": 19
+      },
+      "averaging": "Five equally weighted diagonal cells, 20 off-diagonal cells; paired same-minus-other uses complete response tuples across all five vectors."
+    },
+    {
+      "slot": "m3",
+      "estimator": "shadow",
+      "context": "ethical",
+      "diagonal_mean_cell_delta_pp": 7.408158188042353,
+      "off_diagonal_mean_cell_delta_pp": 6.32696747198512,
+      "min_off_diagonal_delta_pp": 2.5,
+      "max_off_diagonal_delta_pp": 12.5,
+      "paired_same_minus_other": {
+        "delta_pp": 0.8816120906801008,
+        "ci95_pp": [
+          -0.47245957425668794,
+          2.32820999849378
+        ],
+        "paired_resolved": 794,
+        "paired_total": 800,
+        "paired_missing": 6,
+        "bootstrap_undefined": 0,
+        "families": 19
+      },
+      "averaging": "Five equally weighted diagonal cells, 20 off-diagonal cells; paired same-minus-other uses complete response tuples across all five vectors."
+    },
+    {
+      "slot": "m3",
+      "estimator": "shadow",
+      "context": "neutral",
+      "diagonal_mean_cell_delta_pp": -5.75,
+      "off_diagonal_mean_cell_delta_pp": -5.5147405660377355,
+      "min_off_diagonal_delta_pp": -9.433962264150944,
+      "max_off_diagonal_delta_pp": 0.0,
+      "paired_same_minus_other": {
+        "delta_pp": -0.2518891687657431,
+        "ci95_pp": [
+          -0.8306962025316454,
+          0.4425106037597524
+        ],
+        "paired_resolved": 794,
+        "paired_total": 800,
+        "paired_missing": 6,
+        "bootstrap_undefined": 0,
+        "families": 19
+      },
+      "averaging": "Five equally weighted diagonal cells, 20 off-diagonal cells; paired same-minus-other uses complete response tuples across all five vectors."
+    },
+    {
+      "slot": "m5",
+      "estimator": "native",
+      "context": "ethical",
+      "diagonal_mean_cell_delta_pp": 24.27412392841486,
+      "off_diagonal_mean_cell_delta_pp": 13.826937422455805,
+      "min_off_diagonal_delta_pp": -8.125,
+      "max_off_diagonal_delta_pp": 34.41558441558442,
+      "paired_same_minus_other": {
+        "delta_pp": 10.162337662337663,
+        "ci95_pp": [
+          3.7848242931424143,
+          17.234243500122272
+        ],
+        "paired_resolved": 770,
+        "paired_total": 800,
+        "paired_missing": 30,
+        "bootstrap_undefined": 0,
+        "families": 19
+      },
+      "averaging": "Five equally weighted diagonal cells, 20 off-diagonal cells; paired same-minus-other uses complete response tuples across all five vectors."
+    },
+    {
+      "slot": "m5",
+      "estimator": "native",
+      "context": "neutral",
+      "diagonal_mean_cell_delta_pp": -44.410838103462375,
+      "off_diagonal_mean_cell_delta_pp": -19.976617606115184,
+      "min_off_diagonal_delta_pp": -48.07692307692308,
+      "max_off_diagonal_delta_pp": 0.6711409395973155,
+      "paired_same_minus_other": {
+        "delta_pp": -24.205298013245034,
+        "ci95_pp": [
+          -28.973032544722827,
+          -18.612988790406675
+        ],
+        "paired_resolved": 755,
+        "paired_total": 800,
+        "paired_missing": 45,
+        "bootstrap_undefined": 0,
+        "families": 19
+      },
+      "averaging": "Five equally weighted diagonal cells, 20 off-diagonal cells; paired same-minus-other uses complete response tuples across all five vectors."
+    },
+    {
+      "slot": "m5",
+      "estimator": "shadow",
+      "context": "ethical",
+      "diagonal_mean_cell_delta_pp": 24.01981980283867,
+      "off_diagonal_mean_cell_delta_pp": 13.403650385281543,
+      "min_off_diagonal_delta_pp": -6.369426751592357,
+      "max_off_diagonal_delta_pp": 25.477707006369428,
+      "paired_same_minus_other": {
+        "delta_pp": 10.129870129870131,
+        "ci95_pp": [
+          3.402454096045198,
+          17.096086514569684
+        ],
+        "paired_resolved": 770,
+        "paired_total": 800,
+        "paired_missing": 30,
+        "bootstrap_undefined": 0,
+        "families": 19
+      },
+      "averaging": "Five equally weighted diagonal cells, 20 off-diagonal cells; paired same-minus-other uses complete response tuples across all five vectors."
+    },
+    {
+      "slot": "m5",
+      "estimator": "shadow",
+      "context": "neutral",
+      "diagonal_mean_cell_delta_pp": -40.69948894156131,
+      "off_diagonal_mean_cell_delta_pp": -18.913979134870647,
+      "min_off_diagonal_delta_pp": -46.45161290322581,
+      "max_off_diagonal_delta_pp": 2.6490066225165565,
+      "paired_same_minus_other": {
+        "delta_pp": -22.225891677675033,
+        "ci95_pp": [
+          -25.434065585075494,
+          -19.376208776929285
+        ],
+        "paired_resolved": 757,
+        "paired_total": 800,
+        "paired_missing": 43,
+        "bootstrap_undefined": 0,
+        "families": 19
+      },
+      "averaging": "Five equally weighted diagonal cells, 20 off-diagonal cells; paired same-minus-other uses complete response tuples across all five vectors."
+    }
+  ],
+  "correction": {
+    "observations": {
+      "sha256": "4dc19e7abb490867eba2940e01bbcbf55cfda790e2079a042a2aaf94f10d27ec"
+    },
+    "frozen_directions": true
+  }
+}

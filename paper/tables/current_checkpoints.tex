@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\footnotesize
+\begin{tabularx}{\linewidth}{lXr}
+\toprule
+Role & Checkpoint & Layers  \\
+\midrule
+Source & \path{Qwen/Qwen3.5-9B} & 32  \\
+Source & \path{mistralai/Ministral-3-8B-Instruct-2512-BF16} & 34 \\
+Source & \path{meta-llama/Llama-3.1-8B-Instruct} & 32  \\
+Receiver & \path{Qwen/Qwen3.5-27B} & 64 \\
+Receiver & \path{mistralai/Ministral-3-14B-Instruct-2512-BF16} & 40  \\
+Receiver & \path{meta-llama/Llama-3.1-70B-Instruct} & 80  \\
+\bottomrule
+\end{tabularx}
+\caption{Source and receiver checkpoints fixed for the final evaluation. All
+representation capture and intervention use BF16; source NF4 copies supply auxiliary labels.}
+\label{tab:current-checkpoints}
+\end{table}

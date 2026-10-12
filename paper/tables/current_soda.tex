@@ -1,0 +1,26 @@
+\begin{table*}[t]
+\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llrrrr}
+\toprule
+Model & Arm & $a$ & Unsafe/labeled & Rate (\%) & Paired $\Delta$ [adjusted CI] \\
+\midrule
+Qwen3.5-9B & Baseline & $0$ & 114/400 & 28.50 & -- \\
+Qwen3.5-9B & Native $+$ & $8$ & 270/400 & 67.50 & $+39.00$ [$ 30.25, 48.00 $] \\
+Qwen3.5-9B & Shadow $+$ & $8$ & 270/400 & 67.50 & $+39.00$ [$ 29.25, 48.50 $] \\
+\midrule
+Ministral-3-8B & Baseline & $0$ & 133/400 & 33.25 & -- \\
+Ministral-3-8B & Native $+$ & $1$ & 198/400 & 49.50 & $+16.25$ [$ 10.75, 22.25 $] \\
+Ministral-3-8B & Native $-$ & $-0.25$ & 125/400 & 31.25 & $-2.00$ [$ -5.25, 1.75 $] \\
+Ministral-3-8B & Shadow $+$ & $1$ & 205/400 & 51.25 & $+18.00$ [$ 11.75, 24.25 $] \\
+Ministral-3-8B & Shadow $-$ & $-0.25$ & 131/400 & 32.75 & $-0.50$ [$ -3.50, 2.75 $] \\
+\midrule
+Llama-3.1-8B & Baseline & $0$ & 238/400 & 59.50 & -- \\
+Llama-3.1-8B & Native $+$ & $4$ & 260/400 & 65.00 & $+5.50$ [$ -2.25, 14.00 $] \\
+Llama-3.1-8B & Native $-$ & $-4$ & 167/400 & 41.75 & $-17.75$ [$ -26.50, -9.50 $] \\
+Llama-3.1-8B & Shadow $+$ & $4$ & 264/400 & 66.00 & $+6.50$ [$ -1.00, 14.50 $] \\
+Llama-3.1-8B & Shadow $-$ & $-4$ & 166/400 & 41.50 & $-18.00$ [$ -26.00, -10.25 $] \\
+\bottomrule
+\end{tabular}
+\caption{Executed SODA trajectories with the fixed LUMEN interventions. Each arm has 400 tasks in 80 scenarios. Counts and rates use valid labels; deltas are equal-scenario means of paired changes, in percentage points. Intervals adjust over ten nonzero steering contrasts. Qwen has no selected negative intervention; its zero-dose aliases are not additional trajectories or suppression effects. Paired changes use available labels in both arms and can differ from marginal rate differences. Intervals condition on DeepSeek judgments and omit evaluator error.}
+\label{tab:current-soda}
+\end{table*}

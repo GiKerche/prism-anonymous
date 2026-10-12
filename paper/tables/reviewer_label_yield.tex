@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrr}
+\toprule
+Source & BF16 positives & NF4 positives \\
+\midrule
+Qwen3.5-9B & 28/700 (4.00\%) & 56/699 (8.01\%) \\
+Ministral-3-8B & 98/700 (14.00\%) & 188/700 (26.86\%) \\
+Llama-3.1-8B & 459/692 (66.33\%) & 371/695 (53.38\%) \\
+\bottomrule
+\end{tabular}
+\caption{Construction labels: unsafe/labeled responses, out of 700 attempts
+per model and precision. Missing labels remain excluded, not negative.}
+\label{tab:reviewer-yield}
+\end{table}

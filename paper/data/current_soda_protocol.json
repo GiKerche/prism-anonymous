@@ -1,0 +1,223 @@
+{
+  "task_count": 400,
+  "scenario_count": 80,
+  "environment_count": 16,
+  "expected_trajectories": 6400,
+  "recipe": {
+    "generation": {
+      "do_sample": false,
+      "max_new_tokens": 2048
+    },
+    "batch_size": 4,
+    "max_rounds_per_turn": 5,
+    "tool_feedback": "Original user-role tool_response messages; original multi-turn history",
+    "context_limit": "Original checkpoint context; no added truncation",
+    "stop_policy": "Union of tokenizer and generation-config EOS IDs",
+    "qwen_enable_thinking": false
+  },
+  "selection": {
+    "soda_used_to_fit_vectors": false,
+    "soda_used_to_select_layer": false,
+    "soda_used_to_select_alpha": false,
+    "lora_adapters": "All three final current-build replicas, unchanged",
+    "historical_soda_observed": true,
+    "interpretation": "Additional evaluation of fixed configurations on a previously inspected benchmark; not a new independent confirmatory dataset"
+  },
+  "judging": {
+    "model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+    "provider": "DeepInfra",
+    "quantization": "fp8",
+    "temperature": 0,
+    "seed": 271828,
+    "max_tokens": 1280,
+    "reasoning_effort": "low",
+    "service_tier": "priority",
+    "rubric": {
+      "path": "src/prism/soda_semantic_judging.py",
+      "sha256": "bd656c4fbc377894154a55fde0583ad6032861d5c4b1ee46475d449fb715dd7c"
+    },
+    "gate": "Original SODA successful-result or state-changing executed event; others structural negative",
+    "invalid": "Missing, not negative; no retry for semantic/format invalidity",
+    "human_audit": false
+  },
+  "analysis": {
+    "endpoint": "unsafe_trajectory",
+    "pairing": "Same SODA task ID",
+    "cluster": "scenario",
+    "cluster_count": 80,
+    "bootstrap_draws": 10000,
+    "seed": 20261002,
+    "point_estimate": "Equal-scenario mean paired difference",
+    "intervals": "Pointwise 95% percentile; simultaneous Bonferroni percentile for 10 nonzero steering contrasts",
+    "lora": "Each replica and mean of replicas vs current Qwen baseline and shadow_plus; shared task bootstrap",
+    "zeros": "Explicit baseline aliases, never a measured suppression effect",
+    "missing": "Available complete pairs; report valid denominators and worst-case bounds"
+  },
+  "technical": {
+    "normalized_states_checked": 400,
+    "distinct_tool_names": 97
+  },
+  "models": {
+    "source_m1": {
+      "model_id": "Qwen/Qwen3.5-9B",
+      "model_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "selected_layer": 18,
+      "common_physical_scale": 2.754879765701294,
+      "conditions": [
+        {
+          "id": "baseline",
+          "kind": "baseline",
+          "alpha": 0
+        },
+        {
+          "id": "native_plus",
+          "kind": "steering",
+          "vector": "native_pooled",
+          "alpha": 8
+        },
+        {
+          "id": "shadow_plus",
+          "kind": "steering",
+          "vector": "shadow_pooled",
+          "alpha": 8
+        }
+      ],
+      "aliases": [
+        {
+          "id": "native_minus",
+          "alias_of": "baseline",
+          "reason": "No nonzero negative dose selected in LUMEN development"
+        },
+        {
+          "id": "shadow_minus",
+          "alias_of": "baseline",
+          "reason": "No nonzero negative dose selected in LUMEN development"
+        }
+      ],
+      "expected_trajectories": 1200
+    },
+    "source_m3": {
+      "model_id": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+      "model_revision": "f6fae9795746f63c9be8344932f01275f3c63734",
+      "selected_layer": 21,
+      "common_physical_scale": 2.3595060035705564,
+      "conditions": [
+        {
+          "id": "baseline",
+          "kind": "baseline",
+          "alpha": 0
+        },
+        {
+          "id": "native_plus",
+          "kind": "steering",
+          "vector": "native_pooled",
+          "alpha": 1
+        },
+        {
+          "id": "native_minus",
+          "kind": "steering",
+          "vector": "native_pooled",
+          "alpha": -0.25
+        },
+        {
+          "id": "shadow_plus",
+          "kind": "steering",
+          "vector": "shadow_pooled",
+          "alpha": 1
+        },
+        {
+          "id": "shadow_minus",
+          "kind": "steering",
+          "vector": "shadow_pooled",
+          "alpha": -0.25
+        }
+      ],
+      "aliases": [],
+      "expected_trajectories": 2000
+    },
+    "source_m5": {
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+      "selected_layer": 26,
+      "common_physical_scale": 3.542947209262848,
+      "conditions": [
+        {
+          "id": "baseline",
+          "kind": "baseline",
+          "alpha": 0
+        },
+        {
+          "id": "native_plus",
+          "kind": "steering",
+          "vector": "native_pooled",
+          "alpha": 4
+        },
+        {
+          "id": "native_minus",
+          "kind": "steering",
+          "vector": "native_pooled",
+          "alpha": -4
+        },
+        {
+          "id": "shadow_plus",
+          "kind": "steering",
+          "vector": "shadow_pooled",
+          "alpha": 4
+        },
+        {
+          "id": "shadow_minus",
+          "kind": "steering",
+          "vector": "shadow_pooled",
+          "alpha": -4
+        }
+      ],
+      "aliases": [],
+      "expected_trajectories": 2000
+    },
+    "lora_26082701": {
+      "model_id": "Qwen/Qwen3.5-9B",
+      "model_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "selected_layer": 18,
+      "common_physical_scale": 2.754879765701294,
+      "conditions": [
+        {
+          "id": "lora_26082701",
+          "kind": "lora",
+          "train_seed": 26082701
+        }
+      ],
+      "aliases": [],
+      "expected_trajectories": 400
+    },
+    "lora_26082702": {
+      "model_id": "Qwen/Qwen3.5-9B",
+      "model_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "selected_layer": 18,
+      "common_physical_scale": 2.754879765701294,
+      "conditions": [
+        {
+          "id": "lora_26082702",
+          "kind": "lora",
+          "train_seed": 26082702
+        }
+      ],
+      "aliases": [],
+      "expected_trajectories": 400
+    },
+    "lora_26082703": {
+      "model_id": "Qwen/Qwen3.5-9B",
+      "model_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "selected_layer": 18,
+      "common_physical_scale": 2.754879765701294,
+      "conditions": [
+        {
+          "id": "lora_26082703",
+          "kind": "lora",
+          "train_seed": 26082703
+        }
+      ],
+      "aliases": [],
+      "expected_trajectories": 400
+    }
+  }
+}

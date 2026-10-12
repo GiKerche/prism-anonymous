@@ -1,0 +1,26 @@
+\begin{table*}[t]
+\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrr}
+\toprule
+Direction & Unsafe/labeled (\%) & $\Delta$ vs. baseline [adj. CI] & $\Delta$ vs. transport [adj. CI] & BFCL $\Delta$ \\
+\midrule
+Random 1 ($+$) & 37/800 (4.62\%) & $+0.25$ [$ -2.57, 2.45 $] & $-27.25$ [$ -40.87, -18.02 $] & $-0.22$ \\
+Random 2 ($+$) & 31/800 (3.88\%) & $-0.50$ [$ -3.14, 2.13 $] & $-28.00$ [$ -42.61, -17.98 $] & $+0.00$ \\
+Random 3 ($+$) & 31/800 (3.88\%) & $-0.50$ [$ -3.01, 2.12 $] & $-28.00$ [$ -42.30, -18.43 $] & $+0.11$ \\
+Probe ($+$) & 81/800 (10.12\%) & $+5.75$ [$ 1.25, 15.24 $] & $-21.75$ [$ -30.81, -12.73 $] & $-0.22$ \\
+Call propensity ($+$) & 366/800 (45.75\%) & $+41.38$ [$ 29.40, 51.47 $] & $+13.88$ [$ 4.38, 18.66 $] & $+0.00$ \\
+Permuted labels ($+$) & 407/800 (50.88\%) & $+46.50$ [$ 34.49, 58.43 $] & $+19.00$ [$ 7.06, 29.01 $] & $-0.22$ \\
+Receiver native ($+$) & 401/800 (50.12\%) & $+45.75$ [$ 33.92, 55.55 $] & $+18.25$ [$ 8.29, 25.88 $] & $-0.11$ \\
+\midrule
+Random 1 ($-$) & 394/800 (49.25\%) & $+0.76$ [$ -3.41, 4.26 $] & $+36.17$ [$ 15.60, 56.22 $] & $-0.11$ \\
+Random 2 ($-$) & 381/800 (47.62\%) & $-1.01$ [$ -5.05, 1.25 $] & $+34.54$ [$ 17.19, 51.55 $] & $+0.11$ \\
+Random 3 ($-$) & 381/800 (47.62\%) & $-0.76$ [$ -9.23, 2.96 $] & $+34.54$ [$ 16.61, 52.44 $] & $+0.11$ \\
+Probe ($-$) & 266/800 (33.25\%) & $-14.77$ [$ -28.18, -6.09 $] & $+20.15$ [$ 6.96, 33.60 $] & $-0.22$ \\
+Call propensity ($-$) & 159/800 (19.88\%) & $-28.41$ [$ -44.91, -13.97 $] & $+6.76$ [$ 0.97, 15.22 $] & $+0.44$ \\
+Permuted labels ($-$) & 246/800 (30.75\%) & $-17.55$ [$ -34.65, -10.11 $] & $+17.65$ [$ 5.58, 29.00 $] & $+0.33$ \\
+Receiver native ($-$) & 146/800 (18.25\%) & $-29.92$ [$ -47.35, -14.79 $] & $+5.13$ [$ 0.08, 12.40 $] & $+0.44$ \\
+\bottomrule
+\end{tabular}
+\caption{Llama-3.1-70B controls at the layer and signed displacement used for transport. Plus uses ethical and minus neutral context; every arm has 800 responses. Baselines: ethical 35/800 (4.38\%); neutral 383/792 (48.36\%). Counts and rates use available judgments. Changes are paired percentage points, with family-bootstrap intervals adjusted over all 174 additional contrasts. The transport difference is control minus transported intervention. BFCL reports the validity change on 914 tool-required cases. These controls retain the transport dose and are not separately optimized for capacity. All three random draws and the permuted-label draw are reported.}
+\label{tab:controls-receiver_m5}
+\end{table*}

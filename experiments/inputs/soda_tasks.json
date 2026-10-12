@@ -1,0 +1,2043 @@
+{
+  "contains_harm_metadata": false,
+  "execution_contract": {
+    "environment_state": "isolated_in_memory_dict_per_task",
+    "external_network": false,
+    "host_or_shell_access": false,
+    "state_change_layers": [
+      "call",
+      "tool_result",
+      "state_change",
+      "unsafe_trajectory"
+    ]
+  },
+  "generation_contract": {
+    "k": 1,
+    "max_new_tokens": 2048,
+    "max_rounds_per_turn": 5,
+    "sampling": "deterministic",
+    "thinking": false
+  },
+  "id_order_sha256": "485bb32f32618b06d0ff116b9904aec07a13433a2409c41210ad57eb0d304bc5",
+  "model_id": "Qwen/Qwen3.5-9B",
+  "model_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "population": 400,
+  "schema_version": 2,
+  "scope": "exploratory_M1_external_controls_not_formal_final_test",
+  "soda_code_commit": "bd68402cabe390f26e4c3243a7634cd98e413104",
+  "soda_code_git_tree": "38223f2c6bd8a9a0e1d745308fea337416c78ce6",
+  "soda_dataset_commit": "47dcb7c3d8a6e13e78219f3480879e5c4ec5d39b",
+  "source_sha256": "aa9a54a509e9ce77498b7c5bf03dcf12d26c116333c4bc6f19b20297dd517f1d",
+  "status": "M1_SODA_D0_GENERATION_INPUT_NO_HARM_METADATA_FROZEN",
+  "tasks": [
+    {
+      "id": "BankAccount_monthly_review_user_d0_000",
+      "scenario": "monthly_review",
+      "threat_depth": 0
+    },
+    {
+      "id": "BankAccount_monthly_review_user_d0_001",
+      "scenario": "monthly_review",
+      "threat_depth": 0
+    },
+    {
+      "id": "BankAccount_monthly_review_user_d0_002",
+      "scenario": "monthly_review",
+      "threat_depth": 0
+    },
+    {
+      "id": "BankAccount_monthly_review_user_d0_003",
+      "scenario": "monthly_review",
+      "threat_depth": 0
+    },
+    {
+      "id": "BankAccount_monthly_review_user_d0_004",
+      "scenario": "monthly_review",
+      "threat_depth": 0
+    },
+    {
+      "id": "BankAccount_pay_bills_user_d0_000",
+      "scenario": "pay_bills",
+      "threat_depth": 0
+    },
+    {
+      "id": "BankAccount_pay_bills_user_d0_001",
+      "scenario": "pay_bills",
+      "threat_depth": 0
+    },
+    {
+      "id": "BankAccount_pay_bills_user_d0_002",
+      "scenario": "pay_bills",
+      "threat_depth": 0
+    },
+    {
+      "id": "BankAccount_pay_bills_user_d0_003",
+      "scenario": "pay_bills",
+      "threat_depth": 0
+    },
+    {
+      "id": "BankAccount_pay_bills_user_d0_004",
+      "scenario": "pay_bills",
+      "threat_depth": 0
+    },
+    {
+      "id": "BankAccount_review_finances_user_d0_000",
+      "scenario": "review_finances",
+      "threat_depth": 0
+    },
+    {
+      "id": "BankAccount_review_finances_user_d0_001",
+      "scenario": "review_finances",
+      "threat_depth": 0
+    },
+    {
+      "id": "BankAccount_review_finances_user_d0_002",
+      "scenario": "review_finances",
+      "threat_depth": 0
+    },
+    {
+      "id": "BankAccount_review_finances_user_d0_003",
+      "scenario": "review_finances",
+      "threat_depth": 0
+    },
+    {
+      "id": "BankAccount_review_finances_user_d0_004",
+      "scenario": "review_finances",
+      "threat_depth": 0
+    },
+    {
+      "id": "BankAccount_transfer_funds_user_d0_000",
+      "scenario": "transfer_funds",
+      "threat_depth": 0
+    },
+    {
+      "id": "BankAccount_transfer_funds_user_d0_001",
+      "scenario": "transfer_funds",
+      "threat_depth": 0
+    },
+    {
+      "id": "BankAccount_transfer_funds_user_d0_002",
+      "scenario": "transfer_funds",
+      "threat_depth": 0
+    },
+    {
+      "id": "BankAccount_transfer_funds_user_d0_003",
+      "scenario": "transfer_funds",
+      "threat_depth": 0
+    },
+    {
+      "id": "BankAccount_transfer_funds_user_d0_004",
+      "scenario": "transfer_funds",
+      "threat_depth": 0
+    },
+    {
+      "id": "BankAccount_update_profile_user_d0_000",
+      "scenario": "update_profile",
+      "threat_depth": 0
+    },
+    {
+      "id": "BankAccount_update_profile_user_d0_001",
+      "scenario": "update_profile",
+      "threat_depth": 0
+    },
+    {
+      "id": "BankAccount_update_profile_user_d0_002",
+      "scenario": "update_profile",
+      "threat_depth": 0
+    },
+    {
+      "id": "BankAccount_update_profile_user_d0_003",
+      "scenario": "update_profile",
+      "threat_depth": 0
+    },
+    {
+      "id": "BankAccount_update_profile_user_d0_004",
+      "scenario": "update_profile",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_cleanup_calendar_user_d0_000",
+      "scenario": "cleanup_calendar",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_cleanup_calendar_user_d0_001",
+      "scenario": "cleanup_calendar",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_cleanup_calendar_user_d0_002",
+      "scenario": "cleanup_calendar",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_cleanup_calendar_user_d0_003",
+      "scenario": "cleanup_calendar",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_cleanup_calendar_user_d0_004",
+      "scenario": "cleanup_calendar",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_invite_people_user_d0_000",
+      "scenario": "invite_people",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_invite_people_user_d0_001",
+      "scenario": "invite_people",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_invite_people_user_d0_002",
+      "scenario": "invite_people",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_invite_people_user_d0_003",
+      "scenario": "invite_people",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_invite_people_user_d0_004",
+      "scenario": "invite_people",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_review_schedule_user_d0_000",
+      "scenario": "review_schedule",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_review_schedule_user_d0_001",
+      "scenario": "review_schedule",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_review_schedule_user_d0_002",
+      "scenario": "review_schedule",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_review_schedule_user_d0_003",
+      "scenario": "review_schedule",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_review_schedule_user_d0_004",
+      "scenario": "review_schedule",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_schedule_meetings_user_d0_000",
+      "scenario": "schedule_meetings",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_schedule_meetings_user_d0_001",
+      "scenario": "schedule_meetings",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_schedule_meetings_user_d0_002",
+      "scenario": "schedule_meetings",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_schedule_meetings_user_d0_003",
+      "scenario": "schedule_meetings",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_schedule_meetings_user_d0_004",
+      "scenario": "schedule_meetings",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_update_meetings_user_d0_000",
+      "scenario": "update_meetings",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_update_meetings_user_d0_001",
+      "scenario": "update_meetings",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_update_meetings_user_d0_002",
+      "scenario": "update_meetings",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_update_meetings_user_d0_003",
+      "scenario": "update_meetings",
+      "threat_depth": 0
+    },
+    {
+      "id": "CalendarScheduler_update_meetings_user_d0_004",
+      "scenario": "update_meetings",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_backup_systems_user_d0_000",
+      "scenario": "backup_systems",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_backup_systems_user_d0_001",
+      "scenario": "backup_systems",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_backup_systems_user_d0_002",
+      "scenario": "backup_systems",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_backup_systems_user_d0_003",
+      "scenario": "backup_systems",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_backup_systems_user_d0_004",
+      "scenario": "backup_systems",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_check_status_user_d0_000",
+      "scenario": "check_status",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_check_status_user_d0_001",
+      "scenario": "check_status",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_check_status_user_d0_002",
+      "scenario": "check_status",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_check_status_user_d0_003",
+      "scenario": "check_status",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_check_status_user_d0_004",
+      "scenario": "check_status",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_deploy_updates_user_d0_000",
+      "scenario": "deploy_updates",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_deploy_updates_user_d0_001",
+      "scenario": "deploy_updates",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_deploy_updates_user_d0_002",
+      "scenario": "deploy_updates",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_deploy_updates_user_d0_003",
+      "scenario": "deploy_updates",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_deploy_updates_user_d0_004",
+      "scenario": "deploy_updates",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_manage_instances_user_d0_000",
+      "scenario": "manage_instances",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_manage_instances_user_d0_001",
+      "scenario": "manage_instances",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_manage_instances_user_d0_002",
+      "scenario": "manage_instances",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_manage_instances_user_d0_003",
+      "scenario": "manage_instances",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_manage_instances_user_d0_004",
+      "scenario": "manage_instances",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_security_review_user_d0_000",
+      "scenario": "security_review",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_security_review_user_d0_001",
+      "scenario": "security_review",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_security_review_user_d0_002",
+      "scenario": "security_review",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_security_review_user_d0_003",
+      "scenario": "security_review",
+      "threat_depth": 0
+    },
+    {
+      "id": "CloudInfra_security_review_user_d0_004",
+      "scenario": "security_review",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_code_review_user_d0_000",
+      "scenario": "code_review",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_code_review_user_d0_001",
+      "scenario": "code_review",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_code_review_user_d0_002",
+      "scenario": "code_review",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_code_review_user_d0_003",
+      "scenario": "code_review",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_code_review_user_d0_004",
+      "scenario": "code_review",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_debug_test_user_d0_000",
+      "scenario": "debug_test",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_debug_test_user_d0_001",
+      "scenario": "debug_test",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_debug_test_user_d0_002",
+      "scenario": "debug_test",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_debug_test_user_d0_003",
+      "scenario": "debug_test",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_debug_test_user_d0_004",
+      "scenario": "debug_test",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_deploy_release_user_d0_000",
+      "scenario": "deploy_release",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_deploy_release_user_d0_001",
+      "scenario": "deploy_release",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_deploy_release_user_d0_002",
+      "scenario": "deploy_release",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_deploy_release_user_d0_003",
+      "scenario": "deploy_release",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_deploy_release_user_d0_004",
+      "scenario": "deploy_release",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_develop_feature_user_d0_000",
+      "scenario": "develop_feature",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_develop_feature_user_d0_001",
+      "scenario": "develop_feature",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_develop_feature_user_d0_002",
+      "scenario": "develop_feature",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_develop_feature_user_d0_003",
+      "scenario": "develop_feature",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_develop_feature_user_d0_004",
+      "scenario": "develop_feature",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_setup_project_user_d0_000",
+      "scenario": "setup_project",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_setup_project_user_d0_001",
+      "scenario": "setup_project",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_setup_project_user_d0_002",
+      "scenario": "setup_project",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_setup_project_user_d0_003",
+      "scenario": "setup_project",
+      "threat_depth": 0
+    },
+    {
+      "id": "CodeAssistant_setup_project_user_d0_004",
+      "scenario": "setup_project",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_admin_maintenance_user_d0_000",
+      "scenario": "admin_maintenance",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_admin_maintenance_user_d0_001",
+      "scenario": "admin_maintenance",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_admin_maintenance_user_d0_002",
+      "scenario": "admin_maintenance",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_admin_maintenance_user_d0_003",
+      "scenario": "admin_maintenance",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_admin_maintenance_user_d0_004",
+      "scenario": "admin_maintenance",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_data_entry_user_d0_000",
+      "scenario": "data_entry",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_data_entry_user_d0_001",
+      "scenario": "data_entry",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_data_entry_user_d0_002",
+      "scenario": "data_entry",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_data_entry_user_d0_003",
+      "scenario": "data_entry",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_data_entry_user_d0_004",
+      "scenario": "data_entry",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_data_export_user_d0_000",
+      "scenario": "data_export",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_data_export_user_d0_001",
+      "scenario": "data_export",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_data_export_user_d0_002",
+      "scenario": "data_export",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_data_export_user_d0_003",
+      "scenario": "data_export",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_data_export_user_d0_004",
+      "scenario": "data_export",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_data_update_user_d0_000",
+      "scenario": "data_update",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_data_update_user_d0_001",
+      "scenario": "data_update",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_data_update_user_d0_002",
+      "scenario": "data_update",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_data_update_user_d0_003",
+      "scenario": "data_update",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_data_update_user_d0_004",
+      "scenario": "data_update",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_query_reports_user_d0_000",
+      "scenario": "query_reports",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_query_reports_user_d0_001",
+      "scenario": "query_reports",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_query_reports_user_d0_002",
+      "scenario": "query_reports",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_query_reports_user_d0_003",
+      "scenario": "query_reports",
+      "threat_depth": 0
+    },
+    {
+      "id": "DatabaseManager_query_reports_user_d0_004",
+      "scenario": "query_reports",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_browse_products_user_d0_000",
+      "scenario": "browse_products",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_browse_products_user_d0_001",
+      "scenario": "browse_products",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_browse_products_user_d0_002",
+      "scenario": "browse_products",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_browse_products_user_d0_003",
+      "scenario": "browse_products",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_browse_products_user_d0_004",
+      "scenario": "browse_products",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_manage_orders_user_d0_000",
+      "scenario": "manage_orders",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_manage_orders_user_d0_001",
+      "scenario": "manage_orders",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_manage_orders_user_d0_002",
+      "scenario": "manage_orders",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_manage_orders_user_d0_003",
+      "scenario": "manage_orders",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_manage_orders_user_d0_004",
+      "scenario": "manage_orders",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_place_orders_user_d0_000",
+      "scenario": "place_orders",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_place_orders_user_d0_001",
+      "scenario": "place_orders",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_place_orders_user_d0_002",
+      "scenario": "place_orders",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_place_orders_user_d0_003",
+      "scenario": "place_orders",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_place_orders_user_d0_004",
+      "scenario": "place_orders",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_shopping_cart_user_d0_000",
+      "scenario": "shopping_cart",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_shopping_cart_user_d0_001",
+      "scenario": "shopping_cart",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_shopping_cart_user_d0_002",
+      "scenario": "shopping_cart",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_shopping_cart_user_d0_003",
+      "scenario": "shopping_cart",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_shopping_cart_user_d0_004",
+      "scenario": "shopping_cart",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_write_reviews_user_d0_000",
+      "scenario": "write_reviews",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_write_reviews_user_d0_001",
+      "scenario": "write_reviews",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_write_reviews_user_d0_002",
+      "scenario": "write_reviews",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_write_reviews_user_d0_003",
+      "scenario": "write_reviews",
+      "threat_depth": 0
+    },
+    {
+      "id": "ECommerce_write_reviews_user_d0_004",
+      "scenario": "write_reviews",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_cleanup_inbox_user_d0_000",
+      "scenario": "cleanup_inbox",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_cleanup_inbox_user_d0_001",
+      "scenario": "cleanup_inbox",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_cleanup_inbox_user_d0_002",
+      "scenario": "cleanup_inbox",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_cleanup_inbox_user_d0_003",
+      "scenario": "cleanup_inbox",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_cleanup_inbox_user_d0_004",
+      "scenario": "cleanup_inbox",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_compose_replies_user_d0_000",
+      "scenario": "compose_replies",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_compose_replies_user_d0_001",
+      "scenario": "compose_replies",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_compose_replies_user_d0_002",
+      "scenario": "compose_replies",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_compose_replies_user_d0_003",
+      "scenario": "compose_replies",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_compose_replies_user_d0_004",
+      "scenario": "compose_replies",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_forward_chain_user_d0_000",
+      "scenario": "forward_chain",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_forward_chain_user_d0_001",
+      "scenario": "forward_chain",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_forward_chain_user_d0_002",
+      "scenario": "forward_chain",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_forward_chain_user_d0_003",
+      "scenario": "forward_chain",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_forward_chain_user_d0_004",
+      "scenario": "forward_chain",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_read_inbox_user_d0_000",
+      "scenario": "read_inbox",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_read_inbox_user_d0_001",
+      "scenario": "read_inbox",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_read_inbox_user_d0_002",
+      "scenario": "read_inbox",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_read_inbox_user_d0_003",
+      "scenario": "read_inbox",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_read_inbox_user_d0_004",
+      "scenario": "read_inbox",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_search_and_read_user_d0_000",
+      "scenario": "search_and_read",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_search_and_read_user_d0_001",
+      "scenario": "search_and_read",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_search_and_read_user_d0_002",
+      "scenario": "search_and_read",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_search_and_read_user_d0_003",
+      "scenario": "search_and_read",
+      "threat_depth": 0
+    },
+    {
+      "id": "EmailManager_search_and_read_user_d0_004",
+      "scenario": "search_and_read",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_backup_files_user_d0_000",
+      "scenario": "backup_files",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_backup_files_user_d0_001",
+      "scenario": "backup_files",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_backup_files_user_d0_002",
+      "scenario": "backup_files",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_backup_files_user_d0_003",
+      "scenario": "backup_files",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_backup_files_user_d0_004",
+      "scenario": "backup_files",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_edit_configs_user_d0_000",
+      "scenario": "edit_configs",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_edit_configs_user_d0_001",
+      "scenario": "edit_configs",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_edit_configs_user_d0_002",
+      "scenario": "edit_configs",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_edit_configs_user_d0_003",
+      "scenario": "edit_configs",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_edit_configs_user_d0_004",
+      "scenario": "edit_configs",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_explore_directory_user_d0_000",
+      "scenario": "explore_directory",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_explore_directory_user_d0_001",
+      "scenario": "explore_directory",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_explore_directory_user_d0_002",
+      "scenario": "explore_directory",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_explore_directory_user_d0_003",
+      "scenario": "explore_directory",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_explore_directory_user_d0_004",
+      "scenario": "explore_directory",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_review_code_user_d0_000",
+      "scenario": "review_code",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_review_code_user_d0_001",
+      "scenario": "review_code",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_review_code_user_d0_002",
+      "scenario": "review_code",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_review_code_user_d0_003",
+      "scenario": "review_code",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_review_code_user_d0_004",
+      "scenario": "review_code",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_run_scripts_user_d0_000",
+      "scenario": "run_scripts",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_run_scripts_user_d0_001",
+      "scenario": "run_scripts",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_run_scripts_user_d0_002",
+      "scenario": "run_scripts",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_run_scripts_user_d0_003",
+      "scenario": "run_scripts",
+      "threat_depth": 0
+    },
+    {
+      "id": "FileSystem_run_scripts_user_d0_004",
+      "scenario": "run_scripts",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_benefits_management_user_d0_000",
+      "scenario": "benefits_management",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_benefits_management_user_d0_001",
+      "scenario": "benefits_management",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_benefits_management_user_d0_002",
+      "scenario": "benefits_management",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_benefits_management_user_d0_003",
+      "scenario": "benefits_management",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_benefits_management_user_d0_004",
+      "scenario": "benefits_management",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_compensation_update_user_d0_000",
+      "scenario": "compensation_update",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_compensation_update_user_d0_001",
+      "scenario": "compensation_update",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_compensation_update_user_d0_002",
+      "scenario": "compensation_update",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_compensation_update_user_d0_003",
+      "scenario": "compensation_update",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_compensation_update_user_d0_004",
+      "scenario": "compensation_update",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_hr_communications_user_d0_000",
+      "scenario": "hr_communications",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_hr_communications_user_d0_001",
+      "scenario": "hr_communications",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_hr_communications_user_d0_002",
+      "scenario": "hr_communications",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_hr_communications_user_d0_003",
+      "scenario": "hr_communications",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_hr_communications_user_d0_004",
+      "scenario": "hr_communications",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_lookup_employees_user_d0_000",
+      "scenario": "lookup_employees",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_lookup_employees_user_d0_001",
+      "scenario": "lookup_employees",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_lookup_employees_user_d0_002",
+      "scenario": "lookup_employees",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_lookup_employees_user_d0_003",
+      "scenario": "lookup_employees",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_lookup_employees_user_d0_004",
+      "scenario": "lookup_employees",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_performance_reviews_user_d0_000",
+      "scenario": "performance_reviews",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_performance_reviews_user_d0_001",
+      "scenario": "performance_reviews",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_performance_reviews_user_d0_002",
+      "scenario": "performance_reviews",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_performance_reviews_user_d0_003",
+      "scenario": "performance_reviews",
+      "threat_depth": 0
+    },
+    {
+      "id": "HRSystem_performance_reviews_user_d0_004",
+      "scenario": "performance_reviews",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_chart_updates_user_d0_000",
+      "scenario": "chart_updates",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_chart_updates_user_d0_001",
+      "scenario": "chart_updates",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_chart_updates_user_d0_002",
+      "scenario": "chart_updates",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_chart_updates_user_d0_003",
+      "scenario": "chart_updates",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_chart_updates_user_d0_004",
+      "scenario": "chart_updates",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_lab_review_user_d0_000",
+      "scenario": "lab_review",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_lab_review_user_d0_001",
+      "scenario": "lab_review",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_lab_review_user_d0_002",
+      "scenario": "lab_review",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_lab_review_user_d0_003",
+      "scenario": "lab_review",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_lab_review_user_d0_004",
+      "scenario": "lab_review",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_patient_lookup_user_d0_000",
+      "scenario": "patient_lookup",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_patient_lookup_user_d0_001",
+      "scenario": "patient_lookup",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_patient_lookup_user_d0_002",
+      "scenario": "patient_lookup",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_patient_lookup_user_d0_003",
+      "scenario": "patient_lookup",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_patient_lookup_user_d0_004",
+      "scenario": "patient_lookup",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_prescribe_meds_user_d0_000",
+      "scenario": "prescribe_meds",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_prescribe_meds_user_d0_001",
+      "scenario": "prescribe_meds",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_prescribe_meds_user_d0_002",
+      "scenario": "prescribe_meds",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_prescribe_meds_user_d0_003",
+      "scenario": "prescribe_meds",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_prescribe_meds_user_d0_004",
+      "scenario": "prescribe_meds",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_referral_management_user_d0_000",
+      "scenario": "referral_management",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_referral_management_user_d0_001",
+      "scenario": "referral_management",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_referral_management_user_d0_002",
+      "scenario": "referral_management",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_referral_management_user_d0_003",
+      "scenario": "referral_management",
+      "threat_depth": 0
+    },
+    {
+      "id": "HealthcarePortal_referral_management_user_d0_004",
+      "scenario": "referral_management",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_draft_documents_user_d0_000",
+      "scenario": "draft_documents",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_draft_documents_user_d0_001",
+      "scenario": "draft_documents",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_draft_documents_user_d0_002",
+      "scenario": "draft_documents",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_draft_documents_user_d0_003",
+      "scenario": "draft_documents",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_draft_documents_user_d0_004",
+      "scenario": "draft_documents",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_redact_sensitive_user_d0_000",
+      "scenario": "redact_sensitive",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_redact_sensitive_user_d0_001",
+      "scenario": "redact_sensitive",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_redact_sensitive_user_d0_002",
+      "scenario": "redact_sensitive",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_redact_sensitive_user_d0_003",
+      "scenario": "redact_sensitive",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_redact_sensitive_user_d0_004",
+      "scenario": "redact_sensitive",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_review_contracts_user_d0_000",
+      "scenario": "review_contracts",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_review_contracts_user_d0_001",
+      "scenario": "review_contracts",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_review_contracts_user_d0_002",
+      "scenario": "review_contracts",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_review_contracts_user_d0_003",
+      "scenario": "review_contracts",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_review_contracts_user_d0_004",
+      "scenario": "review_contracts",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_share_distribute_user_d0_000",
+      "scenario": "share_distribute",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_share_distribute_user_d0_001",
+      "scenario": "share_distribute",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_share_distribute_user_d0_002",
+      "scenario": "share_distribute",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_share_distribute_user_d0_003",
+      "scenario": "share_distribute",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_share_distribute_user_d0_004",
+      "scenario": "share_distribute",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_sign_execute_user_d0_000",
+      "scenario": "sign_execute",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_sign_execute_user_d0_001",
+      "scenario": "sign_execute",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_sign_execute_user_d0_002",
+      "scenario": "sign_execute",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_sign_execute_user_d0_003",
+      "scenario": "sign_execute",
+      "threat_depth": 0
+    },
+    {
+      "id": "LegalDocuments_sign_execute_user_d0_004",
+      "scenario": "sign_execute",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_browse_stock_user_d0_000",
+      "scenario": "browse_stock",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_browse_stock_user_d0_001",
+      "scenario": "browse_stock",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_browse_stock_user_d0_002",
+      "scenario": "browse_stock",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_browse_stock_user_d0_003",
+      "scenario": "browse_stock",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_browse_stock_user_d0_004",
+      "scenario": "browse_stock",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_edit_publish_user_d0_000",
+      "scenario": "edit_publish",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_edit_publish_user_d0_001",
+      "scenario": "edit_publish",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_edit_publish_user_d0_002",
+      "scenario": "edit_publish",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_edit_publish_user_d0_003",
+      "scenario": "edit_publish",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_edit_publish_user_d0_004",
+      "scenario": "edit_publish",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_full_workflow_user_d0_000",
+      "scenario": "full_workflow",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_full_workflow_user_d0_001",
+      "scenario": "full_workflow",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_full_workflow_user_d0_002",
+      "scenario": "full_workflow",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_full_workflow_user_d0_003",
+      "scenario": "full_workflow",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_full_workflow_user_d0_004",
+      "scenario": "full_workflow",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_generate_content_user_d0_000",
+      "scenario": "generate_content",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_generate_content_user_d0_001",
+      "scenario": "generate_content",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_generate_content_user_d0_002",
+      "scenario": "generate_content",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_generate_content_user_d0_003",
+      "scenario": "generate_content",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_generate_content_user_d0_004",
+      "scenario": "generate_content",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_transcription_user_d0_000",
+      "scenario": "transcription",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_transcription_user_d0_001",
+      "scenario": "transcription",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_transcription_user_d0_002",
+      "scenario": "transcription",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_transcription_user_d0_003",
+      "scenario": "transcription",
+      "threat_depth": 0
+    },
+    {
+      "id": "MediaContent_transcription_user_d0_004",
+      "scenario": "transcription",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_adjust_settings_user_d0_000",
+      "scenario": "adjust_settings",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_adjust_settings_user_d0_001",
+      "scenario": "adjust_settings",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_adjust_settings_user_d0_002",
+      "scenario": "adjust_settings",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_adjust_settings_user_d0_003",
+      "scenario": "adjust_settings",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_adjust_settings_user_d0_004",
+      "scenario": "adjust_settings",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_automation_setup_user_d0_000",
+      "scenario": "automation_setup",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_automation_setup_user_d0_001",
+      "scenario": "automation_setup",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_automation_setup_user_d0_002",
+      "scenario": "automation_setup",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_automation_setup_user_d0_003",
+      "scenario": "automation_setup",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_automation_setup_user_d0_004",
+      "scenario": "automation_setup",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_check_home_user_d0_000",
+      "scenario": "check_home",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_check_home_user_d0_001",
+      "scenario": "check_home",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_check_home_user_d0_002",
+      "scenario": "check_home",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_check_home_user_d0_003",
+      "scenario": "check_home",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_check_home_user_d0_004",
+      "scenario": "check_home",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_door_management_user_d0_000",
+      "scenario": "door_management",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_door_management_user_d0_001",
+      "scenario": "door_management",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_door_management_user_d0_002",
+      "scenario": "door_management",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_door_management_user_d0_003",
+      "scenario": "door_management",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_door_management_user_d0_004",
+      "scenario": "door_management",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_security_check_user_d0_000",
+      "scenario": "security_check",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_security_check_user_d0_001",
+      "scenario": "security_check",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_security_check_user_d0_002",
+      "scenario": "security_check",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_security_check_user_d0_003",
+      "scenario": "security_check",
+      "threat_depth": 0
+    },
+    {
+      "id": "SmartHome_security_check_user_d0_004",
+      "scenario": "security_check",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_browse_feed_user_d0_000",
+      "scenario": "browse_feed",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_browse_feed_user_d0_001",
+      "scenario": "browse_feed",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_browse_feed_user_d0_002",
+      "scenario": "browse_feed",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_browse_feed_user_d0_003",
+      "scenario": "browse_feed",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_browse_feed_user_d0_004",
+      "scenario": "browse_feed",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_create_content_user_d0_000",
+      "scenario": "create_content",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_create_content_user_d0_001",
+      "scenario": "create_content",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_create_content_user_d0_002",
+      "scenario": "create_content",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_create_content_user_d0_003",
+      "scenario": "create_content",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_create_content_user_d0_004",
+      "scenario": "create_content",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_engage_community_user_d0_000",
+      "scenario": "engage_community",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_engage_community_user_d0_001",
+      "scenario": "engage_community",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_engage_community_user_d0_002",
+      "scenario": "engage_community",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_engage_community_user_d0_003",
+      "scenario": "engage_community",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_engage_community_user_d0_004",
+      "scenario": "engage_community",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_messaging_user_d0_000",
+      "scenario": "messaging",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_messaging_user_d0_001",
+      "scenario": "messaging",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_messaging_user_d0_002",
+      "scenario": "messaging",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_messaging_user_d0_003",
+      "scenario": "messaging",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_messaging_user_d0_004",
+      "scenario": "messaging",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_networking_user_d0_000",
+      "scenario": "networking",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_networking_user_d0_001",
+      "scenario": "networking",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_networking_user_d0_002",
+      "scenario": "networking",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_networking_user_d0_003",
+      "scenario": "networking",
+      "threat_depth": 0
+    },
+    {
+      "id": "SocialMedia_networking_user_d0_004",
+      "scenario": "networking",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_book_trip_user_d0_000",
+      "scenario": "book_trip",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_book_trip_user_d0_001",
+      "scenario": "book_trip",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_book_trip_user_d0_002",
+      "scenario": "book_trip",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_book_trip_user_d0_003",
+      "scenario": "book_trip",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_book_trip_user_d0_004",
+      "scenario": "book_trip",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_modify_bookings_user_d0_000",
+      "scenario": "modify_bookings",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_modify_bookings_user_d0_001",
+      "scenario": "modify_bookings",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_modify_bookings_user_d0_002",
+      "scenario": "modify_bookings",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_modify_bookings_user_d0_003",
+      "scenario": "modify_bookings",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_modify_bookings_user_d0_004",
+      "scenario": "modify_bookings",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_review_itinerary_user_d0_000",
+      "scenario": "review_itinerary",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_review_itinerary_user_d0_001",
+      "scenario": "review_itinerary",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_review_itinerary_user_d0_002",
+      "scenario": "review_itinerary",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_review_itinerary_user_d0_003",
+      "scenario": "review_itinerary",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_review_itinerary_user_d0_004",
+      "scenario": "review_itinerary",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_search_flights_user_d0_000",
+      "scenario": "search_flights",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_search_flights_user_d0_001",
+      "scenario": "search_flights",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_search_flights_user_d0_002",
+      "scenario": "search_flights",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_search_flights_user_d0_003",
+      "scenario": "search_flights",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_search_flights_user_d0_004",
+      "scenario": "search_flights",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_search_hotels_user_d0_000",
+      "scenario": "search_hotels",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_search_hotels_user_d0_001",
+      "scenario": "search_hotels",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_search_hotels_user_d0_002",
+      "scenario": "search_hotels",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_search_hotels_user_d0_003",
+      "scenario": "search_hotels",
+      "threat_depth": 0
+    },
+    {
+      "id": "TravelBooking_search_hotels_user_d0_004",
+      "scenario": "search_hotels",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_compare_products_user_d0_000",
+      "scenario": "compare_products",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_compare_products_user_d0_001",
+      "scenario": "compare_products",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_compare_products_user_d0_002",
+      "scenario": "compare_products",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_compare_products_user_d0_003",
+      "scenario": "compare_products",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_compare_products_user_d0_004",
+      "scenario": "compare_products",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_download_resources_user_d0_000",
+      "scenario": "download_resources",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_download_resources_user_d0_001",
+      "scenario": "download_resources",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_download_resources_user_d0_002",
+      "scenario": "download_resources",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_download_resources_user_d0_003",
+      "scenario": "download_resources",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_download_resources_user_d0_004",
+      "scenario": "download_resources",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_fill_applications_user_d0_000",
+      "scenario": "fill_applications",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_fill_applications_user_d0_001",
+      "scenario": "fill_applications",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_fill_applications_user_d0_002",
+      "scenario": "fill_applications",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_fill_applications_user_d0_003",
+      "scenario": "fill_applications",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_fill_applications_user_d0_004",
+      "scenario": "fill_applications",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_research_topic_user_d0_000",
+      "scenario": "research_topic",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_research_topic_user_d0_001",
+      "scenario": "research_topic",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_research_topic_user_d0_002",
+      "scenario": "research_topic",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_research_topic_user_d0_003",
+      "scenario": "research_topic",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_research_topic_user_d0_004",
+      "scenario": "research_topic",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_submit_reports_user_d0_000",
+      "scenario": "submit_reports",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_submit_reports_user_d0_001",
+      "scenario": "submit_reports",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_submit_reports_user_d0_002",
+      "scenario": "submit_reports",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_submit_reports_user_d0_003",
+      "scenario": "submit_reports",
+      "threat_depth": 0
+    },
+    {
+      "id": "WebBrowser_submit_reports_user_d0_004",
+      "scenario": "submit_reports",
+      "threat_depth": 0
+    }
+  ],
+  "tasks_sha256": "c4eb32dd850aded6c13a4dfbbfaf75e295c18182ab23f58be5c0a9098ebe021c",
+  "public_export_status": "TASK_MANIFEST_REQUIRES_PINNED_DATASET_FOR_EXECUTION",
+  "requires_external_dataset": true,
+  "omitted_input_fields": [
+    "user_turns",
+    "prefilled_messages",
+    "environments"
+  ],
+  "omission_reason": "Benchmark input text and simulated states contain credential-shaped fixtures. Full inputs are reconstructed in memory from the pinned external dataset and verified against tasks_sha256."
+}

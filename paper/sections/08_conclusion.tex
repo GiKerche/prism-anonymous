@@ -1,0 +1,17 @@
+\section{Conclusion}
+\label{sec:conclusion}
+PRISM shows that an activation direction estimated once in a BF16
+model transfers along three axes. Across precision, native--shadow paired differences stay within
+$1.8$ pp without establishing equivalence; NF4 improves direction
+availability in sparse Qwen and Ministral subsets.
+Across languages, mean native induction is preserved in Qwen3.5-9B
+and roughly halved in Llama-3.1-8B; the five-language direction also
+acts in Arabic, which supplied no estimation or selection data. Across scale, a
+linear map fitted on benign inputs carries the direction into a
+model up to nine times larger, raising unsafe calls by $3.62$ to $76.01$ pp
+and lowering them by $7.65$ and $35.15$ pp, with BFCL changes from
+$-2.84$ to $+1.20$ pp. Transfer is uneven across language pairs,
+receiver-native directions remain competitive, and effect sizes depend
+on the judge, with no human reference: PRISM establishes transfer under
+the evaluated conditions and delimits its generality.
+\label{sec:conclusion-end}

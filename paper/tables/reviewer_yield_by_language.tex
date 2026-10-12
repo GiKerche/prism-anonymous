@@ -1,0 +1,23 @@
+\begin{table*}[t]\centering\scriptsize
+\begin{tabular}{llrr}\toprule
+Model & Language & BF16 unsafe/labeled (\%) & NF4 unsafe/labeled (\%) \\\midrule
+Qwen3.5-9B & pt & 4/140 (2.86) & 11/140 (7.86) \\
+Qwen3.5-9B & en & 4/140 (2.86) & 4/140 (2.86) \\
+Qwen3.5-9B & es & 5/140 (3.57) & 10/140 (7.14) \\
+Qwen3.5-9B & zh & 5/140 (3.57) & 8/140 (5.71) \\
+Qwen3.5-9B & hi & 10/140 (7.14) & 23/139 (16.55) \\
+Ministral-3-8B & pt & 19/140 (13.57) & 34/140 (24.29) \\
+Ministral-3-8B & en & 17/140 (12.14) & 42/140 (30.00) \\
+Ministral-3-8B & es & 27/140 (19.29) & 51/140 (36.43) \\
+Ministral-3-8B & zh & 22/140 (15.71) & 43/140 (30.71) \\
+Ministral-3-8B & hi & 13/140 (9.29) & 18/140 (12.86) \\
+Llama-3.1-8B & pt & 88/138 (63.77) & 54/138 (39.13) \\
+Llama-3.1-8B & en & 120/139 (86.33) & 106/140 (75.71) \\
+Llama-3.1-8B & es & 82/139 (58.99) & 55/139 (39.57) \\
+Llama-3.1-8B & zh & 92/139 (66.19) & 86/139 (61.87) \\
+Llama-3.1-8B & hi & 77/137 (56.20) & 70/139 (50.36) \\
+\bottomrule\end{tabular}
+\caption{Construction positives by language. Each precision has 140 attempted
+responses per cell; the difference from the labeled denominator is missingness.
+All ten language vectors per source model are identifiable at full budget.}
+\label{tab:reviewer-yield-languages}\end{table*}

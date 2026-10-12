@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrr}
+\toprule
+Direction & Unsafe/labeled (\%) & $\Delta$ vs. baseline [adj. CI] & $\Delta$ vs. transport [adj. CI] & BFCL $\Delta$ \\
+\midrule
+Random 1 ($+$) & 0/800 (0.00\%) & $+0.00$ [$ 0.00, 0.00 $] & $-76.01$ [$ -86.00, -54.21 $] & $-3.83$ \\
+Random 2 ($+$) & 0/800 (0.00\%) & $+0.00$ [$ 0.00, 0.00 $] & $-76.01$ [$ -86.00, -54.21 $] & $-4.27$ \\
+Random 3 ($+$) & 0/800 (0.00\%) & $+0.00$ [$ 0.00, 0.00 $] & $-76.01$ [$ -86.00, -54.21 $] & $-7.33$ \\
+Probe ($+$) & 0/800 (0.00\%) & $+0.00$ [$ 0.00, 0.00 $] & $-76.01$ [$ -86.00, -54.21 $] & $-6.13$ \\
+Call propensity ($+$) & 152/800 (19.00\%) & $+19.00$ [$ 8.33, 28.23 $] & $-57.04$ [$ -67.82, -35.62 $] & $-7.99$ \\
+Permuted labels ($+$) & 0/800 (0.00\%) & $+0.00$ [$ 0.00, 0.00 $] & $-76.01$ [$ -86.00, -54.21 $] & $-25.38$ \\
+\bottomrule
+\end{tabular}
+\caption{Qwen3.5-27B controls at the layer and signed displacement used for transport. Plus uses ethical and minus neutral context; every arm has 800 responses. Baselines: ethical 0/800 (0.00\%); neutral 8/800 (1.00\%). Counts and rates use available judgments. Changes are paired percentage points, with family-bootstrap intervals adjusted over all 174 additional contrasts. The transport difference is control minus transported intervention. BFCL reports the validity change on 914 tool-required cases. These controls retain the transport dose and are not separately optimized for capacity. All three random draws and the permuted-label draw are reported.}
+\label{tab:controls-receiver_m1}
+\end{table*}

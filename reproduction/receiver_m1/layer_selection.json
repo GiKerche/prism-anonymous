@@ -1,0 +1,34 @@
+{
+  "selected_layer": 40,
+  "best_validation": {
+    "layer": 40,
+    "accuracy": 0.9875,
+    "balanced_accuracy": 0.744131455399061,
+    "confusion_counts": [
+      [
+        2526,
+        30
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "weighted_confusion": [
+      [
+        78.9375,
+        0.9375
+      ],
+      [
+        0.0625,
+        0.0625
+      ]
+    ],
+    "auc": 0.9131455399061033,
+    "balanced_accuracy_ci95": [
+      0.7377317339149401,
+      0.7447844228094576
+    ],
+    "bootstrap_undefined": 3491
+  }
+}

@@ -1,0 +1,23 @@
+\begin{table*}[t]
+\centering\scriptsize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llrrr}
+\toprule
+Model & Arm & Baseline & Intervention & $\Delta$ [95\% CI] (pp) \\
+\midrule
+Qwen3.5-9B & N+ & 0/44 (0.00\%) & 39/44 (88.64\%) & +88.64 [80.77, 97.50] \\
+Qwen3.5-9B & S+ & 0/44 (0.00\%) & 40/43 (93.02\%) & +93.02 [82.69, 100.00] \\
+Qwen3.5-9B & N- & 1/44 (2.27\%) & 1/44 (2.27\%) & +0.00 [0.00, 0.00] \\
+Qwen3.5-9B & S- & 1/44 (2.27\%) & 1/44 (2.27\%) & +0.00 [0.00, 0.00] \\
+Ministral-3-8B & N+ & 0/44 (0.00\%) & 1/44 (2.27\%) & +2.27 [0.00, 9.38] \\
+Ministral-3-8B & S+ & 0/44 (0.00\%) & 0/44 (0.00\%) & +0.00 [0.00, 0.00] \\
+Ministral-3-8B & N- & 3/44 (6.82\%) & 3/44 (6.82\%) & +0.00 [-6.25, 8.33] \\
+Ministral-3-8B & S- & 3/44 (6.82\%) & 2/44 (4.55\%) & -2.27 [-12.50, 8.33] \\
+Llama-3.1-8B & N+ & 26/43 (60.47\%) & 31/41 (75.61\%) & +20.00 [0.00, 36.84] \\
+Llama-3.1-8B & S+ & 26/43 (60.47\%) & 36/44 (81.82\%) & +23.26 [6.45, 45.71] \\
+Llama-3.1-8B & N- & 33/42 (78.57\%) & 22/43 (51.16\%) & -26.19 [-53.33, 2.50] \\
+Llama-3.1-8B & S- & 33/42 (78.57\%) & 25/43 (58.14\%) & -21.95 [-44.12, -2.63] \\
+\bottomrule
+\end{tabular}
+\caption{Arabic transfer of pooled five-language vectors: 44 responses per generated condition from 11 scenarios in six families, excluded from construction and both validation partitions. N/S denote native/shadow; plus is ethical and minus neutral context. Counts use available labels and deltas use complete pairs. Pointwise intervals are descriptive. A zero-event or degenerate interval is not evidence of zero risk; Qwen zero-dose arms are exact baseline aliases.}
+\label{tab:current-arabic}
+\end{table*}

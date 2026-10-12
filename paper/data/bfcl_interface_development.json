@@ -1,0 +1,281 @@
+{
+  "scope": "86 BFCL development cases, fixed original primary doses, model tool interfaces versus separate Prompt/Python diagnostic",
+  "primary_protocol": "model-native tool interfaces with validated parser and Llama schema-envelope corrections",
+  "records": [
+    {
+      "key": "source_m1",
+      "model": "Qwen3.5-9B",
+      "direction": "native_plus",
+      "alpha": 8,
+      "cases": 86,
+      "tool_interface_baseline_correct": 76,
+      "tool_interface_intervention_correct": 78,
+      "tool_interface_delta_pp": 2.3255813953488302,
+      "prompt_python_baseline_correct": 70,
+      "prompt_python_intervention_correct": 60,
+      "prompt_python_delta_pp": -11.627906976744185
+    },
+    {
+      "key": "source_m1",
+      "model": "Qwen3.5-9B",
+      "direction": "native_minus",
+      "alpha": 0.0,
+      "cases": 86,
+      "tool_interface_baseline_correct": 76,
+      "tool_interface_intervention_correct": 76,
+      "tool_interface_delta_pp": 0.0,
+      "prompt_python_baseline_correct": 70,
+      "prompt_python_intervention_correct": 70,
+      "prompt_python_delta_pp": 0.0
+    },
+    {
+      "key": "source_m1",
+      "model": "Qwen3.5-9B",
+      "direction": "shadow_plus",
+      "alpha": 8,
+      "cases": 86,
+      "tool_interface_baseline_correct": 76,
+      "tool_interface_intervention_correct": 78,
+      "tool_interface_delta_pp": 2.3255813953488302,
+      "prompt_python_baseline_correct": 70,
+      "prompt_python_intervention_correct": 54,
+      "prompt_python_delta_pp": -18.6046511627907
+    },
+    {
+      "key": "source_m1",
+      "model": "Qwen3.5-9B",
+      "direction": "shadow_minus",
+      "alpha": 0.0,
+      "cases": 86,
+      "tool_interface_baseline_correct": 76,
+      "tool_interface_intervention_correct": 76,
+      "tool_interface_delta_pp": 0.0,
+      "prompt_python_baseline_correct": 70,
+      "prompt_python_intervention_correct": 70,
+      "prompt_python_delta_pp": 0.0
+    },
+    {
+      "key": "source_m3",
+      "model": "Ministral-3-8B",
+      "direction": "native_plus",
+      "alpha": 1,
+      "cases": 86,
+      "tool_interface_baseline_correct": 72,
+      "tool_interface_intervention_correct": 72,
+      "tool_interface_delta_pp": 0.0,
+      "prompt_python_baseline_correct": 46,
+      "prompt_python_intervention_correct": 30,
+      "prompt_python_delta_pp": -18.60465116279069
+    },
+    {
+      "key": "source_m3",
+      "model": "Ministral-3-8B",
+      "direction": "native_minus",
+      "alpha": -0.25,
+      "cases": 86,
+      "tool_interface_baseline_correct": 72,
+      "tool_interface_intervention_correct": 72,
+      "tool_interface_delta_pp": 0.0,
+      "prompt_python_baseline_correct": 46,
+      "prompt_python_intervention_correct": 48,
+      "prompt_python_delta_pp": 2.3255813953488413
+    },
+    {
+      "key": "source_m3",
+      "model": "Ministral-3-8B",
+      "direction": "shadow_plus",
+      "alpha": 1,
+      "cases": 86,
+      "tool_interface_baseline_correct": 72,
+      "tool_interface_intervention_correct": 72,
+      "tool_interface_delta_pp": 0.0,
+      "prompt_python_baseline_correct": 46,
+      "prompt_python_intervention_correct": 34,
+      "prompt_python_delta_pp": -13.95348837209302
+    },
+    {
+      "key": "source_m3",
+      "model": "Ministral-3-8B",
+      "direction": "shadow_minus",
+      "alpha": -0.25,
+      "cases": 86,
+      "tool_interface_baseline_correct": 72,
+      "tool_interface_intervention_correct": 71,
+      "tool_interface_delta_pp": -1.1627906976744207,
+      "prompt_python_baseline_correct": 46,
+      "prompt_python_intervention_correct": 49,
+      "prompt_python_delta_pp": 3.488372093023262
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "direction": "native_plus",
+      "alpha": 4,
+      "cases": 86,
+      "tool_interface_baseline_correct": 32,
+      "tool_interface_intervention_correct": 49,
+      "tool_interface_delta_pp": 19.76744186046512,
+      "prompt_python_baseline_correct": 75,
+      "prompt_python_intervention_correct": 72,
+      "prompt_python_delta_pp": -3.488372093023251
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "direction": "native_minus",
+      "alpha": -4,
+      "cases": 86,
+      "tool_interface_baseline_correct": 32,
+      "tool_interface_intervention_correct": 48,
+      "tool_interface_delta_pp": 18.6046511627907,
+      "prompt_python_baseline_correct": 75,
+      "prompt_python_intervention_correct": 75,
+      "prompt_python_delta_pp": 0.0
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "direction": "shadow_plus",
+      "alpha": 4,
+      "cases": 86,
+      "tool_interface_baseline_correct": 32,
+      "tool_interface_intervention_correct": 54,
+      "tool_interface_delta_pp": 25.581395348837212,
+      "prompt_python_baseline_correct": 75,
+      "prompt_python_intervention_correct": 72,
+      "prompt_python_delta_pp": -3.488372093023251
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "direction": "shadow_minus",
+      "alpha": -4,
+      "cases": 86,
+      "tool_interface_baseline_correct": 32,
+      "tool_interface_intervention_correct": 46,
+      "tool_interface_delta_pp": 16.279069767441857,
+      "prompt_python_baseline_correct": 75,
+      "prompt_python_intervention_correct": 76,
+      "prompt_python_delta_pp": 1.1627906976744207
+    },
+    {
+      "key": "receiver_m1",
+      "model": "Qwen3.5-27B",
+      "direction": "transported_native_plus",
+      "alpha": 8,
+      "cases": 86,
+      "tool_interface_baseline_correct": 79,
+      "tool_interface_intervention_correct": 75,
+      "tool_interface_delta_pp": -4.651162790697672,
+      "prompt_python_baseline_correct": 74,
+      "prompt_python_intervention_correct": 71,
+      "prompt_python_delta_pp": -3.488372093023251
+    },
+    {
+      "key": "receiver_m1",
+      "model": "Qwen3.5-27B",
+      "direction": "transported_native_minus",
+      "alpha": 0.0,
+      "cases": 86,
+      "tool_interface_baseline_correct": 79,
+      "tool_interface_intervention_correct": 79,
+      "tool_interface_delta_pp": 0.0,
+      "prompt_python_baseline_correct": 74,
+      "prompt_python_intervention_correct": 74,
+      "prompt_python_delta_pp": 0.0
+    },
+    {
+      "key": "receiver_m3",
+      "model": "Ministral-3-14B",
+      "direction": "transported_native_plus",
+      "alpha": 2,
+      "cases": 86,
+      "tool_interface_baseline_correct": 75,
+      "tool_interface_intervention_correct": 77,
+      "tool_interface_delta_pp": 2.3255813953488413,
+      "prompt_python_baseline_correct": 76,
+      "prompt_python_intervention_correct": 70,
+      "prompt_python_delta_pp": -6.976744186046513
+    },
+    {
+      "key": "receiver_m3",
+      "model": "Ministral-3-14B",
+      "direction": "transported_native_minus",
+      "alpha": -1,
+      "cases": 86,
+      "tool_interface_baseline_correct": 75,
+      "tool_interface_intervention_correct": 72,
+      "tool_interface_delta_pp": -3.488372093023251,
+      "prompt_python_baseline_correct": 76,
+      "prompt_python_intervention_correct": 76,
+      "prompt_python_delta_pp": 0.0
+    },
+    {
+      "key": "receiver_m5",
+      "model": "Llama-3.1-70B",
+      "direction": "transported_native_plus",
+      "alpha": 2,
+      "cases": 86,
+      "tool_interface_baseline_correct": 19,
+      "tool_interface_intervention_correct": 19,
+      "tool_interface_delta_pp": 0.0,
+      "prompt_python_baseline_correct": 81,
+      "prompt_python_intervention_correct": 81,
+      "prompt_python_delta_pp": 0.0
+    },
+    {
+      "key": "receiver_m5",
+      "model": "Llama-3.1-70B",
+      "direction": "transported_native_minus",
+      "alpha": -4,
+      "cases": 86,
+      "tool_interface_baseline_correct": 19,
+      "tool_interface_intervention_correct": 16,
+      "tool_interface_delta_pp": -3.4883720930232567,
+      "prompt_python_baseline_correct": 81,
+      "prompt_python_intervention_correct": 80,
+      "prompt_python_delta_pp": -1.1627906976744207
+    }
+  ],
+  "sources": [
+    {
+      "sha256": "ae20c606d5ff70629c76fa70c15915fadb3230fdeba7344dcfffb4229612b265"
+    },
+    {
+      "sha256": "f45746cba21f595e95eb38af0613907b0a91d5bc8fb9bc2e96d733c4b8abc5a6"
+    },
+    {
+      "sha256": "3f4c5490247587b8d83f91662e2923ce9356d86e6ec3545e87da8fb15a4c6d77"
+    },
+    {
+      "sha256": "5d29299d6737c50c9442a44a856f6b46bfc7e1b2959434852e81c8ba96d3b415"
+    },
+    {
+      "sha256": "f9902249af335dda049c47aa42b413a6325469980e680274559157de64b3cfb2"
+    },
+    {
+      "sha256": "4cbef481eb2f464eef5d8ab2ba96ec5e95f5ac763c49ffaf36b2399348c2cd50"
+    },
+    {
+      "sha256": "fb26553332ac86b9b40388e4e08312f80f58ccb786b7d3e4bbc0eff0a8857cc1"
+    },
+    {
+      "sha256": "fb21bd4e56f35a30e1592270dfba63bf811225d0763237808c875b283680e9c0"
+    },
+    {
+      "sha256": "b8f787e5fc68d6e0600a214eae91d392114fcb289fc5d4ab1b148a09fcb3bc18"
+    },
+    {
+      "sha256": "e82d9de84ebd85c1800a1542b9852f22859707a149ec1f9aa981cf8a48d6cec0"
+    },
+    {
+      "sha256": "53d951a2362b4cc5f6a3288174cc1ee6d2a1ecc34006fe65576f835786e97ca5"
+    },
+    {
+      "sha256": "da5c04b1ae4beccfe6904eab4fe914f234d41dbd21e4d4fe5b7dd97479c77a4d"
+    }
+  ],
+  "scores_are_not_pooled_across_interfaces": true,
+  "new_dose_selected": false,
+  "same_gpu_crossover_for_all_models": false
+}

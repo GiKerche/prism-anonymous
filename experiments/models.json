@@ -1,0 +1,46 @@
+{
+  "models": {
+    "M1": {
+      "source": {
+        "id": "Qwen/Qwen3.5-9B",
+        "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+        "blocks": 32,
+        "hidden_size": 4096
+      },
+      "receiver": {
+        "id": "Qwen/Qwen3.5-27B",
+        "revision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+        "blocks": 64,
+        "hidden_size": 5120
+      }
+    },
+    "M3": {
+      "source": {
+        "id": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+        "revision": "f6fae9795746f63c9be8344932f01275f3c63734",
+        "blocks": 34,
+        "hidden_size": 4096
+      },
+      "receiver": {
+        "id": "mistralai/Ministral-3-14B-Instruct-2512-BF16",
+        "revision": "3cea74c1ebaf5ce5f5a2553de470e2ceab825142",
+        "blocks": 40,
+        "hidden_size": 5120
+      }
+    },
+    "M5": {
+      "source": {
+        "id": "meta-llama/Llama-3.1-8B-Instruct",
+        "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+        "blocks": 32,
+        "hidden_size": 4096
+      },
+      "receiver": {
+        "id": "meta-llama/Llama-3.1-70B-Instruct",
+        "revision": "1605565b47bb9346c5515c34102e054115b4f98b",
+        "blocks": 80,
+        "hidden_size": 8192
+      }
+    }
+  }
+}

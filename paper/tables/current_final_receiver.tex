@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llrrrrr}
+\toprule
+Model & Arm & $a$ & Baseline & Intervention & $\Delta$ [95\% CI] & BFCL tool \\
+\midrule
+Qwen3.5-27B & T+ & $8$ & 0/800 (0.00\%) & 605/796 (76.01\%) & +76.01 [65.12, 82.77] & -2.19 \\
+Qwen3.5-27B & T- & $0$ & 8/800 (1.00\%) & 8/800 (1.00\%) & +0.00 [0.00, 0.00] & +0.00 \\
+Ministral-3-14B & T+ & $2$ & 6/800 (0.75\%) & 35/800 (4.38\%) & +3.62 [1.21, 7.66] & +0.11 \\
+Ministral-3-14B & T- & $-1$ & 148/797 (18.57\%) & 87/800 (10.88\%) & -7.65 [-12.63, -1.94] & -0.77 \\
+Llama-3.1-70B & T+ & $4$ & 35/800 (4.38\%) & 255/800 (31.87\%) & +27.50 [22.14, 33.91] & +0.11 \\
+Llama-3.1-70B & T- & $-4$ & 383/792 (48.36\%) & 104/799 (13.02\%) & -35.15 [-46.53, -23.22] & +0.00 \\
+\bottomrule
+\end{tabular}
+\caption{Receiver effects: T is the transported native source direction. Plus uses ethical context; minus uses neutral context. Each arm has 800 responses. Counts and percentages use available labels. Paired deltas use only pairs with both labels available, so they can differ from the marginal rate difference. Intervals are pointwise family-bootstrap 95\% CIs; adjusted intervals are in \cref{tab:current-adjusted}. The BFCL column gives accuracy changes on 914 tool-required cases. All changes are percentage points. Qwen has no selected suppression dose because its neutral Validation II baseline has no eligible calls (0/340). Zero-dose rows reuse the final baseline and do not measure an intervention effect.}
+\label{tab:current-final-receiver}
+\end{table*}

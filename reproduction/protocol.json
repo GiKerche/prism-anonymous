@@ -1,0 +1,207 @@
+{
+  "classifier": {
+    "C": 1.0,
+    "fit_intercept": true,
+    "max_iter": 5000,
+    "penalty": "l2",
+    "random_state": 20260926,
+    "solver": "liblinear",
+    "threshold": 0.5,
+    "tol": 1e-06,
+    "type": "LogisticRegression"
+  },
+  "software": {
+    "numpy": "2.4.4",
+    "sklearn": "1.8.0"
+  },
+  "weighting": "Each scenario has total mass 5; equal mass per language with resolved labels; divide its prompt mass among resolved seeds. Class weights = build total mass/(2*build class mass). Same base weights without class reweighting for validation metrics. Seeds do not multiply effective fitting mass.",
+  "vector_estimator": "Sum per-language covariance between BF16 features and centered four-seed unsafe fraction, divided by number of resolved scenarios per language, then unit L2 normalization; native and NF4 labels separately. No probe coefficient substitution.",
+  "bootstrap": {
+    "method": "percentile 2.5/97.5; fixed predictions, paired family multiplicities across layers; undefined two-class resamples excluded and counted",
+    "replicates": 10000,
+    "seed": 20260926,
+    "selection_adjusted": false,
+    "unit": "reviewed_semantic_family"
+  },
+  "source_languages": [
+    "pt",
+    "en",
+    "es",
+    "zh",
+    "hi"
+  ],
+  "models": {
+    "source_m1": {
+      "model_id": "Qwen/Qwen3.5-9B",
+      "model_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "blocks": 32,
+      "hidden_size": 4096,
+      "layer": 18,
+      "selected_alphas": {
+        "native_plus": {
+          "alpha": 8,
+          "condition": "native_plus_8",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "native_plus_8",
+          "one_se_gain_threshold_pp": 66.6396786345341
+        },
+        "native_minus": {
+          "alpha": 0.0,
+          "reason": "NO_POSITIVE_SIGNED_GAIN"
+        },
+        "shadow_plus": {
+          "alpha": 8,
+          "condition": "shadow_plus_8",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "shadow_plus_8",
+          "one_se_gain_threshold_pp": 66.83717217226648
+        },
+        "shadow_minus": {
+          "alpha": 0.0,
+          "reason": "NO_POSITIVE_SIGNED_GAIN"
+        }
+      },
+      "sigma": 2.754879765701294
+    },
+    "source_m3": {
+      "model_id": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+      "model_revision": "f6fae9795746f63c9be8344932f01275f3c63734",
+      "blocks": 34,
+      "hidden_size": 4096,
+      "layer": 21,
+      "selected_alphas": {
+        "native_plus": {
+          "alpha": 1,
+          "condition": "native_plus_1",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "native_plus_1",
+          "one_se_gain_threshold_pp": 2.5518934116252527
+        },
+        "native_minus": {
+          "alpha": -0.25,
+          "condition": "native_minus_0p25",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "native_minus_0p5",
+          "one_se_gain_threshold_pp": 3.481096746437368
+        },
+        "shadow_plus": {
+          "alpha": 1,
+          "condition": "shadow_plus_1",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "shadow_plus_1",
+          "one_se_gain_threshold_pp": 2.6935673211812703
+        },
+        "shadow_minus": {
+          "alpha": -0.25,
+          "condition": "shadow_minus_0p25",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "shadow_minus_0p5",
+          "one_se_gain_threshold_pp": 2.6170471238926463
+        }
+      },
+      "sigma": 2.3595060035705564
+    },
+    "source_m5": {
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+      "blocks": 32,
+      "hidden_size": 4096,
+      "layer": 26,
+      "selected_alphas": {
+        "native_plus": {
+          "alpha": 4,
+          "condition": "native_plus_4",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "native_plus_4",
+          "one_se_gain_threshold_pp": 11.927613003203966
+        },
+        "native_minus": {
+          "alpha": -4,
+          "condition": "native_minus_4",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "native_minus_4",
+          "one_se_gain_threshold_pp": 21.343931955657286
+        },
+        "shadow_plus": {
+          "alpha": 4,
+          "condition": "shadow_plus_4",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "shadow_plus_4",
+          "one_se_gain_threshold_pp": 11.75989180629216
+        },
+        "shadow_minus": {
+          "alpha": -4,
+          "condition": "shadow_minus_4",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "shadow_minus_4",
+          "one_se_gain_threshold_pp": 19.12392580384489
+        }
+      },
+      "sigma": 3.542947209262848
+    },
+    "receiver_m1": {
+      "model_id": "Qwen/Qwen3.5-27B",
+      "model_revision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+      "blocks": 64,
+      "hidden_size": 5120,
+      "layer": 40,
+      "selected_alphas": {
+        "transported_native_plus": 8,
+        "transported_native_minus": 0.0
+      },
+      "sigma": 5.336600187234658
+    },
+    "receiver_m3": {
+      "model_id": "mistralai/Ministral-3-14B-Instruct-2512-BF16",
+      "model_revision": "3cea74c1ebaf5ce5f5a2553de470e2ceab825142",
+      "blocks": 40,
+      "hidden_size": 5120,
+      "layer": 20,
+      "selected_alphas": {
+        "transported_native_plus": 2,
+        "transported_native_minus": -1
+      },
+      "sigma": 3.1708687155643904
+    },
+    "receiver_m5": {
+      "model_id": "meta-llama/Llama-3.1-70B-Instruct",
+      "model_revision": "1605565b47bb9346c5515c34102e054115b4f98b",
+      "blocks": 80,
+      "hidden_size": 8192,
+      "layer": 78,
+      "selected_alphas": {
+        "transported_native_plus": 4,
+        "transported_native_minus": -4
+      },
+      "sigma": 4.303750356562192
+    }
+  },
+  "map": {
+    "fit_rows": [
+      0,
+      1024
+    ],
+    "validation_rows": [
+      1024,
+      1536
+    ],
+    "diagnostic_test_rows": [
+      1536,
+      2048
+    ],
+    "pca_rank_grid": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "ridge_lambda_relative_grid": [
+      0.0001,
+      0.001,
+      0.01,
+      0.1,
+      1.0
+    ],
+    "selection": "Minimum normalized validation squared prediction error; exact ties lower rank, then higher lambda. Fit centering and PCA on benign train only."
+  }
+}

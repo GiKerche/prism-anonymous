@@ -1,0 +1,177 @@
+{
+  "rows": [
+    {
+      "condition": "native_pooled_plus",
+      "stratum": "tool_required",
+      "n": 914,
+      "metrics": {
+        "official_valid": {
+          "baseline": 834,
+          "intervention": 823,
+          "zero_to_one": 17,
+          "one_to_zero": 28
+        },
+        "any_call": {
+          "baseline": 911,
+          "intervention": 908,
+          "zero_to_one": 3,
+          "one_to_zero": 6
+        },
+        "malformed": {
+          "baseline": 3,
+          "intervention": 6,
+          "zero_to_one": 6,
+          "one_to_zero": 3
+        },
+        "truncated": {
+          "baseline": 0,
+          "intervention": 0,
+          "zero_to_one": 0,
+          "one_to_zero": 0
+        },
+        "parser_invalid": {
+          "baseline": 3,
+          "intervention": 7,
+          "zero_to_one": 7,
+          "one_to_zero": 3
+        },
+        "quality_alert": {
+          "baseline": 12,
+          "intervention": 8,
+          "zero_to_one": 0,
+          "one_to_zero": 4
+        }
+      }
+    },
+    {
+      "condition": "shadow_pooled_plus",
+      "stratum": "tool_required",
+      "n": 914,
+      "metrics": {
+        "official_valid": {
+          "baseline": 834,
+          "intervention": 820,
+          "zero_to_one": 14,
+          "one_to_zero": 28
+        },
+        "any_call": {
+          "baseline": 911,
+          "intervention": 906,
+          "zero_to_one": 3,
+          "one_to_zero": 8
+        },
+        "malformed": {
+          "baseline": 3,
+          "intervention": 8,
+          "zero_to_one": 8,
+          "one_to_zero": 3
+        },
+        "truncated": {
+          "baseline": 0,
+          "intervention": 0,
+          "zero_to_one": 0,
+          "one_to_zero": 0
+        },
+        "parser_invalid": {
+          "baseline": 3,
+          "intervention": 9,
+          "zero_to_one": 9,
+          "one_to_zero": 3
+        },
+        "quality_alert": {
+          "baseline": 12,
+          "intervention": 9,
+          "zero_to_one": 0,
+          "one_to_zero": 3
+        }
+      }
+    },
+    {
+      "condition": "native_pooled_minus",
+      "stratum": "tool_required",
+      "n": 914,
+      "metrics": {
+        "official_valid": {
+          "baseline": 834,
+          "intervention": 811,
+          "zero_to_one": 12,
+          "one_to_zero": 35
+        },
+        "any_call": {
+          "baseline": 911,
+          "intervention": 903,
+          "zero_to_one": 1,
+          "one_to_zero": 9
+        },
+        "malformed": {
+          "baseline": 3,
+          "intervention": 11,
+          "zero_to_one": 9,
+          "one_to_zero": 1
+        },
+        "truncated": {
+          "baseline": 0,
+          "intervention": 0,
+          "zero_to_one": 0,
+          "one_to_zero": 0
+        },
+        "parser_invalid": {
+          "baseline": 3,
+          "intervention": 18,
+          "zero_to_one": 16,
+          "one_to_zero": 1
+        },
+        "quality_alert": {
+          "baseline": 12,
+          "intervention": 15,
+          "zero_to_one": 4,
+          "one_to_zero": 1
+        }
+      }
+    },
+    {
+      "condition": "shadow_pooled_minus",
+      "stratum": "tool_required",
+      "n": 914,
+      "metrics": {
+        "official_valid": {
+          "baseline": 834,
+          "intervention": 814,
+          "zero_to_one": 14,
+          "one_to_zero": 34
+        },
+        "any_call": {
+          "baseline": 911,
+          "intervention": 904,
+          "zero_to_one": 1,
+          "one_to_zero": 8
+        },
+        "malformed": {
+          "baseline": 3,
+          "intervention": 10,
+          "zero_to_one": 8,
+          "one_to_zero": 1
+        },
+        "truncated": {
+          "baseline": 0,
+          "intervention": 1,
+          "zero_to_one": 1,
+          "one_to_zero": 0
+        },
+        "parser_invalid": {
+          "baseline": 3,
+          "intervention": 18,
+          "zero_to_one": 16,
+          "one_to_zero": 1
+        },
+        "quality_alert": {
+          "baseline": 12,
+          "intervention": 14,
+          "zero_to_one": 3,
+          "one_to_zero": 1
+        }
+      }
+    }
+  ],
+  "scope": "Llama Prompt/Python; fixed original source interventions."
+}

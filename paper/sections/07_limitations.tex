@@ -1,0 +1,25 @@
+\section*{Limitations}
+\label{sec:limitations}
+
+The scenario partitions are small and not fully independent. Families group closely related requests, but requests in different families can still share a theme, and category coverage differs between partitions. Repeated seeds add responses, not scenarios. Validation I has few positive responses for the Qwen models (two in one family for Qwen3.5-9B, four in one family for Qwen3.5-27B), so their selected layers are less reliable than the others.
+
+The method covers three model families and one quantization scheme.
+The selected layer is chosen with native labels and shared by the native and shadow estimators. The probe that selects the layer is not the direction estimator, and the layer with the highest balanced accuracy need not be the layer where an intervention is most effective.
+
+The language and capability evaluations are incomplete. Arabic has
+translations for only 11 test scenarios. BFCL tasks are in English, so
+preserved capability in the other languages is not measured. LUMEN
+records proposed calls without executing them (SODA executes them, but
+in simulated environments).
+
+All violation labels come from language models without human
+validation. Invalid judgments stay missing, agreement between judges is
+not accuracy, and the reported intervals condition on the labels and
+on the selected layers and strengths (they omit judge error and
+selection uncertainty).
+
+Scale transfer requires access to the receiver. The map needs receiver
+activations on benign inputs, and the intervention strength is selected
+on receiver outcomes in Validation II. Transport shows no uniform
+advantage over directions estimated in the receiver, and the three
+transfer axes are tested separately, never jointly.  

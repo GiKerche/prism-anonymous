@@ -1,0 +1,96 @@
+{
+  "status": "POSTHOC_EQUIVALENCE_MARGIN_DIAGNOSTIC_COMPLETE",
+  "margin_pp": 7.0,
+  "margin_source": "Explicitly suggested in the supplied reviewer critique after outcomes were available.",
+  "decision": "Both one-sided bounds inside +/-7 pp. Percentile interval inclusion with one-sided tail .05/5; five nonzero native-shadow contrasts, Bonferroni familywise alpha .05.",
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260928,
+  "zero_dose_qwen_alias_excluded": true,
+  "limitations": "Post-hoc margin is not independently justified as practically negligible. Conditional on observed primary labels and complete response pairs; not distribution-free proof of equivalence or universal interchangeability.",
+  "rows": [
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "delta_pp": -1.5132408575031526,
+      "interval98_pp": [
+        -4.098460149086957,
+        4.0100854546003575
+      ],
+      "inside_margin": true,
+      "paired_resolved": 793,
+      "paired_missing": 7,
+      "bootstrap_undefined": 0
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "delta_pp": -0.7537688442211055,
+      "interval98_pp": [
+        -3.368794326241135,
+        0.2631578947368421
+      ],
+      "inside_margin": true,
+      "paired_resolved": 796,
+      "paired_missing": 4,
+      "bootstrap_undefined": 0
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "delta_pp": -0.2503128911138924,
+      "interval98_pp": [
+        -1.129032258064516,
+        1.1173184357541899
+      ],
+      "inside_margin": true,
+      "paired_resolved": 799,
+      "paired_missing": 1,
+      "bootstrap_undefined": 0
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "delta_pp": 1.6352201257861636,
+      "interval98_pp": [
+        -1.303546271556959,
+        3.5885792913656704
+      ],
+      "inside_margin": true,
+      "paired_resolved": 795,
+      "paired_missing": 5,
+      "bootstrap_undefined": 0
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "delta_pp": -1.804123711340206,
+      "interval98_pp": [
+        -5.468773746200608,
+        1.7543859649122806
+      ],
+      "inside_margin": true,
+      "paired_resolved": 776,
+      "paired_missing": 24,
+      "bootstrap_undefined": 0
+    }
+  ],
+  "implementation": {
+    "sha256": "ed8aab56d45ce2396ece35e060baef9eb44edaa6966a3fc75f22673adc793217"
+  },
+  "original_provenance": [
+    {
+      "sha256": "7770fb38900dff372e945e4e22feba09cf8fffb5fedd75d26eb9db06c2b9b108"
+    },
+    {
+      "sha256": "60640c91b0530e90b77d5c1232663b0e4e0cb9e100ee3ce54e4024a5add0f385"
+    },
+    {
+      "sha256": "f53df99f721c6b3d15c50025160acfb832a5a410926b42cd21a192fe18906e22"
+    }
+  ],
+  "provenance": [
+    {
+      "sha256": "4dc19e7abb490867eba2940e01bbcbf55cfda790e2079a042a2aaf94f10d27ec"
+    }
+  ]
+}

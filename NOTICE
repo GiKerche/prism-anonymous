@@ -1,0 +1,18 @@
+This repository accompanies the anonymous review version of PRISM.
+The manuscript and PRISM-specific research materials retain their authorship.
+Publication of this artifact does not grant a new blanket license to third-party
+models, benchmarks, documents, or software. Their upstream terms apply.
+
+The ACL style and bibliography support files retain their embedded notices.
+The BFCL interfaces reference the Berkeley Function Calling Leaderboard
+(ShishirPatil/gorilla), pinned in experiments/benchmarks.json.
+The SODA adapter references the benchmark by Sun, Liu and Weng, with its
+source and dataset revisions recorded in the same file. External benchmark
+software and base-model checkpoints are not redistributed here.
+
+experiments/prism/qwen_xml_types_v3.py identifies the upstream vLLM XML
+parameter-conversion semantics that it adapts. No upstream attribution has
+been removed. See the notices accompanying that file.
+The Apache 2.0 license for that adapted code is included in
+licenses/Apache-2.0.txt. This notice does not extend that license to the paper
+or to other materials with their own terms.

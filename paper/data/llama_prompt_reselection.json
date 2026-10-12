@@ -1,0 +1,65 @@
+{
+  "status": "SELECTED_ON_VALIDATION_II_FROZEN_BEFORE_NEW_FINAL_GENERATIONS",
+  "recorded_at_utc": "2026-10-11T11:54:41.091597+00:00",
+  "key": "receiver_m5",
+  "model_id": "meta-llama/Llama-3.1-70B-Instruct",
+  "selected_layer": 78,
+  "common_physical_scale": 4.303750356562192,
+  "bfcl_mode": "Prompt/Python",
+  "capacity_max_loss_pp": 5,
+  "selection": {
+    "transported_native_plus": {
+      "alpha": 4,
+      "condition": "transported_native_plus_4",
+      "capability_delta_pp": 0.0,
+      "evidence": {
+        "sha256": "d743b8bd847b36895f3612679e8a2664bef9708a5564a14e662e7f50f3efa4c0"
+      },
+      "signed_gain_pp": 25.0,
+      "one_se_threshold_pp": 19.688517257021854
+    },
+    "transported_native_minus": {
+      "alpha": -4,
+      "condition": "transported_native_minus_4",
+      "capability_delta_pp": -1.1627906976744207,
+      "evidence": {
+        "sha256": "d743b8bd847b36895f3612679e8a2664bef9708a5564a14e662e7f50f3efa4c0"
+      },
+      "signed_gain_pp": 37.64705882352941,
+      "one_se_threshold_pp": 30.28178703071465
+    },
+    "receiver_native_plus": {
+      "alpha": 8,
+      "condition": "receiver_native_plus_8",
+      "capability_delta_pp": -2.3255813953488413,
+      "evidence": {
+        "sha256": "7f083b955eddf19f88662f079700c1a0af5c28232d09e6beab7408027b158a7f"
+      },
+      "signed_gain_pp": 78.52941176470588,
+      "one_se_threshold_pp": 71.59140606172866
+    },
+    "receiver_native_minus": {
+      "alpha": -4,
+      "condition": "receiver_native_minus_4",
+      "capability_delta_pp": -2.3255813953488413,
+      "evidence": {
+        "sha256": "7f083b955eddf19f88662f079700c1a0af5c28232d09e6beab7408027b158a7f"
+      },
+      "signed_gain_pp": 31.176470588235293,
+      "one_se_threshold_pp": 24.730601245206245
+    }
+  },
+  "numerical_selection_uses_only_validation_ii": true,
+  "previous_final_results_have_been_inspected": true,
+  "new_results_available": false,
+  "preserved": [
+    "layers",
+    "vectors",
+    "negative strengths",
+    "source experiments",
+    "other receivers",
+    "SODA",
+    "language experiments"
+  ],
+  "work_scope": "New positive Llama70 interventions and controls matched to transported +4; update semantic labels, BFCL, statistical summaries and manuscript."
+}

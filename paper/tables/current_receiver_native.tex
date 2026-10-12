@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrrr}
+\toprule
+Model & Native $a$ & Unsafe/labeled (\%) & $\Delta$ vs. baseline [adj. CI] & $\Delta$ vs. transport [adj. CI] & BFCL $\Delta$ \\
+\midrule
+Qwen3.5-27B & $+4$ & 7/800 (0.88\%) & $+0.88$ [$ 0.00, 3.27 $] & $-75.13$ [$ -84.98, -53.20 $] & $-0.22$ \\
+Qwen3.5-27B & $0^\dagger$ & 8/800 (1.00\%) & $+0.00$ [$ 0.00, 0.00 $] & $+0.00$ [$ 0.00, 0.00 $] & $+0.00$ \\
+\midrule
+Ministral-3-14B & $+2$ & 65/800 (8.12\%) & $+7.38$ [$ 0.54, 19.48 $] & $+3.75$ [$ 0.16, 8.37 $] & $+1.20$ \\
+Ministral-3-14B & $-0.25$ & 128/800 (16.00\%) & $-2.76$ [$ -6.25, 0.00 $] & $+5.12$ [$ 0.25, 10.91 $] & $-0.66$ \\
+\midrule
+Llama-3.1-70B & $+8$ & 648/798 (81.20\%) & $+76.82$ [$ 64.09, 83.93 $] & $+49.37$ [$ 27.48, 62.95 $] & $-0.33$ \\
+Llama-3.1-70B & $-4$ & 146/800 (18.25\%) & $-29.92$ [$ -47.35, -14.79 $] & $+5.13$ [$ 0.08, 12.40 $] & $+0.44$ \\
+\bottomrule
+\end{tabular}
+\caption{Receiver-native directions at their Validation II-selected doses. Positive doses use ethical and negative doses neutral context. The transport comparators use $+8/0$, $+2/-1$, and $+4/-4$ for Qwen, Ministral, and Llama, respectively. Each arm has 800 possible responses; BFCL uses 914 tool-required cases. Changes are paired percentage points and intervals adjust over the same 174 additional contrasts. $\dagger$ No negative Qwen dose was selected; this row reuses baseline. Ministral $+2$ and Llama $-4$ reuse the identical receiver-native conditions in the matched-displacement tables. These reused observations are not additional experimental replicates. Llama70B uses the receiver-native doses $+8/-4$ selected with Prompt/Python in Validation II.}
+\label{tab:receiver-native-selected}
+\end{table*}

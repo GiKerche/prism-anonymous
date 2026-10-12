@@ -1,0 +1,30 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}Xrrr@{}}
+\toprule
+ & \shortstack{Qwen3.5\\9B} & \shortstack{Ministral-3\\8B} & \shortstack{Llama-3.1\\8B} \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{Validation labels (number of responses)}} \\
+Unsafe action    & 2    & 318  & 1715 \\
+No unsafe action & 2558 & 2241 & 826  \\
+Missing label    & 0    & 1    & 19   \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{Validation performance (\%)}} \\
+Probe accuracy          & 93.83 & 83.21 & 73.39 \\
+Majority-class baseline & 99.92 & 87.57 & 67.49 \\
+Probe balanced accuracy & 96.91 & 85.29 & 73.66 \\
+\bottomrule
+\end{tabularx}
+\caption{Labels and probe performance used to select each frozen layer on Validation I; label-audit sensitivity is reported in the text.
+Each model generated 2,560 validation responses from 16 scenarios
+in 11 families. Responses with missing labels are excluded from
+performance calculations. Accuracy is the weighted percentage of
+correct predictions. The majority-class baseline always predicts
+the most frequent class in the construction split; it does not
+measure evaluator agreement. Balanced accuracy averages recall
+for the unsafe and non-unsafe classes and is the layer-selection
+criterion.}
+\label{tab:current-probe-support}
+\end{table}

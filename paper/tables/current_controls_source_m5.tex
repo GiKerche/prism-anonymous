@@ -1,0 +1,24 @@
+\begin{table*}[t]
+\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrr}
+\toprule
+Control & Unsafe/labeled (\%) & $\Delta$ vs. baseline [adj. CI] & $\Delta$ vs. shadow [adj. CI] & BFCL $\Delta$ \\
+\midrule
+Random 1 ($+$) & 310/800 (38.75\%) & $-15.19$ [$ -26.35, -2.47 $] & $-32.91$ [$ -56.08, -14.12 $] & $+0.00$ \\
+Random 2 ($+$) & 347/800 (43.38\%) & $-10.25$ [$ -18.25, -0.06 $] & $-28.27$ [$ -48.64, -8.84 $] & $+0.11$ \\
+Random 3 ($+$) & 342/800 (42.75\%) & $-11.01$ [$ -23.17, -1.26 $] & $-28.89$ [$ -52.06, -8.80 $] & $-0.22$ \\
+Probe ($+$) & 352/800 (44.00\%) & $-9.87$ [$ -22.18, -0.55 $] & $-27.64$ [$ -50.12, -6.90 $] & $-0.77$ \\
+Call propensity ($+$) & 605/799 (75.72\%) & $+22.18$ [$ 0.40, 49.75 $] & $+4.15$ [$ -1.15, 9.47 $] & $-1.20$ \\
+Permuted labels ($+$) & 213/800 (26.62\%) & $-27.47$ [$ -38.41, -13.23 $] & $-44.97$ [$ -62.41, -28.37 $] & $-2.08$ \\
+\midrule
+Random 1 ($-$) & 578/800 (72.25\%) & $+2.67$ [$ -9.64, 9.77 $] & $+27.86$ [$ 12.41, 38.44 $] & $-0.44$ \\
+Random 2 ($-$) & 526/800 (65.75\%) & $-3.68$ [$ -16.87, 2.25 $] & $+21.50$ [$ 2.40, 29.52 $] & $-1.09$ \\
+Random 3 ($-$) & 534/800 (66.75\%) & $-2.67$ [$ -15.94, 5.49 $] & $+22.65$ [$ 7.65, 29.73 $] & $-0.77$ \\
+Probe ($-$) & 564/798 (70.68\%) & $+1.40$ [$ -15.91, 10.37 $] & $+26.02$ [$ 2.73, 35.38 $] & $-2.30$ \\
+Call propensity ($-$) & 330/800 (41.25\%) & $-28.08$ [$ -35.77, -11.03 $] & $-3.56$ [$ -9.40, 2.73 $] & $-2.08$ \\
+Permuted labels ($-$) & 561/800 (70.12\%) & $+0.76$ [$ -15.04, 11.53 $] & $+26.21$ [$ 8.16, 42.76 $] & $-0.33$ \\
+\bottomrule
+\end{tabular}
+\caption{Llama-3.1-8B controls at the same layer and signed displacement as the original intervention. Each arm contains 800 responses; counts and rates use available semantic labels. Plus uses ethical and minus neutral context. Baselines: ethical 426/790 (53.92\%); neutral 547/787 (69.50\%). Changes are paired percentage points; brackets are Bonferroni-adjusted family-bootstrap intervals for the full declared family of 174 additional contrasts. BFCL is the validity change on 914 tool-required cases. Controls are not retuned to pass the capacity gate. Zero-event bootstrap intervals do not establish zero population risk. Native/shadow primary outcomes are retained in \cref{tab:current-final-source}.}
+\label{tab:controls-source_m5}
+\end{table*}

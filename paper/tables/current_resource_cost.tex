@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrr}
+\toprule
+Quantity & Steering & LoRA \\
+\midrule
+Stored coefficients & 4,096 & 43,278,336 \\
+Additional artifact & 16 KiB & 165.15 MiB \\
+Weight-update steps & 0 & 20 \\
+Optimizer-loop time (min) & --- & 15.99--16.50 \\
+Training peak (GiB) & --- & 55.67 \\
+\bottomrule
+\end{tabular}
+\caption{Measured Qwen9B intervention artifacts and LoRA training resources.
+LoRA entries are per adapter; the time range covers all three replicas on one H200 each.
+Steering stores one pooled FP32 direction; LoRA stores FP32 adapter weights.
+The shared BF16 checkpoint is excluded from artifact size. Peak memory is
+PyTorch allocated memory, including the backbone. Dashes denote quantities
+without a comparable measurement, not zero preparation cost.}
+\label{tab:current-resource-cost}
+\end{table}

@@ -1,0 +1,39 @@
+\newcommand{\prism}{\textsc{Prism}}
+\newcommand{\native}{\textsc{Native}}
+\newcommand{\shadow}{\textsc{Shadow}}
+\newcommand{\bfcl}{\textsc{BFCL}}
+\newcommand{\soda}{\textsc{SODA}}
+\newcommand{\lumen}{\textsc{Lumen}}
+\newcommand{\nfour}{\textsc{NF4}}
+\newcommand{\bfsixteen}{\textsc{BF16}}
+\newcommand{\pp}{\,pp}
+\newcommand{\pct}[1]{#1\%}
+\newcommand{\vect}[1]{\bm{#1}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Prob}{\mathbb{P}}
+\newcommand{\rbal}{r_{\mathrm{balanced}}}
+\newcommand{\rmax}{r_{\mathrm{max\mbox{-}effect}}}
+\newcommand{\Rexternal}{\mathcal{R}_{\mathrm{external}}}
+\newcommand{\unsafe}{\texttt{unsafe\_valid\_action}}
+
+\definecolor{prismblue}{HTML}{2C6EBA}
+\definecolor{prismteal}{HTML}{178F89}
+\definecolor{prismorange}{HTML}{D97706}
+\definecolor{prismred}{HTML}{B42318}
+\definecolor{prismgray}{HTML}{667085}
+\definecolor{pendingbg}{HTML}{FFF7E6}
+
+\newcommand{\evidencepending}[1]{%
+  \begingroup\color{prismorange}\textbf{Evidence boundary:} #1\endgroup}
+\newcommand{\notclaimable}{\textsc{not yet claimable}}
+\newcommand{\completed}{\textsc{complete}}
+\newcommand{\partialstatus}{\textsc{partial}}
+
+\setlist[itemize]{leftmargin=*}
+\setlist[enumerate]{leftmargin=*}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.08}
+
+
+% Visible unresolved result slots; never substitute numbers from another configuration.
+\newcommand{\pendingresult}[1]{\noindent\textit{Pending final analysis: #1}}

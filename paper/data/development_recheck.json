@@ -1,0 +1,500 @@
+{
+  "status": "JOINT_CORRECTED_DEVELOPMENT_RECHECK_COMPLETE",
+  "checks": [
+    {
+      "key": "source_m1",
+      "phase": "primary_alpha",
+      "original_selected_alphas": {
+        "native_plus": {
+          "alpha": 8,
+          "condition": "native_plus_8",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "native_plus_8",
+          "one_se_gain_threshold_pp": 66.6396786345341
+        },
+        "native_minus": {
+          "alpha": 0.0,
+          "reason": "NO_POSITIVE_SIGNED_GAIN"
+        },
+        "shadow_plus": {
+          "alpha": 8,
+          "condition": "shadow_plus_8",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "shadow_plus_8",
+          "one_se_gain_threshold_pp": 66.83717217226648
+        },
+        "shadow_minus": {
+          "alpha": 0.0,
+          "reason": "NO_POSITIVE_SIGNED_GAIN"
+        }
+      },
+      "recomputed_rule_choices": {
+        "native_plus": {
+          "alpha": 8,
+          "condition": "native_plus_8",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "native_plus_8",
+          "one_se_gain_threshold_pp": 66.6396786345341
+        },
+        "native_minus": {
+          "alpha": 0.0,
+          "reason": "NO_POSITIVE_SIGNED_GAIN"
+        },
+        "shadow_plus": {
+          "alpha": 8,
+          "condition": "shadow_plus_8",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "shadow_plus_8",
+          "one_se_gain_threshold_pp": 66.83717217226648
+        },
+        "shadow_minus": {
+          "alpha": 0.0,
+          "reason": "NO_POSITIVE_SIGNED_GAIN"
+        }
+      },
+      "alpha_values_unchanged": true,
+      "original_dose_admissibility": {
+        "native_plus": true,
+        "native_minus": true,
+        "shadow_plus": true,
+        "shadow_minus": true
+      },
+      "corrected_action": {
+        "sha256": "56adb4ec94acd192b83ccfb50be0e1985a56e4cf9a9e181ceabed09ca3ec9f3f"
+      },
+      "corrected_capacity": {
+        "sha256": "ae20c606d5ff70629c76fa70c15915fadb3230fdeba7344dcfffb4229612b265"
+      }
+    },
+    {
+      "key": "source_m3",
+      "phase": "primary_alpha",
+      "original_selected_alphas": {
+        "native_plus": {
+          "alpha": 1,
+          "condition": "native_plus_1",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "native_plus_1",
+          "one_se_gain_threshold_pp": 2.5518934116252527
+        },
+        "native_minus": {
+          "alpha": -0.25,
+          "condition": "native_minus_0p25",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "native_minus_0p5",
+          "one_se_gain_threshold_pp": 3.481096746437368
+        },
+        "shadow_plus": {
+          "alpha": 1,
+          "condition": "shadow_plus_1",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "shadow_plus_1",
+          "one_se_gain_threshold_pp": 2.6935673211812703
+        },
+        "shadow_minus": {
+          "alpha": -0.25,
+          "condition": "shadow_minus_0p25",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "shadow_minus_0p5",
+          "one_se_gain_threshold_pp": 2.6170471238926463
+        }
+      },
+      "recomputed_rule_choices": {
+        "native_plus": {
+          "alpha": 1,
+          "condition": "native_plus_1",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "native_plus_1",
+          "one_se_gain_threshold_pp": 2.5518934116252527
+        },
+        "native_minus": {
+          "alpha": -0.25,
+          "condition": "native_minus_0p25",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "native_minus_0p5",
+          "one_se_gain_threshold_pp": 3.4810967464373683
+        },
+        "shadow_plus": {
+          "alpha": 1,
+          "condition": "shadow_plus_1",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "shadow_plus_1",
+          "one_se_gain_threshold_pp": 2.69356732118127
+        },
+        "shadow_minus": {
+          "alpha": -0.25,
+          "condition": "shadow_minus_0p25",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "shadow_minus_0p5",
+          "one_se_gain_threshold_pp": 2.6170471238926463
+        }
+      },
+      "alpha_values_unchanged": true,
+      "original_dose_admissibility": {
+        "native_plus": true,
+        "native_minus": true,
+        "shadow_plus": true,
+        "shadow_minus": true
+      },
+      "corrected_action": {
+        "sha256": "c2ee98cbd319c4fc1fb730b0ee71a2c2e5c39ee0e72835c1a14e06263bf2b9cf"
+      },
+      "corrected_capacity": {
+        "sha256": "3f4c5490247587b8d83f91662e2923ce9356d86e6ec3545e87da8fb15a4c6d77"
+      }
+    },
+    {
+      "key": "source_m5",
+      "phase": "primary_alpha",
+      "original_selected_alphas": {
+        "native_plus": {
+          "alpha": 4,
+          "condition": "native_plus_4",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "native_plus_4",
+          "one_se_gain_threshold_pp": 11.927613003203966
+        },
+        "native_minus": {
+          "alpha": -4,
+          "condition": "native_minus_4",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "native_minus_4",
+          "one_se_gain_threshold_pp": 21.343931955657286
+        },
+        "shadow_plus": {
+          "alpha": 4,
+          "condition": "shadow_plus_4",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "shadow_plus_4",
+          "one_se_gain_threshold_pp": 11.75989180629216
+        },
+        "shadow_minus": {
+          "alpha": -4,
+          "condition": "shadow_minus_4",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "shadow_minus_4",
+          "one_se_gain_threshold_pp": 19.12392580384489
+        }
+      },
+      "recomputed_rule_choices": {
+        "native_plus": {
+          "alpha": 4,
+          "condition": "native_plus_4",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "native_plus_4",
+          "one_se_gain_threshold_pp": 11.531166396432077
+        },
+        "native_minus": {
+          "alpha": -4,
+          "condition": "native_minus_4",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "native_minus_4",
+          "one_se_gain_threshold_pp": 21.34393195565729
+        },
+        "shadow_plus": {
+          "alpha": 4,
+          "condition": "shadow_plus_4",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "shadow_plus_4",
+          "one_se_gain_threshold_pp": 10.661325916610242
+        },
+        "shadow_minus": {
+          "alpha": -4,
+          "condition": "shadow_minus_4",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "shadow_minus_4",
+          "one_se_gain_threshold_pp": 19.12392580384489
+        }
+      },
+      "alpha_values_unchanged": true,
+      "original_dose_admissibility": {
+        "native_plus": true,
+        "native_minus": true,
+        "shadow_plus": true,
+        "shadow_minus": true
+      },
+      "corrected_action": {
+        "sha256": "f26bd9e0386b1df4927ecd5fd62eb482ee915496e76e2905150f872c9fe595f1"
+      },
+      "corrected_capacity": {
+        "sha256": "f9902249af335dda049c47aa42b413a6325469980e680274559157de64b3cfb2"
+      }
+    },
+    {
+      "key": "receiver_m1",
+      "phase": "primary_alpha",
+      "original_selected_alphas": {
+        "transported_native_plus": {
+          "alpha": 8,
+          "condition": "transported_native_plus_8",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "transported_native_plus_8",
+          "one_se_gain_threshold_pp": 62.59891702554934
+        },
+        "transported_native_minus": {
+          "alpha": 0.0,
+          "reason": "NO_POSITIVE_SIGNED_GAIN"
+        }
+      },
+      "recomputed_rule_choices": {
+        "transported_native_plus": {
+          "alpha": 8,
+          "condition": "transported_native_plus_8",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "transported_native_plus_8",
+          "one_se_gain_threshold_pp": 62.59891702554934
+        },
+        "transported_native_minus": {
+          "alpha": 0.0,
+          "reason": "NO_POSITIVE_SIGNED_GAIN"
+        }
+      },
+      "alpha_values_unchanged": true,
+      "original_dose_admissibility": {
+        "transported_native_plus": true,
+        "transported_native_minus": true
+      },
+      "corrected_action": {
+        "sha256": "b3b3d15189c232002bd748f699a4229a2d93d6d2a64ac191435aaeae6bce6dd5"
+      },
+      "corrected_capacity": {
+        "sha256": "fb26553332ac86b9b40388e4e08312f80f58ccb786b7d3e4bbc0eff0a8857cc1"
+      }
+    },
+    {
+      "key": "receiver_m1",
+      "phase": "native_alpha",
+      "original_selected_alphas": {
+        "receiver_native_plus": {
+          "alpha": 4,
+          "condition": "receiver_native_plus_4",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "receiver_native_plus_4",
+          "one_se_gain_threshold_pp": 0.025460656249429614
+        },
+        "receiver_native_minus": {
+          "alpha": 0.0,
+          "reason": "NO_POSITIVE_SIGNED_GAIN"
+        }
+      },
+      "recomputed_rule_choices": {
+        "receiver_native_plus": {
+          "alpha": 4,
+          "condition": "receiver_native_plus_4",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "receiver_native_plus_4",
+          "one_se_gain_threshold_pp": 0.02546065624942956
+        },
+        "receiver_native_minus": {
+          "alpha": 0.0,
+          "reason": "NO_POSITIVE_SIGNED_GAIN"
+        }
+      },
+      "alpha_values_unchanged": true,
+      "original_dose_admissibility": {
+        "receiver_native_plus": true,
+        "receiver_native_minus": true
+      },
+      "corrected_action": {
+        "sha256": "5331b910573eb584d2d95a3a8c1e1ce4e3e4313b2c7eb6f688338c8a667d2933"
+      },
+      "corrected_capacity": {
+        "sha256": "b61f02a5a8cd50699f9d7a33462eb78c3958416f1f412c34dd9d7cfa9e142eaa"
+      }
+    },
+    {
+      "key": "receiver_m3",
+      "phase": "primary_alpha",
+      "original_selected_alphas": {
+        "transported_native_plus": {
+          "alpha": 2,
+          "condition": "transported_native_plus_2",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "transported_native_plus_2",
+          "one_se_gain_threshold_pp": 0.22934783621149446
+        },
+        "transported_native_minus": {
+          "alpha": -1,
+          "condition": "transported_native_minus_1",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "transported_native_minus_1",
+          "one_se_gain_threshold_pp": 3.886466027582871
+        }
+      },
+      "recomputed_rule_choices": {
+        "transported_native_plus": {
+          "alpha": 2,
+          "condition": "transported_native_plus_2",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "transported_native_plus_2",
+          "one_se_gain_threshold_pp": 0.2293478362114949
+        },
+        "transported_native_minus": {
+          "alpha": -1,
+          "condition": "transported_native_minus_1",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "transported_native_minus_1",
+          "one_se_gain_threshold_pp": 3.886466027582871
+        }
+      },
+      "alpha_values_unchanged": true,
+      "original_dose_admissibility": {
+        "transported_native_plus": true,
+        "transported_native_minus": true
+      },
+      "corrected_action": {
+        "sha256": "646b6778702a2d3800243834c4835ced1afd18fab52fe9c810ed8237ae801444"
+      },
+      "corrected_capacity": {
+        "sha256": "b8f787e5fc68d6e0600a214eae91d392114fcb289fc5d4ab1b148a09fcb3bc18"
+      }
+    },
+    {
+      "key": "receiver_m3",
+      "phase": "native_alpha",
+      "original_selected_alphas": {
+        "receiver_native_plus": {
+          "alpha": 2,
+          "condition": "receiver_native_plus_2",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "receiver_native_plus_2",
+          "one_se_gain_threshold_pp": 2.2610868555515653
+        },
+        "receiver_native_minus": {
+          "alpha": -0.25,
+          "condition": "receiver_native_minus_0p25",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "receiver_native_minus_0p5",
+          "one_se_gain_threshold_pp": 2.458483766495202
+        }
+      },
+      "recomputed_rule_choices": {
+        "receiver_native_plus": {
+          "alpha": 2,
+          "condition": "receiver_native_plus_2",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "receiver_native_plus_2",
+          "one_se_gain_threshold_pp": 2.2610868555515653
+        },
+        "receiver_native_minus": {
+          "alpha": -0.25,
+          "condition": "receiver_native_minus_0p25",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "receiver_native_minus_0p5",
+          "one_se_gain_threshold_pp": 2.458483766495202
+        }
+      },
+      "alpha_values_unchanged": true,
+      "original_dose_admissibility": {
+        "receiver_native_plus": true,
+        "receiver_native_minus": true
+      },
+      "corrected_action": {
+        "sha256": "62376927079c8feb3e4de6deb6c691700e673de2d06a314ec80f098d0617b8fe"
+      },
+      "corrected_capacity": {
+        "sha256": "17fb9fc891a9dd9cda58b08027c596d3505fb244b5003bde37a1627b11fce3b8"
+      }
+    },
+    {
+      "key": "receiver_m5",
+      "phase": "primary_alpha",
+      "original_selected_alphas": {
+        "transported_native_plus": {
+          "alpha": 2,
+          "condition": "transported_native_plus_2",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "transported_native_plus_2",
+          "one_se_gain_threshold_pp": 7.387748981817076
+        },
+        "transported_native_minus": {
+          "alpha": -4,
+          "condition": "transported_native_minus_4",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "transported_native_minus_4",
+          "one_se_gain_threshold_pp": 30.28178703071465
+        }
+      },
+      "recomputed_rule_choices": {
+        "transported_native_plus": {
+          "alpha": 2,
+          "condition": "transported_native_plus_2",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "transported_native_plus_2",
+          "one_se_gain_threshold_pp": 7.387748981817076
+        },
+        "transported_native_minus": {
+          "alpha": -4,
+          "condition": "transported_native_minus_4",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "transported_native_minus_4",
+          "one_se_gain_threshold_pp": 30.28178703071465
+        }
+      },
+      "alpha_values_unchanged": true,
+      "original_dose_admissibility": {
+        "transported_native_plus": true,
+        "transported_native_minus": true
+      },
+      "corrected_action": {
+        "sha256": "7f0a299b2b004dc6868a3b2341de9faefa0efabe25b4c8d4f996ec56f352ea1a"
+      },
+      "corrected_capacity": {
+        "sha256": "53d951a2362b4cc5f6a3288174cc1ee6d2a1ecc34006fe65576f835786e97ca5"
+      }
+    },
+    {
+      "key": "receiver_m5",
+      "phase": "native_alpha",
+      "original_selected_alphas": {
+        "receiver_native_plus": {
+          "alpha": 4,
+          "condition": "receiver_native_plus_4",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "receiver_native_plus_4",
+          "one_se_gain_threshold_pp": 37.26023137228988
+        },
+        "receiver_native_minus": {
+          "alpha": -4,
+          "condition": "receiver_native_minus_4",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "receiver_native_minus_4",
+          "one_se_gain_threshold_pp": 24.730601245206245
+        }
+      },
+      "recomputed_rule_choices": {
+        "receiver_native_plus": {
+          "alpha": 8,
+          "condition": "receiver_native_plus_8",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "receiver_native_plus_8",
+          "one_se_gain_threshold_pp": 71.59140606172866
+        },
+        "receiver_native_minus": {
+          "alpha": -4,
+          "condition": "receiver_native_minus_4",
+          "reason": "SMALLEST_ADMISSIBLE_WITHIN_ONE_SE",
+          "best_observed_condition": "receiver_native_minus_4",
+          "one_se_gain_threshold_pp": 24.730601245206245
+        }
+      },
+      "alpha_values_unchanged": false,
+      "original_dose_admissibility": {
+        "receiver_native_plus": true,
+        "receiver_native_minus": true
+      },
+      "corrected_action": {
+        "sha256": "4449f8cdca0cd3fc17aa0edc5bb7255b84944ed35a099870f61ddf55f199f86f"
+      },
+      "corrected_capacity": {
+        "sha256": "bbc260b33a102444e26cdedb965fcd77d329ffe9234c08cc49454d4bde7242f6"
+      }
+    }
+  ],
+  "new_selection_promoted": false,
+  "final_outcomes_used": false,
+  "all_original_doses_reproduced": false,
+  "script": {
+    "sha256": "0061b77063e092a9c89746610e8470f90c7594f13b116773a55839d71971ae8c"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-11T21:41:22.389992+00:00",
+  "manuscript": {
+    "tex_files_identical_to_final_author_source": 45,
+    "pdf_text_identical": true,
+    "pages": 31,
+    "unresolved_references": 0
+  },
+  "numerical": {
+    "primary_paired_contrasts": 24,
+    "all_endpoint_rates": 5346,
+    "all_endpoint_contrasts": 4698,
+    "all_endpoint_capability_rows": 420,
+    "source_and_receiver_control_arms": 74,
+    "source_and_receiver_control_contrasts": 174,
+    "source_capability_arms": 34,
+    "receiver_capability_arms": 40,
+    "construction_probes_refitted": 282,
+    "map_candidates": 60,
+    "selected_signed_doses": 24,
+    "scarcity_rows": 36,
+    "label_yield_rows": 36,
+    "lora_rates": 420,
+    "lora_paired_contrasts": 168,
+    "lora_capability_rows": 35,
+    "soda_trajectories": 6400,
+    "soda_arms": 16,
+    "soda_contrasts": 18,
+    "llama70_panel_responses": 3200,
+    "llama70_panel_candidates": 952,
+    "llama70_panel_rates": 16,
+    "llama70_panel_contrasts": 8,
+    "stratified_audit_responses": 753,
+    "stratified_audit_rates": 120,
+    "stratified_audit_contrasts": 72,
+    "language_summaries": 12,
+    "exploratory_equivalence_checks": 5
+  },
+  "experimental_code": {
+    "python_compilation": "PASS",
+    "cpu_dry_runs": "PASS",
+    "bfcl_checker_smoke": "PASS",
+    "soda_full_input_hash": "PASS",
+    "new_gpu_runs": false,
+    "new_judge_calls": false
+  },
+  "security": {
+    "raw_soda_prompts_and_states_distributed": false,
+    "gitleaks_version": "8.30.1",
+    "credential_findings_after_cleanup": 0,
+    "base_model_weights_distributed": false,
+    "operational_logs_distributed": false
+  },
+  "limits": [
+    "Statistics are conditional on the deposited automatic labels; this is not independent human label validation.",
+    "Fresh generation and hosted judging are separate replications, not bit-for-bit guarantees.",
+    "Fresh SODA execution requires the pinned external dataset and environment code; the deposited labels suffice for offline statistical reproduction."
+  ]
+}

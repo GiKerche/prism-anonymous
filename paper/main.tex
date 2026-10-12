@@ -1,0 +1,73 @@
+\documentclass[11pt]{article}
+
+% Anonymous review version.
+\usepackage[review]{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{inconsolata}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{booktabs,multirow,array,tabularx}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{xurl}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,backgrounds,calc}
+\usepackage{hyperref}
+\usepackage[capitalise,noabbrev]{cleveref}
+
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows.meta, shapes.geometric, calc}
+
+\input{macros}
+
+\usepackage{xcolor}
+
+\definecolor{darkblue}{HTML}{000099}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=darkblue,
+  citecolor=darkblue,
+  urlcolor=darkblue,
+  pdftitle={PRISM: Transfer and Limits of Activation Interventions in Tool-Calling Language Models},
+  pdfauthor={Anonymous authors}
+}
+
+\title{PRISM: Transfer and Limits of Activation Interventions\\
+in Tool-Calling Language Models}
+
+
+\author{Anonymous authors}
+
+\begin{document}
+\maketitle
+
+\input{sections/00_abstract}
+\input{sections/01_introduction}
+\input{sections/02_related_work}
+\input{sections/03_method}
+\input{sections/04_experiments}
+\input{sections/08_conclusion}
+\FloatBarrier
+\input{sections/07_limitations}
+
+\section*{Ethical considerations}
+This work audits a dual-use failure mode: activation interventions can reveal and causally increase unsafe tool-action rates. Experiments use simulated tools and benchmark environments; no real user account, production tool, or external system is modified by a generated action. The design evaluates benign capability alongside unsafe-action effects.  It does not contain model weights or an executable attack service. The study recruits no human participants and performs no new human annotation; its benign anchors reuse screened inputs from a public dataset. Model-based evaluation is explicitly disclosed and audited for disagreement and missingness.
+
+\paragraph{Use of AI tools.}
+Generative AI tools were used to assist with code development, experiment
+orchestration, documentation,  and editing this manuscript. Generative AI systems were also used as model-based evaluators, as described in \cref{sec:semantic-evaluation}; their identities, missingness, and disagreements are retained as measurement metadata rather than treated as ground truth. The authors take responsibility for the final content of the work, including all AI-assisted artifacts.
+
+\bibliography{references}
+
+\clearpage
+\appendix
+\input{sections/09_appendix}
+
+\end{document}

@@ -1,0 +1,63 @@
+{
+  "selected_layer": 26,
+  "best_validation": {
+    "accuracy": 0.7338601918798666,
+    "accuracy_ci95": [
+      0.6932772177419354,
+      0.7995060483870967
+    ],
+    "auc": 0.7937416622241473,
+    "balanced_accuracy": 0.736579081375764,
+    "balanced_accuracy_ci95": [
+      0.6843430933140048,
+      0.7844533714282336
+    ],
+    "bootstrap_undefined": 0,
+    "confusion_counts": [
+      [
+        615,
+        211
+      ],
+      [
+        465,
+        1250
+      ]
+    ],
+    "layer": 26,
+    "weighted_confusion": [
+      [
+        19.357068038561387,
+        6.648252688172041
+      ],
+      [
+        14.642931961438636,
+        39.35174731182798
+      ]
+    ]
+  },
+  "majority_baseline": {
+    "accuracy": 0.6749334909158317,
+    "auc": null,
+    "balanced_accuracy": 0.5,
+    "confusion_counts": [
+      [
+        0,
+        826
+      ],
+      [
+        0,
+        1715
+      ]
+    ],
+    "weighted_confusion": [
+      [
+        0.0,
+        26.005320726733455
+      ],
+      [
+        0.0,
+        53.99467927326649
+      ]
+    ]
+  }
+}

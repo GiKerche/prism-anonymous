@@ -1,0 +1,7 @@
+# CUDA 12.8 wheels for the frozen generation/training runtime.
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.8.0
+transformers==5.15.0
+safetensors==0.8.0
+# Supporting loader dependency; the core versions above are recorded versions.
+accelerate>=1.10

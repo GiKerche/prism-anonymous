@@ -1,0 +1,197 @@
+{
+  "scope": "Descriptive maxima; no new selection or evaluation.",
+  "rows": [
+    {
+      "component": "languages",
+      "context": "ethical",
+      "target_language": "pt",
+      "left": "native_es_plus",
+      "right": "baseline",
+      "metric": "semantic_unsafe",
+      "confirmatory_main": false,
+      "delta_pp": 87.42138364779875,
+      "paired_resolved": 159,
+      "paired_total": 160,
+      "paired_missing": 1,
+      "ci95_pp": [
+        79.0,
+        93.4959349593496
+      ],
+      "multiplicity": 1,
+      "bonferroni_ci_pp": null,
+      "all_response_delta_bounds_pp": [
+        86.875,
+        87.5
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19,
+      "predefined_main_contrast": false,
+      "qwen_rule_revision_after_prior_inspection": true,
+      "model": "Qwen3.5-9B",
+      "estimator": "native",
+      "source_language": "es"
+    },
+    {
+      "component": "languages",
+      "context": "ethical",
+      "target_language": "pt",
+      "left": "shadow_zh_plus",
+      "right": "baseline",
+      "metric": "semantic_unsafe",
+      "confirmatory_main": false,
+      "delta_pp": 88.125,
+      "paired_resolved": 160,
+      "paired_total": 160,
+      "paired_missing": 0,
+      "ci95_pp": [
+        77.41839477726575,
+        93.75
+      ],
+      "multiplicity": 1,
+      "bonferroni_ci_pp": null,
+      "all_response_delta_bounds_pp": [
+        88.125,
+        88.125
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19,
+      "predefined_main_contrast": false,
+      "qwen_rule_revision_after_prior_inspection": true,
+      "model": "Qwen3.5-9B",
+      "estimator": "shadow",
+      "source_language": "zh"
+    },
+    {
+      "component": "languages",
+      "context": "ethical",
+      "target_language": "zh",
+      "left": "native_hi_plus",
+      "right": "baseline",
+      "metric": "semantic_unsafe",
+      "confirmatory_main": false,
+      "delta_pp": 13.750000000000002,
+      "paired_resolved": 160,
+      "paired_total": 160,
+      "paired_missing": 0,
+      "ci95_pp": [
+        3.3333333333333335,
+        24.193548387096776
+      ],
+      "multiplicity": 1,
+      "bonferroni_ci_pp": null,
+      "all_response_delta_bounds_pp": [
+        13.750000000000002,
+        13.750000000000002
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19,
+      "predefined_main_contrast": false,
+      "qwen_rule_revision_after_prior_inspection": true,
+      "model": "Ministral-3-8B",
+      "estimator": "native",
+      "source_language": "hi"
+    },
+    {
+      "component": "languages",
+      "context": "ethical",
+      "target_language": "zh",
+      "left": "shadow_hi_plus",
+      "right": "baseline",
+      "metric": "semantic_unsafe",
+      "confirmatory_main": false,
+      "delta_pp": 12.5,
+      "paired_resolved": 160,
+      "paired_total": 160,
+      "paired_missing": 0,
+      "ci95_pp": [
+        3.3783783783783785,
+        20.652173913043477
+      ],
+      "multiplicity": 1,
+      "bonferroni_ci_pp": null,
+      "all_response_delta_bounds_pp": [
+        12.5,
+        12.5
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19,
+      "predefined_main_contrast": false,
+      "qwen_rule_revision_after_prior_inspection": true,
+      "model": "Ministral-3-8B",
+      "estimator": "shadow",
+      "source_language": "hi"
+    },
+    {
+      "component": "languages",
+      "context": "ethical",
+      "target_language": "es",
+      "left": "native_pt_plus",
+      "right": "baseline",
+      "metric": "semantic_unsafe",
+      "confirmatory_main": false,
+      "delta_pp": 34.41558441558442,
+      "paired_resolved": 154,
+      "paired_total": 160,
+      "paired_missing": 6,
+      "ci95_pp": [
+        15.436138039605602,
+        54.82330442752396
+      ],
+      "multiplicity": 1,
+      "bonferroni_ci_pp": null,
+      "all_response_delta_bounds_pp": [
+        30.625000000000004,
+        34.375
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19,
+      "predefined_main_contrast": false,
+      "qwen_rule_revision_after_prior_inspection": true,
+      "model": "Llama-3.1-8B",
+      "estimator": "native",
+      "source_language": "pt"
+    },
+    {
+      "component": "languages",
+      "context": "ethical",
+      "target_language": "es",
+      "left": "shadow_pt_plus",
+      "right": "baseline",
+      "metric": "semantic_unsafe",
+      "confirmatory_main": false,
+      "delta_pp": 25.477707006369428,
+      "paired_resolved": 157,
+      "paired_total": 160,
+      "paired_missing": 3,
+      "ci95_pp": [
+        11.272599231754162,
+        41.22829625610417
+      ],
+      "multiplicity": 1,
+      "bonferroni_ci_pp": null,
+      "all_response_delta_bounds_pp": [
+        23.75,
+        25.624999999999996
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19,
+      "predefined_main_contrast": false,
+      "qwen_rule_revision_after_prior_inspection": true,
+      "model": "Llama-3.1-8B",
+      "estimator": "shadow",
+      "source_language": "pt"
+    }
+  ]
+}

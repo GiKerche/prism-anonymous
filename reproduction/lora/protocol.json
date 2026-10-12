@@ -1,0 +1,109 @@
+{
+  "model_id": "Qwen/Qwen3.5-9B",
+  "model_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "precision": "bfloat16",
+  "source_precision": "nf4",
+  "lora": {
+    "implementation": "prism_standard_linear_lora_v1",
+    "formula": "base(x) + lora_B(lora_A(dropout(x))) * alpha/rank",
+    "rank": 16,
+    "alpha": 32.0,
+    "dropout": 0.05,
+    "target_scope": "all_torch_linear_modules_strictly_under_model.layers",
+    "base_parameters_frozen": true,
+    "adapter_parameters_float32": true
+  },
+  "optimization": {
+    "train_seeds": [
+      26082701,
+      26082702,
+      26082703
+    ],
+    "epochs": 5,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0,
+    "max_grad_norm": 1.0,
+    "warmup_optimizer_steps": 5,
+    "scheduler": "linear_warmup_cosine_decay",
+    "effective_batch_size": 16,
+    "micro_batch_size": 2,
+    "gradient_accumulation_steps": 8,
+    "max_sequence_tokens": 8192,
+    "gradient_checkpointing": true,
+    "optimizer": "torch_adamw_fused",
+    "completion_only_loss": true,
+    "prompt_loss_masked": true,
+    "remainder_policy": "keep_final_partial_without_drop_pad_or_oversampling",
+    "steps_per_epoch": 4,
+    "total_optimizer_steps": 20,
+    "final_group_size": 7,
+    "checkpoint_every_optimizer_steps": 5,
+    "seed_set_before_adapter_initialization": true,
+    "resume_restores_python_torch_cpu_and_cuda_rng": true
+  },
+  "evaluation": {
+    "final_training_checkpoint_only": true,
+    "seed_or_checkpoint_selection": false,
+    "benchmarks": [
+      "LUMEN_current_final",
+      "BFCL_current_final"
+    ],
+    "final_scenarios": 40,
+    "final_families": 19,
+    "languages": [
+      "pt",
+      "en",
+      "es",
+      "zh",
+      "hi"
+    ],
+    "contexts": [
+      "ethical",
+      "neutral"
+    ],
+    "generation_seeds": [
+      101,
+      102,
+      103,
+      104
+    ],
+    "arabic_scenarios": 11,
+    "arabic_families": 6,
+    "unsafe_decoding": {
+      "do_sample": true,
+      "temperature": 0.7,
+      "top_p": 0.95,
+      "max_new_tokens": 1024
+    },
+    "bfcl_decoding": {
+      "do_sample": false,
+      "max_new_tokens": 2048
+    },
+    "unsafe_batch_size": 4,
+    "benign_batch_size": 4,
+    "main_generations_per_adapter": 1600,
+    "arabic_generations_per_adapter": 88,
+    "bfcl_generations_per_adapter": 1114,
+    "total_new_generations": 8406,
+    "reuse_existing_baseline_and_steering_only_after_exact_input_hash_match": true,
+    "primary_comparisons": [
+      "ethical:LoRA_minus_baseline",
+      "ethical:LoRA_minus_shadow_plus_8"
+    ],
+    "secondary_comparison": "ethical:LoRA_minus_native_plus_8",
+    "neutral_and_language_and_arabic": "descriptive; no comparison to an opposite-signed steering arm",
+    "capacity": "official BFCL tool-required and no-tool strata, plus response quality; no outcome-based retraining",
+    "primary_judge": "same DeepSeek-V4-Flash-0731 FP8 rubric and decoding as completed campaign",
+    "annotation_routes": [
+      "DeepInfra direct Priority FP8",
+      "OpenRouter approved FP8 provider"
+    ],
+    "primary_judge_concurrency": 14,
+    "audit": "Claude/Grok; deterministic hash sample of up to two distinct families per adapter/component/context/target-language cell; no selective replacement",
+    "missing_votes": "retain invalid votes as missing; retry transport failures only, at most eight attempts",
+    "estimand": "mean of three adapter-specific paired response-weighted differences; all replicas retained",
+    "uncertainty": "10000 paired family bootstrap draws preserving languages/generation seeds and all three fixed adapters; report each replica too",
+    "primary_intervals": "pointwise 95% and Bonferroni 97.5% for two primary contrasts",
+    "adapter_seed_uncertainty": "three replicas reported separately; primary family interval conditions on these three adapters"
+  }
+}

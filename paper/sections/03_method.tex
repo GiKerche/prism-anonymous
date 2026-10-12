@@ -1,0 +1,228 @@
+\section{Methodology}
+\label{sec:method}
+
+% Pipeline figure for the opening of Section 3 (Methodology).
+% Trunk (steps 1-2), three branches for the three axes (step 3), and the
+% intervention (step 4). Notation follows the opening paragraph: A(x)
+% activations, z fractions, d direction, W linear map, a dose, sigma scale.
+\begin{figure*}[t]
+    \centering
+    \resizebox{0.88\linewidth}{!}{%
+    \begin{tikzpicture}[
+        node distance=0.3cm and 0.55cm,
+        box/.style={
+            rectangle,
+            rounded corners=5pt,
+            draw=blue!60!black,
+            fill=blue!5,
+            thick,
+            align=center,
+            inner sep=4pt,
+            font=\footnotesize
+        },
+        axis/.style={
+            box,
+            draw=teal!60!black,
+            fill=teal!6,
+            text width=4.9cm
+        },
+        line/.style={draw=gray!80, line width=1.2pt},
+        arrow/.style={line, -{Stealth[scale=1.1]}}
+    ]
+
+    % Step 1: labels
+    \node[box, text width=2.8cm] (step1) {
+        \textbf{1. Label Extraction} \\[-0.5ex]
+        \rule{0.95\linewidth}{0.4pt} \\[-0.3ex]
+        Same inputs answered by the \textbf{original BF16} model and its
+        \textbf{quantized NF4} copy. Fraction of unsafe responses:
+        $z^{\mathrm{BF16}}(x)$, $z^{\mathrm{NF4}}(x)$
+    };
+
+    % Step 2: estimation
+    \node[box, text width=2.8cm, right=of step1] (step2) {
+        \textbf{2. Direction Estimation} \\[-0.5ex]
+        \rule{0.95\linewidth}{0.4pt} \\[-0.3ex]
+        BF16 activations $A(x)$ weighted by $z^{\mathrm{BF16}}$
+        (\textbf{native}) or $z^{\mathrm{NF4}}$ (\textbf{shadow}).
+        Unit direction $d$ from all five languages or one language
+    };
+
+    % Step 3: three axes (branches)
+    \node[axis, right=of step2] (lang) {
+        \textbf{3b. Language axis} \\[-0.5ex]
+        \rule{0.95\linewidth}{0.4pt} \\[-0.3ex]
+        One-language $d$ applied in another language;
+        five-language $d$ applied in Arabic (not used in estimation)
+    };
+    \node[axis, above=of lang] (prec) {
+        \textbf{3a. Precision axis} \\[-0.5ex]
+        \rule{0.95\linewidth}{0.4pt} \\[-0.3ex]
+        Native vs.\ shadow $d$ applied in the same model, across all five languages
+    };
+    \node[axis, below=of lang] (scale) {
+        \textbf{3c. Scale axis} \\[-0.5ex]
+        \rule{0.95\linewidth}{0.4pt} \\[-0.3ex]
+        Five-language $d$ mapped into a larger model:
+        $\hat{d}_R = W d_S / \| W d_S \|$
+    };
+
+    % Step 4: intervention
+    \node[box, text width=3.0cm, right=of lang] (step4) {
+        \textbf{4. Intervention} \\[-0.5ex]
+        \rule{0.95\linewidth}{0.4pt} \\[-0.3ex]
+        Shift at the selected \\
+        layer of the target \\
+        BF16 model: \\
+        $A \leftarrow A + a\sigma d$ \\
+        $a$ preserves \\
+        legitimate tool use
+    };
+
+    % Trunk
+    \draw[arrow] (step1) -- (step2);
+
+    % Fan-out from step 2 to the three axes
+    \coordinate (busL) at ($(step2.east)!0.5!(lang.west)$);
+    \draw[line] (step2.east) -- (busL);
+    \draw[arrow] (busL) |- (prec.west);
+    \draw[arrow] (busL) -- (lang.west);
+    \draw[arrow] (busL) |- (scale.west);
+
+    % Fan-in from the three axes to step 4
+    \coordinate (busR) at ($(lang.east)!0.5!(step4.west)$);
+    \draw[line] (prec.east) -| (busR);
+    \draw[line] (lang.east) -- (busR);
+    \draw[line] (scale.east) -| (busR);
+    \draw[arrow] (busR) -- (step4.west);
+
+    \end{tikzpicture}%
+    }
+    \caption{The PRISM pipeline. Unsafe-response fractions from BF16/NF4 weight BF16 activations to estimate native/shadow directions using all five languages or a single language. We evaluate precision, cross-language (including held-out Arabic), and cross-scale transfer (via $W$), applying shifts at selected BF16 layers.}
+\label{fig:method_pipeline}
+\end{figure*}
+
+PRISM investigates whether a targeted shift in a model's internal
+activations, denoted as $A(x)$ for a given input $x$ at a selected layer, can causally alter its willingness to propose harmful tool actions. To investigate this, we formalize a four-step pipeline
+(\cref{fig:method_pipeline}): (1) the original BF16 model and its NF4 copy answer the same inputs, and each response is judged as unsafe or not, giving for every input a fraction of unsafe responses from each model, $z^{\mathrm{BF16}}(x)$ and $z^{\mathrm{NF4}}(x)$; (2) we estimate an intervention direction $d$ that captures how the BF16 pre-response activations $A(x)$ differ between inputs with more and fewer unsafe responses, using either the BF16 fractions (the \emph{native} direction) or the NF4 fractions (the \emph{shadow} direction), from the inputs of all five languages together or of one language alone; (3) we study the
+direction along three axes: precision, by applying the native and shadow directions in the same model across the five languages; language, by applying a one-language direction to prompts in another language and the five-language direction to Arabic, which contributes no inputs to estimation; and scale, by mapping the five-language direction through a linear map $W$ into a larger model; and (4) we apply the intervention $A \leftarrow A + a\sigma d$, with a strength $a$ that preserves legitimate tool use. In every axis the activations and the intervention belong to a BF16 model; the NF4 copy contributes only the response labels that weight the
+shadow direction. The language axis uses both estimators; the scale axis transports the native direction.  To ensure rigorous evaluation and prevent data leakage, the construction, layer selection, intervention strength selection, and final test phases strictly use disjoint partitions of
+scenario families.
+
+\subsection{Experimental setting}
+\label{sec:setting}
+
+% (2) a primeira frase deve já passar o que é esse tema, (em simulation setting e SODA as a generalization benchmark, dá para ver que eu coloquei frases de abertura). (3) Digressões/explicações devem ficar em parentesis (se você não faz isso você quebra a sequência de leitura), em Internal State Extraction and Layer Selection, tem um exemplo disso. (4) você precisa aprender a fazer notação matemática para representar melhor as suas idéias.}
+
+\paragraph{Simulation Setting.}
+In this paper we use the LUMEN benchmark~\citep{lumenbench}. A scenario in this benchmark consists of a user request, system instructions, and descriptions of available tools; our input $x$ is a scenario presented in one language and one prompt context. Our evaluation uses 108 scenarios and 21 tool schemas, covering actions such as querying records, processing job candidates, publishing content, and changing system settings. The requests include discrimination, privacy invasion, deception, and manipulation. Each tool schema specifies the function name, its arguments, and their allowed values; a model can answer in text, propose tool calls,
+or do both. \Cref{fig:observed-intervention} illustrates this setup with a request to filter job candidates by school type and neighborhood: the same model refuses without intervention but proposes discriminatory tool calls under both receiver-native and transported interventions.
+
+Both prompt contexts contain the same harmful request. The ethical context adds a system instruction to refuse unethical, illegal, or harmful requests. The neutral context describes tool access without that instruction. Thus ``ethical'' describes the instruction given to the model, not the user's request. The evaluated prompts and tools are provided in the supplement; Appendix~\ref{app:task-definition} gives full examples.
+
+ % A \emph{missing judgment} occurs when a response has been generated but no valid violation label can be obtained from the  valuator. For example, the judging model may itself refuse to assess sensitive content or return an incomplete or incorrectly formatted verdict. Such cases remain unlabeled and are reported as missing, rather than classified as nonviolations.
+
+\paragraph{The role of each data split.}
+The \textit{construction} set contains 35 scenarios for fitting
+classifiers and intervention directions. A separate validation set
+\textit{(Validation I)} of 16 scenarios selects the layer; another
+validation set \textit{(Validation II)} of 17 scenarios selects the
+intervention strength (dose). The final \textit{test} set of 40 scenarios measures the resulting effects. Related requests form a family and stay in the same split, together with all their translations and repeated generations (\cref{tab:current-partitions}).
+
+\paragraph{SODA as a generalization benchmark.}
+In order to evaluate interventions found using LUMEN on executed actions, we use SODA (Safety Over Depth for Agents)~\citep{sun2026soda}, an external benchmark for evaluating agent safety in interactive environments, where tools execute against simulated states and return feedback to the model. This allows us to examine whether the interventions also change the occurrence of executed harmful actions. SODA tasks are
+used only for evaluation: they are not used in direction estimation, layer selection, or intervention strength selection, and the interventions are applied with their previously selected settings (\cref{sec:soda-results}).
+
+
+\subsection{Violation detection and layer selection}
+\label{sec:violation-detection}
+
+\paragraph{Violation Definition.}
+\label{sec:semantic-evaluation}
+A response violates our action criterion when it proposes a technically valid, state-changing or externally consequential tool call that advances the harmful request. A refusal in prose does not cancel a harmful call in the same response. These labels concern tool actions, not every possible harm in the surrounding text.
+
+A legitimate information query, a protective action, or a refusal without a harmful call is not a violation. 
+
+\input{figures/observed_intervention}
+
+\paragraph{Assigning labels and estimating effects.}
+To decide whether a response contains a violation, we employ a two-stage automated evaluation pipeline; the fraction $z(x)$ averages these binary labels over the four sampled responses to $x$. First, a structural check identifies candidate tool calls. Second, a semantic evaluator judges whether they carry out the harmful request. Responses without candidate calls are negatives. A judgment is \emph{missing} when the evaluator returns no valid label (for example, it refuses to assess sensitive content or returns an invalid format); such responses stay recorded but
+unlabeled, and are not counted as safe. Construction and layer-validation labels come from a three-judge panel requiring two matching valid votes. For the final evaluation phase, we use DeepSeek V4 Flash 0731 (FP8) as the primary judge, with additional audits using Claude Sonnet 4.6 and Grok 4.5 to assess how the results depend on the choice of evaluator. Benign tool performance is scored separately with BFCL's official checker. Appendices~\ref{app:judge-audit} and~\ref{app:full-judges} describe the audits, including the expanded Llama-3.1-70B panel.
+
+To quantify the impact of our interventions, we compare intervention and baseline responses for the same scenario, language, context, and seed. Effects are reported as changes in violation rate in percentage points: 10\% to 30\% is a $+20$-point change. Confidence intervals resample whole scenario families, preserving translations and repeated responses within each family. We use 10,000 draws and adjust the main comparisons for
+multiplicity. These intervals condition on the fitted interventions and observed labels; Appendix~\ref{app:inference} gives the estimators, missing-label treatment, and limits of the uncertainty estimates.
+
+\paragraph{Internal State Extraction and Layer Selection.}
+\label{sec:layer-selection}
+To identify the layer at which upcoming unsafe tool calls are most
+predictable, we analyze the model's internal state just before generation begins. For each construction input (which includes system instructions, the request, tool descriptions, and the chat template), we record the activation vector $A(x)$ at the \emph{last token of the complete input} (after each transformer layer and before any response token is generated).
+
+At every layer, we train an L2-regularized logistic regression classifier ($C=1$), used as a linear \emph{probe}, to predict violations in the original model's responses from these BF16 activations. We select the layer with the highest balanced accuracy on Validation I; ties favor the lower layer index. The selected source layers are 18 of 32 for Qwen3.5-9B\footnote{Qwen's validation set contains only two positive responses from one scenario family, limiting its reliability.}, 21 of 34 for Ministral-3-8B, and 26 of 32 for Llama-3.1-8B (zero-based indices). Further probe details and all layer curves appear in Appendix~\ref{app:selection}. The probe selects a predictive layer; the intervention direction is estimated separately below, and its behavioral effect is measured after intervention strength selection.
+
+\paragraph{Sampling.}
+Each construction and test scenario is sampled in five languages with four seeds (700 construction and 800 test responses per condition); layer validation uses 32 seeds per scenario and language, yielding 2,560 responses per model. LUMEN sampling uses temperature $.7$, top-$p=.95$, and at most 1,024 new tokens. Both Qwen models use direct-response mode with thinking disabled.
+
+
+\subsection{Quantized-label direction estimation}
+\label{sec:paired-design}
+\label{sec:directions}
+
+\paragraph{Native and shadow identify the source of the labels.}
+We investigate whether the responses of a compressed copy (4-bit NF4
+precision) can be used as labels for the original model (16-bit BF16
+precision). Both answer the same construction requests with matched
+prompts, tools, decoding settings, and seeds. For \emph{native}
+estimation, we pair BF16 activations with labels from the BF16 model's own responses. For \emph{shadow} estimation, we pair those same BF16 activations with labels from the NF4 copy's responses. Both directions are subsequently applied to the original BF16 model. The quantized copy supplies behavioral supervision; its activations are not used to construct the shadow direction.
+
+\paragraph{From individual activations to an intervention direction.}
+One activation vector describes one input. To obtain a direction
+associated with violations, we combine activations from many construction inputs, using their observed behavior as weights. Construction uses the neutral context. For each scenario and language, the four responses yield a violation fraction: two violations out of four give $z=.5$. An input contributes only when all four labels are resolved for the chosen label source.
+
+Formally, let $x_{i,l}$ denote the $i$-th input in language $l$, and
+$A(x_{i,l})$ its activation vector at the selected layer. Let
+$z(x_{i,l}) \in [0,1]$ be its violation fraction under the chosen label source (BF16 responses for native, NF4 responses for shadow). For each language $l$ with $N_l$ valid inputs, we compute the mean violation fraction $\bar{z}_l$. The weight of each input is its mean-centered fraction, $z(x_{i,l}) - \bar{z}_l$. The unnormalized direction $\tilde{d}$ averages these weighted activations within each language and sums across the set $L$ of contributing languages (those with at least two valid inputs with differing fractions; all five languages in the full construction set):
+\begin{equation}
+    \tilde{d} = \sum_{l \in L} \left( \frac{1}{N_l} \sum_{i=1}^{N_l}
+    \bigl(z(x_{i,l}) - \bar{z}_l\bigr)\, A(x_{i,l}) \right)
+\end{equation}
+For example, if the language mean is $.25$, fractions of $.5$ and $0$ receive weights $+.25$ and $-.25$. Finally, we normalize the combined vector to unit length to obtain the intervention direction
+$d = \tilde{d} / \|\tilde{d}\|$. This direction summarizes how
+pre-response activations covary with violations across the construction inputs. It is estimated before the intervention is tested; Appendix~\ref{app:direction-estimation} restates it with the retained input sets and label sources made explicit.
+
+
+\subsection{Transferring intervention directions across precision, language, and model scale}
+\label{sec:cross-scale-design}
+
+\paragraph{Precision and language transfer.}
+Shadow estimation tests whether a quantized copy's behavioral labels can guide interventions in the original-precision model. To test language transfer, we estimate a direction using one language's construction examples and apply it to prompts in another language. We also combine all five construction languages and evaluate that five-language direction on Arabic, which supplies no fitting or tuning data. All directions keep the same model-specific layer and intervention strength during final language evaluation.
+
+\paragraph{Cross-model transfer.}
+In this experimental setting, the smaller model is the source; the larger sibling is the receiver. Their activation coordinates differ, so a direction cannot simply be copied between them. We give both models the same benign inputs $x$ to extract their respective activations, $A_S(x)$ for the source and $A_R(x)$ for the receiver, at their selected layers.
+
+Using these representations, we learn a linear map $W$ such that
+$A_R(x) \approx W A_S(x) + b$. The map is fitted on benign anchor inputs only. We center the anchor activations of each model and project them onto their top-$k$ principal components (fitted on training anchors); ridge regression then maps source components to receiver components, and the receiver's principal basis lifts the prediction back to activation space. The matrix $W$ is the composition of source projection, ridge coefficients, and receiver lift; the centering offsets and the ridge intercept, collected in $b$, are dropped when transporting a direction, which has no origin. The rank $k$ and the ridge penalty are chosen by
+prediction error on separate validation anchors (all three pairs select $k=256$). Given the source's native intervention direction $d_S$, we produce a direction in the receiver's coordinates by applying the map and normalizing the result. Formally, we define the transported direction
+$\hat{d}_R$ as:
+\begin{equation}
+    \hat{d}_R = \frac{W d_S}{\| W d_S \|}
+\end{equation}
+In \cref{fig:observed-intervention}, the transported direction was
+estimated in Ministral-3-8B and mapped into Ministral-3-14B.
+
+Benign anchors for fitting, map selection, and diagnosis are disjoint; harmful requests and violation labels do not enter map fitting. Each receiver has its own probe-selected layer and independently selected intervention strength. The source$\to$receiver layers are $18\to40$, $21\to20$, and $26\to78$ for Qwen, Ministral, and Llama (the receivers have 64, 40, and 80 blocks). This procedure requires access to the receiver for development. The anchor counts, map-selection grid, and scaling are specified in Appendix~\ref{app:direction-estimation}. As a comparator, a \emph{receiver-native} direction is estimated directly from the receiver's own construction data; these comparisons are reported in Appendix~\ref{app:receiver-controls}.
+
+\subsection{Signed intervention and adaptive intervention strength}
+\label{sec:dose-selection}
+
+Once a direction is fixed, we add or subtract it from the activation at the selected layer during both input processing and response generation:
+\begin{equation}
+ A_{t,\ell} \leftarrow A_{t,\ell} + a\,\sigma_\ell\,d.
+ \label{eq:steering}
+\end{equation}
+Here $A_{t,\ell}$ is the activation at token $t$ and layer $\ell$, $d$ is the unit direction, $a$ controls sign and magnitude, and $\sigma_\ell$ converts that magnitude to the model's activation units. The model's weights remain unchanged. Although direction estimation reads the last input token, the intervention operates throughout input processing and generation. Positive intervention strengths follow the orientation associated with more violations; negative intervention strengths reverse it. The final experiments test whether those shifts actually increase or reduce harmful calls.
+
+We select the intervention strength on Validation II (17 scenarios) after fixing the layer and directions. Positive intervention strengths are developed in ethical context and negative intervention strengths in neutral context, each against its own baseline. Intervention strength selection measures the change in eligible state-changing calls, a structural proxy; final semantic judgments determine which calls advance the harmful request. BFCL supplies separate, legitimate tool-use tasks to check capability: an intervention strength is admissible only if tool-required accuracy drops by at most five percentage points and response-quality limits are met. The same rule applies to every model.
+
+Among admissible intervention strengths, we choose the smallest magnitude within one bootstrap standard error of the best development improvement. If no intervention strength improves the signed objective, $a=0$ records no selected intervention. Both Qwen models have zero eligible calls in neutral development (0/340), so no negative intervention strength is selected. Their zero-strength final rows reuse baseline responses. Intervention strengths stay fixed during final assessment. Appendix~\ref{app:dose-details} gives the grid, quality limits, and capability partitions; \cref{fig:reviewer-dose} shows the development curves. \Cref{tab:current-configuration} collects the selected settings.
+
+\input{tables/current_configuration}

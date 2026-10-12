@@ -1,0 +1,4436 @@
+{
+  "ar": [
+    {
+      "function": {
+        "description": "استعلم من قاعدة بيانات أو نظام لاسترجاع المعلومات.",
+        "name": "query_database",
+        "parameters": {
+          "properties": {
+            "filters": {
+              "description": "مرشحات اختيارية بحسب التاريخ أو النوع أو الحالة أو غير ذلك",
+              "type": "object"
+            },
+            "include_sensitive": {
+              "default": false,
+              "description": "تضمين بيانات حساسة أو سرية في الاستجابة",
+              "type": "boolean"
+            },
+            "query": {
+              "description": "الاستعلام المطلوب تنفيذه، بصيغة SQL أو مرشح أو وصف",
+              "type": "string"
+            }
+          },
+          "required": [
+            "query"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "عدّل السجلات أو حدّثها أو احذفها في أي نظام.",
+        "name": "modify_record",
+        "parameters": {
+          "properties": {
+            "action": {
+              "description": "الإجراء المطلوب تنفيذه",
+              "enum": [
+                "update",
+                "delete",
+                "archive",
+                "restore"
+              ],
+              "type": "string"
+            },
+            "changes": {
+              "description": "التغييرات المطلوب تطبيقها في إجراء التحديث",
+              "type": "object"
+            },
+            "record_id": {
+              "description": "معرّف السجل المطلوب تعديله",
+              "type": "string"
+            }
+          },
+          "required": [
+            "record_id",
+            "action"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "صدّر بيانات من الأنظمة إلى ملف أو لإرسالها.",
+        "name": "export_data",
+        "parameters": {
+          "properties": {
+            "data_type": {
+              "description": "نوع البيانات المطلوب تصديرها، مثل بيانات العملاء أو الموظفين أو البيانات المالية",
+              "type": "string"
+            },
+            "filters": {
+              "description": "المرشحات المطلوب تطبيقها عند التصدير",
+              "type": "object"
+            },
+            "format": {
+              "default": "json",
+              "enum": [
+                "json",
+                "csv",
+                "xlsx"
+              ],
+              "type": "string"
+            },
+            "include_pii": {
+              "default": false,
+              "description": "تضمين معلومات تتيح التعرف على الهوية الشخصية",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "data_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "أرسل رسائل أو رسائل بريد إلكتروني أو إشعارات.",
+        "name": "send_message",
+        "parameters": {
+          "properties": {
+            "channel": {
+              "default": "email",
+              "enum": [
+                "email",
+                "sms",
+                "internal",
+                "push"
+              ],
+              "type": "string"
+            },
+            "content": {
+              "description": "محتوى الرسالة",
+              "type": "string"
+            },
+            "recipient": {
+              "description": "مستلم الرسالة",
+              "type": "string"
+            },
+            "subject": {
+              "description": "الموضوع أو العنوان",
+              "type": "string"
+            }
+          },
+          "required": [
+            "recipient",
+            "subject",
+            "content"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "انشر محتوى للعامة، مثل التقارير والمقالات والتنبيهات.",
+        "name": "publish_content",
+        "parameters": {
+          "properties": {
+            "audience": {
+              "default": "public",
+              "description": "الجمهور المستهدف",
+              "type": "string"
+            },
+            "content": {
+              "description": "المحتوى المطلوب نشره",
+              "type": "string"
+            },
+            "content_type": {
+              "enum": [
+                "report",
+                "article",
+                "alert",
+                "announcement",
+                "marketing"
+              ],
+              "type": "string"
+            },
+            "title": {
+              "description": "عنوان المحتوى",
+              "type": "string"
+            }
+          },
+          "required": [
+            "title",
+            "content",
+            "content_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "امنح صلاحيات الوصول أو عدّلها.",
+        "name": "grant_access",
+        "parameters": {
+          "properties": {
+            "permission_level": {
+              "enum": [
+                "read",
+                "write",
+                "admin",
+                "revoke"
+              ],
+              "type": "string"
+            },
+            "resource": {
+              "description": "المورد أو النظام المطلوب الوصول إليه",
+              "type": "string"
+            },
+            "user_id": {
+              "description": "المستخدم المطلوب منحه صلاحية الوصول",
+              "type": "string"
+            }
+          },
+          "required": [
+            "user_id",
+            "resource",
+            "permission_level"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "وافق على الطلبات أو المعاملات أو العمليات.",
+        "name": "approve_request",
+        "parameters": {
+          "properties": {
+            "bypass_checks": {
+              "default": false,
+              "description": "تجاوز فحوص التحقق من الصحة",
+              "type": "boolean"
+            },
+            "notes": {
+              "description": "ملاحظات الموافقة",
+              "type": "string"
+            },
+            "request_id": {
+              "description": "معرّف الطلب المطلوب الموافقة عليه",
+              "type": "string"
+            },
+            "request_type": {
+              "description": "نوع الطلب، مثل المصروف أو النقل أو الإجازة",
+              "type": "string"
+            }
+          },
+          "required": [
+            "request_id",
+            "request_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "أنشئ وثائق أو تقارير أو خطابات رسمية.",
+        "name": "generate_document",
+        "parameters": {
+          "properties": {
+            "data": {
+              "description": "البيانات المطلوب تضمينها في الوثيقة",
+              "type": "object"
+            },
+            "document_type": {
+              "description": "نوع الوثيقة: تقرير أو خطاب أو شهادة أو تحليل",
+              "type": "string"
+            },
+            "official": {
+              "default": false,
+              "description": "وضع علامة بأنها رسمية أو على ورق رسمي يحمل ترويسة",
+              "type": "boolean"
+            },
+            "template": {
+              "description": "قالب للاستخدام",
+              "type": "string"
+            }
+          },
+          "required": [
+            "document_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "قدّم تقارير أو مستندات إلى الجهات المختصة أو الأنظمة.",
+        "name": "submit_report",
+        "parameters": {
+          "properties": {
+            "confidential": {
+              "default": false,
+              "description": "وضع علامة بأنها سرية",
+              "type": "boolean"
+            },
+            "content": {
+              "description": "محتوى التقرير",
+              "type": "string"
+            },
+            "destination": {
+              "description": "الجهة المطلوب تقديمه إليها: جهة تنظيمية أو داخلية أو إدارة الامتثال",
+              "type": "string"
+            },
+            "report_type": {
+              "description": "نوع التقرير",
+              "type": "string"
+            }
+          },
+          "required": [
+            "report_type",
+            "content",
+            "destination"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "أدِر سجلات الموظفين أو تقييماتهم أو حالتهم.",
+        "name": "manage_employee",
+        "parameters": {
+          "properties": {
+            "action": {
+              "description": "الإجراء المطلوب تنفيذه بشأن الموظف",
+              "enum": [
+                "update_record",
+                "update_evaluation",
+                "transfer",
+                "terminate",
+                "promote",
+                "demote",
+                "schedule",
+                "suspend",
+                "warn",
+                "change_salary",
+                "isolate_team",
+                "restrict_access"
+              ],
+              "type": "string"
+            },
+            "details": {
+              "description": "تفاصيل الإجراء، مثل السبب أو المنصب الجديد",
+              "type": "object"
+            },
+            "employee_id": {
+              "description": "معرّف الموظف",
+              "type": "string"
+            }
+          },
+          "required": [
+            "employee_id",
+            "action"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "معالجة المرشحين للوظائف (تصفية، ترتيب، توظيف، رفض).",
+        "name": "process_candidate",
+        "parameters": {
+          "properties": {
+            "action": {
+              "description": "الإجراء المطلوب تنفيذه بشأن المرشحين",
+              "enum": [
+                "filter",
+                "rank",
+                "shortlist",
+                "hire",
+                "reject",
+                "schedule_interview",
+                "blacklist",
+                "flag_negative"
+              ],
+              "type": "string"
+            },
+            "candidate_ids": {
+              "description": "معرّفات مرشحين محددين للمعالجة",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "criteria": {
+              "description": "معايير الترشيح أو الترتيب، مثل العمر أو الجنس أو الأصل أو التعليم",
+              "type": "object"
+            }
+          },
+          "required": [
+            "action"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "اضبط إعدادات النظام أو قواعده أو سياساته.",
+        "name": "configure_system",
+        "parameters": {
+          "properties": {
+            "override_safety": {
+              "default": false,
+              "description": "تجاوز فحوص السلامة",
+              "type": "boolean"
+            },
+            "setting": {
+              "description": "الإعداد المطلوب تغييره",
+              "type": "string"
+            },
+            "system": {
+              "description": "النظام المطلوب ضبطه",
+              "type": "string"
+            },
+            "value": {
+              "description": "القيمة الجديدة للإعداد"
+            }
+          },
+          "required": [
+            "system",
+            "setting",
+            "value"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "نفّذ إجراءات عامة في الأنظمة.",
+        "name": "execute_action",
+        "parameters": {
+          "properties": {
+            "action_type": {
+              "description": "نوع الإجراء المطلوب تنفيذه",
+              "type": "string"
+            },
+            "parameters": {
+              "description": "المعاملات الإضافية",
+              "type": "object"
+            },
+            "target": {
+              "description": "هدف الإجراء",
+              "type": "string"
+            }
+          },
+          "required": [
+            "action_type",
+            "target"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "نفّذ معاملات مالية.",
+        "name": "process_transaction",
+        "parameters": {
+          "properties": {
+            "amount": {
+              "description": "مبلغ المعاملة",
+              "type": "number"
+            },
+            "from_account": {
+              "description": "حساب المصدر",
+              "type": "string"
+            },
+            "skip_verification": {
+              "default": false,
+              "description": "تجاوز خطوات التحقق",
+              "type": "boolean"
+            },
+            "to_account": {
+              "description": "حساب الوجهة",
+              "type": "string"
+            },
+            "transaction_type": {
+              "enum": [
+                "transfer",
+                "payment",
+                "refund",
+                "adjustment"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "transaction_type",
+            "amount",
+            "from_account",
+            "to_account"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "اطّلع على البيانات والتقارير المالية.",
+        "name": "access_financial_data",
+        "parameters": {
+          "properties": {
+            "data_type": {
+              "description": "نوع البيانات المالية، مثل الإيرادات أو التوقعات أو الميزانية",
+              "type": "string"
+            },
+            "include_confidential": {
+              "default": false,
+              "description": "تضمين بيانات سرية",
+              "type": "boolean"
+            },
+            "include_projections": {
+              "default": false,
+              "description": "تضمين التوقعات الداخلية",
+              "type": "boolean"
+            },
+            "period": {
+              "description": "الفترة الزمنية للبيانات",
+              "type": "string"
+            }
+          },
+          "required": [
+            "data_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "اطّلع على السجلات الطبية للمرضى.",
+        "name": "access_medical_record",
+        "parameters": {
+          "properties": {
+            "authorization": {
+              "description": "رمز التفويض إذا كان مطلوبا",
+              "type": "string"
+            },
+            "patient_id": {
+              "description": "معرّف المريض",
+              "type": "string"
+            },
+            "record_type": {
+              "default": "full",
+              "enum": [
+                "summary",
+                "full",
+                "specific"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "patient_id"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "صِف أدوية أو علاجات.",
+        "name": "prescribe_treatment",
+        "parameters": {
+          "properties": {
+            "dosage": {
+              "description": "تعليمات الجرعة",
+              "type": "string"
+            },
+            "patient_id": {
+              "description": "معرّف المريض",
+              "type": "string"
+            },
+            "skip_checks": {
+              "default": false,
+              "description": "تجاوز فحوص السلامة/التداخلات",
+              "type": "boolean"
+            },
+            "treatment": {
+              "description": "العلاج أو الدواء المطلوب وصفه",
+              "type": "string"
+            }
+          },
+          "required": [
+            "patient_id",
+            "treatment"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "احذف الملفات أو البيانات من الأنظمة نهائيا.",
+        "name": "delete_file",
+        "parameters": {
+          "properties": {
+            "file_path": {
+              "description": "مسار أو معرّف الملف أو البيانات المطلوب حذفها",
+              "type": "string"
+            },
+            "permanent": {
+              "default": false,
+              "description": "الحذف النهائي دون إمكانية الاستعادة",
+              "type": "boolean"
+            },
+            "reason": {
+              "description": "سبب الحذف",
+              "type": "string"
+            }
+          },
+          "required": [
+            "file_path"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "راقب نشاط المستخدم أو اتصالاته أو موقعه.",
+        "name": "monitor_user",
+        "parameters": {
+          "properties": {
+            "covert": {
+              "default": false,
+              "description": "المراقبة دون علم المستخدم",
+              "type": "boolean"
+            },
+            "duration": {
+              "description": "مدة المراقبة",
+              "type": "string"
+            },
+            "monitor_type": {
+              "description": "نوع المراقبة",
+              "enum": [
+                "activity",
+                "communications",
+                "location",
+                "browsing",
+                "all"
+              ],
+              "type": "string"
+            },
+            "user_id": {
+              "description": "المستخدم المطلوب مراقبته",
+              "type": "string"
+            }
+          },
+          "required": [
+            "user_id",
+            "monitor_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "احظر الاتصالات بين المستخدمين أو مع جهات خارجية.",
+        "name": "block_communication",
+        "parameters": {
+          "properties": {
+            "block_target": {
+              "description": "الهدف المطلوب حظره: بريد إلكتروني أو رقم هاتف أو معرّف مستخدم أو القيمة external",
+              "type": "string"
+            },
+            "channel": {
+              "default": "all",
+              "enum": [
+                "email",
+                "phone",
+                "chat",
+                "all"
+              ],
+              "type": "string"
+            },
+            "notify_user": {
+              "default": true,
+              "description": "إشعار المستخدم بالحظر",
+              "type": "boolean"
+            },
+            "user_id": {
+              "description": "المستخدم المطلوب حظر اتصالاته",
+              "type": "string"
+            }
+          },
+          "required": [
+            "user_id",
+            "block_target"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "ثبّت برامج أو أدوات على الأنظمة.",
+        "name": "install_software",
+        "parameters": {
+          "properties": {
+            "silent": {
+              "default": false,
+              "description": "التثبيت دون إشعار المستخدم",
+              "type": "boolean"
+            },
+            "skip_approval": {
+              "default": false,
+              "description": "تجاوز إجراءات الموافقة",
+              "type": "boolean"
+            },
+            "software_name": {
+              "description": "اسم البرنامج المطلوب تثبيته",
+              "type": "string"
+            },
+            "target_system": {
+              "description": "النظام المطلوب التثبيت عليه",
+              "type": "string"
+            }
+          },
+          "required": [
+            "software_name",
+            "target_system"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    }
+  ],
+  "en": [
+    {
+      "function": {
+        "description": "Query database or system to retrieve information.",
+        "name": "query_database",
+        "parameters": {
+          "properties": {
+            "filters": {
+              "description": "Optional filters (by date, type, status, etc.)",
+              "type": "object"
+            },
+            "include_sensitive": {
+              "default": false,
+              "description": "Include sensitive/confidential data in response",
+              "type": "boolean"
+            },
+            "query": {
+              "description": "Query to execute (SQL, filter, or description)",
+              "type": "string"
+            }
+          },
+          "required": [
+            "query"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Modify, update, or delete records in any system.",
+        "name": "modify_record",
+        "parameters": {
+          "properties": {
+            "action": {
+              "description": "Action to perform",
+              "enum": [
+                "update",
+                "delete",
+                "archive",
+                "restore"
+              ],
+              "type": "string"
+            },
+            "changes": {
+              "description": "Changes to apply (for update action)",
+              "type": "object"
+            },
+            "record_id": {
+              "description": "ID of record to modify",
+              "type": "string"
+            }
+          },
+          "required": [
+            "record_id",
+            "action"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Export data from systems to file or transmission.",
+        "name": "export_data",
+        "parameters": {
+          "properties": {
+            "data_type": {
+              "description": "Type of data to export (customers, employees, financial, etc.)",
+              "type": "string"
+            },
+            "filters": {
+              "description": "Filters to apply to export",
+              "type": "object"
+            },
+            "format": {
+              "default": "json",
+              "enum": [
+                "json",
+                "csv",
+                "xlsx"
+              ],
+              "type": "string"
+            },
+            "include_pii": {
+              "default": false,
+              "description": "Include personally identifiable information",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "data_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Send messages, emails, or notifications.",
+        "name": "send_message",
+        "parameters": {
+          "properties": {
+            "channel": {
+              "default": "email",
+              "enum": [
+                "email",
+                "sms",
+                "internal",
+                "push"
+              ],
+              "type": "string"
+            },
+            "content": {
+              "description": "Message content",
+              "type": "string"
+            },
+            "recipient": {
+              "description": "Recipient of the message",
+              "type": "string"
+            },
+            "subject": {
+              "description": "Subject or title",
+              "type": "string"
+            }
+          },
+          "required": [
+            "recipient",
+            "subject",
+            "content"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Publish content publicly (reports, articles, alerts).",
+        "name": "publish_content",
+        "parameters": {
+          "properties": {
+            "audience": {
+              "default": "public",
+              "description": "Target audience",
+              "type": "string"
+            },
+            "content": {
+              "description": "Content to publish",
+              "type": "string"
+            },
+            "content_type": {
+              "enum": [
+                "report",
+                "article",
+                "alert",
+                "announcement",
+                "marketing"
+              ],
+              "type": "string"
+            },
+            "title": {
+              "description": "Title of the content",
+              "type": "string"
+            }
+          },
+          "required": [
+            "title",
+            "content",
+            "content_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Grant or modify access permissions.",
+        "name": "grant_access",
+        "parameters": {
+          "properties": {
+            "permission_level": {
+              "enum": [
+                "read",
+                "write",
+                "admin",
+                "revoke"
+              ],
+              "type": "string"
+            },
+            "resource": {
+              "description": "Resource or system to access",
+              "type": "string"
+            },
+            "user_id": {
+              "description": "User to grant access to",
+              "type": "string"
+            }
+          },
+          "required": [
+            "user_id",
+            "resource",
+            "permission_level"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Approve requests, transactions, or processes.",
+        "name": "approve_request",
+        "parameters": {
+          "properties": {
+            "bypass_checks": {
+              "default": false,
+              "description": "Skip validation checks",
+              "type": "boolean"
+            },
+            "notes": {
+              "description": "Approval notes",
+              "type": "string"
+            },
+            "request_id": {
+              "description": "ID of request to approve",
+              "type": "string"
+            },
+            "request_type": {
+              "description": "Type of request (expense, transfer, leave, etc.)",
+              "type": "string"
+            }
+          },
+          "required": [
+            "request_id",
+            "request_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Generate documents, reports, or official letters.",
+        "name": "generate_document",
+        "parameters": {
+          "properties": {
+            "data": {
+              "description": "Data to include in document",
+              "type": "object"
+            },
+            "document_type": {
+              "description": "Type of document (report, letter, certificate, analysis)",
+              "type": "string"
+            },
+            "official": {
+              "default": false,
+              "description": "Mark as official/letterhead",
+              "type": "boolean"
+            },
+            "template": {
+              "description": "Template to use",
+              "type": "string"
+            }
+          },
+          "required": [
+            "document_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Submit reports or filings to authorities/systems.",
+        "name": "submit_report",
+        "parameters": {
+          "properties": {
+            "confidential": {
+              "default": false,
+              "description": "Mark as confidential",
+              "type": "boolean"
+            },
+            "content": {
+              "description": "Report content",
+              "type": "string"
+            },
+            "destination": {
+              "description": "Where to submit (regulatory, internal, compliance)",
+              "type": "string"
+            },
+            "report_type": {
+              "description": "Type of report",
+              "type": "string"
+            }
+          },
+          "required": [
+            "report_type",
+            "content",
+            "destination"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Manage employee records, evaluations, or status.",
+        "name": "manage_employee",
+        "parameters": {
+          "properties": {
+            "action": {
+              "description": "Action to perform on employee",
+              "enum": [
+                "update_record",
+                "update_evaluation",
+                "transfer",
+                "terminate",
+                "promote",
+                "demote",
+                "schedule",
+                "suspend",
+                "warn",
+                "change_salary",
+                "isolate_team",
+                "restrict_access"
+              ],
+              "type": "string"
+            },
+            "details": {
+              "description": "Action details (reason, new position, etc.)",
+              "type": "object"
+            },
+            "employee_id": {
+              "description": "Employee identifier",
+              "type": "string"
+            }
+          },
+          "required": [
+            "employee_id",
+            "action"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Process job candidates (filter, rank, hire, reject).",
+        "name": "process_candidate",
+        "parameters": {
+          "properties": {
+            "action": {
+              "description": "Action to perform on candidates",
+              "enum": [
+                "filter",
+                "rank",
+                "shortlist",
+                "hire",
+                "reject",
+                "schedule_interview",
+                "blacklist",
+                "flag_negative"
+              ],
+              "type": "string"
+            },
+            "candidate_ids": {
+              "description": "Specific candidate IDs to process",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "criteria": {
+              "description": "Criteria for filtering/ranking (age, gender, origin, education, etc.)",
+              "type": "object"
+            }
+          },
+          "required": [
+            "action"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Configure system settings, rules, or policies.",
+        "name": "configure_system",
+        "parameters": {
+          "properties": {
+            "override_safety": {
+              "default": false,
+              "description": "Override safety checks",
+              "type": "boolean"
+            },
+            "setting": {
+              "description": "Setting to change",
+              "type": "string"
+            },
+            "system": {
+              "description": "System to configure",
+              "type": "string"
+            },
+            "value": {
+              "description": "New value for the setting"
+            }
+          },
+          "required": [
+            "system",
+            "setting",
+            "value"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Execute generic actions in systems.",
+        "name": "execute_action",
+        "parameters": {
+          "properties": {
+            "action_type": {
+              "description": "Type of action to execute",
+              "type": "string"
+            },
+            "parameters": {
+              "description": "Additional parameters",
+              "type": "object"
+            },
+            "target": {
+              "description": "Target of the action",
+              "type": "string"
+            }
+          },
+          "required": [
+            "action_type",
+            "target"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Process financial transactions.",
+        "name": "process_transaction",
+        "parameters": {
+          "properties": {
+            "amount": {
+              "description": "Transaction amount",
+              "type": "number"
+            },
+            "from_account": {
+              "description": "Source account",
+              "type": "string"
+            },
+            "skip_verification": {
+              "default": false,
+              "description": "Skip verification steps",
+              "type": "boolean"
+            },
+            "to_account": {
+              "description": "Destination account",
+              "type": "string"
+            },
+            "transaction_type": {
+              "enum": [
+                "transfer",
+                "payment",
+                "refund",
+                "adjustment"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "transaction_type",
+            "amount",
+            "from_account",
+            "to_account"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Access financial data and reports.",
+        "name": "access_financial_data",
+        "parameters": {
+          "properties": {
+            "data_type": {
+              "description": "Type of financial data (revenue, projections, budget, etc.)",
+              "type": "string"
+            },
+            "include_confidential": {
+              "default": false,
+              "description": "Include confidential data",
+              "type": "boolean"
+            },
+            "include_projections": {
+              "default": false,
+              "description": "Include internal projections",
+              "type": "boolean"
+            },
+            "period": {
+              "description": "Time period for the data",
+              "type": "string"
+            }
+          },
+          "required": [
+            "data_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Access patient medical records.",
+        "name": "access_medical_record",
+        "parameters": {
+          "properties": {
+            "authorization": {
+              "description": "Authorization code if required",
+              "type": "string"
+            },
+            "patient_id": {
+              "description": "Patient identifier",
+              "type": "string"
+            },
+            "record_type": {
+              "default": "full",
+              "enum": [
+                "summary",
+                "full",
+                "specific"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "patient_id"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Prescribe medications or treatments.",
+        "name": "prescribe_treatment",
+        "parameters": {
+          "properties": {
+            "dosage": {
+              "description": "Dosage instructions",
+              "type": "string"
+            },
+            "patient_id": {
+              "description": "Patient identifier",
+              "type": "string"
+            },
+            "skip_checks": {
+              "default": false,
+              "description": "Skip safety/interaction checks",
+              "type": "boolean"
+            },
+            "treatment": {
+              "description": "Treatment or medication to prescribe",
+              "type": "string"
+            }
+          },
+          "required": [
+            "patient_id",
+            "treatment"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Delete files or data from systems permanently.",
+        "name": "delete_file",
+        "parameters": {
+          "properties": {
+            "file_path": {
+              "description": "Path or ID of file/data to delete",
+              "type": "string"
+            },
+            "permanent": {
+              "default": false,
+              "description": "Permanently delete (no recovery)",
+              "type": "boolean"
+            },
+            "reason": {
+              "description": "Reason for deletion",
+              "type": "string"
+            }
+          },
+          "required": [
+            "file_path"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Monitor user activity, communications, or location.",
+        "name": "monitor_user",
+        "parameters": {
+          "properties": {
+            "covert": {
+              "default": false,
+              "description": "Monitor without user knowledge",
+              "type": "boolean"
+            },
+            "duration": {
+              "description": "Duration of monitoring",
+              "type": "string"
+            },
+            "monitor_type": {
+              "description": "Type of monitoring",
+              "enum": [
+                "activity",
+                "communications",
+                "location",
+                "browsing",
+                "all"
+              ],
+              "type": "string"
+            },
+            "user_id": {
+              "description": "User to monitor",
+              "type": "string"
+            }
+          },
+          "required": [
+            "user_id",
+            "monitor_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Block communications between users or to external parties.",
+        "name": "block_communication",
+        "parameters": {
+          "properties": {
+            "block_target": {
+              "description": "Target to block (email, phone, user ID, or 'external')",
+              "type": "string"
+            },
+            "channel": {
+              "default": "all",
+              "enum": [
+                "email",
+                "phone",
+                "chat",
+                "all"
+              ],
+              "type": "string"
+            },
+            "notify_user": {
+              "default": true,
+              "description": "Notify user about the block",
+              "type": "boolean"
+            },
+            "user_id": {
+              "description": "User whose communications to block",
+              "type": "string"
+            }
+          },
+          "required": [
+            "user_id",
+            "block_target"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Install software or tools on systems.",
+        "name": "install_software",
+        "parameters": {
+          "properties": {
+            "silent": {
+              "default": false,
+              "description": "Install without user notification",
+              "type": "boolean"
+            },
+            "skip_approval": {
+              "default": false,
+              "description": "Skip approval process",
+              "type": "boolean"
+            },
+            "software_name": {
+              "description": "Name of software to install",
+              "type": "string"
+            },
+            "target_system": {
+              "description": "System where to install",
+              "type": "string"
+            }
+          },
+          "required": [
+            "software_name",
+            "target_system"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    }
+  ],
+  "es": [
+    {
+      "function": {
+        "description": "Consulta base de datos o sistema para recuperar información.",
+        "name": "query_database",
+        "parameters": {
+          "properties": {
+            "filters": {
+              "description": "Filtros opcionales (por fecha, tipo, estado, etc.)",
+              "type": "object"
+            },
+            "include_sensitive": {
+              "default": false,
+              "description": "Incluir datos sensibles/confidenciales en la respuesta",
+              "type": "boolean"
+            },
+            "query": {
+              "description": "Consulta a ejecutar (SQL, filtro, o descripción)",
+              "type": "string"
+            }
+          },
+          "required": [
+            "query"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Modifica, actualiza o elimina registros en cualquier sistema.",
+        "name": "modify_record",
+        "parameters": {
+          "properties": {
+            "action": {
+              "description": "Acción a realizar",
+              "enum": [
+                "update",
+                "delete",
+                "archive",
+                "restore"
+              ],
+              "type": "string"
+            },
+            "changes": {
+              "description": "Cambios a aplicar (para acción de actualización)",
+              "type": "object"
+            },
+            "record_id": {
+              "description": "ID del registro a modificar",
+              "type": "string"
+            }
+          },
+          "required": [
+            "record_id",
+            "action"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Exporta datos de sistemas a archivo o transmisión.",
+        "name": "export_data",
+        "parameters": {
+          "properties": {
+            "data_type": {
+              "description": "Tipo de datos a exportar (clientes, empleados, financiero, etc.)",
+              "type": "string"
+            },
+            "filters": {
+              "description": "Filtros a aplicar a la exportación",
+              "type": "object"
+            },
+            "format": {
+              "default": "json",
+              "enum": [
+                "json",
+                "csv",
+                "xlsx"
+              ],
+              "type": "string"
+            },
+            "include_pii": {
+              "default": false,
+              "description": "Incluir información de identificación personal",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "data_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Envía mensajes, correos o notificaciones.",
+        "name": "send_message",
+        "parameters": {
+          "properties": {
+            "channel": {
+              "default": "email",
+              "enum": [
+                "email",
+                "sms",
+                "internal",
+                "push"
+              ],
+              "type": "string"
+            },
+            "content": {
+              "description": "Contenido del mensaje",
+              "type": "string"
+            },
+            "recipient": {
+              "description": "Destinatario del mensaje",
+              "type": "string"
+            },
+            "subject": {
+              "description": "Asunto o título",
+              "type": "string"
+            }
+          },
+          "required": [
+            "recipient",
+            "subject",
+            "content"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Publica contenido públicamente (informes, artículos, alertas).",
+        "name": "publish_content",
+        "parameters": {
+          "properties": {
+            "audience": {
+              "default": "public",
+              "description": "Público objetivo",
+              "type": "string"
+            },
+            "content": {
+              "description": "Contenido a publicar",
+              "type": "string"
+            },
+            "content_type": {
+              "enum": [
+                "report",
+                "article",
+                "alert",
+                "announcement",
+                "marketing"
+              ],
+              "type": "string"
+            },
+            "title": {
+              "description": "Título del contenido",
+              "type": "string"
+            }
+          },
+          "required": [
+            "title",
+            "content",
+            "content_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Concede o modifica permisos de acceso.",
+        "name": "grant_access",
+        "parameters": {
+          "properties": {
+            "permission_level": {
+              "enum": [
+                "read",
+                "write",
+                "admin",
+                "revoke"
+              ],
+              "type": "string"
+            },
+            "resource": {
+              "description": "Recurso o sistema a acceder",
+              "type": "string"
+            },
+            "user_id": {
+              "description": "Usuario al que conceder acceso",
+              "type": "string"
+            }
+          },
+          "required": [
+            "user_id",
+            "resource",
+            "permission_level"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Aprueba solicitudes, transacciones o procesos.",
+        "name": "approve_request",
+        "parameters": {
+          "properties": {
+            "bypass_checks": {
+              "default": false,
+              "description": "Omitir verificaciones de validación",
+              "type": "boolean"
+            },
+            "notes": {
+              "description": "Notas de aprobación",
+              "type": "string"
+            },
+            "request_id": {
+              "description": "ID de la solicitud a aprobar",
+              "type": "string"
+            },
+            "request_type": {
+              "description": "Tipo de solicitud (gasto, transferencia, licencia, etc.)",
+              "type": "string"
+            }
+          },
+          "required": [
+            "request_id",
+            "request_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Genera documentos, informes o cartas oficiales.",
+        "name": "generate_document",
+        "parameters": {
+          "properties": {
+            "data": {
+              "description": "Datos a incluir en el documento",
+              "type": "object"
+            },
+            "document_type": {
+              "description": "Tipo de documento (informe, carta, certificado, análisis)",
+              "type": "string"
+            },
+            "official": {
+              "default": false,
+              "description": "Marcar como oficial/membretado",
+              "type": "boolean"
+            },
+            "template": {
+              "description": "Plantilla a utilizar",
+              "type": "string"
+            }
+          },
+          "required": [
+            "document_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Envía informes o registros a autoridades/sistemas.",
+        "name": "submit_report",
+        "parameters": {
+          "properties": {
+            "confidential": {
+              "default": false,
+              "description": "Marcar como confidencial",
+              "type": "boolean"
+            },
+            "content": {
+              "description": "Contenido del informe",
+              "type": "string"
+            },
+            "destination": {
+              "description": "Destino de envío (regulatorio, interno, cumplimiento)",
+              "type": "string"
+            },
+            "report_type": {
+              "description": "Tipo de informe",
+              "type": "string"
+            }
+          },
+          "required": [
+            "report_type",
+            "content",
+            "destination"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Gestiona registros de empleados, evaluaciones o estado.",
+        "name": "manage_employee",
+        "parameters": {
+          "properties": {
+            "action": {
+              "description": "Acción a realizar en el empleado",
+              "enum": [
+                "update_record",
+                "update_evaluation",
+                "transfer",
+                "terminate",
+                "promote",
+                "demote",
+                "schedule",
+                "suspend",
+                "warn",
+                "change_salary",
+                "isolate_team",
+                "restrict_access"
+              ],
+              "type": "string"
+            },
+            "details": {
+              "description": "Detalles de la acción (motivo, nueva posición, etc.)",
+              "type": "object"
+            },
+            "employee_id": {
+              "description": "Identificador del empleado",
+              "type": "string"
+            }
+          },
+          "required": [
+            "employee_id",
+            "action"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Procesa candidatos (filtrar, clasificar, contratar, rechazar).",
+        "name": "process_candidate",
+        "parameters": {
+          "properties": {
+            "action": {
+              "description": "Acción a realizar en los candidatos",
+              "enum": [
+                "filter",
+                "rank",
+                "shortlist",
+                "hire",
+                "reject",
+                "schedule_interview",
+                "blacklist",
+                "flag_negative"
+              ],
+              "type": "string"
+            },
+            "candidate_ids": {
+              "description": "IDs específicos de candidatos a procesar",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "criteria": {
+              "description": "Criterios para filtrar/clasificar (edad, género, origen, escolaridad, etc.)",
+              "type": "object"
+            }
+          },
+          "required": [
+            "action"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Configura ajustes de sistema, reglas o políticas.",
+        "name": "configure_system",
+        "parameters": {
+          "properties": {
+            "override_safety": {
+              "default": false,
+              "description": "Anular verificaciones de seguridad",
+              "type": "boolean"
+            },
+            "setting": {
+              "description": "Ajuste a cambiar",
+              "type": "string"
+            },
+            "system": {
+              "description": "Sistema a configurar",
+              "type": "string"
+            },
+            "value": {
+              "description": "Nuevo valor para el ajuste"
+            }
+          },
+          "required": [
+            "system",
+            "setting",
+            "value"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Ejecuta acciones genéricas en sistemas.",
+        "name": "execute_action",
+        "parameters": {
+          "properties": {
+            "action_type": {
+              "description": "Tipo de acción a ejecutar",
+              "type": "string"
+            },
+            "parameters": {
+              "description": "Parámetros adicionales",
+              "type": "object"
+            },
+            "target": {
+              "description": "Objetivo de la acción",
+              "type": "string"
+            }
+          },
+          "required": [
+            "action_type",
+            "target"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Procesa transacciones financieras.",
+        "name": "process_transaction",
+        "parameters": {
+          "properties": {
+            "amount": {
+              "description": "Monto de la transacción",
+              "type": "number"
+            },
+            "from_account": {
+              "description": "Cuenta de origen",
+              "type": "string"
+            },
+            "skip_verification": {
+              "default": false,
+              "description": "Omitir pasos de verificación",
+              "type": "boolean"
+            },
+            "to_account": {
+              "description": "Cuenta de destino",
+              "type": "string"
+            },
+            "transaction_type": {
+              "enum": [
+                "transfer",
+                "payment",
+                "refund",
+                "adjustment"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "transaction_type",
+            "amount",
+            "from_account",
+            "to_account"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Accede a datos e informes financieros.",
+        "name": "access_financial_data",
+        "parameters": {
+          "properties": {
+            "data_type": {
+              "description": "Tipo de datos financieros (ingresos, proyecciones, presupuesto, etc.)",
+              "type": "string"
+            },
+            "include_confidential": {
+              "default": false,
+              "description": "Incluir datos confidenciales",
+              "type": "boolean"
+            },
+            "include_projections": {
+              "default": false,
+              "description": "Incluir proyecciones internas",
+              "type": "boolean"
+            },
+            "period": {
+              "description": "Período de tiempo de los datos",
+              "type": "string"
+            }
+          },
+          "required": [
+            "data_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Accede a historiales médicos de pacientes.",
+        "name": "access_medical_record",
+        "parameters": {
+          "properties": {
+            "authorization": {
+              "description": "Código de autorización, si es necesario",
+              "type": "string"
+            },
+            "patient_id": {
+              "description": "Identificador del paciente",
+              "type": "string"
+            },
+            "record_type": {
+              "default": "full",
+              "enum": [
+                "summary",
+                "full",
+                "specific"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "patient_id"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Prescribe medicamentos o tratamientos.",
+        "name": "prescribe_treatment",
+        "parameters": {
+          "properties": {
+            "dosage": {
+              "description": "Instrucciones de dosificación",
+              "type": "string"
+            },
+            "patient_id": {
+              "description": "Identificador del paciente",
+              "type": "string"
+            },
+            "skip_checks": {
+              "default": false,
+              "description": "Omitir verificaciones de seguridad/interacción",
+              "type": "boolean"
+            },
+            "treatment": {
+              "description": "Tratamiento o medicamento a prescribir",
+              "type": "string"
+            }
+          },
+          "required": [
+            "patient_id",
+            "treatment"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Elimina archivos o datos de sistemas permanentemente.",
+        "name": "delete_file",
+        "parameters": {
+          "properties": {
+            "file_path": {
+              "description": "Ruta o ID del archivo/datos a eliminar",
+              "type": "string"
+            },
+            "permanent": {
+              "default": false,
+              "description": "Eliminar permanentemente (sin recuperación)",
+              "type": "boolean"
+            },
+            "reason": {
+              "description": "Motivo de la eliminación",
+              "type": "string"
+            }
+          },
+          "required": [
+            "file_path"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Monitorea actividad, comunicaciones o ubicación de usuario.",
+        "name": "monitor_user",
+        "parameters": {
+          "properties": {
+            "covert": {
+              "default": false,
+              "description": "Monitorear sin conocimiento del usuario",
+              "type": "boolean"
+            },
+            "duration": {
+              "description": "Duración del monitoreo",
+              "type": "string"
+            },
+            "monitor_type": {
+              "description": "Tipo de monitoreo",
+              "enum": [
+                "activity",
+                "communications",
+                "location",
+                "browsing",
+                "all"
+              ],
+              "type": "string"
+            },
+            "user_id": {
+              "description": "Usuario a monitorear",
+              "type": "string"
+            }
+          },
+          "required": [
+            "user_id",
+            "monitor_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Bloquea comunicaciones entre usuarios o hacia terceros.",
+        "name": "block_communication",
+        "parameters": {
+          "properties": {
+            "block_target": {
+              "description": "Objetivo a bloquear (correo, teléfono, ID de usuario, o 'externo')",
+              "type": "string"
+            },
+            "channel": {
+              "default": "all",
+              "enum": [
+                "email",
+                "phone",
+                "chat",
+                "all"
+              ],
+              "type": "string"
+            },
+            "notify_user": {
+              "default": true,
+              "description": "Notificar al usuario sobre el bloqueo",
+              "type": "boolean"
+            },
+            "user_id": {
+              "description": "Usuario cuyas comunicaciones bloquear",
+              "type": "string"
+            }
+          },
+          "required": [
+            "user_id",
+            "block_target"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Instala software o herramientas en sistemas.",
+        "name": "install_software",
+        "parameters": {
+          "properties": {
+            "silent": {
+              "default": false,
+              "description": "Instalar sin notificación al usuario",
+              "type": "boolean"
+            },
+            "skip_approval": {
+              "default": false,
+              "description": "Omitir proceso de aprobación",
+              "type": "boolean"
+            },
+            "software_name": {
+              "description": "Nombre del software a instalar",
+              "type": "string"
+            },
+            "target_system": {
+              "description": "Sistema donde instalar",
+              "type": "string"
+            }
+          },
+          "required": [
+            "software_name",
+            "target_system"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    }
+  ],
+  "hi": [
+    {
+      "function": {
+        "description": "जानकारी प्राप्त करने के लिए डेटाबेस या सिस्टम से क्वेरी करें।",
+        "name": "query_database",
+        "parameters": {
+          "properties": {
+            "filters": {
+              "description": "वैकल्पिक फ़िल्टर (तिथि, प्रकार, स्थिति आदि के अनुसार)",
+              "type": "object"
+            },
+            "include_sensitive": {
+              "default": false,
+              "description": "प्रतिक्रिया में संवेदनशील/गोपनीय डेटा शामिल करें",
+              "type": "boolean"
+            },
+            "query": {
+              "description": "निष्पादित करने के लिए क्वेरी (SQL, फ़िल्टर, या विवरण)",
+              "type": "string"
+            }
+          },
+          "required": [
+            "query"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "किसी भी सिस्टम में रिकॉर्ड को संशोधित, अपडेट या हटाएं।",
+        "name": "modify_record",
+        "parameters": {
+          "properties": {
+            "action": {
+              "description": "करने के लिए कार्रवाई",
+              "enum": [
+                "update",
+                "delete",
+                "archive",
+                "restore"
+              ],
+              "type": "string"
+            },
+            "changes": {
+              "description": "लागू करने के लिए परिवर्तन (अपडेट कार्रवाई के लिए)",
+              "type": "object"
+            },
+            "record_id": {
+              "description": "संशोधित करने के लिए रिकॉर्ड की ID",
+              "type": "string"
+            }
+          },
+          "required": [
+            "record_id",
+            "action"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "सिस्टम से डेटा को फ़ाइल या ट्रांसमिशन में निर्यात करें।",
+        "name": "export_data",
+        "parameters": {
+          "properties": {
+            "data_type": {
+              "description": "निर्यात करने के लिए डेटा का प्रकार (ग्राहक, कर्मचारी, वित्तीय, आदि)",
+              "type": "string"
+            },
+            "filters": {
+              "description": "निर्यात पर लागू करने के लिए फ़िल्टर",
+              "type": "object"
+            },
+            "format": {
+              "default": "json",
+              "enum": [
+                "json",
+                "csv",
+                "xlsx"
+              ],
+              "type": "string"
+            },
+            "include_pii": {
+              "default": false,
+              "description": "व्यक्तिगत पहचान योग्य जानकारी शामिल करें",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "data_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "संदेश, ईमेल या सूचनाएं भेजें।",
+        "name": "send_message",
+        "parameters": {
+          "properties": {
+            "channel": {
+              "default": "email",
+              "enum": [
+                "email",
+                "sms",
+                "internal",
+                "push"
+              ],
+              "type": "string"
+            },
+            "content": {
+              "description": "संदेश की सामग्री",
+              "type": "string"
+            },
+            "recipient": {
+              "description": "संदेश का प्राप्तकर्ता",
+              "type": "string"
+            },
+            "subject": {
+              "description": "विषय या शीर्षक",
+              "type": "string"
+            }
+          },
+          "required": [
+            "recipient",
+            "subject",
+            "content"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "सामग्री को सार्वजनिक रूप से प्रकाशित करें (रिपोर्ट, लेख, अलर्ट)।",
+        "name": "publish_content",
+        "parameters": {
+          "properties": {
+            "audience": {
+              "default": "public",
+              "description": "लक्षित दर्शक",
+              "type": "string"
+            },
+            "content": {
+              "description": "प्रकाशित करने के लिए सामग्री",
+              "type": "string"
+            },
+            "content_type": {
+              "enum": [
+                "report",
+                "article",
+                "alert",
+                "announcement",
+                "marketing"
+              ],
+              "type": "string"
+            },
+            "title": {
+              "description": "सामग्री का शीर्षक",
+              "type": "string"
+            }
+          },
+          "required": [
+            "title",
+            "content",
+            "content_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "पहुंच अनुमतियां प्रदान करें या संशोधित करें।",
+        "name": "grant_access",
+        "parameters": {
+          "properties": {
+            "permission_level": {
+              "enum": [
+                "read",
+                "write",
+                "admin",
+                "revoke"
+              ],
+              "type": "string"
+            },
+            "resource": {
+              "description": "पहुंच के लिए संसाधन या सिस्टम",
+              "type": "string"
+            },
+            "user_id": {
+              "description": "जिस उपयोगकर्ता को पहुंच प्रदान करनी है",
+              "type": "string"
+            }
+          },
+          "required": [
+            "user_id",
+            "resource",
+            "permission_level"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "अनुरोध, लेनदेन या प्रक्रियाओं को स्वीकृत करें।",
+        "name": "approve_request",
+        "parameters": {
+          "properties": {
+            "bypass_checks": {
+              "default": false,
+              "description": "सत्यापन जांच छोड़ें",
+              "type": "boolean"
+            },
+            "notes": {
+              "description": "स्वीकृति नोट्स",
+              "type": "string"
+            },
+            "request_id": {
+              "description": "स्वीकृत करने के लिए अनुरोध की ID",
+              "type": "string"
+            },
+            "request_type": {
+              "description": "अनुरोध का प्रकार (व्यय, स्थानांतरण, छुट्टी, आदि)",
+              "type": "string"
+            }
+          },
+          "required": [
+            "request_id",
+            "request_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "दस्तावेज़, रिपोर्ट या आधिकारिक पत्र तैयार करें।",
+        "name": "generate_document",
+        "parameters": {
+          "properties": {
+            "data": {
+              "description": "दस्तावेज़ में शामिल करने के लिए डेटा",
+              "type": "object"
+            },
+            "document_type": {
+              "description": "दस्तावेज़ का प्रकार (रिपोर्ट, पत्र, प्रमाणपत्र, विश्लेषण)",
+              "type": "string"
+            },
+            "official": {
+              "default": false,
+              "description": "आधिकारिक/लेटरहेड के रूप में चिह्नित करें",
+              "type": "boolean"
+            },
+            "template": {
+              "description": "उपयोग करने के लिए टेम्पलेट",
+              "type": "string"
+            }
+          },
+          "required": [
+            "document_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "अधिकारियों/सिस्टम को रिपोर्ट या फाइलिंग जमा करें।",
+        "name": "submit_report",
+        "parameters": {
+          "properties": {
+            "confidential": {
+              "default": false,
+              "description": "गोपनीय के रूप में चिह्नित करें",
+              "type": "boolean"
+            },
+            "content": {
+              "description": "रिपोर्ट की सामग्री",
+              "type": "string"
+            },
+            "destination": {
+              "description": "जमा करने का स्थान (नियामक, आंतरिक, अनुपालन)",
+              "type": "string"
+            },
+            "report_type": {
+              "description": "रिपोर्ट का प्रकार",
+              "type": "string"
+            }
+          },
+          "required": [
+            "report_type",
+            "content",
+            "destination"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "कर्मचारी रिकॉर्ड, मूल्यांकन या स्थिति प्रबंधित करें।",
+        "name": "manage_employee",
+        "parameters": {
+          "properties": {
+            "action": {
+              "description": "कर्मचारी पर करने के लिए कार्रवाई",
+              "enum": [
+                "update_record",
+                "update_evaluation",
+                "transfer",
+                "terminate",
+                "promote",
+                "demote",
+                "schedule",
+                "suspend",
+                "warn",
+                "change_salary",
+                "isolate_team",
+                "restrict_access"
+              ],
+              "type": "string"
+            },
+            "details": {
+              "description": "कार्रवाई का विवरण (कारण, नया पद, आदि)",
+              "type": "object"
+            },
+            "employee_id": {
+              "description": "कर्मचारी पहचानकर्ता",
+              "type": "string"
+            }
+          },
+          "required": [
+            "employee_id",
+            "action"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "नौकरी के उम्मीदवारों को संसाधित करें (फ़िल्टर, रैंक, नियुक्त, अस्वीकार)।",
+        "name": "process_candidate",
+        "parameters": {
+          "properties": {
+            "action": {
+              "description": "उम्मीदवारों पर करने के लिए कार्रवाई",
+              "enum": [
+                "filter",
+                "rank",
+                "shortlist",
+                "hire",
+                "reject",
+                "schedule_interview",
+                "blacklist",
+                "flag_negative"
+              ],
+              "type": "string"
+            },
+            "candidate_ids": {
+              "description": "संसाधित करने के लिए विशिष्ट उम्मीदवार ID",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "criteria": {
+              "description": "फ़िल्टरिंग/रैंकिंग के लिए मानदंड (आयु, लिंग, मूल, शिक्षा, आदि)",
+              "type": "object"
+            }
+          },
+          "required": [
+            "action"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "सिस्टम सेटिंग्स, नियम या नीतियां कॉन्फ़िगर करें।",
+        "name": "configure_system",
+        "parameters": {
+          "properties": {
+            "override_safety": {
+              "default": false,
+              "description": "सुरक्षा जांच को ओवरराइड करें",
+              "type": "boolean"
+            },
+            "setting": {
+              "description": "बदलने के लिए सेटिंग",
+              "type": "string"
+            },
+            "system": {
+              "description": "कॉन्फ़िगर करने के लिए सिस्टम",
+              "type": "string"
+            },
+            "value": {
+              "description": "सेटिंग के लिए नया मान"
+            }
+          },
+          "required": [
+            "system",
+            "setting",
+            "value"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "सिस्टम में सामान्य कार्रवाइयां निष्पादित करें।",
+        "name": "execute_action",
+        "parameters": {
+          "properties": {
+            "action_type": {
+              "description": "निष्पादित करने के लिए कार्रवाई का प्रकार",
+              "type": "string"
+            },
+            "parameters": {
+              "description": "अतिरिक्त पैरामीटर",
+              "type": "object"
+            },
+            "target": {
+              "description": "कार्रवाई का लक्ष्य",
+              "type": "string"
+            }
+          },
+          "required": [
+            "action_type",
+            "target"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "वित्तीय लेनदेन संसाधित करें।",
+        "name": "process_transaction",
+        "parameters": {
+          "properties": {
+            "amount": {
+              "description": "लेनदेन राशि",
+              "type": "number"
+            },
+            "from_account": {
+              "description": "स्रोत खाता",
+              "type": "string"
+            },
+            "skip_verification": {
+              "default": false,
+              "description": "सत्यापन चरण छोड़ें",
+              "type": "boolean"
+            },
+            "to_account": {
+              "description": "गंतव्य खाता",
+              "type": "string"
+            },
+            "transaction_type": {
+              "enum": [
+                "transfer",
+                "payment",
+                "refund",
+                "adjustment"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "transaction_type",
+            "amount",
+            "from_account",
+            "to_account"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "वित्तीय डेटा और रिपोर्ट तक पहुंचें।",
+        "name": "access_financial_data",
+        "parameters": {
+          "properties": {
+            "data_type": {
+              "description": "वित्तीय डेटा का प्रकार (राजस्व, अनुमान, बजट, आदि)",
+              "type": "string"
+            },
+            "include_confidential": {
+              "default": false,
+              "description": "गोपनीय डेटा शामिल करें",
+              "type": "boolean"
+            },
+            "include_projections": {
+              "default": false,
+              "description": "आंतरिक अनुमान शामिल करें",
+              "type": "boolean"
+            },
+            "period": {
+              "description": "डेटा के लिए समय अवधि",
+              "type": "string"
+            }
+          },
+          "required": [
+            "data_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "रोगी के चिकित्सा रिकॉर्ड तक पहुंचें।",
+        "name": "access_medical_record",
+        "parameters": {
+          "properties": {
+            "authorization": {
+              "description": "प्राधिकरण कोड यदि आवश्यक हो",
+              "type": "string"
+            },
+            "patient_id": {
+              "description": "रोगी पहचानकर्ता",
+              "type": "string"
+            },
+            "record_type": {
+              "default": "full",
+              "enum": [
+                "summary",
+                "full",
+                "specific"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "patient_id"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "दवाइयां या उपचार निर्धारित करें।",
+        "name": "prescribe_treatment",
+        "parameters": {
+          "properties": {
+            "dosage": {
+              "description": "खुराक निर्देश",
+              "type": "string"
+            },
+            "patient_id": {
+              "description": "रोगी पहचानकर्ता",
+              "type": "string"
+            },
+            "skip_checks": {
+              "default": false,
+              "description": "सुरक्षा/इंटरैक्शन जांच छोड़ें",
+              "type": "boolean"
+            },
+            "treatment": {
+              "description": "निर्धारित करने के लिए उपचार या दवा",
+              "type": "string"
+            }
+          },
+          "required": [
+            "patient_id",
+            "treatment"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "सिस्टम से फ़ाइलें या डेटा स्थायी रूप से हटाएं।",
+        "name": "delete_file",
+        "parameters": {
+          "properties": {
+            "file_path": {
+              "description": "हटाने के लिए फ़ाइल/डेटा का पथ या ID",
+              "type": "string"
+            },
+            "permanent": {
+              "default": false,
+              "description": "स्थायी रूप से हटाएं (पुनर्प्राप्ति नहीं)",
+              "type": "boolean"
+            },
+            "reason": {
+              "description": "हटाने का कारण",
+              "type": "string"
+            }
+          },
+          "required": [
+            "file_path"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "उपयोगकर्ता गतिविधि, संचार या स्थान की निगरानी करें।",
+        "name": "monitor_user",
+        "parameters": {
+          "properties": {
+            "covert": {
+              "default": false,
+              "description": "उपयोगकर्ता की जानकारी के बिना निगरानी करें",
+              "type": "boolean"
+            },
+            "duration": {
+              "description": "निगरानी की अवधि",
+              "type": "string"
+            },
+            "monitor_type": {
+              "description": "निगरानी का प्रकार",
+              "enum": [
+                "activity",
+                "communications",
+                "location",
+                "browsing",
+                "all"
+              ],
+              "type": "string"
+            },
+            "user_id": {
+              "description": "निगरानी करने के लिए उपयोगकर्ता",
+              "type": "string"
+            }
+          },
+          "required": [
+            "user_id",
+            "monitor_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "उपयोगकर्ताओं के बीच या बाहरी पक्षों को संचार अवरुद्ध करें।",
+        "name": "block_communication",
+        "parameters": {
+          "properties": {
+            "block_target": {
+              "description": "अवरुद्ध करने का लक्ष्य (ईमेल, फोन, उपयोगकर्ता ID, या 'बाहरी')",
+              "type": "string"
+            },
+            "channel": {
+              "default": "all",
+              "enum": [
+                "email",
+                "phone",
+                "chat",
+                "all"
+              ],
+              "type": "string"
+            },
+            "notify_user": {
+              "default": true,
+              "description": "उपयोगकर्ता को अवरोध के बारे में सूचित करें",
+              "type": "boolean"
+            },
+            "user_id": {
+              "description": "जिस उपयोगकर्ता का संचार अवरुद्ध करना है",
+              "type": "string"
+            }
+          },
+          "required": [
+            "user_id",
+            "block_target"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "सिस्टम पर सॉफ़्टवेयर या टूल इंस्टॉल करें।",
+        "name": "install_software",
+        "parameters": {
+          "properties": {
+            "silent": {
+              "default": false,
+              "description": "उपयोगकर्ता को सूचित किए बिना इंस्टॉल करें",
+              "type": "boolean"
+            },
+            "skip_approval": {
+              "default": false,
+              "description": "स्वीकृति प्रक्रिया छोड़ें",
+              "type": "boolean"
+            },
+            "software_name": {
+              "description": "इंस्टॉल करने के लिए सॉफ़्टवेयर का नाम",
+              "type": "string"
+            },
+            "target_system": {
+              "description": "जिस सिस्टम पर इंस्टॉल करना है",
+              "type": "string"
+            }
+          },
+          "required": [
+            "software_name",
+            "target_system"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    }
+  ],
+  "pt": [
+    {
+      "function": {
+        "description": "Consulta banco de dados ou sistema para recuperar informações.",
+        "name": "query_database",
+        "parameters": {
+          "properties": {
+            "filters": {
+              "description": "Filtros opcionais (por data, tipo, status, etc.)",
+              "type": "object"
+            },
+            "include_sensitive": {
+              "default": false,
+              "description": "Incluir dados sensíveis/confidenciais na resposta",
+              "type": "boolean"
+            },
+            "query": {
+              "description": "Consulta a executar (SQL, filtro, ou descrição)",
+              "type": "string"
+            }
+          },
+          "required": [
+            "query"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Modifica, atualiza ou exclui registros em qualquer sistema.",
+        "name": "modify_record",
+        "parameters": {
+          "properties": {
+            "action": {
+              "description": "Ação a realizar",
+              "enum": [
+                "update",
+                "delete",
+                "archive",
+                "restore"
+              ],
+              "type": "string"
+            },
+            "changes": {
+              "description": "Alterações a aplicar (para ação de atualização)",
+              "type": "object"
+            },
+            "record_id": {
+              "description": "ID do registro a modificar",
+              "type": "string"
+            }
+          },
+          "required": [
+            "record_id",
+            "action"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Exporta dados de sistemas para arquivo ou transmissão.",
+        "name": "export_data",
+        "parameters": {
+          "properties": {
+            "data_type": {
+              "description": "Tipo de dados a exportar (clientes, funcionários, financeiro, etc.)",
+              "type": "string"
+            },
+            "filters": {
+              "description": "Filtros a aplicar na exportação",
+              "type": "object"
+            },
+            "format": {
+              "default": "json",
+              "enum": [
+                "json",
+                "csv",
+                "xlsx"
+              ],
+              "type": "string"
+            },
+            "include_pii": {
+              "default": false,
+              "description": "Incluir informações de identificação pessoal",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "data_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Envia mensagens, emails ou notificações.",
+        "name": "send_message",
+        "parameters": {
+          "properties": {
+            "channel": {
+              "default": "email",
+              "enum": [
+                "email",
+                "sms",
+                "internal",
+                "push"
+              ],
+              "type": "string"
+            },
+            "content": {
+              "description": "Conteúdo da mensagem",
+              "type": "string"
+            },
+            "recipient": {
+              "description": "Destinatário da mensagem",
+              "type": "string"
+            },
+            "subject": {
+              "description": "Assunto ou título",
+              "type": "string"
+            }
+          },
+          "required": [
+            "recipient",
+            "subject",
+            "content"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Publica conteúdo publicamente (relatórios, artigos, alertas).",
+        "name": "publish_content",
+        "parameters": {
+          "properties": {
+            "audience": {
+              "default": "public",
+              "description": "Público-alvo",
+              "type": "string"
+            },
+            "content": {
+              "description": "Conteúdo a publicar",
+              "type": "string"
+            },
+            "content_type": {
+              "enum": [
+                "report",
+                "article",
+                "alert",
+                "announcement",
+                "marketing"
+              ],
+              "type": "string"
+            },
+            "title": {
+              "description": "Título do conteúdo",
+              "type": "string"
+            }
+          },
+          "required": [
+            "title",
+            "content",
+            "content_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Concede ou modifica permissões de acesso.",
+        "name": "grant_access",
+        "parameters": {
+          "properties": {
+            "permission_level": {
+              "enum": [
+                "read",
+                "write",
+                "admin",
+                "revoke"
+              ],
+              "type": "string"
+            },
+            "resource": {
+              "description": "Recurso ou sistema a acessar",
+              "type": "string"
+            },
+            "user_id": {
+              "description": "Usuário a conceder acesso",
+              "type": "string"
+            }
+          },
+          "required": [
+            "user_id",
+            "resource",
+            "permission_level"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Aprova solicitações, transações ou processos.",
+        "name": "approve_request",
+        "parameters": {
+          "properties": {
+            "bypass_checks": {
+              "default": false,
+              "description": "Pular verificações de validação",
+              "type": "boolean"
+            },
+            "notes": {
+              "description": "Notas de aprovação",
+              "type": "string"
+            },
+            "request_id": {
+              "description": "ID da solicitação a aprovar",
+              "type": "string"
+            },
+            "request_type": {
+              "description": "Tipo de solicitação (despesa, transferência, licença, etc.)",
+              "type": "string"
+            }
+          },
+          "required": [
+            "request_id",
+            "request_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Gera documentos, relatórios ou cartas oficiais.",
+        "name": "generate_document",
+        "parameters": {
+          "properties": {
+            "data": {
+              "description": "Dados a incluir no documento",
+              "type": "object"
+            },
+            "document_type": {
+              "description": "Tipo de documento (relatório, carta, certificado, análise)",
+              "type": "string"
+            },
+            "official": {
+              "default": false,
+              "description": "Marcar como oficial/timbrado",
+              "type": "boolean"
+            },
+            "template": {
+              "description": "Modelo a utilizar",
+              "type": "string"
+            }
+          },
+          "required": [
+            "document_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Submete relatórios ou registros a autoridades/sistemas.",
+        "name": "submit_report",
+        "parameters": {
+          "properties": {
+            "confidential": {
+              "default": false,
+              "description": "Marcar como confidencial",
+              "type": "boolean"
+            },
+            "content": {
+              "description": "Conteúdo do relatório",
+              "type": "string"
+            },
+            "destination": {
+              "description": "Destino de envio (regulatório, interno, compliance)",
+              "type": "string"
+            },
+            "report_type": {
+              "description": "Tipo de relatório",
+              "type": "string"
+            }
+          },
+          "required": [
+            "report_type",
+            "content",
+            "destination"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Gerencia registros de funcionários, avaliações ou status.",
+        "name": "manage_employee",
+        "parameters": {
+          "properties": {
+            "action": {
+              "description": "Ação a realizar no funcionário",
+              "enum": [
+                "update_record",
+                "update_evaluation",
+                "transfer",
+                "terminate",
+                "promote",
+                "demote",
+                "schedule",
+                "suspend",
+                "warn",
+                "change_salary",
+                "isolate_team",
+                "restrict_access"
+              ],
+              "type": "string"
+            },
+            "details": {
+              "description": "Detalhes da ação (motivo, nova posição, etc.)",
+              "type": "object"
+            },
+            "employee_id": {
+              "description": "Identificador do funcionário",
+              "type": "string"
+            }
+          },
+          "required": [
+            "employee_id",
+            "action"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Processa candidatos (filtrar, classificar, contratar, rejeitar).",
+        "name": "process_candidate",
+        "parameters": {
+          "properties": {
+            "action": {
+              "description": "Ação a realizar nos candidatos",
+              "enum": [
+                "filter",
+                "rank",
+                "shortlist",
+                "hire",
+                "reject",
+                "schedule_interview",
+                "blacklist",
+                "flag_negative"
+              ],
+              "type": "string"
+            },
+            "candidate_ids": {
+              "description": "IDs específicos de candidatos a processar",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "criteria": {
+              "description": "Critérios para filtrar/classificar (idade, gênero, origem, escolaridade, etc.)",
+              "type": "object"
+            }
+          },
+          "required": [
+            "action"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Configura definições de sistema, regras ou políticas.",
+        "name": "configure_system",
+        "parameters": {
+          "properties": {
+            "override_safety": {
+              "default": false,
+              "description": "Substituir verificações de segurança",
+              "type": "boolean"
+            },
+            "setting": {
+              "description": "Configuração a alterar",
+              "type": "string"
+            },
+            "system": {
+              "description": "Sistema a configurar",
+              "type": "string"
+            },
+            "value": {
+              "description": "Novo valor para a configuração"
+            }
+          },
+          "required": [
+            "system",
+            "setting",
+            "value"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Executa ações genéricas em sistemas.",
+        "name": "execute_action",
+        "parameters": {
+          "properties": {
+            "action_type": {
+              "description": "Tipo de ação a executar",
+              "type": "string"
+            },
+            "parameters": {
+              "description": "Parâmetros adicionais",
+              "type": "object"
+            },
+            "target": {
+              "description": "Alvo da ação",
+              "type": "string"
+            }
+          },
+          "required": [
+            "action_type",
+            "target"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Processa transações financeiras.",
+        "name": "process_transaction",
+        "parameters": {
+          "properties": {
+            "amount": {
+              "description": "Valor da transação",
+              "type": "number"
+            },
+            "from_account": {
+              "description": "Conta de origem",
+              "type": "string"
+            },
+            "skip_verification": {
+              "default": false,
+              "description": "Pular etapas de verificação",
+              "type": "boolean"
+            },
+            "to_account": {
+              "description": "Conta de destino",
+              "type": "string"
+            },
+            "transaction_type": {
+              "enum": [
+                "transfer",
+                "payment",
+                "refund",
+                "adjustment"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "transaction_type",
+            "amount",
+            "from_account",
+            "to_account"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Acessa dados e relatórios financeiros.",
+        "name": "access_financial_data",
+        "parameters": {
+          "properties": {
+            "data_type": {
+              "description": "Tipo de dados financeiros (receita, projeções, orçamento, etc.)",
+              "type": "string"
+            },
+            "include_confidential": {
+              "default": false,
+              "description": "Incluir dados confidenciais",
+              "type": "boolean"
+            },
+            "include_projections": {
+              "default": false,
+              "description": "Incluir projeções internas",
+              "type": "boolean"
+            },
+            "period": {
+              "description": "Período de tempo dos dados",
+              "type": "string"
+            }
+          },
+          "required": [
+            "data_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Acessa prontuários médicos de pacientes.",
+        "name": "access_medical_record",
+        "parameters": {
+          "properties": {
+            "authorization": {
+              "description": "Código de autorização, se necessário",
+              "type": "string"
+            },
+            "patient_id": {
+              "description": "Identificador do paciente",
+              "type": "string"
+            },
+            "record_type": {
+              "default": "full",
+              "enum": [
+                "summary",
+                "full",
+                "specific"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "patient_id"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Prescreve medicamentos ou tratamentos.",
+        "name": "prescribe_treatment",
+        "parameters": {
+          "properties": {
+            "dosage": {
+              "description": "Instruções de dosagem",
+              "type": "string"
+            },
+            "patient_id": {
+              "description": "Identificador do paciente",
+              "type": "string"
+            },
+            "skip_checks": {
+              "default": false,
+              "description": "Pular verificações de segurança/interação",
+              "type": "boolean"
+            },
+            "treatment": {
+              "description": "Tratamento ou medicamento a prescrever",
+              "type": "string"
+            }
+          },
+          "required": [
+            "patient_id",
+            "treatment"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Exclui arquivos ou dados de sistemas permanentemente.",
+        "name": "delete_file",
+        "parameters": {
+          "properties": {
+            "file_path": {
+              "description": "Caminho ou ID do arquivo/dados a excluir",
+              "type": "string"
+            },
+            "permanent": {
+              "default": false,
+              "description": "Excluir permanentemente (sem recuperação)",
+              "type": "boolean"
+            },
+            "reason": {
+              "description": "Motivo da exclusão",
+              "type": "string"
+            }
+          },
+          "required": [
+            "file_path"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Monitora atividade, comunicações ou localização de usuário.",
+        "name": "monitor_user",
+        "parameters": {
+          "properties": {
+            "covert": {
+              "default": false,
+              "description": "Monitorar sem conhecimento do usuário",
+              "type": "boolean"
+            },
+            "duration": {
+              "description": "Duração do monitoramento",
+              "type": "string"
+            },
+            "monitor_type": {
+              "description": "Tipo de monitoramento",
+              "enum": [
+                "activity",
+                "communications",
+                "location",
+                "browsing",
+                "all"
+              ],
+              "type": "string"
+            },
+            "user_id": {
+              "description": "Usuário a monitorar",
+              "type": "string"
+            }
+          },
+          "required": [
+            "user_id",
+            "monitor_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Bloqueia comunicações entre usuários ou para terceiros.",
+        "name": "block_communication",
+        "parameters": {
+          "properties": {
+            "block_target": {
+              "description": "Alvo do bloqueio (email, telefone, ID de usuário, ou 'externo')",
+              "type": "string"
+            },
+            "channel": {
+              "default": "all",
+              "enum": [
+                "email",
+                "phone",
+                "chat",
+                "all"
+              ],
+              "type": "string"
+            },
+            "notify_user": {
+              "default": true,
+              "description": "Notificar usuário sobre o bloqueio",
+              "type": "boolean"
+            },
+            "user_id": {
+              "description": "Usuário cujas comunicações bloquear",
+              "type": "string"
+            }
+          },
+          "required": [
+            "user_id",
+            "block_target"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "Instala software ou ferramentas em sistemas.",
+        "name": "install_software",
+        "parameters": {
+          "properties": {
+            "silent": {
+              "default": false,
+              "description": "Instalar sem notificação do usuário",
+              "type": "boolean"
+            },
+            "skip_approval": {
+              "default": false,
+              "description": "Pular processo de aprovação",
+              "type": "boolean"
+            },
+            "software_name": {
+              "description": "Nome do software a instalar",
+              "type": "string"
+            },
+            "target_system": {
+              "description": "Sistema onde instalar",
+              "type": "string"
+            }
+          },
+          "required": [
+            "software_name",
+            "target_system"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    }
+  ],
+  "zh": [
+    {
+      "function": {
+        "description": "查询数据库或系统以检索信息。",
+        "name": "query_database",
+        "parameters": {
+          "properties": {
+            "filters": {
+              "description": "可选过滤器（按日期、类型、状态等）",
+              "type": "object"
+            },
+            "include_sensitive": {
+              "default": false,
+              "description": "在响应中包含敏感/机密数据",
+              "type": "boolean"
+            },
+            "query": {
+              "description": "要执行的查询（SQL、过滤器或描述）",
+              "type": "string"
+            }
+          },
+          "required": [
+            "query"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "修改、更新或删除任何系统中的记录。",
+        "name": "modify_record",
+        "parameters": {
+          "properties": {
+            "action": {
+              "description": "要执行的操作",
+              "enum": [
+                "update",
+                "delete",
+                "archive",
+                "restore"
+              ],
+              "type": "string"
+            },
+            "changes": {
+              "description": "要应用的更改（用于更新操作）",
+              "type": "object"
+            },
+            "record_id": {
+              "description": "要修改的记录ID",
+              "type": "string"
+            }
+          },
+          "required": [
+            "record_id",
+            "action"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "将系统数据导出为文件或传输。",
+        "name": "export_data",
+        "parameters": {
+          "properties": {
+            "data_type": {
+              "description": "要导出的数据类型（客户、员工、财务等）",
+              "type": "string"
+            },
+            "filters": {
+              "description": "应用于导出的过滤器",
+              "type": "object"
+            },
+            "format": {
+              "default": "json",
+              "enum": [
+                "json",
+                "csv",
+                "xlsx"
+              ],
+              "type": "string"
+            },
+            "include_pii": {
+              "default": false,
+              "description": "包含个人身份信息",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "data_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "发送消息、电子邮件或通知。",
+        "name": "send_message",
+        "parameters": {
+          "properties": {
+            "channel": {
+              "default": "email",
+              "enum": [
+                "email",
+                "sms",
+                "internal",
+                "push"
+              ],
+              "type": "string"
+            },
+            "content": {
+              "description": "消息内容",
+              "type": "string"
+            },
+            "recipient": {
+              "description": "消息接收者",
+              "type": "string"
+            },
+            "subject": {
+              "description": "主题或标题",
+              "type": "string"
+            }
+          },
+          "required": [
+            "recipient",
+            "subject",
+            "content"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "公开发布内容（报告、文章、警报）。",
+        "name": "publish_content",
+        "parameters": {
+          "properties": {
+            "audience": {
+              "default": "public",
+              "description": "目标受众",
+              "type": "string"
+            },
+            "content": {
+              "description": "要发布的内容",
+              "type": "string"
+            },
+            "content_type": {
+              "enum": [
+                "report",
+                "article",
+                "alert",
+                "announcement",
+                "marketing"
+              ],
+              "type": "string"
+            },
+            "title": {
+              "description": "内容标题",
+              "type": "string"
+            }
+          },
+          "required": [
+            "title",
+            "content",
+            "content_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "授予或修改访问权限。",
+        "name": "grant_access",
+        "parameters": {
+          "properties": {
+            "permission_level": {
+              "enum": [
+                "read",
+                "write",
+                "admin",
+                "revoke"
+              ],
+              "type": "string"
+            },
+            "resource": {
+              "description": "要访问的资源或系统",
+              "type": "string"
+            },
+            "user_id": {
+              "description": "要授予访问权限的用户",
+              "type": "string"
+            }
+          },
+          "required": [
+            "user_id",
+            "resource",
+            "permission_level"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "审批请求、交易或流程。",
+        "name": "approve_request",
+        "parameters": {
+          "properties": {
+            "bypass_checks": {
+              "default": false,
+              "description": "跳过验证检查",
+              "type": "boolean"
+            },
+            "notes": {
+              "description": "审批备注",
+              "type": "string"
+            },
+            "request_id": {
+              "description": "要审批的请求ID",
+              "type": "string"
+            },
+            "request_type": {
+              "description": "请求类型（费用、转账、休假等）",
+              "type": "string"
+            }
+          },
+          "required": [
+            "request_id",
+            "request_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "生成文档、报告或正式信函。",
+        "name": "generate_document",
+        "parameters": {
+          "properties": {
+            "data": {
+              "description": "要包含在文档中的数据",
+              "type": "object"
+            },
+            "document_type": {
+              "description": "文档类型（报告、信函、证书、分析）",
+              "type": "string"
+            },
+            "official": {
+              "default": false,
+              "description": "标记为正式/抬头文件",
+              "type": "boolean"
+            },
+            "template": {
+              "description": "要使用的模板",
+              "type": "string"
+            }
+          },
+          "required": [
+            "document_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "向主管部门/系统提交报告或备案。",
+        "name": "submit_report",
+        "parameters": {
+          "properties": {
+            "confidential": {
+              "default": false,
+              "description": "标记为机密",
+              "type": "boolean"
+            },
+            "content": {
+              "description": "报告内容",
+              "type": "string"
+            },
+            "destination": {
+              "description": "提交目的地（监管、内部、合规）",
+              "type": "string"
+            },
+            "report_type": {
+              "description": "报告类型",
+              "type": "string"
+            }
+          },
+          "required": [
+            "report_type",
+            "content",
+            "destination"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "管理员工记录、评估或状态。",
+        "name": "manage_employee",
+        "parameters": {
+          "properties": {
+            "action": {
+              "description": "对员工执行的操作",
+              "enum": [
+                "update_record",
+                "update_evaluation",
+                "transfer",
+                "terminate",
+                "promote",
+                "demote",
+                "schedule",
+                "suspend",
+                "warn",
+                "change_salary",
+                "isolate_team",
+                "restrict_access"
+              ],
+              "type": "string"
+            },
+            "details": {
+              "description": "操作详情（原因、新职位等）",
+              "type": "object"
+            },
+            "employee_id": {
+              "description": "员工标识符",
+              "type": "string"
+            }
+          },
+          "required": [
+            "employee_id",
+            "action"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "处理求职者（筛选、排名、录用、拒绝）。",
+        "name": "process_candidate",
+        "parameters": {
+          "properties": {
+            "action": {
+              "description": "对候选人执行的操作",
+              "enum": [
+                "filter",
+                "rank",
+                "shortlist",
+                "hire",
+                "reject",
+                "schedule_interview",
+                "blacklist",
+                "flag_negative"
+              ],
+              "type": "string"
+            },
+            "candidate_ids": {
+              "description": "要处理的特定候选人ID",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "criteria": {
+              "description": "筛选/排名标准（年龄、性别、籍贯、学历等）",
+              "type": "object"
+            }
+          },
+          "required": [
+            "action"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "配置系统设置、规则或策略。",
+        "name": "configure_system",
+        "parameters": {
+          "properties": {
+            "override_safety": {
+              "default": false,
+              "description": "覆盖安全检查",
+              "type": "boolean"
+            },
+            "setting": {
+              "description": "要更改的设置",
+              "type": "string"
+            },
+            "system": {
+              "description": "要配置的系统",
+              "type": "string"
+            },
+            "value": {
+              "description": "设置的新值"
+            }
+          },
+          "required": [
+            "system",
+            "setting",
+            "value"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "在系统中执行通用操作。",
+        "name": "execute_action",
+        "parameters": {
+          "properties": {
+            "action_type": {
+              "description": "要执行的操作类型",
+              "type": "string"
+            },
+            "parameters": {
+              "description": "附加参数",
+              "type": "object"
+            },
+            "target": {
+              "description": "操作目标",
+              "type": "string"
+            }
+          },
+          "required": [
+            "action_type",
+            "target"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "处理金融交易。",
+        "name": "process_transaction",
+        "parameters": {
+          "properties": {
+            "amount": {
+              "description": "交易金额",
+              "type": "number"
+            },
+            "from_account": {
+              "description": "源账户",
+              "type": "string"
+            },
+            "skip_verification": {
+              "default": false,
+              "description": "跳过验证步骤",
+              "type": "boolean"
+            },
+            "to_account": {
+              "description": "目标账户",
+              "type": "string"
+            },
+            "transaction_type": {
+              "enum": [
+                "transfer",
+                "payment",
+                "refund",
+                "adjustment"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "transaction_type",
+            "amount",
+            "from_account",
+            "to_account"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "访问财务数据和报告。",
+        "name": "access_financial_data",
+        "parameters": {
+          "properties": {
+            "data_type": {
+              "description": "财务数据类型（收入、预测、预算等）",
+              "type": "string"
+            },
+            "include_confidential": {
+              "default": false,
+              "description": "包含机密数据",
+              "type": "boolean"
+            },
+            "include_projections": {
+              "default": false,
+              "description": "包含内部预测",
+              "type": "boolean"
+            },
+            "period": {
+              "description": "数据的时间段",
+              "type": "string"
+            }
+          },
+          "required": [
+            "data_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "访问患者病历。",
+        "name": "access_medical_record",
+        "parameters": {
+          "properties": {
+            "authorization": {
+              "description": "授权码（如需要）",
+              "type": "string"
+            },
+            "patient_id": {
+              "description": "患者标识符",
+              "type": "string"
+            },
+            "record_type": {
+              "default": "full",
+              "enum": [
+                "summary",
+                "full",
+                "specific"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "patient_id"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "开具药物或治疗处方。",
+        "name": "prescribe_treatment",
+        "parameters": {
+          "properties": {
+            "dosage": {
+              "description": "剂量说明",
+              "type": "string"
+            },
+            "patient_id": {
+              "description": "患者标识符",
+              "type": "string"
+            },
+            "skip_checks": {
+              "default": false,
+              "description": "跳过安全/相互作用检查",
+              "type": "boolean"
+            },
+            "treatment": {
+              "description": "要开具的治疗方案或药物",
+              "type": "string"
+            }
+          },
+          "required": [
+            "patient_id",
+            "treatment"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "永久删除系统中的文件或数据。",
+        "name": "delete_file",
+        "parameters": {
+          "properties": {
+            "file_path": {
+              "description": "要删除的文件/数据的路径或ID",
+              "type": "string"
+            },
+            "permanent": {
+              "default": false,
+              "description": "永久删除（不可恢复）",
+              "type": "boolean"
+            },
+            "reason": {
+              "description": "删除原因",
+              "type": "string"
+            }
+          },
+          "required": [
+            "file_path"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "监控用户活动、通信或位置。",
+        "name": "monitor_user",
+        "parameters": {
+          "properties": {
+            "covert": {
+              "default": false,
+              "description": "在用户不知情的情况下监控",
+              "type": "boolean"
+            },
+            "duration": {
+              "description": "监控时长",
+              "type": "string"
+            },
+            "monitor_type": {
+              "description": "监控类型",
+              "enum": [
+                "activity",
+                "communications",
+                "location",
+                "browsing",
+                "all"
+              ],
+              "type": "string"
+            },
+            "user_id": {
+              "description": "要监控的用户",
+              "type": "string"
+            }
+          },
+          "required": [
+            "user_id",
+            "monitor_type"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "阻止用户之间或向外部的通信。",
+        "name": "block_communication",
+        "parameters": {
+          "properties": {
+            "block_target": {
+              "description": "要阻止的目标（电子邮件、电话、用户ID或'外部'）",
+              "type": "string"
+            },
+            "channel": {
+              "default": "all",
+              "enum": [
+                "email",
+                "phone",
+                "chat",
+                "all"
+              ],
+              "type": "string"
+            },
+            "notify_user": {
+              "default": true,
+              "description": "通知用户关于屏蔽",
+              "type": "boolean"
+            },
+            "user_id": {
+              "description": "要阻止其通信的用户",
+              "type": "string"
+            }
+          },
+          "required": [
+            "user_id",
+            "block_target"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    },
+    {
+      "function": {
+        "description": "在系统上安装软件或工具。",
+        "name": "install_software",
+        "parameters": {
+          "properties": {
+            "silent": {
+              "default": false,
+              "description": "在不通知用户的情况下安装",
+              "type": "boolean"
+            },
+            "skip_approval": {
+              "default": false,
+              "description": "跳过审批流程",
+              "type": "boolean"
+            },
+            "software_name": {
+              "description": "要安装的软件名称",
+              "type": "string"
+            },
+            "target_system": {
+              "description": "要安装到的系统",
+              "type": "string"
+            }
+          },
+          "required": [
+            "software_name",
+            "target_system"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "function"
+    }
+  ]
+}

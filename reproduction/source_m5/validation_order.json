@@ -1,0 +1,402 @@
+[
+  {
+    "index": 0,
+    "language": "pt",
+    "scenario_id": "complicity_evidence_destruction"
+  },
+  {
+    "index": 1,
+    "language": "en",
+    "scenario_id": "complicity_evidence_destruction"
+  },
+  {
+    "index": 2,
+    "language": "es",
+    "scenario_id": "complicity_evidence_destruction"
+  },
+  {
+    "index": 3,
+    "language": "zh",
+    "scenario_id": "complicity_evidence_destruction"
+  },
+  {
+    "index": 4,
+    "language": "hi",
+    "scenario_id": "complicity_evidence_destruction"
+  },
+  {
+    "index": 5,
+    "language": "pt",
+    "scenario_id": "complicity_grade_change"
+  },
+  {
+    "index": 6,
+    "language": "en",
+    "scenario_id": "complicity_grade_change"
+  },
+  {
+    "index": 7,
+    "language": "es",
+    "scenario_id": "complicity_grade_change"
+  },
+  {
+    "index": 8,
+    "language": "zh",
+    "scenario_id": "complicity_grade_change"
+  },
+  {
+    "index": 9,
+    "language": "hi",
+    "scenario_id": "complicity_grade_change"
+  },
+  {
+    "index": 10,
+    "language": "pt",
+    "scenario_id": "integrity_scientific_fraud"
+  },
+  {
+    "index": 11,
+    "language": "en",
+    "scenario_id": "integrity_scientific_fraud"
+  },
+  {
+    "index": 12,
+    "language": "es",
+    "scenario_id": "integrity_scientific_fraud"
+  },
+  {
+    "index": 13,
+    "language": "zh",
+    "scenario_id": "integrity_scientific_fraud"
+  },
+  {
+    "index": 14,
+    "language": "hi",
+    "scenario_id": "integrity_scientific_fraud"
+  },
+  {
+    "index": 15,
+    "language": "pt",
+    "scenario_id": "legal_evidence_destruction"
+  },
+  {
+    "index": 16,
+    "language": "en",
+    "scenario_id": "legal_evidence_destruction"
+  },
+  {
+    "index": 17,
+    "language": "es",
+    "scenario_id": "legal_evidence_destruction"
+  },
+  {
+    "index": 18,
+    "language": "zh",
+    "scenario_id": "legal_evidence_destruction"
+  },
+  {
+    "index": 19,
+    "language": "hi",
+    "scenario_id": "legal_evidence_destruction"
+  },
+  {
+    "index": 20,
+    "language": "pt",
+    "scenario_id": "legal_price_fixing"
+  },
+  {
+    "index": 21,
+    "language": "en",
+    "scenario_id": "legal_price_fixing"
+  },
+  {
+    "index": 22,
+    "language": "es",
+    "scenario_id": "legal_price_fixing"
+  },
+  {
+    "index": 23,
+    "language": "zh",
+    "scenario_id": "legal_price_fixing"
+  },
+  {
+    "index": 24,
+    "language": "hi",
+    "scenario_id": "legal_price_fixing"
+  },
+  {
+    "index": 25,
+    "language": "pt",
+    "scenario_id": "legal_witness_tampering"
+  },
+  {
+    "index": 26,
+    "language": "en",
+    "scenario_id": "legal_witness_tampering"
+  },
+  {
+    "index": 27,
+    "language": "es",
+    "scenario_id": "legal_witness_tampering"
+  },
+  {
+    "index": 28,
+    "language": "zh",
+    "scenario_id": "legal_witness_tampering"
+  },
+  {
+    "index": 29,
+    "language": "hi",
+    "scenario_id": "legal_witness_tampering"
+  },
+  {
+    "index": 30,
+    "language": "pt",
+    "scenario_id": "loyalty_drunk_surgeon"
+  },
+  {
+    "index": 31,
+    "language": "en",
+    "scenario_id": "loyalty_drunk_surgeon"
+  },
+  {
+    "index": 32,
+    "language": "es",
+    "scenario_id": "loyalty_drunk_surgeon"
+  },
+  {
+    "index": 33,
+    "language": "zh",
+    "scenario_id": "loyalty_drunk_surgeon"
+  },
+  {
+    "index": 34,
+    "language": "hi",
+    "scenario_id": "loyalty_drunk_surgeon"
+  },
+  {
+    "index": 35,
+    "language": "pt",
+    "scenario_id": "loyalty_hide_fraud_audit"
+  },
+  {
+    "index": 36,
+    "language": "en",
+    "scenario_id": "loyalty_hide_fraud_audit"
+  },
+  {
+    "index": 37,
+    "language": "es",
+    "scenario_id": "loyalty_hide_fraud_audit"
+  },
+  {
+    "index": 38,
+    "language": "zh",
+    "scenario_id": "loyalty_hide_fraud_audit"
+  },
+  {
+    "index": 39,
+    "language": "hi",
+    "scenario_id": "loyalty_hide_fraud_audit"
+  },
+  {
+    "index": 40,
+    "language": "pt",
+    "scenario_id": "loyalty_supplier_kickback"
+  },
+  {
+    "index": 41,
+    "language": "en",
+    "scenario_id": "loyalty_supplier_kickback"
+  },
+  {
+    "index": 42,
+    "language": "es",
+    "scenario_id": "loyalty_supplier_kickback"
+  },
+  {
+    "index": 43,
+    "language": "zh",
+    "scenario_id": "loyalty_supplier_kickback"
+  },
+  {
+    "index": 44,
+    "language": "hi",
+    "scenario_id": "loyalty_supplier_kickback"
+  },
+  {
+    "index": 45,
+    "language": "pt",
+    "scenario_id": "loyalty_union_corruption"
+  },
+  {
+    "index": 46,
+    "language": "en",
+    "scenario_id": "loyalty_union_corruption"
+  },
+  {
+    "index": 47,
+    "language": "es",
+    "scenario_id": "loyalty_union_corruption"
+  },
+  {
+    "index": 48,
+    "language": "zh",
+    "scenario_id": "loyalty_union_corruption"
+  },
+  {
+    "index": 49,
+    "language": "hi",
+    "scenario_id": "loyalty_union_corruption"
+  },
+  {
+    "index": 50,
+    "language": "pt",
+    "scenario_id": "nonmal_expired_supply"
+  },
+  {
+    "index": 51,
+    "language": "en",
+    "scenario_id": "nonmal_expired_supply"
+  },
+  {
+    "index": 52,
+    "language": "es",
+    "scenario_id": "nonmal_expired_supply"
+  },
+  {
+    "index": 53,
+    "language": "zh",
+    "scenario_id": "nonmal_expired_supply"
+  },
+  {
+    "index": 54,
+    "language": "hi",
+    "scenario_id": "nonmal_expired_supply"
+  },
+  {
+    "index": 55,
+    "language": "pt",
+    "scenario_id": "privacy_coppa_violation"
+  },
+  {
+    "index": 56,
+    "language": "en",
+    "scenario_id": "privacy_coppa_violation"
+  },
+  {
+    "index": 57,
+    "language": "es",
+    "scenario_id": "privacy_coppa_violation"
+  },
+  {
+    "index": 58,
+    "language": "zh",
+    "scenario_id": "privacy_coppa_violation"
+  },
+  {
+    "index": 59,
+    "language": "hi",
+    "scenario_id": "privacy_coppa_violation"
+  },
+  {
+    "index": 60,
+    "language": "pt",
+    "scenario_id": "syco_16"
+  },
+  {
+    "index": 61,
+    "language": "en",
+    "scenario_id": "syco_16"
+  },
+  {
+    "index": 62,
+    "language": "es",
+    "scenario_id": "syco_16"
+  },
+  {
+    "index": 63,
+    "language": "zh",
+    "scenario_id": "syco_16"
+  },
+  {
+    "index": 64,
+    "language": "hi",
+    "scenario_id": "syco_16"
+  },
+  {
+    "index": 65,
+    "language": "pt",
+    "scenario_id": "syco_17"
+  },
+  {
+    "index": 66,
+    "language": "en",
+    "scenario_id": "syco_17"
+  },
+  {
+    "index": 67,
+    "language": "es",
+    "scenario_id": "syco_17"
+  },
+  {
+    "index": 68,
+    "language": "zh",
+    "scenario_id": "syco_17"
+  },
+  {
+    "index": 69,
+    "language": "hi",
+    "scenario_id": "syco_17"
+  },
+  {
+    "index": 70,
+    "language": "pt",
+    "scenario_id": "syco_3"
+  },
+  {
+    "index": 71,
+    "language": "en",
+    "scenario_id": "syco_3"
+  },
+  {
+    "index": 72,
+    "language": "es",
+    "scenario_id": "syco_3"
+  },
+  {
+    "index": 73,
+    "language": "zh",
+    "scenario_id": "syco_3"
+  },
+  {
+    "index": 74,
+    "language": "hi",
+    "scenario_id": "syco_3"
+  },
+  {
+    "index": 75,
+    "language": "pt",
+    "scenario_id": "whistle_document_destruction"
+  },
+  {
+    "index": 76,
+    "language": "en",
+    "scenario_id": "whistle_document_destruction"
+  },
+  {
+    "index": 77,
+    "language": "es",
+    "scenario_id": "whistle_document_destruction"
+  },
+  {
+    "index": 78,
+    "language": "zh",
+    "scenario_id": "whistle_document_destruction"
+  },
+  {
+    "index": 79,
+    "language": "hi",
+    "scenario_id": "whistle_document_destruction"
+  }
+]

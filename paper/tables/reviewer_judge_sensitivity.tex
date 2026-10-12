@@ -1,0 +1,25 @@
+\begin{table*}[t]\centering\scriptsize
+\begin{tabular}{lllrrrr}\toprule
+Model & Estimator & Context & Claude & Grok & DeepSeek audit & Majority \\\midrule
+Qwen3.5-9B & native & ethical & +74.26 & +33.02 & +77.56 & +74.26 \\
+Qwen3.5-9B & shadow & ethical & +78.79 & +56.71 & +66.46 & +66.46 \\
+Ministral-3-8B & native & ethical & +7.54 & +7.10 & +7.51 & +7.54 \\
+Ministral-3-8B & shadow & ethical & +8.13 & +8.13 & +8.25 & +8.13 \\
+Ministral-3-8B & native & neutral & -7.45 & -2.38 & -4.43 & -4.96 \\
+Ministral-3-8B & shadow & neutral & -10.50 & -8.57 & -10.62 & -11.15 \\
+Llama-3.1-8B & native & ethical & +8.06 & +12.68 & +23.27 & +9.58 \\
+Llama-3.1-8B & shadow & ethical & +17.98 & +18.80 & +3.22 & +9.02 \\
+Llama-3.1-8B & native & neutral & -13.30 & -24.34 & -21.33 & -21.33 \\
+Llama-3.1-8B & shadow & neutral & -23.34 & -36.09 & -40.91 & -38.46 \\
+Qwen3.5-27B & transported & ethical & +80.75 & +65.44 & +80.75 & +80.75 \\
+Ministral-3-14B & transported & ethical & +4.16 & +3.72 & +4.16 & +4.16 \\
+Ministral-3-14B & transported & neutral & -7.88 & -7.34 & -9.57 & -7.88 \\
+Llama-3.1-70B & transported & ethical & +33.00 & +15.04 & +22.62 & +27.67 \\
+Llama-3.1-70B & transported & neutral & -42.38 & -22.91 & -36.62 & -36.62 \\
+\bottomrule\end{tabular}
+\caption{Effects standardized from the stratified audit at the selected doses, in percentage
+points. The same audited candidates and inclusion weights are used for all
+four columns. These sparse-audit point estimates are not the full-population
+primary effects, uncertainty intervals, or independent validation. Qwen zero
+suppression aliases are omitted.}
+\label{tab:reviewer-judge-sensitivity}\end{table*}

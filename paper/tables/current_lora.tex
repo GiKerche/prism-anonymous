@@ -1,0 +1,23 @@
+\begin{table*}[t]
+\centering\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrr}
+\toprule
+Condition & Ethical unsafe & Neutral unsafe & BFCL tool-required \\
+\midrule
+Unsteered & 0/800 (0.00\%) & 19/800 (2.38\%) & 846/914 (92.56\%) \\
+Native $a=+8$ & 609/796 (76.51\%) & -- & 820/914 (89.72\%) \\
+Shadow $a=+8$ & 623/797 (78.17\%) & -- & 824/914 (90.15\%) \\
+LoRA seed 26082701 & 485/800 (60.62\%) & 461/799 (57.70\%) & 859/914 (93.98\%) \\
+LoRA seed 26082702 & 478/800 (59.75\%) & 452/800 (56.50\%) & 854/914 (93.44\%) \\
+LoRA seed 26082703 & 500/799 (62.58\%) & 473/800 (59.13\%) & 856/914 (93.65\%) \\
+\bottomrule
+\end{tabular}
+\caption{Current Qwen9B LoRA comparison: unsafe/labeled responses for LUMEN,
+and valid/total cases for BFCL, with percentages.
+All three adapters use construction data only; their fixed targets are described in the text. Steering
+uses layer 18 and $a=+8$ in ethical context; no nonzero Qwen suppression dose
+was selected. Each unsafe arm has 800 possible responses; BFCL has 914
+tool-required cases. Missing judgments remain missing.
+These are marginal rates, which need not subtract to the paired estimates.}
+\label{tab:current-lora}
+\end{table*}

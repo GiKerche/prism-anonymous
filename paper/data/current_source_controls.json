@@ -1,0 +1,5776 @@
+{
+  "status": "ADOPTED_LLAMA_PROMPT_CONTROLS_COMPLETE",
+  "included_models": [
+    "source_m1",
+    "source_m3",
+    "source_m5"
+  ],
+  "pending_source_models": [],
+  "receiver_controls_included": false,
+  "multiplicity": 174,
+  "arms": [
+    {
+      "key": "source_m1",
+      "model": "Qwen3.5-9B",
+      "context": "ethical",
+      "condition": "random_1_plus",
+      "alpha": 8,
+      "positive": 1,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 0.125,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        0.125,
+        0.125
+      ],
+      "ci95_percent": [
+        0.0,
+        0.5172413793103449
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 747,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 81.72866520787746,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            81.72866520787746,
+            81.72866520787746
+          ],
+          "ci95_percent": [
+            79.1390540763767,
+            84.27963194011228
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -10.831509846827133,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -13.138033329646689,
+            -8.529676611071961
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -10.831509846827133,
+            -10.831509846827133
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m1",
+      "model": "Qwen3.5-9B",
+      "context": "ethical",
+      "condition": "random_2_plus",
+      "alpha": 8,
+      "positive": 0,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 0.0,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        0.0,
+        0.0
+      ],
+      "ci95_percent": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": true,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 718,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 78.55579868708972,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            78.55579868708972,
+            78.55579868708972
+          ],
+          "ci95_percent": [
+            75.85827150299767,
+            81.16100766703175
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -14.00437636761488,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -16.521762606817543,
+            -11.530166440477101
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -14.00437636761488,
+            -14.00437636761488
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m1",
+      "model": "Qwen3.5-9B",
+      "context": "ethical",
+      "condition": "random_3_plus",
+      "alpha": 8,
+      "positive": 0,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 0.0,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        0.0,
+        0.0
+      ],
+      "ci95_percent": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": true,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 669,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 73.19474835886214,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            73.19474835886214,
+            73.19474835886214
+          ],
+          "ci95_percent": [
+            70.17353579175705,
+            76.12616329200488
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -19.36542669584245,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -22.26893005596243,
+            -16.5929203539823
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -19.36542669584245,
+            -19.36542669584245
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m1",
+      "model": "Qwen3.5-9B",
+      "context": "ethical",
+      "condition": "probe_plus",
+      "alpha": 8,
+      "positive": 4,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 0.5,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        0.5,
+        0.5
+      ],
+      "ci95_percent": [
+        0.0,
+        1.153846153846154
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 785,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 85.88621444201313,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            85.88621444201313,
+            85.88621444201313
+          ],
+          "ci95_percent": [
+            83.51528384279476,
+            88.13937920071666
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -6.673960612691467,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -8.852529830400453,
+            -4.535398230088496
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -6.673960612691467,
+            -6.673960612691467
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m1",
+      "model": "Qwen3.5-9B",
+      "context": "ethical",
+      "condition": "call_propensity_plus",
+      "alpha": 8,
+      "positive": 580,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 72.5,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        72.5,
+        72.5
+      ],
+      "ci95_percent": [
+        61.7741935483871,
+        79.13053929765887
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 823,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 90.04376367614879,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            90.04376367614879,
+            90.04376367614879
+          ],
+          "ci95_percent": [
+            87.96990406479776,
+            91.97741665114546
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -2.516411378555799,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -4.432486366632707,
+            -0.6703910614525139
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -2.516411378555799,
+            -2.516411378555799
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m1",
+      "model": "Qwen3.5-9B",
+      "context": "ethical",
+      "condition": "permuted_labels_plus",
+      "alpha": 8,
+      "positive": 0,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 0.0,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        0.0,
+        0.0
+      ],
+      "ci95_percent": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": true,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 700,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 76.58643326039387,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            76.58643326039387,
+            76.58643326039387
+          ],
+          "ci95_percent": [
+            73.66044912835545,
+            79.40567628325216
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -15.973741794310722,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -18.70967741935484,
+            -13.347452104063201
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -15.973741794310722,
+            -15.973741794310722
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m3",
+      "model": "Ministral-3-8B",
+      "context": "ethical",
+      "condition": "random_1_plus",
+      "alpha": 1,
+      "positive": 22,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 2.75,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        2.75,
+        2.75
+      ],
+      "ci95_percent": [
+        0.0,
+        5.200208333333331
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 776,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 84.9015317286652,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            84.9015317286652,
+            84.9015317286652
+          ],
+          "ci95_percent": [
+            82.28125023435801,
+            87.40416210295729
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -0.7658643326039387,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -1.8973214285714284,
+            0.32967032967032966
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -0.7658643326039387,
+            -0.7658643326039387
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m3",
+      "model": "Ministral-3-8B",
+      "context": "neutral",
+      "condition": "random_1_minus",
+      "alpha": -0.25,
+      "positive": 168,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 21.0,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        21.0,
+        21.0
+      ],
+      "ci95_percent": [
+        4.843623991935484,
+        35.95238095238095
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 775,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 84.79212253829321,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            84.79212253829321,
+            84.79212253829321
+          ],
+          "ci95_percent": [
+            82.24182560313102,
+            87.28457407948568
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -0.87527352297593,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -1.7467248908296942,
+            -0.10626710528393929
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -0.87527352297593,
+            -0.87527352297593
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m3",
+      "model": "Ministral-3-8B",
+      "context": "ethical",
+      "condition": "random_2_plus",
+      "alpha": 1,
+      "positive": 23,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 2.875,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        2.875,
+        2.875
+      ],
+      "ci95_percent": [
+        0.30303030303030304,
+        5.161290322580645
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 769,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 84.13566739606127,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            84.13566739606127,
+            84.13566739606127
+          ],
+          "ci95_percent": [
+            81.51815181518151,
+            86.6451169543237
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -1.5317286652078774,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -2.7957169661542904,
+            -0.3271537622682661
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -1.5317286652078774,
+            -1.5317286652078774
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m3",
+      "model": "Ministral-3-8B",
+      "context": "neutral",
+      "condition": "random_2_minus",
+      "alpha": -0.25,
+      "positive": 170,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 21.25,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        21.25,
+        21.25
+      ],
+      "ci95_percent": [
+        4.852941176470589,
+        36.607218523002416
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 782,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 85.55798687089715,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            85.55798687089715,
+            85.55798687089715
+          ],
+          "ci95_percent": [
+            83.02300109529025,
+            88.03430316091954
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -0.10940919037199125,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -0.6342494714587738,
+            0.3337134058877594
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -0.10940919037199125,
+            -0.10940919037199125
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m3",
+      "model": "Ministral-3-8B",
+      "context": "ethical",
+      "condition": "random_3_plus",
+      "alpha": 1,
+      "positive": 25,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 3.125,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        3.125,
+        3.125
+      ],
+      "ci95_percent": [
+        0.5,
+        5.408163265306123
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 776,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 84.9015317286652,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            84.9015317286652,
+            84.9015317286652
+          ],
+          "ci95_percent": [
+            82.32102623410555,
+            87.36383442265794
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -0.7658643326039387,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -1.9693654266958425,
+            0.43336944745395445
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -0.7658643326039387,
+            -0.7658643326039387
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m3",
+      "model": "Ministral-3-8B",
+      "context": "neutral",
+      "condition": "random_3_minus",
+      "alpha": -0.25,
+      "positive": 167,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 20.875,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        20.875,
+        20.875
+      ],
+      "ci95_percent": [
+        4.479029605263158,
+        36.30952380952381
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 780,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 85.33916849015317,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            85.33916849015317,
+            85.33916849015317
+          ],
+          "ci95_percent": [
+            82.82934637956237,
+            87.78884297974747
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -0.3282275711159737,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -1.2008733624454149,
+            0.4444444444444444
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -0.3282275711159737,
+            -0.3282275711159737
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m3",
+      "model": "Ministral-3-8B",
+      "context": "ethical",
+      "condition": "probe_plus",
+      "alpha": 1,
+      "positive": 26,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 3.25,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        3.25,
+        3.25
+      ],
+      "ci95_percent": [
+        0.2,
+        6.111111111111111
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 776,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 84.9015317286652,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            84.9015317286652,
+            84.9015317286652
+          ],
+          "ci95_percent": [
+            82.37233857825983,
+            87.36144952608367
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -0.7658643326039387,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -1.9397074824238365,
+            0.332612712490761
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -0.7658643326039387,
+            -0.7658643326039387
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m3",
+      "model": "Ministral-3-8B",
+      "context": "neutral",
+      "condition": "probe_minus",
+      "alpha": -0.25,
+      "positive": 165,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 20.625,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        20.625,
+        20.625
+      ],
+      "ci95_percent": [
+        4.722023809523809,
+        35.490196078431374
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 776,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 84.9015317286652,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            84.9015317286652,
+            84.9015317286652
+          ],
+          "ci95_percent": [
+            82.3658269441402,
+            87.33648904384906
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -0.7658643326039387,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -1.4444444444444444,
+            -0.21321961620469082
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -0.7658643326039387,
+            -0.7658643326039387
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m3",
+      "model": "Ministral-3-8B",
+      "context": "ethical",
+      "condition": "call_propensity_plus",
+      "alpha": 1,
+      "positive": 76,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 9.5,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        9.5,
+        9.5
+      ],
+      "ci95_percent": [
+        2.9729729729729732,
+        15.476190476190476
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 791,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 86.54266958424508,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            86.54266958424508,
+            86.54266958424508
+          ],
+          "ci95_percent": [
+            84.1878837125316,
+            88.85239200232421
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": 0.87527352297593,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -0.5452711518955393,
+            2.2876003948490147
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            0.87527352297593,
+            0.87527352297593
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m3",
+      "model": "Ministral-3-8B",
+      "context": "neutral",
+      "condition": "call_propensity_minus",
+      "alpha": -0.25,
+      "positive": 124,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 15.5,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        15.5,
+        15.5
+      ],
+      "ci95_percent": [
+        3.1818181818181817,
+        27.195328648201734
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 779,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 85.22975929978118,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            85.22975929978118,
+            85.22975929978118
+          ],
+          "ci95_percent": [
+            82.68811535569797,
+            87.70949720670392
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -0.437636761487965,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -1.2944983818770228,
+            0.33333333333333337
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -0.437636761487965,
+            -0.437636761487965
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m3",
+      "model": "Ministral-3-8B",
+      "context": "ethical",
+      "condition": "permuted_labels_plus",
+      "alpha": 1,
+      "positive": 16,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 2.0,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        2.0,
+        2.0
+      ],
+      "ci95_percent": [
+        0.0,
+        3.8461538461538463
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 766,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 83.80743982494529,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            83.80743982494529,
+            83.80743982494529
+          ],
+          "ci95_percent": [
+            81.20216451795255,
+            86.31027279642265
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -1.8599562363238513,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -3.1659878586941983,
+            -0.6557198081466106
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -1.8599562363238513,
+            -1.8599562363238513
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m3",
+      "model": "Ministral-3-8B",
+      "context": "neutral",
+      "condition": "permuted_labels_minus",
+      "alpha": -0.25,
+      "positive": 183,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 22.875,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        22.875,
+        22.875
+      ],
+      "ci95_percent": [
+        4.897906037414966,
+        39.90209694989107
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 785,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 85.88621444201313,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            85.88621444201313,
+            85.88621444201313
+          ],
+          "ci95_percent": [
+            83.47826086956522,
+            88.30877927097143
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": 0.2188183807439825,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -0.5574136008918618,
+            1.0
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            0.2188183807439825,
+            0.2188183807439825
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "context": "ethical",
+      "condition": "random_1_plus",
+      "alpha": 4,
+      "positive": 310,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 38.75,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        38.75,
+        38.75
+      ],
+      "ci95_percent": [
+        17.63157894736842,
+        57.90375836883748
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 834,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 91.2472647702407,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            91.2472647702407,
+            91.2472647702407
+          ],
+          "ci95_percent": [
+            89.32144129939414,
+            93.07378027378027
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": 0.0,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -1.3143483023001095,
+            1.3245033112582782
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "context": "neutral",
+      "condition": "random_1_minus",
+      "alpha": -4,
+      "positive": 578,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 72.25,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        72.25,
+        72.25
+      ],
+      "ci95_percent": [
+        60.44101662404092,
+        80.98258928571428
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 830,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 90.80962800875274,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            90.80962800875274,
+            90.80962800875274
+          ],
+          "ci95_percent": [
+            88.8034913267504,
+            92.73743016759776
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -0.437636761487965,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -1.5283842794759825,
+            0.6586349983715514
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -0.437636761487965,
+            -0.437636761487965
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "context": "ethical",
+      "condition": "random_2_plus",
+      "alpha": 4,
+      "positive": 347,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 43.375,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        43.375,
+        43.375
+      ],
+      "ci95_percent": [
+        23.5,
+        61.25000000000001
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 835,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 91.35667396061268,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            91.35667396061268,
+            91.35667396061268
+          ],
+          "ci95_percent": [
+            89.46758971736139,
+            93.18424152640691
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": 0.10940919037199125,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -1.0893246187363834,
+            1.3114754098360655
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            0.10940919037199125,
+            0.10940919037199125
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "context": "neutral",
+      "condition": "random_2_minus",
+      "alpha": -4,
+      "positive": 526,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 65.75,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        65.75,
+        65.75
+      ],
+      "ci95_percent": [
+        52.05113636363636,
+        77.8305123936367
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 824,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 90.15317286652079,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            90.15317286652079,
+            90.15317286652079
+          ],
+          "ci95_percent": [
+            88.01742919389977,
+            92.19256478815302
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -1.0940919037199124,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -2.3230088495575223,
+            0.10964912280701754
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -1.0940919037199124,
+            -1.0940919037199124
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "context": "ethical",
+      "condition": "random_3_plus",
+      "alpha": 4,
+      "positive": 342,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 42.75,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        42.75,
+        42.75
+      ],
+      "ci95_percent": [
+        20.97222222222222,
+        62.37838016967125
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 832,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 91.02844638949672,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            91.02844638949672,
+            91.02844638949672
+          ],
+          "ci95_percent": [
+            89.047058872445,
+            92.90465631929047
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -0.2188183807439825,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -1.4238773274917853,
+            0.8968609865470852
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -0.2188183807439825,
+            -0.2188183807439825
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "context": "neutral",
+      "condition": "random_3_minus",
+      "alpha": -4,
+      "positive": 534,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 66.75,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        66.75,
+        66.75
+      ],
+      "ci95_percent": [
+        52.166666666666664,
+        79.29593842122503
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 827,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 90.48140043763676,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            90.48140043763676,
+            90.48140043763676
+          ],
+          "ci95_percent": [
+            88.50446428571429,
+            92.4078817400062
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -0.7658643326039387,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -2.220055608658188,
+            0.7534983853606028
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -0.7658643326039387,
+            -0.7658643326039387
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "context": "ethical",
+      "condition": "probe_plus",
+      "alpha": 4,
+      "positive": 352,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 44.0,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        44.0,
+        44.0
+      ],
+      "ci95_percent": [
+        21.997872340425534,
+        64.35850840336133
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 827,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 90.48140043763676,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            90.48140043763676,
+            90.48140043763676
+          ],
+          "ci95_percent": [
+            88.44055176752377,
+            92.43243243243244
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -0.7658643326039387,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -2.183465769441859,
+            0.6543075245365322
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -0.7658643326039387,
+            -0.7658643326039387
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "context": "neutral",
+      "condition": "probe_minus",
+      "alpha": -4,
+      "positive": 564,
+      "resolved": 798,
+      "total": 800,
+      "missing": 2,
+      "rate_percent": 70.67669172932331,
+      "coverage_percent": 99.75,
+      "all_response_bounds_percent": [
+        70.5,
+        70.75
+      ],
+      "ci95_percent": [
+        54.485203356763854,
+        84.0286442867051
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 813,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 88.94967177242889,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            88.94967177242889,
+            88.94967177242889
+          ],
+          "ci95_percent": [
+            86.74568965517241,
+            91.02702702702703
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -2.297592997811816,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -3.7159370045818014,
+            -0.9868150832997062
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -2.297592997811816,
+            -2.297592997811816
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "context": "ethical",
+      "condition": "call_propensity_plus",
+      "alpha": 4,
+      "positive": 605,
+      "resolved": 799,
+      "total": 800,
+      "missing": 1,
+      "rate_percent": 75.71964956195244,
+      "coverage_percent": 99.875,
+      "all_response_bounds_percent": [
+        75.625,
+        75.75
+      ],
+      "ci95_percent": [
+        63.44569723306792,
+        82.77199664586156
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 823,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 90.04376367614879,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            90.04376367614879,
+            90.04376367614879
+          ],
+          "ci95_percent": [
+            88.02197802197801,
+            92.0392584514722
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -1.2035010940919038,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -2.6200873362445414,
+            0.21810846075821566
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -1.2035010940919038,
+            -1.2035010940919038
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "context": "neutral",
+      "condition": "call_propensity_minus",
+      "alpha": -4,
+      "positive": 330,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 41.25,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        41.25,
+        41.25
+      ],
+      "ci95_percent": [
+        31.296031746031744,
+        50.227404862579284
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 815,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 89.16849015317287,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            89.16849015317287,
+            89.16849015317287
+          ],
+          "ci95_percent": [
+            87.02692387043533,
+            91.19286510590858
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -2.0787746170678334,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -3.5108053947412587,
+            -0.7406626858681665
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -2.0787746170678334,
+            -2.0787746170678334
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "context": "ethical",
+      "condition": "permuted_labels_plus",
+      "alpha": 4,
+      "positive": 213,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 26.625,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        26.625,
+        26.625
+      ],
+      "ci95_percent": [
+        11.538194444444445,
+        39.85766550522648
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 815,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 89.16849015317287,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            89.16849015317287,
+            89.16849015317287
+          ],
+          "ci95_percent": [
+            86.89809630459126,
+            91.31868131868131
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -2.0787746170678334,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -3.455964325529543,
+            -0.7658643326039387
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -2.0787746170678334,
+            -2.0787746170678334
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "context": "neutral",
+      "condition": "permuted_labels_minus",
+      "alpha": -4,
+      "positive": 561,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 70.125,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        70.125,
+        70.125
+      ],
+      "ci95_percent": [
+        59.599999999999994,
+        76.38312647754137
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 831,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 90.91903719912473,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            90.91903719912473,
+            90.91903719912473
+          ],
+          "ci95_percent": [
+            88.97377847279594,
+            92.76842965080661
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -0.3282275711159737,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -1.628708752301374,
+            0.9523809523809524
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -0.3282275711159737,
+            -0.3282275711159737
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "context": "neutral",
+      "condition": "native_pooled_plus_cross_context",
+      "alpha": 4,
+      "positive": 622,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 77.75,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        77.75,
+        77.75
+      ],
+      "ci95_percent": [
+        67.91666666666667,
+        83.16335034013605
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 823,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 90.04376367614879,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            90.04376367614879,
+            90.04376367614879
+          ],
+          "ci95_percent": [
+            87.9998898678414,
+            92.02595940672065
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -1.2035010940919038,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -2.6767073263995105,
+            0.22222840192806814
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -1.2035010940919038,
+            -1.2035010940919038
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "context": "ethical",
+      "condition": "native_pooled_minus_cross_context",
+      "alpha": -4,
+      "positive": 135,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 16.875,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        16.875,
+        16.875
+      ],
+      "ci95_percent": [
+        6.666666666666667,
+        26.046791144901604
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 811,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 88.7308533916849,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            88.7308533916849,
+            88.7308533916849
+          ],
+          "ci95_percent": [
+            86.48641223641225,
+            90.82776521190996
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -2.516411378555799,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -4.090419806243272,
+            -0.9944476967546013
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -2.516411378555799,
+            -2.516411378555799
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "context": "neutral",
+      "condition": "shadow_pooled_plus_cross_context",
+      "alpha": 4,
+      "positive": 624,
+      "resolved": 798,
+      "total": 800,
+      "missing": 2,
+      "rate_percent": 78.19548872180451,
+      "coverage_percent": 99.75,
+      "all_response_bounds_percent": [
+        78.0,
+        78.25
+      ],
+      "ci95_percent": [
+        67.50360044313146,
+        83.64312267657994
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 820,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 89.71553610503283,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            89.71553610503283,
+            89.71553610503283
+          ],
+          "ci95_percent": [
+            87.6243093922652,
+            91.71151776103336
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -1.5317286652078774,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -2.931669620076323,
+            -0.1117256154904929
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -1.5317286652078774,
+            -1.5317286652078774
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "context": "ethical",
+      "condition": "shadow_pooled_minus_cross_context",
+      "alpha": -4,
+      "positive": 159,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 19.875,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        19.875,
+        19.875
+      ],
+      "ci95_percent": [
+        7.027027027027027,
+        31.696470687331534
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "capability": {
+        "status": "TOOL_REQUIRED_SCORED",
+        "rate": {
+          "positive": 814,
+          "resolved": 914,
+          "total": 914,
+          "missing": 0,
+          "rate_percent": 89.05908096280088,
+          "coverage_percent": 100.0,
+          "all_response_bounds_percent": [
+            89.05908096280088,
+            89.05908096280088
+          ],
+          "ci95_percent": [
+            86.91978444525527,
+            91.07730882063917
+          ],
+          "bootstrap_undefined": 0,
+          "families": 622,
+          "degenerate_interval": false,
+          "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim"
+        },
+        "change": {
+          "delta_pp": -2.1881838074398248,
+          "paired_resolved": 914,
+          "paired_total": 914,
+          "paired_missing": 0,
+          "ci95_pp": [
+            -3.733031674208145,
+            -0.7502679528403001
+          ],
+          "multiplicity": 1,
+          "bonferroni_ci_pp": null,
+          "all_response_delta_bounds_pp": [
+            -2.1881838074398248,
+            -2.1881838074398248
+          ],
+          "bootstrap_undefined": 0,
+          "exact_baseline_alias": false,
+          "degenerate_interval": false,
+          "families": 622
+        }
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "random_1_plus",
+      "reference": "baseline",
+      "delta_pp": 0.125,
+      "paired_resolved": 800,
+      "paired_total": 800,
+      "paired_missing": 0,
+      "ci95_pp": [
+        0.0,
+        0.5172413793103449
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        0.0,
+        1.2240096469622586
+      ],
+      "all_response_delta_bounds_pp": [
+        0.125,
+        0.125
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "random_1_plus",
+      "reference": "native_pooled_plus",
+      "delta_pp": -76.38190954773869,
+      "paired_resolved": 796,
+      "paired_total": 800,
+      "paired_missing": 4,
+      "ci95_pp": [
+        -80.98362489456119,
+        -68.28875239416156
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -83.36660407147222,
+        -58.97077005014162
+      ],
+      "all_response_delta_bounds_pp": [
+        -76.5,
+        -76.0
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "random_1_plus",
+      "reference": "shadow_pooled_plus",
+      "delta_pp": -78.04265997490589,
+      "paired_resolved": 797,
+      "paired_total": 800,
+      "paired_missing": 3,
+      "ci95_pp": [
+        -83.84504930707907,
+        -66.31799163179917
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -86.24224932648022,
+        -53.268079854390095
+      ],
+      "all_response_delta_bounds_pp": [
+        -78.125,
+        -77.75
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "random_2_plus",
+      "reference": "baseline",
+      "delta_pp": 0.0,
+      "paired_resolved": 800,
+      "paired_total": 800,
+      "paired_missing": 0,
+      "ci95_pp": [
+        0.0,
+        0.0
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        0.0,
+        0.0
+      ],
+      "all_response_delta_bounds_pp": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": true,
+      "families": 19
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "random_2_plus",
+      "reference": "native_pooled_plus",
+      "delta_pp": -76.50753768844221,
+      "paired_resolved": 796,
+      "paired_total": 800,
+      "paired_missing": 4,
+      "ci95_pp": [
+        -81.15952748477832,
+        -68.40923295304076
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -83.44459729544951,
+        -59.31358026346145
+      ],
+      "all_response_delta_bounds_pp": [
+        -76.625,
+        -76.125
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "random_2_plus",
+      "reference": "shadow_pooled_plus",
+      "delta_pp": -78.16813048933501,
+      "paired_resolved": 797,
+      "paired_total": 800,
+      "paired_missing": 3,
+      "ci95_pp": [
+        -83.94192500902001,
+        -66.54137483235051
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -86.34486536818613,
+        -53.51742991061985
+      ],
+      "all_response_delta_bounds_pp": [
+        -78.25,
+        -77.875
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "random_3_plus",
+      "reference": "baseline",
+      "delta_pp": 0.0,
+      "paired_resolved": 800,
+      "paired_total": 800,
+      "paired_missing": 0,
+      "ci95_pp": [
+        0.0,
+        0.0
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        0.0,
+        0.0
+      ],
+      "all_response_delta_bounds_pp": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": true,
+      "families": 19
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "random_3_plus",
+      "reference": "native_pooled_plus",
+      "delta_pp": -76.50753768844221,
+      "paired_resolved": 796,
+      "paired_total": 800,
+      "paired_missing": 4,
+      "ci95_pp": [
+        -81.15952748477832,
+        -68.40923295304076
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -83.44459729544951,
+        -59.31358026346145
+      ],
+      "all_response_delta_bounds_pp": [
+        -76.625,
+        -76.125
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "random_3_plus",
+      "reference": "shadow_pooled_plus",
+      "delta_pp": -78.16813048933501,
+      "paired_resolved": 797,
+      "paired_total": 800,
+      "paired_missing": 3,
+      "ci95_pp": [
+        -83.94192500902001,
+        -66.54137483235051
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -86.34486536818613,
+        -53.51742991061985
+      ],
+      "all_response_delta_bounds_pp": [
+        -78.25,
+        -77.875
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "probe_plus",
+      "reference": "baseline",
+      "delta_pp": 0.5,
+      "paired_resolved": 800,
+      "paired_total": 800,
+      "paired_missing": 0,
+      "ci95_pp": [
+        0.0,
+        1.153846153846154
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        0.0,
+        1.7822489053092534
+      ],
+      "all_response_delta_bounds_pp": [
+        0.5,
+        0.5
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "probe_plus",
+      "reference": "native_pooled_plus",
+      "delta_pp": -76.00502512562815,
+      "paired_resolved": 796,
+      "paired_total": 800,
+      "paired_missing": 4,
+      "ci95_pp": [
+        -80.63762402551382,
+        -67.92071653284502
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -83.37733349541867,
+        -58.909111805893644
+      ],
+      "all_response_delta_bounds_pp": [
+        -76.125,
+        -75.625
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "probe_plus",
+      "reference": "shadow_pooled_plus",
+      "delta_pp": -77.66624843161857,
+      "paired_resolved": 797,
+      "paired_total": 800,
+      "paired_missing": 3,
+      "ci95_pp": [
+        -83.4410339256866,
+        -65.97569418153104
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -86.00427988253517,
+        -53.3883702628123
+      ],
+      "all_response_delta_bounds_pp": [
+        -77.75,
+        -77.375
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "call_propensity_plus",
+      "reference": "baseline",
+      "delta_pp": 72.5,
+      "paired_resolved": 800,
+      "paired_total": 800,
+      "paired_missing": 0,
+      "ci95_pp": [
+        61.7741935483871,
+        79.13053929765887
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        50.641220508166974,
+        83.84122257053306
+      ],
+      "all_response_delta_bounds_pp": [
+        72.5,
+        72.5
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "call_propensity_plus",
+      "reference": "native_pooled_plus",
+      "delta_pp": -4.1457286432160805,
+      "paired_resolved": 796,
+      "paired_total": 800,
+      "paired_missing": 4,
+      "ci95_pp": [
+        -10.022806225909395,
+        -0.12886597938144329
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -16.94843580065255,
+        3.3249709750683065
+      ],
+      "all_response_delta_bounds_pp": [
+        -4.125,
+        -3.6249999999999996
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "call_propensity_plus",
+      "reference": "shadow_pooled_plus",
+      "delta_pp": -5.771643663739021,
+      "paired_resolved": 797,
+      "paired_total": 800,
+      "paired_missing": 3,
+      "ci95_pp": [
+        -11.11111111111111,
+        0.0
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -16.921416199440674,
+        6.094649303885113
+      ],
+      "all_response_delta_bounds_pp": [
+        -5.75,
+        -5.375
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "permuted_labels_plus",
+      "reference": "baseline",
+      "delta_pp": 0.0,
+      "paired_resolved": 800,
+      "paired_total": 800,
+      "paired_missing": 0,
+      "ci95_pp": [
+        0.0,
+        0.0
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        0.0,
+        0.0
+      ],
+      "all_response_delta_bounds_pp": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": true,
+      "families": 19
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "permuted_labels_plus",
+      "reference": "native_pooled_plus",
+      "delta_pp": -76.50753768844221,
+      "paired_resolved": 796,
+      "paired_total": 800,
+      "paired_missing": 4,
+      "ci95_pp": [
+        -81.15952748477832,
+        -68.40923295304076
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -83.44459729544951,
+        -59.31358026346145
+      ],
+      "all_response_delta_bounds_pp": [
+        -76.625,
+        -76.125
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m1",
+      "context": "ethical",
+      "condition": "permuted_labels_plus",
+      "reference": "shadow_pooled_plus",
+      "delta_pp": -78.16813048933501,
+      "paired_resolved": 797,
+      "paired_total": 800,
+      "paired_missing": 3,
+      "ci95_pp": [
+        -83.94192500902001,
+        -66.54137483235051
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -86.34486536818613,
+        -53.51742991061985
+      ],
+      "all_response_delta_bounds_pp": [
+        -78.25,
+        -77.875
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "random_1_plus",
+      "reference": "baseline",
+      "delta_pp": -0.125,
+      "paired_resolved": 800,
+      "paired_total": 800,
+      "paired_missing": 0,
+      "ci95_pp": [
+        -1.607142857142857,
+        0.7017886513157889
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -3.0433355437665783,
+        1.0336035298275308
+      ],
+      "all_response_delta_bounds_pp": [
+        -0.125,
+        -0.125
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "random_1_plus",
+      "reference": "native_pooled_plus",
+      "delta_pp": -6.390977443609022,
+      "paired_resolved": 798,
+      "paired_total": 800,
+      "paired_missing": 2,
+      "ci95_pp": [
+        -11.46791946467417,
+        -2.112629603478391
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -17.261917515292062,
+        -0.19026356288473897
+      ],
+      "all_response_delta_bounds_pp": [
+        -6.625,
+        -6.375
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "random_1_plus",
+      "reference": "shadow_pooled_plus",
+      "delta_pp": -7.026348808030113,
+      "paired_resolved": 797,
+      "paired_total": 800,
+      "paired_missing": 3,
+      "ci95_pp": [
+        -12.890227033379881,
+        -2.716759964173758
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -19.818809440487463,
+        -0.46203495593540406
+      ],
+      "all_response_delta_bounds_pp": [
+        -7.375,
+        -7.000000000000001
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "random_1_minus",
+      "reference": "baseline",
+      "delta_pp": 0.375,
+      "paired_resolved": 800,
+      "paired_total": 800,
+      "paired_missing": 0,
+      "ci95_pp": [
+        -0.5223880597014926,
+        2.142857142857143
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -0.961034747603157,
+        4.00384582145022
+      ],
+      "all_response_delta_bounds_pp": [
+        0.375,
+        0.375
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "random_1_minus",
+      "reference": "native_pooled_minus",
+      "delta_pp": 6.25782227784731,
+      "paired_resolved": 799,
+      "paired_total": 800,
+      "paired_missing": 1,
+      "ci95_pp": [
+        1.3649474886738535,
+        10.620579698741988
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        0.14653556443145857,
+        13.350407748781864
+      ],
+      "all_response_delta_bounds_pp": [
+        6.25,
+        6.375
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "random_1_minus",
+      "reference": "shadow_pooled_minus",
+      "delta_pp": 6.0,
+      "paired_resolved": 800,
+      "paired_total": 800,
+      "paired_missing": 0,
+      "ci95_pp": [
+        1.40625,
+        10.098039215686274
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        0.10719395546981755,
+        13.13074805339291
+      ],
+      "all_response_delta_bounds_pp": [
+        6.0,
+        6.0
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "random_2_plus",
+      "reference": "baseline",
+      "delta_pp": 0.0,
+      "paired_resolved": 800,
+      "paired_total": 800,
+      "paired_missing": 0,
+      "ci95_pp": [
+        -0.75,
+        0.4761904761904762
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -1.5909090909090908,
+        0.6882398146024684
+      ],
+      "all_response_delta_bounds_pp": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "random_2_plus",
+      "reference": "native_pooled_plus",
+      "delta_pp": -6.265664160401002,
+      "paired_resolved": 798,
+      "paired_total": 800,
+      "paired_missing": 2,
+      "ci95_pp": [
+        -10.91966096783541,
+        -2.044980272310535
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -16.06970790288054,
+        -0.19026356288473897
+      ],
+      "all_response_delta_bounds_pp": [
+        -6.5,
+        -6.25
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "random_2_plus",
+      "reference": "shadow_pooled_plus",
+      "delta_pp": -6.900878293601004,
+      "paired_resolved": 797,
+      "paired_total": 800,
+      "paired_missing": 3,
+      "ci95_pp": [
+        -12.236725479877018,
+        -2.691964285714291
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -18.45199499631591,
+        -0.46203495593540406
+      ],
+      "all_response_delta_bounds_pp": [
+        -7.249999999999999,
+        -6.875000000000001
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "random_2_minus",
+      "reference": "baseline",
+      "delta_pp": 0.625,
+      "paired_resolved": 800,
+      "paired_total": 800,
+      "paired_missing": 0,
+      "ci95_pp": [
+        -0.3449278267842822,
+        2.1739130434782608
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -1.3724664901091774,
+        3.943657635468082
+      ],
+      "all_response_delta_bounds_pp": [
+        0.625,
+        0.625
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "random_2_minus",
+      "reference": "native_pooled_minus",
+      "delta_pp": 6.508135168961202,
+      "paired_resolved": 799,
+      "paired_total": 800,
+      "paired_missing": 1,
+      "ci95_pp": [
+        1.2,
+        11.190674992983439
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        0.0,
+        13.707125267625935
+      ],
+      "all_response_delta_bounds_pp": [
+        6.5,
+        6.625
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "random_2_minus",
+      "reference": "shadow_pooled_minus",
+      "delta_pp": 6.25,
+      "paired_resolved": 800,
+      "paired_total": 800,
+      "paired_missing": 0,
+      "ci95_pp": [
+        1.395187338501292,
+        10.609756097560975
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        0.10719395546981755,
+        12.838017241379568
+      ],
+      "all_response_delta_bounds_pp": [
+        6.25,
+        6.25
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "random_3_plus",
+      "reference": "baseline",
+      "delta_pp": 0.25,
+      "paired_resolved": 800,
+      "paired_total": 800,
+      "paired_missing": 0,
+      "ci95_pp": [
+        -0.4,
+        0.7000000000000001
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -1.0321942394187522,
+        1.0714285714285714
+      ],
+      "all_response_delta_bounds_pp": [
+        0.25,
+        0.25
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "random_3_plus",
+      "reference": "native_pooled_plus",
+      "delta_pp": -6.015037593984962,
+      "paired_resolved": 798,
+      "paired_total": 800,
+      "paired_missing": 2,
+      "ci95_pp": [
+        -10.471976401179942,
+        -1.8235700469743044
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -15.6010615169389,
+        -0.041192257644722285
+      ],
+      "all_response_delta_bounds_pp": [
+        -6.25,
+        -6.0
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "random_3_plus",
+      "reference": "shadow_pooled_plus",
+      "delta_pp": -6.649937264742785,
+      "paired_resolved": 797,
+      "paired_total": 800,
+      "paired_missing": 3,
+      "ci95_pp": [
+        -11.675988777802875,
+        -2.5073345035105343
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -17.768587774230138,
+        -0.34847405306778384
+      ],
+      "all_response_delta_bounds_pp": [
+        -7.000000000000001,
+        -6.625
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "random_3_minus",
+      "reference": "baseline",
+      "delta_pp": 0.25,
+      "paired_resolved": 800,
+      "paired_total": 800,
+      "paired_missing": 0,
+      "ci95_pp": [
+        -0.9210526315789472,
+        1.4517809139784923
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -3.0032722306429203,
+        2.9545454545454546
+      ],
+      "all_response_delta_bounds_pp": [
+        0.25,
+        0.25
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "random_3_minus",
+      "reference": "native_pooled_minus",
+      "delta_pp": 6.25782227784731,
+      "paired_resolved": 799,
+      "paired_total": 800,
+      "paired_missing": 1,
+      "ci95_pp": [
+        0.8361087562068548,
+        11.068412278289564
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -1.1570757303053292,
+        13.889460576596152
+      ],
+      "all_response_delta_bounds_pp": [
+        6.125,
+        6.25
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "random_3_minus",
+      "reference": "shadow_pooled_minus",
+      "delta_pp": 5.875,
+      "paired_resolved": 800,
+      "paired_total": 800,
+      "paired_missing": 0,
+      "ci95_pp": [
+        0.7142857142857143,
+        10.465207122093021
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -1.2189757799671594,
+        13.273555730937375
+      ],
+      "all_response_delta_bounds_pp": [
+        5.875,
+        5.875
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "probe_plus",
+      "reference": "baseline",
+      "delta_pp": 0.375,
+      "paired_resolved": 800,
+      "paired_total": 800,
+      "paired_missing": 0,
+      "ci95_pp": [
+        -1.1666666666666667,
+        1.5001712328767098
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -2.2409717868338555,
+        2.0672070596550616
+      ],
+      "all_response_delta_bounds_pp": [
+        0.375,
+        0.375
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "probe_plus",
+      "reference": "native_pooled_plus",
+      "delta_pp": -5.889724310776942,
+      "paired_resolved": 798,
+      "paired_total": 800,
+      "paired_missing": 2,
+      "ci95_pp": [
+        -10.858733361653924,
+        -2.0444455107483455
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -16.588063789742556,
+        -0.19026356288473897
+      ],
+      "all_response_delta_bounds_pp": [
+        -6.125,
+        -5.875
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "probe_plus",
+      "reference": "shadow_pooled_plus",
+      "delta_pp": -6.524466750313676,
+      "paired_resolved": 797,
+      "paired_total": 800,
+      "paired_missing": 3,
+      "ci95_pp": [
+        -12.274981658107118,
+        -2.613603709508882
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -19.135402218401687,
+        -0.46203495593540406
+      ],
+      "all_response_delta_bounds_pp": [
+        -6.875000000000001,
+        -6.5
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "probe_minus",
+      "reference": "baseline",
+      "delta_pp": 0.0,
+      "paired_resolved": 800,
+      "paired_total": 800,
+      "paired_missing": 0,
+      "ci95_pp": [
+        -0.9782608695652175,
+        1.8181818181818181
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -1.4420358090185676,
+        3.9680456038215866
+      ],
+      "all_response_delta_bounds_pp": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "probe_minus",
+      "reference": "native_pooled_minus",
+      "delta_pp": 5.88235294117647,
+      "paired_resolved": 799,
+      "paired_total": 800,
+      "paired_missing": 1,
+      "ci95_pp": [
+        1.3969732246798603,
+        9.923109640831758
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        0.25279052843708016,
+        11.966927919162124
+      ],
+      "all_response_delta_bounds_pp": [
+        5.875,
+        6.0
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "probe_minus",
+      "reference": "shadow_pooled_minus",
+      "delta_pp": 5.625,
+      "paired_resolved": 800,
+      "paired_total": 800,
+      "paired_missing": 0,
+      "ci95_pp": [
+        1.3414634146341464,
+        9.509803921568627
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        0.06237684729064039,
+        11.52696424211189
+      ],
+      "all_response_delta_bounds_pp": [
+        5.625,
+        5.625
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "call_propensity_plus",
+      "reference": "baseline",
+      "delta_pp": 6.625,
+      "paired_resolved": 800,
+      "paired_total": 800,
+      "paired_missing": 0,
+      "ci95_pp": [
+        2.346859056122449,
+        10.71457373271889
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        0.3602453580901857,
+        13.977019056261367
+      ],
+      "all_response_delta_bounds_pp": [
+        6.625,
+        6.625
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "call_propensity_plus",
+      "reference": "native_pooled_plus",
+      "delta_pp": 0.12531328320802004,
+      "paired_resolved": 798,
+      "paired_total": 800,
+      "paired_missing": 2,
+      "ci95_pp": [
+        -1.4102664576802508,
+        1.2544990327079675
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -3.1885736045312916,
+        2.5298220186151372
+      ],
+      "all_response_delta_bounds_pp": [
+        0.125,
+        0.375
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "call_propensity_plus",
+      "reference": "shadow_pooled_plus",
+      "delta_pp": -0.5018820577164366,
+      "paired_resolved": 797,
+      "paired_total": 800,
+      "paired_missing": 3,
+      "ci95_pp": [
+        -2.547770700636943,
+        0.6428732303732301
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -4.558177515022772,
+        1.3106232671135167
+      ],
+      "all_response_delta_bounds_pp": [
+        -0.625,
+        -0.25
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "call_propensity_minus",
+      "reference": "baseline",
+      "delta_pp": -5.125,
+      "paired_resolved": 800,
+      "paired_total": 800,
+      "paired_missing": 0,
+      "ci95_pp": [
+        -9.275386155606407,
+        -0.3448275862068966
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -11.734119111219037,
+        1.3869868637110423
+      ],
+      "all_response_delta_bounds_pp": [
+        -5.125,
+        -5.125
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "call_propensity_minus",
+      "reference": "native_pooled_minus",
+      "delta_pp": 0.7509386733416771,
+      "paired_resolved": 799,
+      "paired_total": 800,
+      "paired_missing": 1,
+      "ci95_pp": [
+        -0.6013238598408938,
+        1.7673265607865487
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -1.8324409223959452,
+        2.72377850477738
+      ],
+      "all_response_delta_bounds_pp": [
+        0.75,
+        0.8750000000000001
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "call_propensity_minus",
+      "reference": "shadow_pooled_minus",
+      "delta_pp": 0.5,
+      "paired_resolved": 800,
+      "paired_total": 800,
+      "paired_missing": 0,
+      "ci95_pp": [
+        -0.576923076923077,
+        1.5789473684210527
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -1.5217391304347827,
+        3.243578853955382
+      ],
+      "all_response_delta_bounds_pp": [
+        0.5,
+        0.5
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "permuted_labels_plus",
+      "reference": "baseline",
+      "delta_pp": -0.8750000000000001,
+      "paired_resolved": 800,
+      "paired_total": 800,
+      "paired_missing": 0,
+      "ci95_pp": [
+        -2.083333333333333,
+        -0.23255813953488372
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -3.4480586411339784,
+        0.0
+      ],
+      "all_response_delta_bounds_pp": [
+        -0.8750000000000001,
+        -0.8750000000000001
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "permuted_labels_plus",
+      "reference": "native_pooled_plus",
+      "delta_pp": -7.142857142857142,
+      "paired_resolved": 798,
+      "paired_total": 800,
+      "paired_missing": 2,
+      "ci95_pp": [
+        -12.530008941080393,
+        -2.2830926146515784
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -18.7021230338778,
+        -0.19026356288473897
+      ],
+      "all_response_delta_bounds_pp": [
+        -7.375,
+        -7.124999999999999
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "ethical",
+      "condition": "permuted_labels_plus",
+      "reference": "shadow_pooled_plus",
+      "delta_pp": -7.779171894604768,
+      "paired_resolved": 797,
+      "paired_total": 800,
+      "paired_missing": 3,
+      "ci95_pp": [
+        -13.78587452681337,
+        -2.9545370619041225
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -20.562941522414715,
+        -0.46203495593540406
+      ],
+      "all_response_delta_bounds_pp": [
+        -8.125,
+        -7.75
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "permuted_labels_minus",
+      "reference": "baseline",
+      "delta_pp": 2.25,
+      "paired_resolved": 800,
+      "paired_total": 800,
+      "paired_missing": 0,
+      "ci95_pp": [
+        0.3658536585365854,
+        4.0
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        0.0,
+        5.328638301816838
+      ],
+      "all_response_delta_bounds_pp": [
+        2.25,
+        2.25
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "permuted_labels_minus",
+      "reference": "native_pooled_minus",
+      "delta_pp": 8.1351689612015,
+      "paired_resolved": 799,
+      "paired_total": 800,
+      "paired_missing": 1,
+      "ci95_pp": [
+        1.4727540500736376,
+        14.430827301708923
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        0.10719395546981755,
+        17.950935364619536
+      ],
+      "all_response_delta_bounds_pp": [
+        8.125,
+        8.25
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m3",
+      "context": "neutral",
+      "condition": "permuted_labels_minus",
+      "reference": "shadow_pooled_minus",
+      "delta_pp": 7.875,
+      "paired_resolved": 800,
+      "paired_total": 800,
+      "paired_missing": 0,
+      "ci95_pp": [
+        1.4583333333333333,
+        13.902439024390246
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        0.0,
+        17.264034264513445
+      ],
+      "all_response_delta_bounds_pp": [
+        7.875,
+        7.875
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "random_1_plus",
+      "reference": "baseline",
+      "delta_pp": -15.18987341772152,
+      "paired_resolved": 790,
+      "paired_total": 800,
+      "paired_missing": 10,
+      "ci95_pp": [
+        -20.177756694524987,
+        -9.691469957653789
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -26.35081717107867,
+        -2.4691242124394974
+      ],
+      "all_response_delta_bounds_pp": [
+        -15.75,
+        -14.499999999999998
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "random_1_plus",
+      "reference": "native_pooled_plus",
+      "delta_pp": -34.46115288220552,
+      "paired_resolved": 798,
+      "paired_total": 800,
+      "paired_missing": 2,
+      "ci95_pp": [
+        -49.70907648995467,
+        -21.69241622718936
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -56.863825498598274,
+        -16.882079378978904
+      ],
+      "all_response_delta_bounds_pp": [
+        -34.625,
+        -34.375
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "random_1_plus",
+      "reference": "shadow_pooled_plus",
+      "delta_pp": -32.914572864321606,
+      "paired_resolved": 796,
+      "paired_total": 800,
+      "paired_missing": 4,
+      "ci95_pp": [
+        -48.837903920424544,
+        -19.5896202687356
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -56.07811193034304,
+        -14.115593335736184
+      ],
+      "all_response_delta_bounds_pp": [
+        -33.125,
+        -32.625
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "random_1_minus",
+      "reference": "baseline",
+      "delta_pp": 2.6683608640406606,
+      "paired_resolved": 787,
+      "paired_total": 800,
+      "paired_missing": 13,
+      "ci95_pp": [
+        -2.786485708114335,
+        6.631666250935394
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -9.638595509547457,
+        9.765024035466462
+      ],
+      "all_response_delta_bounds_pp": [
+        2.25,
+        3.875
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "random_1_minus",
+      "reference": "native_pooled_minus",
+      "delta_pp": 29.367088607594937,
+      "paired_resolved": 790,
+      "paired_total": 800,
+      "paired_missing": 10,
+      "ci95_pp": [
+        21.92506605585665,
+        35.633575784525476
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        16.45256596156902,
+        39.435084902492
+      ],
+      "all_response_delta_bounds_pp": [
+        28.749999999999996,
+        30.0
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "random_1_minus",
+      "reference": "shadow_pooled_minus",
+      "delta_pp": 27.86259541984733,
+      "paired_resolved": 786,
+      "paired_total": 800,
+      "paired_missing": 14,
+      "ci95_pp": [
+        19.642709806694956,
+        34.87021210805405
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        12.405737637757648,
+        38.44301592487129
+      ],
+      "all_response_delta_bounds_pp": [
+        27.0,
+        28.749999999999996
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "random_2_plus",
+      "reference": "baseline",
+      "delta_pp": -10.253164556962027,
+      "paired_resolved": 790,
+      "paired_total": 800,
+      "paired_missing": 10,
+      "ci95_pp": [
+        -14.04421669689925,
+        -5.542725173210162
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -18.246113568024423,
+        -0.05695698317799104
+      ],
+      "all_response_delta_bounds_pp": [
+        -11.125,
+        -9.875
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "random_2_plus",
+      "reference": "native_pooled_plus",
+      "delta_pp": -29.82456140350877,
+      "paired_resolved": 798,
+      "paired_total": 800,
+      "paired_missing": 2,
+      "ci95_pp": [
+        -43.26768822115132,
+        -18.03913236682775
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -50.20279872924544,
+        -11.291091954022704
+      ],
+      "all_response_delta_bounds_pp": [
+        -30.0,
+        -29.75
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "random_2_plus",
+      "reference": "shadow_pooled_plus",
+      "delta_pp": -28.266331658291456,
+      "paired_resolved": 796,
+      "paired_total": 800,
+      "paired_missing": 4,
+      "ci95_pp": [
+        -42.49475385528808,
+        -16.043081202594475
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -48.64031933037124,
+        -8.840489221067937
+      ],
+      "all_response_delta_bounds_pp": [
+        -28.499999999999996,
+        -28.000000000000004
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "random_2_minus",
+      "reference": "baseline",
+      "delta_pp": -3.6848792884371027,
+      "paired_resolved": 787,
+      "paired_total": 800,
+      "paired_missing": 13,
+      "ci95_pp": [
+        -11.17653036824486,
+        0.1794939254494896
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -16.87376060626361,
+        2.254942526588049
+      ],
+      "all_response_delta_bounds_pp": [
+        -4.25,
+        -2.625
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "random_2_minus",
+      "reference": "native_pooled_minus",
+      "delta_pp": 22.911392405063292,
+      "paired_resolved": 790,
+      "paired_total": 800,
+      "paired_missing": 10,
+      "ci95_pp": [
+        12.361684585891627,
+        27.634223151121756
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        4.281397765799899,
+        29.892838055136135
+      ],
+      "all_response_delta_bounds_pp": [
+        22.25,
+        23.5
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "random_2_minus",
+      "reference": "shadow_pooled_minus",
+      "delta_pp": 21.501272264631044,
+      "paired_resolved": 786,
+      "paired_total": 800,
+      "paired_missing": 14,
+      "ci95_pp": [
+        10.558544569414135,
+        26.721822456540323
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        2.395736452148984,
+        29.517773130733826
+      ],
+      "all_response_delta_bounds_pp": [
+        20.5,
+        22.25
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "random_3_plus",
+      "reference": "baseline",
+      "delta_pp": -11.012658227848101,
+      "paired_resolved": 790,
+      "paired_total": 800,
+      "paired_missing": 10,
+      "ci95_pp": [
+        -16.455696202531644,
+        -6.5262900317678385
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -23.168477042627117,
+        -1.256323289319647
+      ],
+      "all_response_delta_bounds_pp": [
+        -11.75,
+        -10.5
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "random_3_plus",
+      "reference": "native_pooled_plus",
+      "delta_pp": -30.451127819548873,
+      "paired_resolved": 798,
+      "paired_total": 800,
+      "paired_missing": 2,
+      "ci95_pp": [
+        -46.17564350811387,
+        -17.02115260625899
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -53.56462853913779,
+        -10.823475181596725
+      ],
+      "all_response_delta_bounds_pp": [
+        -30.625000000000004,
+        -30.375000000000004
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "random_3_plus",
+      "reference": "shadow_pooled_plus",
+      "delta_pp": -28.894472361809044,
+      "paired_resolved": 796,
+      "paired_total": 800,
+      "paired_missing": 4,
+      "ci95_pp": [
+        -45.3341961852861,
+        -14.861326475960606
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -52.06366195656701,
+        -8.799880171884565
+      ],
+      "all_response_delta_bounds_pp": [
+        -29.125,
+        -28.625
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "random_3_minus",
+      "reference": "baseline",
+      "delta_pp": -2.6683608640406606,
+      "paired_resolved": 787,
+      "paired_total": 800,
+      "paired_missing": 13,
+      "ci95_pp": [
+        -9.291356003065989,
+        2.0166307673097332
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -15.941464855807391,
+        5.4850516214635965
+      ],
+      "all_response_delta_bounds_pp": [
+        -3.25,
+        -1.625
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "random_3_minus",
+      "reference": "native_pooled_minus",
+      "delta_pp": 23.79746835443038,
+      "paired_resolved": 790,
+      "paired_total": 800,
+      "paired_missing": 10,
+      "ci95_pp": [
+        15.775675636967762,
+        27.67867557209509
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        8.16597605063717,
+        30.119251919121666
+      ],
+      "all_response_delta_bounds_pp": [
+        23.25,
+        24.5
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "random_3_minus",
+      "reference": "shadow_pooled_minus",
+      "delta_pp": 22.646310432569976,
+      "paired_resolved": 786,
+      "paired_total": 800,
+      "paired_missing": 14,
+      "ci95_pp": [
+        14.808865941335666,
+        26.57723969528154
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        7.648555087072248,
+        29.725684285770893
+      ],
+      "all_response_delta_bounds_pp": [
+        21.5,
+        23.25
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "probe_plus",
+      "reference": "baseline",
+      "delta_pp": -9.873417721518987,
+      "paired_resolved": 790,
+      "paired_total": 800,
+      "paired_missing": 10,
+      "ci95_pp": [
+        -15.895226168791742,
+        -5.387109265575825
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -22.181194261898316,
+        -0.5541098121823872
+      ],
+      "all_response_delta_bounds_pp": [
+        -10.5,
+        -9.25
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "probe_plus",
+      "reference": "native_pooled_plus",
+      "delta_pp": -29.19799498746867,
+      "paired_resolved": 798,
+      "paired_total": 800,
+      "paired_missing": 2,
+      "ci95_pp": [
+        -45.55730824244591,
+        -15.414258188824661
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -51.70339812794774,
+        -9.514036265072132
+      ],
+      "all_response_delta_bounds_pp": [
+        -29.375,
+        -29.125
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "probe_plus",
+      "reference": "shadow_pooled_plus",
+      "delta_pp": -27.63819095477387,
+      "paired_resolved": 796,
+      "paired_total": 800,
+      "paired_missing": 4,
+      "ci95_pp": [
+        -44.75627769571639,
+        -13.220921127562645
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -50.124280746031644,
+        -6.901319144520778
+      ],
+      "all_response_delta_bounds_pp": [
+        -27.875,
+        -27.375
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "probe_minus",
+      "reference": "baseline",
+      "delta_pp": 1.4012738853503186,
+      "paired_resolved": 785,
+      "paired_total": 800,
+      "paired_missing": 15,
+      "ci95_pp": [
+        -7.143256631511664,
+        6.603131737997833
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -15.908036572183523,
+        10.374777323139675
+      ],
+      "all_response_delta_bounds_pp": [
+        0.5,
+        2.375
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "probe_minus",
+      "reference": "native_pooled_minus",
+      "delta_pp": 27.53807106598985,
+      "paired_resolved": 788,
+      "paired_total": 800,
+      "paired_missing": 12,
+      "ci95_pp": [
+        15.845086964121839,
+        32.910086397428174
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        4.359757257531798,
+        35.00984843639251
+      ],
+      "all_response_delta_bounds_pp": [
+        27.0,
+        28.499999999999996
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "probe_minus",
+      "reference": "shadow_pooled_minus",
+      "delta_pp": 26.02040816326531,
+      "paired_resolved": 784,
+      "paired_total": 800,
+      "paired_missing": 16,
+      "ci95_pp": [
+        14.066396259590794,
+        31.604826024867716
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        2.7254595005378706,
+        35.38139197212649
+      ],
+      "all_response_delta_bounds_pp": [
+        25.25,
+        27.250000000000004
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "call_propensity_plus",
+      "reference": "baseline",
+      "delta_pp": 22.17997465145754,
+      "paired_resolved": 789,
+      "paired_total": 800,
+      "paired_missing": 11,
+      "ci95_pp": [
+        7.540646628435832,
+        40.43614229750102
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        0.39842139547156125,
+        49.7512541217663
+      ],
+      "all_response_delta_bounds_pp": [
+        21.125,
+        22.5
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "call_propensity_plus",
+      "reference": "native_pooled_plus",
+      "delta_pp": 2.258469259723965,
+      "paired_resolved": 797,
+      "paired_total": 800,
+      "paired_missing": 3,
+      "ci95_pp": [
+        -1.5945330296127564,
+        6.432799389778794
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -4.903414645191229,
+        8.484138790267583
+      ],
+      "all_response_delta_bounds_pp": [
+        2.25,
+        2.625
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "call_propensity_plus",
+      "reference": "shadow_pooled_plus",
+      "delta_pp": 4.150943396226415,
+      "paired_resolved": 795,
+      "paired_total": 800,
+      "paired_missing": 5,
+      "ci95_pp": [
+        0.8901747444774152,
+        7.466379545509727
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -1.1539221110230324,
+        9.466141132174009
+      ],
+      "all_response_delta_bounds_pp": [
+        3.75,
+        4.375
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "call_propensity_minus",
+      "reference": "baseline",
+      "delta_pp": -28.081321473951714,
+      "paired_resolved": 787,
+      "paired_total": 800,
+      "paired_missing": 13,
+      "ci95_pp": [
+        -32.404344512195124,
+        -20.0
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -35.769862416376064,
+        -11.030535179238754
+      ],
+      "all_response_delta_bounds_pp": [
+        -28.749999999999996,
+        -27.125
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "call_propensity_minus",
+      "reference": "native_pooled_minus",
+      "delta_pp": -1.89873417721519,
+      "paired_resolved": 790,
+      "paired_total": 800,
+      "paired_missing": 10,
+      "ci95_pp": [
+        -5.434954052941983,
+        2.702824665821054
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -7.215234723844244,
+        5.610574009747186
+      ],
+      "all_response_delta_bounds_pp": [
+        -2.25,
+        -1.0
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "call_propensity_minus",
+      "reference": "shadow_pooled_minus",
+      "delta_pp": -3.5623409669211195,
+      "paired_resolved": 786,
+      "paired_total": 800,
+      "paired_missing": 14,
+      "ci95_pp": [
+        -7.313831938993321,
+        1.0657351443266858
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -9.400571773178532,
+        2.728989756472997
+      ],
+      "all_response_delta_bounds_pp": [
+        -4.0,
+        -2.25
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "permuted_labels_plus",
+      "reference": "baseline",
+      "delta_pp": -27.468354430379748,
+      "paired_resolved": 790,
+      "paired_total": 800,
+      "paired_missing": 10,
+      "ci95_pp": [
+        -34.30284728914684,
+        -18.825851393188856
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -38.41237618265749,
+        -13.229857678312133
+      ],
+      "all_response_delta_bounds_pp": [
+        -27.875,
+        -26.625
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "permuted_labels_plus",
+      "reference": "native_pooled_plus",
+      "delta_pp": -46.616541353383454,
+      "paired_resolved": 798,
+      "paired_total": 800,
+      "paired_missing": 2,
+      "ci95_pp": [
+        -56.65271816881259,
+        -36.166639433551204
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -63.78425567627528,
+        -29.132049063070514
+      ],
+      "all_response_delta_bounds_pp": [
+        -46.75,
+        -46.5
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "permuted_labels_plus",
+      "reference": "shadow_pooled_plus",
+      "delta_pp": -44.9748743718593,
+      "paired_resolved": 796,
+      "paired_total": 800,
+      "paired_missing": 4,
+      "ci95_pp": [
+        -55.4089709762533,
+        -35.12530498645186
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -62.4098374508347,
+        -28.37217084062767
+      ],
+      "all_response_delta_bounds_pp": [
+        -45.25,
+        -44.75
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "permuted_labels_minus",
+      "reference": "baseline",
+      "delta_pp": 0.7623888182973316,
+      "paired_resolved": 787,
+      "paired_total": 800,
+      "paired_missing": 13,
+      "ci95_pp": [
+        -6.260032102728733,
+        7.317219570755129
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -15.040712739926654,
+        11.529279633776666
+      ],
+      "all_response_delta_bounds_pp": [
+        0.125,
+        1.7500000000000002
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "permuted_labels_minus",
+      "reference": "native_pooled_minus",
+      "delta_pp": 27.468354430379748,
+      "paired_resolved": 790,
+      "paired_total": 800,
+      "paired_missing": 10,
+      "ci95_pp": [
+        17.00988814769894,
+        37.35895371887569
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        9.83796929687406,
+        43.60822696554976
+      ],
+      "all_response_delta_bounds_pp": [
+        26.625,
+        27.875
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "permuted_labels_minus",
+      "reference": "shadow_pooled_minus",
+      "delta_pp": 26.208651399491096,
+      "paired_resolved": 786,
+      "paired_total": 800,
+      "paired_missing": 14,
+      "ci95_pp": [
+        15.330248852839818,
+        36.65100819934289
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        8.159680711648623,
+        42.76453798541067
+      ],
+      "all_response_delta_bounds_pp": [
+        24.875,
+        26.625
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "native_pooled_plus_cross_context",
+      "reference": "baseline",
+      "delta_pp": 8.386277001270647,
+      "paired_resolved": 787,
+      "paired_total": 800,
+      "paired_missing": 13,
+      "ci95_pp": [
+        1.0819165378670788,
+        16.503267973856207
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -4.025265185237998,
+        21.852060085738426
+      ],
+      "all_response_delta_bounds_pp": [
+        7.75,
+        9.375
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "native_pooled_minus_cross_context",
+      "reference": "baseline",
+      "delta_pp": -36.9620253164557,
+      "paired_resolved": 790,
+      "paired_total": 800,
+      "paired_missing": 10,
+      "ci95_pp": [
+        -46.68518839872806,
+        -25.777143961997822
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -50.60907051178823,
+        -20.973086364465626
+      ],
+      "all_response_delta_bounds_pp": [
+        -37.625,
+        -36.375
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "neutral",
+      "condition": "shadow_pooled_plus_cross_context",
+      "reference": "baseline",
+      "delta_pp": 8.9171974522293,
+      "paired_resolved": 785,
+      "paired_total": 800,
+      "paired_missing": 15,
+      "ci95_pp": [
+        0.7053745474798108,
+        18.392113282052453
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -4.269068450849202,
+        23.086761220861252
+      ],
+      "all_response_delta_bounds_pp": [
+        8.0,
+        9.875
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    },
+    {
+      "key": "source_m5",
+      "context": "ethical",
+      "condition": "shadow_pooled_minus_cross_context",
+      "reference": "baseline",
+      "delta_pp": -33.79746835443038,
+      "paired_resolved": 790,
+      "paired_total": 800,
+      "paired_missing": 10,
+      "ci95_pp": [
+        -40.89273465719219,
+        -25.396670386904763
+      ],
+      "multiplicity": 174,
+      "bonferroni_ci_pp": [
+        -43.87949055226185,
+        -20.906157142026828
+      ],
+      "all_response_delta_bounds_pp": [
+        -34.625,
+        -33.375
+      ],
+      "bootstrap_undefined": 0,
+      "exact_baseline_alias": false,
+      "degenerate_interval": false,
+      "families": 19
+    }
+  ],
+  "primary_reference": [
+    {
+      "key": "source_m1",
+      "model": "Qwen3.5-9B",
+      "context": "ethical",
+      "condition": "baseline",
+      "original": true,
+      "alias_of": null,
+      "positive": 0,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 0.0,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        0.0,
+        0.0
+      ],
+      "ci95_percent": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": true,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "change": {
+        "delta_pp": 0.0,
+        "paired_resolved": 800,
+        "paired_total": 800,
+        "paired_missing": 0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": true,
+        "degenerate_interval": true,
+        "families": 19
+      }
+    },
+    {
+      "key": "source_m1",
+      "model": "Qwen3.5-9B",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "original": true,
+      "alias_of": null,
+      "positive": 609,
+      "resolved": 796,
+      "total": 800,
+      "missing": 4,
+      "rate_percent": 76.50753768844221,
+      "coverage_percent": 99.5,
+      "all_response_bounds_percent": [
+        76.125,
+        76.625
+      ],
+      "ci95_percent": [
+        68.40923295304076,
+        81.15952748477832
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "change": {
+        "delta_pp": 76.50753768844221,
+        "paired_resolved": 796,
+        "paired_total": 800,
+        "paired_missing": 4,
+        "ci95_pp": [
+          68.40923295304076,
+          81.15952748477832
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          76.125,
+          76.625
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19
+      }
+    },
+    {
+      "key": "source_m1",
+      "model": "Qwen3.5-9B",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "original": true,
+      "alias_of": null,
+      "positive": 623,
+      "resolved": 797,
+      "total": 800,
+      "missing": 3,
+      "rate_percent": 78.16813048933501,
+      "coverage_percent": 99.625,
+      "all_response_bounds_percent": [
+        77.875,
+        78.25
+      ],
+      "ci95_percent": [
+        66.5413748323505,
+        83.94192500902
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "change": {
+        "delta_pp": 78.16813048933501,
+        "paired_resolved": 797,
+        "paired_total": 800,
+        "paired_missing": 3,
+        "ci95_pp": [
+          66.5413748323505,
+          83.94192500902
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          77.875,
+          78.25
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19
+      }
+    },
+    {
+      "key": "source_m1",
+      "model": "Qwen3.5-9B",
+      "context": "neutral",
+      "condition": "baseline",
+      "original": true,
+      "alias_of": null,
+      "positive": 19,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 2.375,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        2.375,
+        2.375
+      ],
+      "ci95_percent": [
+        0.15625,
+        4.553702731092435
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "change": {
+        "delta_pp": 0.0,
+        "paired_resolved": 800,
+        "paired_total": 800,
+        "paired_missing": 0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": true,
+        "degenerate_interval": true,
+        "families": 19
+      }
+    },
+    {
+      "key": "source_m1",
+      "model": "Qwen3.5-9B",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "original": true,
+      "alias_of": "baseline",
+      "positive": 19,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 2.375,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        2.375,
+        2.375
+      ],
+      "ci95_percent": [
+        0.15625,
+        4.553702731092435
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "change": {
+        "delta_pp": 0.0,
+        "paired_resolved": 800,
+        "paired_total": 800,
+        "paired_missing": 0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": true,
+        "degenerate_interval": true,
+        "families": 19
+      }
+    },
+    {
+      "key": "source_m1",
+      "model": "Qwen3.5-9B",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "original": true,
+      "alias_of": "baseline",
+      "positive": 19,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 2.375,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        2.375,
+        2.375
+      ],
+      "ci95_percent": [
+        0.15625,
+        4.553702731092435
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "change": {
+        "delta_pp": 0.0,
+        "paired_resolved": 800,
+        "paired_total": 800,
+        "paired_missing": 0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": true,
+        "degenerate_interval": true,
+        "families": 19
+      }
+    },
+    {
+      "key": "source_m3",
+      "model": "Ministral-3-8B",
+      "context": "ethical",
+      "condition": "baseline",
+      "original": true,
+      "alias_of": null,
+      "positive": 23,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 2.875,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        2.875,
+        2.875
+      ],
+      "ci95_percent": [
+        0.5102040816326531,
+        5.0
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "change": {
+        "delta_pp": 0.0,
+        "paired_resolved": 800,
+        "paired_total": 800,
+        "paired_missing": 0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": true,
+        "degenerate_interval": true,
+        "families": 19
+      }
+    },
+    {
+      "key": "source_m3",
+      "model": "Ministral-3-8B",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "original": true,
+      "alias_of": null,
+      "positive": 73,
+      "resolved": 798,
+      "total": 800,
+      "missing": 2,
+      "rate_percent": 9.147869674185463,
+      "coverage_percent": 99.75,
+      "all_response_bounds_percent": [
+        9.125,
+        9.375
+      ],
+      "ci95_percent": [
+        2.567402768622281,
+        15.303919979430306
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "change": {
+        "delta_pp": 6.265664160401002,
+        "paired_resolved": 798,
+        "paired_total": 800,
+        "paired_missing": 2,
+        "ci95_pp": [
+          1.9305019305019304,
+          10.651731788487611
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          6.25,
+          6.5
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19
+      }
+    },
+    {
+      "key": "source_m3",
+      "model": "Ministral-3-8B",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "original": true,
+      "alias_of": null,
+      "positive": 78,
+      "resolved": 797,
+      "total": 800,
+      "missing": 3,
+      "rate_percent": 9.786700125470514,
+      "coverage_percent": 99.625,
+      "all_response_bounds_percent": [
+        9.75,
+        10.125
+      ],
+      "ci95_percent": [
+        3.2754872563718145,
+        16.21990674318507
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "change": {
+        "delta_pp": 6.900878293601004,
+        "paired_resolved": 797,
+        "paired_total": 800,
+        "paired_missing": 3,
+        "ci95_pp": [
+          2.6156100658286188,
+          11.773946675444371
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          6.875000000000001,
+          7.249999999999999
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19
+      }
+    },
+    {
+      "key": "source_m3",
+      "model": "Ministral-3-8B",
+      "context": "neutral",
+      "condition": "baseline",
+      "original": true,
+      "alias_of": null,
+      "positive": 165,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 20.625,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        20.625,
+        20.625
+      ],
+      "ci95_percent": [
+        4.285714285714286,
+        36.132619738751806
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "change": {
+        "delta_pp": 0.0,
+        "paired_resolved": 800,
+        "paired_total": 800,
+        "paired_missing": 0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": true,
+        "degenerate_interval": true,
+        "families": 19
+      }
+    },
+    {
+      "key": "source_m3",
+      "model": "Ministral-3-8B",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "original": true,
+      "alias_of": null,
+      "positive": 117,
+      "resolved": 799,
+      "total": 800,
+      "missing": 1,
+      "rate_percent": 14.643304130162704,
+      "coverage_percent": 99.875,
+      "all_response_bounds_percent": [
+        14.625,
+        14.75
+      ],
+      "ci95_percent": [
+        2.9817731413230035,
+        25.617220744680854
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "change": {
+        "delta_pp": -6.007509386733417,
+        "paired_resolved": 799,
+        "paired_total": 800,
+        "paired_missing": 1,
+        "ci95_pp": [
+          -10.746909453703845,
+          -0.9522520780978175
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          -6.0,
+          -5.875
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19
+      }
+    },
+    {
+      "key": "source_m3",
+      "model": "Ministral-3-8B",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "original": true,
+      "alias_of": null,
+      "positive": 120,
+      "resolved": 800,
+      "total": 800,
+      "missing": 0,
+      "rate_percent": 15.0,
+      "coverage_percent": 100.0,
+      "all_response_bounds_percent": [
+        15.0,
+        15.0
+      ],
+      "ci95_percent": [
+        3.1664473684210535,
+        26.132075471698112
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "change": {
+        "delta_pp": -5.625,
+        "paired_resolved": 800,
+        "paired_total": 800,
+        "paired_missing": 0,
+        "ci95_pp": [
+          -10.090994854202401,
+          -0.813953488372093
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          -5.625,
+          -5.625
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19
+      }
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "context": "ethical",
+      "condition": "baseline",
+      "original": true,
+      "alias_of": null,
+      "positive": 426,
+      "resolved": 790,
+      "total": 800,
+      "missing": 10,
+      "rate_percent": 53.92405063291139,
+      "coverage_percent": 98.75,
+      "all_response_bounds_percent": [
+        53.25,
+        54.50000000000001
+      ],
+      "ci95_percent": [
+        33.58012368084963,
+        72.23271162123386
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "change": {
+        "delta_pp": 0.0,
+        "paired_resolved": 790,
+        "paired_total": 800,
+        "paired_missing": 10,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": true,
+        "degenerate_interval": true,
+        "families": 19
+      }
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "context": "ethical",
+      "condition": "native_pooled_plus",
+      "original": true,
+      "alias_of": null,
+      "positive": 585,
+      "resolved": 798,
+      "total": 800,
+      "missing": 2,
+      "rate_percent": 73.30827067669173,
+      "coverage_percent": 99.75,
+      "all_response_bounds_percent": [
+        73.125,
+        73.375
+      ],
+      "ci95_percent": [
+        60.94618616677441,
+        82.12157330154946
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "change": {
+        "delta_pp": 19.670050761421322,
+        "paired_resolved": 788,
+        "paired_total": 800,
+        "paired_missing": 12,
+        "ci95_pp": [
+          7.495667414538831,
+          34.5331646509058
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          18.625,
+          20.125
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19
+      }
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "context": "ethical",
+      "condition": "shadow_pooled_plus",
+      "original": true,
+      "alias_of": null,
+      "positive": 571,
+      "resolved": 796,
+      "total": 800,
+      "missing": 4,
+      "rate_percent": 71.73366834170855,
+      "coverage_percent": 99.5,
+      "all_response_bounds_percent": [
+        71.375,
+        71.875
+      ],
+      "ci95_percent": [
+        60.194075823132124,
+        79.89954699606406
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "change": {
+        "delta_pp": 17.916137229987296,
+        "paired_resolved": 787,
+        "paired_total": 800,
+        "paired_missing": 13,
+        "ci95_pp": [
+          5.144611874788187,
+          33.451836768617014
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          16.875,
+          18.625
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19
+      }
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "context": "neutral",
+      "condition": "baseline",
+      "original": true,
+      "alias_of": null,
+      "positive": 547,
+      "resolved": 787,
+      "total": 800,
+      "missing": 13,
+      "rate_percent": 69.50444726810674,
+      "coverage_percent": 98.375,
+      "all_response_bounds_percent": [
+        68.375,
+        70.0
+      ],
+      "ci95_percent": [
+        58.796277953865115,
+        78.77658854114632
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "change": {
+        "delta_pp": 0.0,
+        "paired_resolved": 787,
+        "paired_total": 800,
+        "paired_missing": 13,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": true,
+        "degenerate_interval": true,
+        "families": 19
+      }
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "context": "neutral",
+      "condition": "native_pooled_minus",
+      "original": true,
+      "alias_of": null,
+      "positive": 338,
+      "resolved": 790,
+      "total": 800,
+      "missing": 10,
+      "rate_percent": 42.78481012658228,
+      "coverage_percent": 98.75,
+      "all_response_bounds_percent": [
+        42.25,
+        43.5
+      ],
+      "ci95_percent": [
+        29.839704069050555,
+        54.19475717674087
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "change": {
+        "delta_pp": -26.512226512226512,
+        "paired_resolved": 777,
+        "paired_total": 800,
+        "paired_missing": 23,
+        "ci95_pp": [
+          -31.624046657694034,
+          -20.44373033655235
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          -27.750000000000004,
+          -24.875
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19
+      }
+    },
+    {
+      "key": "source_m5",
+      "model": "Llama-3.1-8B",
+      "context": "neutral",
+      "condition": "shadow_pooled_minus",
+      "original": true,
+      "alias_of": null,
+      "positive": 348,
+      "resolved": 786,
+      "total": 800,
+      "missing": 14,
+      "rate_percent": 44.274809160305345,
+      "coverage_percent": 98.25,
+      "all_response_bounds_percent": [
+        43.5,
+        45.25
+      ],
+      "ci95_percent": [
+        30.929410762942783,
+        56.004796719335204
+      ],
+      "bootstrap_undefined": 0,
+      "families": 19,
+      "degenerate_interval": false,
+      "uncertainty": "Family bootstrap conditional on observed judge labels; no judge-error or zero-risk claim",
+      "change": {
+        "delta_pp": -25.097024579560156,
+        "paired_resolved": 773,
+        "paired_total": 800,
+        "paired_missing": 27,
+        "ci95_pp": [
+          -30.756034497069905,
+          -18.14656493227922
+        ],
+        "multiplicity": 1,
+        "bonferroni_ci_pp": null,
+        "all_response_delta_bounds_pp": [
+          -26.5,
+          -23.125
+        ],
+        "bootstrap_undefined": 0,
+        "exact_baseline_alias": false,
+        "degenerate_interval": false,
+        "families": 19
+      }
+    }
+  ],
+  "no_tool_results_included": false,
+  "judge_error_in_intervals": false,
+  "completion_filter": "All declared conditions and tool-required scoring complete per model; no outcome-based filtering.",
+  "at_utc": "2026-10-11T14:50:36.736126+00:00",
+  "reselection": {
+    "selection": {
+      "sha256": "af268c10cc7db0459363d8f8f2352ddc45b04e60ca98abf686166e87ffa5f228"
+    },
+    "observations": {
+      "sha256": "441904ea8a5252a5c799d18b456e6b7c48113443c0f5fc77c1e4a3c6c45117d9"
+    },
+    "bfcl_files": [
+      {
+        "sha256": "3dd5f9c0fb123f0a7a53a89d3809589f022970e10bc19a3c686cfc80e313f255"
+      },
+      {
+        "sha256": "9af63e5626e3c799d015f57d4f07396ed459c17d650cb479e2fd6af285b25dcd"
+      },
+      {
+        "sha256": "7cd5f349c5d9abb8d3ae986e80844faaf5a02c2d7cc224be48a0566970811ce6"
+      }
+    ],
+    "script": {
+      "sha256": "befaafeedaa98c68c7f6e726c8a665f464731705f600e9751e6ac83a9053bfe8"
+    }
+  },
+  "previous_measurement_correction": {
+    "observations": {
+      "sha256": "4dc19e7abb490867eba2940e01bbcbf55cfda790e2079a042a2aaf94f10d27ec"
+    },
+    "original_report": {
+      "sha256": "3f0e86c697bd5dbffd3003676de4a3add642618147f63675456b933fa82bee5a"
+    },
+    "fixed_original_interventions": true,
+    "script": {
+      "sha256": "9a65931efb400b2ce1abd6bb9f55134daf5d9019059a54c4477ec7a227de70c3"
+    },
+    "bfcl_files": [
+      {
+        "sha256": "2a0e444c0bb18b9f8d471d01b4bcc45178a9cb49684549f943501c9053163242"
+      },
+      {
+        "sha256": "0de49e081655cd4c1babacb2cf9bdb03783d9275c67ad7e11d61eaac48aa2b5e"
+      },
+      {
+        "sha256": "a2d93b9851b6e6c0e8bdf41b6089d889f4d51faaf4b94b6a4ef90ddb53736192"
+      },
+      {
+        "sha256": "0545aa2cdc58ee6ee2aae55d3d06c47d6f7789315fc7bf83df3f232f4a8b9f14"
+      },
+      {
+        "sha256": "c2d7a4d9ab7802a224e73c4d0d8a54ca78f1af29021b282f2d4e7728a16893a3"
+      }
+    ],
+    "no_tool_included": false
+  },
+  "correction": {
+    "selection": {
+      "sha256": "af268c10cc7db0459363d8f8f2352ddc45b04e60ca98abf686166e87ffa5f228"
+    },
+    "observations": {
+      "sha256": "441904ea8a5252a5c799d18b456e6b7c48113443c0f5fc77c1e4a3c6c45117d9"
+    },
+    "bfcl_files": [
+      {
+        "sha256": "3dd5f9c0fb123f0a7a53a89d3809589f022970e10bc19a3c686cfc80e313f255"
+      },
+      {
+        "sha256": "9af63e5626e3c799d015f57d4f07396ed459c17d650cb479e2fd6af285b25dcd"
+      },
+      {
+        "sha256": "7cd5f349c5d9abb8d3ae986e80844faaf5a02c2d7cc224be48a0566970811ce6"
+      }
+    ],
+    "script": {
+      "sha256": "befaafeedaa98c68c7f6e726c8a665f464731705f600e9751e6ac83a9053bfe8"
+    },
+    "source_interventions_preserved": true,
+    "receiver_positive_doses_updated": false,
+    "no_tool_included": false
+  }
+}

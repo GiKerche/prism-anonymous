@@ -1,0 +1,3020 @@
+{
+  "cases": [
+    {
+      "bfcl_id": "simple_python_4",
+      "category": "simple_python",
+      "expected": [
+        {
+          "solve_quadratic_equation": {
+            "a": [
+              2
+            ],
+            "b": [
+              6
+            ],
+            "c": [
+              5
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_44",
+      "category": "simple_python",
+      "expected": [
+        {
+          "calculate_electric_field_strength": {
+            "charge": [
+              0.01
+            ],
+            "distance": [
+              4
+            ],
+            "medium": [
+              "",
+              "vacuum"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_50",
+      "category": "simple_python",
+      "expected": [
+        {
+          "entropy_change.calculate": {
+            "final_temperature": [
+              100
+            ],
+            "initial_temperature": [
+              0
+            ],
+            "mass": [
+              1
+            ],
+            "pressure": [
+              "",
+              1
+            ],
+            "substance": [
+              "ice"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_59",
+      "category": "simple_python",
+      "expected": [
+        {
+          "calculate_molecular_weight": {
+            "compound": [
+              "C6H12O6"
+            ],
+            "to_unit": [
+              "grams/mole",
+              "g/mol"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_67",
+      "category": "simple_python",
+      "expected": [
+        {
+          "identify_bird": {
+            "color": [
+              "green"
+            ],
+            "habitat": [
+              "forest"
+            ],
+            "size": [
+              "small"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_82",
+      "category": "simple_python",
+      "expected": [
+        {
+          "calculate_average": {
+            "numbers": [
+              [
+                12.0,
+                15.0,
+                18.0,
+                20.0,
+                21.0,
+                26.0,
+                30.0
+              ]
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_120",
+      "category": "simple_python",
+      "expected": [
+        {
+          "run_two_sample_ttest": {
+            "equal_variance": [
+              true
+            ],
+            "group1": [
+              [
+                3,
+                4,
+                5,
+                6,
+                4
+              ]
+            ],
+            "group2": [
+              [
+                7,
+                8,
+                9,
+                8,
+                7
+              ]
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_128",
+      "category": "simple_python",
+      "expected": [
+        {
+          "finance.calculate_quarterly_dividend_per_share": {
+            "outstanding_shares": [
+              100000000
+            ],
+            "total_payout": [
+              50000000
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_129",
+      "category": "simple_python",
+      "expected": [
+        {
+          "calculate_discounted_cash_flow": {
+            "coupon_payment": [
+              100
+            ],
+            "discount_rate": [
+              0.04
+            ],
+            "face_value": [
+              "",
+              1000
+            ],
+            "period": [
+              5
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_146",
+      "category": "simple_python",
+      "expected": [
+        {
+          "stock_price": {
+            "company": [
+              "Amazon",
+              "AMZN"
+            ],
+            "data_type": [
+              "Close",
+              ""
+            ],
+            "days": [
+              3
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_194",
+      "category": "simple_python",
+      "expected": [
+        {
+          "get_plants_for_slope": {
+            "num_results": [
+              3
+            ],
+            "slope_type": [
+              "hill",
+              "steep",
+              "moderate"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_205",
+      "category": "simple_python",
+      "expected": [
+        {
+          "get_traffic_info": {
+            "end_location": [
+              "New York",
+              "NYC"
+            ],
+            "mode": [
+              "driving",
+              ""
+            ],
+            "start_location": [
+              "Boston"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_227",
+      "category": "simple_python",
+      "expected": [
+        {
+          "get_personality_traits": {
+            "traits": [
+              [
+                "strengths",
+                "weaknesses"
+              ]
+            ],
+            "type": [
+              "ENFJ"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_228",
+      "category": "simple_python",
+      "expected": [
+        {
+          "get_personality_traits": {
+            "hobby": [
+              "jogging"
+            ],
+            "trait_count": [
+              3
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_250",
+      "category": "simple_python",
+      "expected": [
+        {
+          "get_time_difference": {
+            "place1": [
+              "San Francisco",
+              "SF"
+            ],
+            "place2": [
+              "Sydney"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_251",
+      "category": "simple_python",
+      "expected": [
+        {
+          "get_earliest_reference": {
+            "name": [
+              "Jesus Christ"
+            ],
+            "source": [
+              "historical records"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_281",
+      "category": "simple_python",
+      "expected": [
+        {
+          "get_instrument_info": {
+            "maker": [
+              "Stradivarius"
+            ],
+            "name": [
+              "Violin"
+            ],
+            "year": [
+              1721
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_295",
+      "category": "simple_python",
+      "expected": [
+        {
+          "get_song_lyrics": {
+            "artist_name": [
+              "Queen"
+            ],
+            "lang": [
+              "English",
+              ""
+            ],
+            "song_title": [
+              "Bohemian Rhapsody"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_303",
+      "category": "simple_python",
+      "expected": [
+        {
+          "soccer_stat.get_player_stats": {
+            "league": [
+              ""
+            ],
+            "player_name": [
+              "Cristiano Ronaldo"
+            ],
+            "season": [
+              "2019-2020"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_304",
+      "category": "simple_python",
+      "expected": [
+        {
+          "player_stats.getLastGame": {
+            "metrics": [
+              [
+                "Points",
+                "Rebounds"
+              ]
+            ],
+            "player_name": [
+              "LeBron James"
+            ],
+            "team": [
+              "Los Angeles Lakers",
+              "LAL",
+              "Lakers"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_327",
+      "category": "simple_python",
+      "expected": [
+        {
+          "sports_team.get_schedule": {
+            "league": [
+              "Premier League"
+            ],
+            "location": [
+              ""
+            ],
+            "num_of_games": [
+              6
+            ],
+            "team_name": [
+              "Manchester United",
+              "Man United",
+              "Man U",
+              "MUFC"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_352",
+      "category": "simple_python",
+      "expected": [
+        {
+          "gamespot.getAverageUserScore": {
+            "game_name": [
+              "The Legend of Zelda: Breath of the Wild"
+            ],
+            "platform": [
+              "Nintendo Switch",
+              "all platforms"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_365",
+      "category": "simple_python",
+      "expected": [
+        {
+          "cooking_conversion.convert": {
+            "from_unit": [
+              "pound",
+              "pounds",
+              "lb",
+              "lbs"
+            ],
+            "item": [
+              "butter"
+            ],
+            "quantity": [
+              2
+            ],
+            "to_unit": [
+              "ounce",
+              "ounces",
+              "oz"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_366",
+      "category": "simple_python",
+      "expected": [
+        {
+          "recipe.unit_conversion": {
+            "from_unit": [
+              "tablespoon",
+              "tbsp"
+            ],
+            "precision": [
+              1,
+              ""
+            ],
+            "to_unit": [
+              "teaspoon",
+              "tsp"
+            ],
+            "value": [
+              2
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_373",
+      "category": "simple_python",
+      "expected": [
+        {
+          "walmart.purchase": {
+            "loc": [
+              "San Jose",
+              "San Jose, CA"
+            ],
+            "pack_size": [
+              [
+                1,
+                1,
+                12
+              ]
+            ],
+            "product_list": [
+              [
+                "apples",
+                "rice",
+                "bottled water"
+              ],
+              [
+                "apples",
+                "rice",
+                "water"
+              ]
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "simple_python_383",
+      "category": "simple_python",
+      "expected": [
+        {
+          "book_room": {
+            "hotel_name": [
+              "The Plaza"
+            ],
+            "num_nights": [
+              2
+            ],
+            "room_type": [
+              "Single",
+              "single"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "multiple_11",
+      "category": "multiple",
+      "expected": [
+        {
+          "math_roots.quadratic": {
+            "a": [
+              5
+            ],
+            "b": [
+              20
+            ],
+            "c": [
+              -25
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "multiple_15",
+      "category": "multiple",
+      "expected": [
+        {
+          "solarFarm.potential": {
+            "coordinates": [
+              [
+                43.653225,
+                -79.383186
+              ]
+            ],
+            "month": [
+              "December",
+              "Dec"
+            ],
+            "panelArea": [
+              80000
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "multiple_18",
+      "category": "multiple",
+      "expected": [
+        {
+          "european_history.battle_details": {
+            "battle": [
+              "Battle of Stalingrad",
+              "Stalingrad"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "multiple_27",
+      "category": "multiple",
+      "expected": [
+        {
+          "maps.shortest_path": {
+            "end_location": [
+              "Rome, Italy",
+              "Rome"
+            ],
+            "mode": [
+              "transit"
+            ],
+            "start_location": [
+              "Paris, France",
+              "Paris"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "multiple_37",
+      "category": "multiple",
+      "expected": [
+        {
+          "kinematics.final_velocity": {
+            "acceleration": [
+              -9.81,
+              ""
+            ],
+            "initial_velocity": [
+              40
+            ],
+            "time": [
+              6
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "multiple_63",
+      "category": "multiple",
+      "expected": [
+        {
+          "air_quality_forecast": {
+            "days": [
+              7
+            ],
+            "location": [
+              "New York",
+              "New York, NY",
+              "New York City",
+              "NYC"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "multiple_72",
+      "category": "multiple",
+      "expected": [
+        {
+          "us_history.population_by_state_year": {
+            "state": [
+              "California",
+              "CA"
+            ],
+            "year": [
+              1970
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "multiple_82",
+      "category": "multiple",
+      "expected": [
+        {
+          "music.generate": {
+            "key": [
+              "C Major"
+            ],
+            "tempo": [
+              120
+            ],
+            "time_signature": [
+              "",
+              "4/4"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "multiple_83",
+      "category": "multiple",
+      "expected": [
+        {
+          "player_stats.get_all_time_goals": {
+            "competition": [
+              ""
+            ],
+            "player_name": [
+              "Lionel Messi"
+            ],
+            "team_name": [
+              "Barcelona"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "multiple_90",
+      "category": "multiple",
+      "expected": [
+        {
+          "restaurant.find_group": {
+            "cuisine": [
+              [
+                "Seafood"
+              ]
+            ],
+            "group_size": [
+              5
+            ],
+            "location": [
+              "Seattle",
+              "Seattle, WA"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "multiple_91",
+      "category": "multiple",
+      "expected": [
+        {
+          "recipe.find": {
+            "ingredientLimit": [
+              4
+            ],
+            "mainIngredient": [
+              "apple pie",
+              "apple"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "multiple_93",
+      "category": "multiple",
+      "expected": [
+        {
+          "hotel.book": {
+            "additional_services": [
+              [
+                "breakfast"
+              ]
+            ],
+            "location": [
+              "New York",
+              "New York, NY",
+              "NYC"
+            ],
+            "nights": [
+              2
+            ],
+            "roomType": [
+              "deluxe",
+              "Deluxe"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "multiple_100",
+      "category": "multiple",
+      "expected": [
+        {
+          "math.hcf": {
+            "number1": [
+              36
+            ],
+            "number2": [
+              24
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "multiple_121",
+      "category": "multiple",
+      "expected": [
+        {
+          "geometry.area_triangle": {
+            "base": [
+              6
+            ],
+            "height": [
+              10
+            ],
+            "unit": [
+              "",
+              "square meters"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "multiple_129",
+      "category": "multiple",
+      "expected": [
+        {
+          "compound_interest": {
+            "annual_rate": [
+              5.0
+            ],
+            "compounding_freq": [
+              "monthly"
+            ],
+            "principal": [
+              10000
+            ],
+            "time_in_years": [
+              5
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "multiple_140",
+      "category": "multiple",
+      "expected": [
+        {
+          "lawsuits_search": {
+            "case_type": [
+              "",
+              "all"
+            ],
+            "company_name": [
+              "Google"
+            ],
+            "location": [
+              "California",
+              "CA"
+            ],
+            "year": [
+              2020
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "multiple_142",
+      "category": "multiple",
+      "expected": [
+        {
+          "weather.humidity_forecast": {
+            "days": [
+              7
+            ],
+            "location": [
+              "Miami",
+              "Miami, Florida",
+              "FL"
+            ],
+            "min_humidity": [
+              "",
+              0
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "multiple_164",
+      "category": "multiple",
+      "expected": [
+        {
+          "instrument_price.get": {
+            "brand": [
+              "Fender"
+            ],
+            "finish": [
+              "Rosewood"
+            ],
+            "model": [
+              "American Professional II Stratocaster"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "multiple_196",
+      "category": "multiple",
+      "expected": [
+        {
+          "cellbio.get_proteins": {
+            "cell_compartment": [
+              "plasma membrane"
+            ],
+            "include_description": [
+              "",
+              false
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "multiple_199",
+      "category": "multiple",
+      "expected": [
+        {
+          "forest_growth_forecast": {
+            "include_human_impact": [
+              true
+            ],
+            "location": [
+              "Yellowstone",
+              "yellowstone"
+            ],
+            "years": [
+              5
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_5",
+      "category": "parallel",
+      "expected": [
+        {
+          "streaming_services.shows_list_and_ratings": {
+            "show_list": [
+              [
+                "Friends"
+              ]
+            ],
+            "sort_by_rating": [
+              true
+            ],
+            "streaming_service": [
+              "Netflix"
+            ]
+          }
+        },
+        {
+          "streaming_services.shows_list_and_ratings": {
+            "show_list": [
+              [
+                "The Office",
+                "Stranger Things"
+              ],
+              [
+                "Stranger Things",
+                "The Office"
+              ]
+            ],
+            "sort_by_rating": [
+              true
+            ],
+            "streaming_service": [
+              "Hulu"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_10",
+      "category": "parallel",
+      "expected": [
+        {
+          "math.pythagoras": {
+            "a": [
+              3
+            ],
+            "b": [
+              4
+            ]
+          }
+        },
+        {
+          "math.pythagoras": {
+            "a": [
+              5
+            ],
+            "b": [
+              12
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_12",
+      "category": "parallel",
+      "expected": [
+        {
+          "model.DecisionTreeClassifier": {
+            "criterion": [
+              "gini"
+            ],
+            "max_depth": [
+              5
+            ],
+            "random_state": [
+              1
+            ]
+          }
+        },
+        {
+          "model.DecisionTreeClassifier": {
+            "criterion": [
+              "entropy"
+            ],
+            "max_depth": [
+              10
+            ],
+            "random_state": [
+              1
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_13",
+      "category": "parallel",
+      "expected": [
+        {
+          "confidence_interval.calculate": {
+            "confidence_level": [
+              0.95
+            ],
+            "sample_mean": [
+              25
+            ],
+            "sample_size": [
+              50
+            ],
+            "sample_std_dev": [
+              10
+            ]
+          }
+        },
+        {
+          "confidence_interval.calculate": {
+            "confidence_level": [
+              0.95
+            ],
+            "sample_mean": [
+              25
+            ],
+            "sample_size": [
+              150
+            ],
+            "sample_std_dev": [
+              10
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_17",
+      "category": "parallel",
+      "expected": [
+        {
+          "get_stock_data": {
+            "data_points": [
+              [
+                "price",
+                "volume"
+              ],
+              [
+                "volume",
+                "price"
+              ]
+            ],
+            "symbol": [
+              "AAPL"
+            ]
+          }
+        },
+        {
+          "get_stock_data": {
+            "data_points": [
+              [
+                "price",
+                "volume"
+              ],
+              [
+                "volume",
+                "price"
+              ]
+            ],
+            "symbol": [
+              "GOOG",
+              "GOOGL"
+            ]
+          }
+        },
+        {
+          "get_stock_data": {
+            "data_points": [
+              [
+                "price",
+                "volume"
+              ],
+              [
+                "volume",
+                "price"
+              ]
+            ],
+            "symbol": [
+              "MSFT"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_23",
+      "category": "parallel",
+      "expected": [
+        {
+          "alimony_calculator.ca.calculate": {
+            "duration": [
+              10
+            ],
+            "payor_income": [
+              10000
+            ],
+            "recipient_income": [
+              3000
+            ]
+          }
+        },
+        {
+          "alimony_calculator.ca.calculate": {
+            "duration": [
+              20
+            ],
+            "payor_income": [
+              10000
+            ],
+            "recipient_income": [
+              3000
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_26",
+      "category": "parallel",
+      "expected": [
+        {
+          "court_case.find": {
+            "case_number": [
+              [
+                "67813"
+              ]
+            ],
+            "case_type": [
+              "Civil",
+              ""
+            ],
+            "location": [
+              "New York District",
+              "NY District",
+              "New York",
+              "New York, NY",
+              "NY"
+            ]
+          }
+        },
+        {
+          "court_case.find": {
+            "case_number": [
+              [
+                "71249"
+              ]
+            ],
+            "case_type": [
+              "Criminal"
+            ],
+            "location": [
+              "New York District",
+              "NY District",
+              "New York",
+              "New York, NY",
+              "NY"
+            ]
+          }
+        },
+        {
+          "court_case.find": {
+            "case_number": [
+              [
+                "67813"
+              ]
+            ],
+            "case_type": [
+              "Criminal"
+            ],
+            "location": [
+              "New York District",
+              "NY District",
+              "New York",
+              "New York, NY",
+              "NY"
+            ]
+          }
+        },
+        {
+          "court_case.find": {
+            "case_number": [
+              [
+                "71249"
+              ]
+            ],
+            "case_type": [
+              "Civil",
+              ""
+            ],
+            "location": [
+              "New York District",
+              "NY District",
+              "New York",
+              "New York, NY",
+              "NY"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_37",
+      "category": "parallel",
+      "expected": [
+        {
+          "color_converter.get_color_info": {
+            "color_name": [
+              "navy"
+            ],
+            "conversion_type": [
+              [
+                "RGB",
+                "HEX"
+              ],
+              [
+                "HEX",
+                "RGB"
+              ]
+            ]
+          }
+        },
+        {
+          "color_converter.get_color_info": {
+            "color_name": [
+              "purple"
+            ],
+            "conversion_type": [
+              [
+                "RGB",
+                "HEX"
+              ],
+              [
+                "HEX",
+                "RGB"
+              ]
+            ]
+          }
+        },
+        {
+          "color_converter.get_color_info": {
+            "color_name": [
+              "maroon"
+            ],
+            "conversion_type": [
+              [
+                "RGB",
+                "HEX"
+              ],
+              [
+                "HEX",
+                "RGB"
+              ]
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_41",
+      "category": "parallel",
+      "expected": [
+        {
+          "find_music_instrument_store": {
+            "instruments": [
+              [
+                "Yamaha Acoustic Guitar",
+                "Kawai Piano"
+              ],
+              [
+                "Kawai Piano",
+                "Yamaha Acoustic Guitar"
+              ],
+              [
+                "Yamaha acoustic guitar",
+                "Kawai piano"
+              ],
+              [
+                "Kawai piano",
+                "Yamaha acoustic guitar"
+              ]
+            ],
+            "location": [
+              "San Francisco, CA",
+              "San Francisco, CA",
+              "San Francisco, California"
+            ]
+          }
+        },
+        {
+          "find_music_instrument_store": {
+            "instruments": [
+              [
+                "Yamaha Acoustic Guitar",
+                "Kawai Piano"
+              ],
+              [
+                "Kawai Piano",
+                "Yamaha Acoustic Guitar"
+              ],
+              [
+                "Yamaha acoustic guitar",
+                "Kawai piano"
+              ],
+              [
+                "Kawai piano",
+                "Yamaha acoustic guitar"
+              ]
+            ],
+            "location": [
+              "Chicago, IL",
+              "Chicago, Illinois",
+              "Chicago, IL."
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_43",
+      "category": "parallel",
+      "expected": [
+        {
+          "concert_finder": {
+            "location": [
+              "San Francisco, California",
+              "San Francisco, CA",
+              "SF, California",
+              "SF, CA"
+            ],
+            "music_genre": [
+              "rock"
+            ],
+            "time_period": [
+              30,
+              ""
+            ]
+          }
+        },
+        {
+          "concert_finder": {
+            "location": [
+              "San Francisco, California",
+              "San Francisco, CA",
+              "SF, California",
+              "SF, CA"
+            ],
+            "music_genre": [
+              "jazz"
+            ],
+            "time_period": [
+              30,
+              ""
+            ]
+          }
+        },
+        {
+          "concert_finder": {
+            "location": [
+              "New York, New York",
+              "New York, NY",
+              "NYC",
+              "NY, NY"
+            ],
+            "music_genre": [
+              "rock"
+            ],
+            "time_period": [
+              30,
+              ""
+            ]
+          }
+        },
+        {
+          "concert_finder": {
+            "location": [
+              "New York, New York",
+              "New York, NY",
+              "NYC",
+              "NY, NY"
+            ],
+            "music_genre": [
+              "jazz"
+            ],
+            "time_period": [
+              30,
+              ""
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_63",
+      "category": "parallel",
+      "expected": [
+        {
+          "solve_quadratic_equation": {
+            "a": [
+              5
+            ],
+            "b": [
+              6
+            ],
+            "c": [
+              1
+            ]
+          }
+        },
+        {
+          "solve_quadratic_equation": {
+            "a": [
+              3
+            ],
+            "b": [
+              2
+            ],
+            "c": [
+              1
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_98",
+      "category": "parallel",
+      "expected": [
+        {
+          "calculate_electric_field_strength": {
+            "charge": [
+              2
+            ],
+            "distance": [
+              0.5
+            ],
+            "medium": [
+              "vacuum",
+              ""
+            ]
+          }
+        },
+        {
+          "calculate_electric_field_strength": {
+            "charge": [
+              2
+            ],
+            "distance": [
+              1.0
+            ],
+            "medium": [
+              "vacuum",
+              ""
+            ]
+          }
+        },
+        {
+          "calculate_electric_field_strength": {
+            "charge": [
+              2
+            ],
+            "distance": [
+              2.0
+            ],
+            "medium": [
+              "vacuum",
+              ""
+            ]
+          }
+        },
+        {
+          "calculate_electric_field_strength": {
+            "charge": [
+              2
+            ],
+            "distance": [
+              1.0
+            ],
+            "medium": [
+              "air"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_103",
+      "category": "parallel",
+      "expected": [
+        {
+          "entropy_change.calculate": {
+            "final_temperature": [
+              75
+            ],
+            "initial_temperature": [
+              25
+            ],
+            "mass": [
+              2
+            ],
+            "pressure": [
+              1,
+              ""
+            ],
+            "substance": [
+              "A"
+            ]
+          }
+        },
+        {
+          "entropy_change.calculate": {
+            "final_temperature": [
+              50
+            ],
+            "initial_temperature": [
+              10
+            ],
+            "mass": [
+              2
+            ],
+            "pressure": [
+              1,
+              ""
+            ],
+            "substance": [
+              "A"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_111",
+      "category": "parallel",
+      "expected": [
+        {
+          "calculate_molecular_weight": {
+            "compound": [
+              "C6H12O6"
+            ],
+            "to_unit": [
+              "grams/mole",
+              "g/mol"
+            ]
+          }
+        },
+        {
+          "calculate_molecular_weight": {
+            "compound": [
+              "C12H22O11"
+            ],
+            "to_unit": [
+              "grams/mole",
+              "g/mol"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_119",
+      "category": "parallel",
+      "expected": [
+        {
+          "identify_bird": {
+            "color": [
+              "blue"
+            ],
+            "habitat": [
+              "forest"
+            ],
+            "size": [
+              "small",
+              ""
+            ]
+          }
+        },
+        {
+          "identify_bird": {
+            "color": [
+              "black"
+            ],
+            "habitat": [
+              "lake"
+            ],
+            "size": [
+              "large"
+            ]
+          }
+        },
+        {
+          "identify_bird": {
+            "color": [
+              "brown"
+            ],
+            "habitat": [
+              "desert"
+            ],
+            "size": [
+              "medium"
+            ]
+          }
+        },
+        {
+          "identify_bird": {
+            "color": [
+              "green"
+            ],
+            "habitat": [
+              "tropical rainforest"
+            ],
+            "size": [
+              "large"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_132",
+      "category": "parallel",
+      "expected": [
+        {
+          "calculate_average": {
+            "numbers": [
+              [
+                23,
+                45,
+                67,
+                89
+              ]
+            ]
+          }
+        },
+        {
+          "calculate_average": {
+            "numbers": [
+              [
+                12,
+                34,
+                56,
+                78
+              ]
+            ]
+          }
+        },
+        {
+          "calculate_average": {
+            "numbers": [
+              [
+                98,
+                76,
+                54,
+                32
+              ]
+            ]
+          }
+        },
+        {
+          "calculate_average": {
+            "numbers": [
+              [
+                87,
+                65,
+                43,
+                21
+              ]
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_168",
+      "category": "parallel",
+      "expected": [
+        {
+          "finance.calculate_quarterly_dividend_per_share": {
+            "outstanding_shares": [
+              2000000
+            ],
+            "total_payout": [
+              5000000
+            ]
+          }
+        },
+        {
+          "finance.calculate_quarterly_dividend_per_share": {
+            "outstanding_shares": [
+              2500000
+            ],
+            "total_payout": [
+              6000000
+            ]
+          }
+        },
+        {
+          "finance.calculate_quarterly_dividend_per_share": {
+            "outstanding_shares": [
+              2000000
+            ],
+            "total_payout": [
+              6000000
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_169",
+      "category": "parallel",
+      "expected": [
+        {
+          "calculate_discounted_cash_flow": {
+            "coupon_payment": [
+              50
+            ],
+            "discount_rate": [
+              0.05
+            ],
+            "face_value": [
+              1000,
+              ""
+            ],
+            "period": [
+              5
+            ]
+          }
+        },
+        {
+          "calculate_discounted_cash_flow": {
+            "coupon_payment": [
+              60
+            ],
+            "discount_rate": [
+              0.04
+            ],
+            "face_value": [
+              1000,
+              ""
+            ],
+            "period": [
+              7
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_180",
+      "category": "parallel",
+      "expected": [
+        {
+          "stock_price": {
+            "company": [
+              "Microsoft"
+            ],
+            "data_type": [
+              "Open",
+              ""
+            ],
+            "days": [
+              30
+            ]
+          }
+        },
+        {
+          "stock_price": {
+            "company": [
+              "Microsoft"
+            ],
+            "data_type": [
+              "Close",
+              ""
+            ],
+            "days": [
+              30
+            ]
+          }
+        },
+        {
+          "stock_price": {
+            "company": [
+              "Microsoft"
+            ],
+            "data_type": [
+              "High",
+              ""
+            ],
+            "days": [
+              30
+            ]
+          }
+        },
+        {
+          "stock_price": {
+            "company": [
+              "Microsoft"
+            ],
+            "data_type": [
+              "Low",
+              ""
+            ],
+            "days": [
+              30
+            ]
+          }
+        },
+        {
+          "stock_price": {
+            "company": [
+              "Apple"
+            ],
+            "data_type": [
+              "Open",
+              ""
+            ],
+            "days": [
+              30
+            ]
+          }
+        },
+        {
+          "stock_price": {
+            "company": [
+              "Apple"
+            ],
+            "data_type": [
+              "Close",
+              ""
+            ],
+            "days": [
+              30
+            ]
+          }
+        },
+        {
+          "stock_price": {
+            "company": [
+              "Apple"
+            ],
+            "data_type": [
+              "High",
+              ""
+            ],
+            "days": [
+              30
+            ]
+          }
+        },
+        {
+          "stock_price": {
+            "company": [
+              "Apple"
+            ],
+            "data_type": [
+              "Low",
+              ""
+            ],
+            "days": [
+              30
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_188",
+      "category": "parallel",
+      "expected": [
+        {
+          "get_traffic_info": {
+            "end_location": [
+              "Los Angeles",
+              "Los Angeles, CA",
+              "LA"
+            ],
+            "mode": [
+              "driving",
+              ""
+            ],
+            "start_location": [
+              "New York",
+              "New York, NY",
+              "NYC"
+            ]
+          }
+        },
+        {
+          "get_traffic_info": {
+            "end_location": [
+              "San Francisco",
+              "SF"
+            ],
+            "mode": [
+              "bicycling"
+            ],
+            "start_location": [
+              "Los Angeles",
+              "Los Angeles, CA",
+              "LA"
+            ]
+          }
+        },
+        {
+          "get_traffic_info": {
+            "end_location": [
+              "New York",
+              "New York, NY",
+              "NYC"
+            ],
+            "mode": [
+              "transit"
+            ],
+            "start_location": [
+              "San Francisco",
+              "SF"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_multiple_12",
+      "category": "parallel_multiple",
+      "expected": [
+        {
+          "calculate_magnetic_field": {
+            "current": [
+              4.0
+            ],
+            "distance": [
+              2.0
+            ]
+          }
+        },
+        {
+          "calculate_voltage_difference": {
+            "charge": [
+              0.0,
+              ""
+            ],
+            "distance": [
+              3.0
+            ],
+            "electric_field": [
+              5.0
+            ],
+            "permeability": [
+              "",
+              0.1
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_multiple_22",
+      "category": "parallel_multiple",
+      "expected": [
+        {
+          "financial_ratios.interest_coverage": {
+            "company_name": [
+              "XYZ"
+            ],
+            "years": [
+              3
+            ]
+          }
+        },
+        {
+          "sales_growth.calculate": {
+            "company": [
+              "XYZ"
+            ],
+            "years": [
+              3
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_multiple_26",
+      "category": "parallel_multiple",
+      "expected": [
+        {
+          "bank.get_transaction_history": {
+            "account": [
+              "00125648"
+            ],
+            "days": [
+              7
+            ]
+          }
+        },
+        {
+          "bank.calculate_balance": {
+            "account": [
+              "00125648"
+            ],
+            "starting_balance": [
+              "",
+              0.0
+            ],
+            "transactions": [
+              [],
+              ""
+            ],
+            "type": [
+              "credit",
+              ""
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_multiple_47",
+      "category": "parallel_multiple",
+      "expected": [
+        {
+          "lowest_price": {
+            "city": [
+              "Austin"
+            ],
+            "product": [
+              "Yamaha Acoustic Guitar"
+            ]
+          }
+        },
+        {
+          "average_price": {
+            "city": [
+              "New York"
+            ],
+            "product": [
+              "Yamaha Acoustic Guitar"
+            ]
+          }
+        },
+        {
+          "store_count": {
+            "city": [
+              "Austin"
+            ],
+            "product": [
+              "Yamaha Acoustic Guitar"
+            ]
+          }
+        },
+        {
+          "store_count": {
+            "city": [
+              "New York"
+            ],
+            "product": [
+              "Yamaha Acoustic Guitar"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_multiple_67",
+      "category": "parallel_multiple",
+      "expected": [
+        {
+          "math_roots.quadratic": {
+            "a": [
+              3.0
+            ],
+            "b": [
+              4.0
+            ],
+            "c": [
+              -7.0
+            ]
+          }
+        },
+        {
+          "math.roots.cubic": {
+            "a": [
+              2.0
+            ],
+            "b": [
+              -5.0
+            ],
+            "c": [
+              3.0
+            ],
+            "d": [
+              -1.0
+            ]
+          }
+        },
+        {
+          "math.roots.polynomial": {
+            "coefficients": [
+              [
+                6.0,
+                -3.0,
+                2.0,
+                -1.0,
+                1.0
+              ]
+            ],
+            "degree": [
+              4.0,
+              ""
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_multiple_70",
+      "category": "parallel_multiple",
+      "expected": [
+        {
+          "solarFarm.potential": {
+            "coordinates": [
+              [
+                37.7749,
+                -122.4194
+              ]
+            ],
+            "month": [
+              "July"
+            ],
+            "panelArea": [
+              50000.0
+            ]
+          }
+        },
+        {
+          "windFarm.potential": {
+            "coordinates": [
+              [
+                40.7128,
+                -74.006
+              ]
+            ],
+            "month": [
+              "July"
+            ],
+            "turbineCount": [
+              100.0
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_multiple_78",
+      "category": "parallel_multiple",
+      "expected": [
+        {
+          "maps.shortest_path": {
+            "end_location": [
+              "Metropolitan Museum of Art"
+            ],
+            "mode": [
+              "walk",
+              ""
+            ],
+            "start_location": [
+              "New York City"
+            ]
+          }
+        },
+        {
+          "maps.shortest_path": {
+            "end_location": [
+              "Central Park"
+            ],
+            "mode": [
+              "bike"
+            ],
+            "start_location": [
+              "Metropolitan Museum of Art"
+            ]
+          }
+        },
+        {
+          "maps.route_times": {
+            "mode": [
+              "walk",
+              ""
+            ],
+            "route": [
+              "New York City to Metropolitan Museum of Art"
+            ]
+          }
+        },
+        {
+          "maps.route_times": {
+            "mode": [
+              "bike"
+            ],
+            "route": [
+              "Metropolitan Museum of Art to Central Park"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_multiple_87",
+      "category": "parallel_multiple",
+      "expected": [
+        {
+          "kinematics.final_velocity": {
+            "acceleration": [
+              3.0
+            ],
+            "initial_velocity": [
+              0.0
+            ],
+            "time": [
+              5.0
+            ]
+          }
+        },
+        {
+          "physics.wave_velocity": {
+            "frequency": [
+              50.0
+            ],
+            "wavelength": [
+              3.0
+            ]
+          }
+        },
+        {
+          "kinematics.distance": {
+            "acceleration": [
+              3.0
+            ],
+            "initial_velocity": [
+              0.0,
+              ""
+            ],
+            "time": [
+              12.0
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_multiple_104",
+      "category": "parallel_multiple",
+      "expected": [
+        {
+          "air_quality_forecast": {
+            "days": [
+              5
+            ],
+            "location": [
+              "New York",
+              "NY"
+            ]
+          }
+        },
+        {
+          "weather_forecast": {
+            "days": [
+              7
+            ],
+            "location": [
+              "Los Angeles",
+              "LA"
+            ]
+          }
+        },
+        {
+          "news": {
+            "days": [
+              3
+            ],
+            "topic": [
+              "global warming"
+            ]
+          }
+        },
+        {
+          "air_quality_forecast": {
+            "days": [
+              2
+            ],
+            "location": [
+              "Beijing"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_multiple_110",
+      "category": "parallel_multiple",
+      "expected": [
+        {
+          "us_history.population_by_state_year": {
+            "state": [
+              "California",
+              "CA"
+            ],
+            "year": [
+              1980
+            ]
+          }
+        },
+        {
+          "us_history.population_by_state_year": {
+            "state": [
+              "California",
+              "CA"
+            ],
+            "year": [
+              1990
+            ]
+          }
+        },
+        {
+          "us_economy.gdp_by_state_year": {
+            "adjustment": [
+              "Real"
+            ],
+            "state": [
+              "California",
+              "CA"
+            ],
+            "year": [
+              1980
+            ]
+          }
+        },
+        {
+          "us_economy.gdp_by_state_year": {
+            "adjustment": [
+              "Real"
+            ],
+            "state": [
+              "California",
+              "CA"
+            ],
+            "year": [
+              1990
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_multiple_118",
+      "category": "parallel_multiple",
+      "expected": [
+        {
+          "music.generate": {
+            "key": [
+              "D Minor",
+              "Dm"
+            ],
+            "tempo": [
+              120
+            ],
+            "time_signature": [
+              "4/4",
+              ""
+            ]
+          }
+        },
+        {
+          "audio.generate": {
+            "amplitude": [
+              0.5
+            ],
+            "duration": [
+              ""
+            ],
+            "frequency": [
+              440
+            ]
+          }
+        },
+        {
+          "music.generate": {
+            "key": [
+              "E Major",
+              "EM"
+            ],
+            "tempo": [
+              90
+            ],
+            "time_signature": [
+              "3/4"
+            ]
+          }
+        },
+        {
+          "audio.generate": {
+            "amplitude": [
+              0.7
+            ],
+            "duration": [
+              5.0
+            ],
+            "frequency": [
+              300
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_multiple_119",
+      "category": "parallel_multiple",
+      "expected": [
+        {
+          "player_stats.get_all_time_goals": {
+            "competition": [
+              "Premier League",
+              "PL",
+              ""
+            ],
+            "player_name": [
+              "Cristiano Ronaldo"
+            ],
+            "team_name": [
+              "Manchester United"
+            ]
+          }
+        },
+        {
+          "team_stats.get_top_scorer": {
+            "competition": [
+              "Premier League",
+              "PL",
+              ""
+            ],
+            "team_name": [
+              "Manchester United"
+            ]
+          }
+        },
+        {
+          "league_stats.get_top_scorer": {
+            "league_name": [
+              "Premier League",
+              "PL",
+              ""
+            ],
+            "season": [
+              "2019-2020",
+              "19-20",
+              "2019/2020",
+              "2019",
+              "2020",
+              ""
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_multiple_125",
+      "category": "parallel_multiple",
+      "expected": [
+        {
+          "restaurant.find_group": {
+            "cuisine": [
+              [
+                "Seafood",
+                "Italian"
+              ]
+            ],
+            "group_size": [
+              10
+            ],
+            "location": [
+              "Seattle, WA",
+              "WA",
+              "Seattle"
+            ]
+          }
+        },
+        {
+          "events.find_event": {
+            "event_type": [
+              [
+                "Concert",
+                "Sports"
+              ]
+            ],
+            "group_size": [
+              10
+            ],
+            "location": [
+              "Seattle, WA",
+              "WA",
+              "Seattle"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_multiple_126",
+      "category": "parallel_multiple",
+      "expected": [
+        {
+          "recipe.find": {
+            "ingredientLimit": [
+              5
+            ],
+            "mainIngredient": [
+              "chicken"
+            ]
+          }
+        },
+        {
+          "restaurant.find": {
+            "cuisine": [
+              "Italian"
+            ],
+            "price": [
+              [
+                "mid"
+              ],
+              ""
+            ]
+          }
+        },
+        {
+          "recipe.find": {
+            "ingredientLimit": [
+              7
+            ],
+            "mainIngredient": [
+              "beef"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_multiple_127",
+      "category": "parallel_multiple",
+      "expected": [
+        {
+          "hotel.book": {
+            "additional_services": [
+              [
+                "breakfast",
+                "spa"
+              ],
+              [
+                "spa",
+                "breakfast"
+              ]
+            ],
+            "location": [
+              "Paris"
+            ],
+            "nights": [
+              5
+            ],
+            "roomType": [
+              "deluxe"
+            ]
+          }
+        },
+        {
+          "car.rental": {
+            "car_type": [
+              "SUV"
+            ],
+            "days": [
+              7
+            ],
+            "location": [
+              "Paris"
+            ],
+            "pick_up": [
+              "airport",
+              ""
+            ]
+          }
+        },
+        {
+          "hotel.book": {
+            "additional_services": [
+              [
+                "airport transfer service"
+              ],
+              [
+                "airport transfer"
+              ]
+            ],
+            "location": [
+              "Rome"
+            ],
+            "nights": [
+              3
+            ],
+            "roomType": [
+              "suite"
+            ]
+          }
+        },
+        {
+          "car.rental": {
+            "car_type": [
+              "compact"
+            ],
+            "days": [
+              5
+            ],
+            "location": [
+              "Rome"
+            ],
+            "pick_up": [
+              "hotel"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_multiple_133",
+      "category": "parallel_multiple",
+      "expected": [
+        {
+          "music_generator.generate_scale_progression": {
+            "duration": [
+              2
+            ],
+            "key": [
+              "D"
+            ],
+            "scale_type": [
+              "minor",
+              "Minor"
+            ],
+            "tempo": [
+              120
+            ]
+          }
+        },
+        {
+          "math.hcf": {
+            "number1": [
+              456
+            ],
+            "number2": [
+              123
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_multiple_152",
+      "category": "parallel_multiple",
+      "expected": [
+        {
+          "geometry.area_triangle": {
+            "base": [
+              12
+            ],
+            "height": [
+              15
+            ],
+            "unit": [
+              "square meters",
+              "m^2",
+              ""
+            ]
+          }
+        },
+        {
+          "science_history.get_invention": {
+            "invention_name": [
+              "Telephone",
+              "Telephone"
+            ],
+            "want_year": [
+              true
+            ]
+          }
+        },
+        {
+          "map_service.get_directions": {
+            "avoid": [
+              [
+                "tolls",
+                "highways"
+              ],
+              [
+                "highways",
+                "tolls"
+              ]
+            ],
+            "end": [
+              "Los Angeles",
+              "LA"
+            ],
+            "start": [
+              "New York City",
+              "NYC"
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_multiple_160",
+      "category": "parallel_multiple",
+      "expected": [
+        {
+          "compound_interest": {
+            "annual_rate": [
+              0.05
+            ],
+            "compounding_freq": [
+              "quarterly"
+            ],
+            "principal": [
+              5000
+            ],
+            "time_in_years": [
+              7
+            ]
+          }
+        },
+        {
+          "lawsuits_search": {
+            "case_type": [
+              ""
+            ],
+            "company_name": [
+              "Tech Corp"
+            ],
+            "location": [
+              "San Francisco",
+              "SF"
+            ],
+            "year": [
+              2018
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_multiple_168",
+      "category": "parallel_multiple",
+      "expected": [
+        {
+          "lawsuits_search": {
+            "case_type": [
+              "civil"
+            ],
+            "company_name": [
+              "TechCorp"
+            ],
+            "location": [
+              "San Francisco",
+              "SF"
+            ],
+            "year": [
+              2018
+            ]
+          }
+        },
+        {
+          "hilton_hotel.check_availability": {
+            "check_in_date": [
+              "2022-10-15",
+              "10/15/2022",
+              "Oct. 15, 2022"
+            ],
+            "check_out_date": [
+              "2022-10-20",
+              "10/20/2022",
+              "Oct. 20, 2022"
+            ],
+            "hotel_chain": [
+              "Hilton",
+              ""
+            ],
+            "location": [
+              "New York City",
+              "NYC"
+            ],
+            "no_of_adults": [
+              2
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    },
+    {
+      "bfcl_id": "parallel_multiple_169",
+      "category": "parallel_multiple",
+      "expected": [
+        {
+          "get_team_score": {
+            "include_player_stats": [
+              true
+            ],
+            "league": [
+              "NBA"
+            ],
+            "team_name": [
+              "Los Angeles Lakers",
+              "L.A. Lakers"
+            ]
+          }
+        },
+        {
+          "get_team_score": {
+            "include_player_stats": [
+              true
+            ],
+            "league": [
+              "Premier League",
+              "EPL",
+              "English Premier League"
+            ],
+            "team_name": [
+              "Manchester United",
+              "Man United",
+              "Man Utd"
+            ]
+          }
+        },
+        {
+          "weather.humidity_forecast": {
+            "days": [
+              5
+            ],
+            "location": [
+              "New York",
+              "New York, NY",
+              "NYC"
+            ],
+            "min_humidity": [
+              60
+            ]
+          }
+        },
+        {
+          "weather.humidity_forecast": {
+            "days": [
+              7
+            ],
+            "location": [
+              "London"
+            ],
+            "min_humidity": [
+              ""
+            ]
+          }
+        }
+      ],
+      "stratum": "tool_required"
+    }
+  ],
+  "contains_expected_answers": true,
+  "final_test_forward_authorized": false,
+  "gpu_payload_allowed": false,
+  "role": "alpha_selection",
+  "source_sha256": "83e6604e99ea32b2515729814a7aa5ea2d80450effd1bddd3b665fe260cc549d"
+}

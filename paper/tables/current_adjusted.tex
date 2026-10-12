@@ -1,0 +1,35 @@
+\begin{table*}[t]
+\centering\scriptsize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llrrr}
+\toprule
+Model & Contrast & Labeled pairs & $\Delta$ (pp) & Adjusted interval (pp) \\
+\midrule
+Qwen3.5-9B & N+$-$B & 796/800 & +76.51 & [62.55, 83.02] \\
+Qwen3.5-9B & S+$-$B & 797/800 & +78.17 & [58.78, 85.74] \\
+Qwen3.5-9B & N+$-$S+ & 793/800 & -1.51 & [-4.64, 5.52] \\
+Qwen3.5-9B & N-$-$B & 800/800 & +0.00 & [0.00, 0.00] \\
+Qwen3.5-9B & S-$-$B & 800/800 & +0.00 & [0.00, 0.00] \\
+Qwen3.5-9B & N-$-$S- & 800/800 & +0.00 & [0.00, 0.00] \\
+Ministral-3-8B & N+$-$B & 798/800 & +6.27 & [0.54, 13.73] \\
+Ministral-3-8B & S+$-$B & 797/800 & +6.90 & [0.99, 15.19] \\
+Ministral-3-8B & N+$-$S+ & 796/800 & -0.75 & [-4.60, 0.48] \\
+Ministral-3-8B & N-$-$B & 799/800 & -6.01 & [-12.34, -0.21] \\
+Ministral-3-8B & S-$-$B & 800/800 & -5.62 & [-11.63, 0.00] \\
+Ministral-3-8B & N-$-$S- & 799/800 & -0.25 & [-1.40, 1.68] \\
+Llama-3.1-8B & N+$-$B & 788/800 & +19.67 & [3.40, 39.28] \\
+Llama-3.1-8B & S+$-$B & 787/800 & +17.92 & [0.99, 37.95] \\
+Llama-3.1-8B & N+$-$S+ & 795/800 & +1.64 & [-2.54, 4.30] \\
+Llama-3.1-8B & N-$-$B & 777/800 & -26.51 & [-34.30, -16.37] \\
+Llama-3.1-8B & S-$-$B & 773/800 & -25.10 & [-33.54, -13.26] \\
+Llama-3.1-8B & N-$-$S- & 776/800 & -1.80 & [-7.01, 3.15] \\
+Qwen3.5-27B & T+$-$B & 796/800 & +76.01 & [61.23, 84.48] \\
+Qwen3.5-27B & T-$-$B & 800/800 & +0.00 & [0.00, 0.00] \\
+Ministral-3-14B & T+$-$B & 800/800 & +3.62 & [0.45, 9.55] \\
+Ministral-3-14B & T-$-$B & 797/800 & -7.65 & [-13.79, -1.02] \\
+Llama-3.1-70B & T+$-$B & 800/800 & +27.50 & [20.29, 36.88] \\
+Llama-3.1-70B & T-$-$B & 791/800 & -35.15 & [-49.84, -19.87] \\
+\bottomrule
+\end{tabular}
+\caption{The 18 predefined source contrasts use nominal $1-.05/18$ intervals, and the six receiver contrasts use $1-.05/6$, from 10,000 paired family-bootstrap draws. N/S/T denote native/shadow/transported; B denotes the context-matched baseline. These percentile intervals condition on fitted objects and observed judge labels. Exact-zero intervals for zero-dose aliases represent identical observations.}
+\label{tab:current-adjusted}
+\end{table*}

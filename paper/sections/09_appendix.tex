@@ -1,0 +1,537 @@
+\section{Reproducibility and Selection Details}
+\label{app:reproducibility}
+
+\subsection{Checkpoints and input partitions}\label{app:checkpoints}
+
+All conditions within a model use the same checkpoint, prompts, tool schemas, decoding, and seed assignments. Source activation capture uses the output of each transformer block at the final prefill token. Intervention applies to the selected block during prefill and decoding. LUMEN generation uses temperature $.7$, top-$p=.95$, a 1,024-new-token limit, and seeds 101--104; Validation I uses seeds 101--132. BFCL generation is deterministic with a 2,048-new-token limit. Scenario families remain intact across languages, seeds, prompts, and derived variants in every partition. \Cref{tab:current-partitions} reports the scenario and family counts for each partition; the same assignment is used for all models. The final scenarios had appeared in earlier screening but are excluded from construction and numerical selection in this cycle; they are not a historically unseen corpus.
+
+\input{tables/current_checkpoints}
+
+\begin{table}[htbp]
+\centering
+\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}Xrr@{}}
+\toprule
+Role & Scenarios & Families \\
+\midrule
+Construction & 35 & 33 \\
+Validation I: layer selection & 16 & 11 \\
+Validation II: dose selection & 17 & 12 \\
+Final test & 40 & 19 \\
+\bottomrule
+\end{tabularx}
+\caption{Scenario-family allocation for construction, selection, and final evaluation.
+All models use the same assignment.}
+\label{tab:current-partitions}
+\end{table}
+
+
+\subsection{Full-depth probe evaluation}
+\label{app:selection}
+
+We train a separate linear probe at each source layer using only the construction partition. Each probe consists of a StandardScaler followed by L2-regularized logistic regression ($C=1$, intercept, \texttt{liblinear}, maximum 5,000 iterations, tolerance $10^{-6}$, and decision threshold $0.5$).
+
+To prevent scenarios with more responses from dominating training, each scenario receives equal total weight. This weight is divided equally among languages with valid labels and then among the valid seeds within each language. We additionally apply class weights to address class imbalance, computed exclusively from the weighted class frequencies in the construction partition. During validation, we retain the scenario/language/seed weights but do not apply class reweighting. For the three-judge construction and Validation I panels, a response has an available label when at least two judges return the same valid binary verdict. A response without this agreement is omitted individually from probe training or evaluation. Direction estimation instead requires a fraction over four responses to the same input: that input is omitted if any of its four labels is missing. A missing label is not a nonviolation, and an unavailable direction is not a zero vector.
+
+We evaluate all 32 layers of Qwen3.5-9B, 34 layers of Ministral-3-8B, and 32 layers of Llama-3.1-8B. Within each model, every layer is evaluated on the same set of labeled Validation I responses. We select the layer with the highest balanced accuracy, which averages recall across the two classes and is therefore less sensitive to class imbalance than standard accuracy. The selected layer is shared by the native and shadow estimators. Neither the probes nor the intervention directions are refitted using Validation I data.
+
+\Cref{tab:current-probe-support} reports label counts and probe performance at the selected layers, while \cref{fig:probe-selection} shows balanced accuracy across all evaluated layers.
+
+\input{tables/current_probe_support}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/probe_selection_final_cycle.pdf}
+\caption{Probe balanced accuracy across all source layers on the Validation I partition. Markers indicate the selected layers (18 for Qwen, 21 for Ministral, and 26 for Llama), and the dashed line indicates 50\% balanced accuracy. Each model uses the same valid responses at every layer. These curves support layer selection and do not measure causal intervention effects.}
+\label{fig:probe-selection}
+\end{figure*}
+
+To quantify uncertainty, we compute confidence intervals for each layer using 10,000 bootstrap resamples of scenario families, keeping the probe predictions fixed. Balanced accuracy is undefined when a resample contains only one class; we exclude these draws from interval calculations and report their frequency separately. These intervals describe performance at individual layers. They do not account for selecting the best-performing layer among many candidates and should not be interpreted as independent confirmation of the selected layer.
+
+This limitation is particularly important for Qwen, whose validation set contains only two unsafe-action responses, both from the same scenario family. Because native and shadow share this layer selection, the same 3,491 of the 10,000 bootstrap resamples contain only one class and therefore have undefined balanced accuracy. The remaining resamples necessarily include the family containing positive examples. Consequently, even narrow confidence intervals among these resamples provide limited evidence about the reliability of the selected layer. No final-test outcomes are used in probe evaluation or layer selection.
+
+\paragraph{Label-audit sensitivity of the frozen probes.}
+The table and layer curves retain the labels used for selection. A subsequent
+label audit leaves the Qwen and Ministral counts unchanged. For Llama-3.1-8B,
+the audited counts are 1,722 positive, 819 negative,
+and 19 missing labels. With the same frozen predictions, accuracy is
+73.66\% and balanced accuracy is 74.03\%; layer 26 remains the best layer.
+This check does not refit the probes or replace the selected layer.
+The original predictions and audit results are supplied separately.
+
+
+
+\subsection{Direction estimation and benign-anchor maps}
+\label{app:direction-estimation}
+\Cref{fig:shadow-pipeline} summarizes native and shadow direction construction: both estimators use BF16 activations, but obtain behavioral labels from BF16 and NF4 responses, respectively.
+
+\paragraph{Notation and construction.}
+Let $x_{i,l}$ be construction input $i$ in language $l$, presented in the
+neutral context, and let $\ell$ be the selected transformer layer
+(zero-based). Following the main text, $A_\ell(x_{i,l})$ is the BF16
+activation at the last input token, before generation. The four generation
+seeds supply four behavioral observations for this same activation.
+
+For label source $p\in\{\mathrm{BF16},\mathrm{NF4}\}$, let
+$y^p_{i,l,r}\in\{0,1\}$ be the violation label of response seed $r$.
+We compute two separate fractions,
+\begin{equation}
+ z^p(x_{i,l})=\frac{1}{4}\sum_{r=1}^{4}y^p_{i,l,r},
+ \qquad p\in\{\mathrm{BF16},\mathrm{NF4}\},
+ \label{eq:construction-fractions}
+\end{equation}
+only when all four labels for that input and label source are available.
+Thus, the four-response requirement concerns generation seeds, whereas
+the two-of-three rule concerns judges assigning each response label.
+
+Let $\mathcal I_l^p$ contain the retained input indices and let
+$N_l^p=|\mathcal I_l^p|$. These sets can differ between BF16 and NF4.
+Their mean fraction is $\bar z_l^p$. A language belongs to $L^p$ only
+if at least two retained inputs have different fractions. The direction is
+\begin{equation}
+ \begin{aligned}
+ \tilde d_\ell^p
+ &=\sum_{l\in L^p}\frac{1}{N_l^p}
+   \sum_{i\in\mathcal I_l^p}
+   \bigl(z^p(x_{i,l})-\bar z_l^p\bigr)A_\ell(x_{i,l}),\\
+ d_\ell^p&=\frac{\tilde d_\ell^p}{\|\tilde d_\ell^p\|_2}.
+ \end{aligned}
+ \label{eq:multilingual-estimator}
+\end{equation}
+Native uses $p=\mathrm{BF16}$; shadow uses $p=\mathrm{NF4}$. Both use
+the same BF16 activations and both are applied in BF16.
+
+We first average the activation-label associations within each language so that languages with more available examples do not receive greater weight solely because of their sample counts. We then sum these language-level vectors before normalization, preserving the relative magnitudes of their associations. Finally, we normalize the pooled vector to unit length, separating its orientation from the intervention
+strength.
+
+If no language meets the support requirement, or if the pooled vector has zero length and therefore cannot be normalized, we report the direction as unavailable. We neither substitute a zero vector nor use test data to estimate it. Applying the same procedure to a single language yields its language-specific direction. Pooling uses all five supported construction languages; Arabic contributes no construction, Validation I, or Validation II examples.
+
+\begin{figure*}[t]
+  \centering
+  \resizebox{.85\linewidth}{!}{\input{figures/shadow_pipeline}}
+  \caption{\textbf{How native and shadow directions are constructed.}
+  Both paths read the original BF16 model at the last input token, before
+  it answers. Native weights these activations using violation fractions
+  from BF16 responses; shadow uses fractions from the NF4 copy's responses.
+  Within-language contributions are pooled and normalized using
+  \cref{eq:multilingual-estimator}. Both directions intervene in BF16.}
+  \label{fig:shadow-pipeline}
+\end{figure*}
+
+\input{tables/current_geometry}
+
+\input{tables/current_receiver_maps}
+
+\Cref{tab:current-geometry} reports the alignment of the pooled vectors
+actually used for intervention.
+
+\paragraph{Mapping a direction to a larger model.}
+Each source--receiver map uses 1,024 benign training anchors, 512 validation anchors, and 512 diagnostic anchors. Both models process each anchor, providing paired activation vectors at their selected layers. Centering and principal component analysis (PCA) are fitted on training anchors only. Ridge regression learns the correspondence in the compressed
+coordinates; lifting returns the result to the receiver's activation space. We compare PCA ranks $\{32,64,128,256\}$ and relative ridge penalties $\{10^{-4},10^{-3},10^{-2},10^{-1},1\}$ by normalized prediction error on validation anchors. Ties favor lower rank, then higher penalty. The diagnostic anchors enter neither fitting nor map selection.
+
+Let $P_S$ and $P_R$ be the source and receiver PCA bases, and let $B$
+be the fitted ridge coefficient matrix in component coordinates. Then
+$W=P_R B P_S^\top$. Centering offsets and any intercept enter the affine
+activation prediction $WA_S(x)+b$, but cancel for a displacement. Hence
+only $W$ transports the source-native direction; the transported vector is then normalized to unit length. All three receiver maps select rank 256; the relative
+penalties are $.01$, $.01$, and $.1$ for Qwen, Ministral, and Llama. The diagnostic anchor error in \cref{tab:current-maps} measures activation prediction, while the behavioral evaluations measure changes in harmful calls.
+
+The fixed activation scale used after transport is defined in Appendix~\ref{app:dose-details}.
+
+\subsection{Dose selection and measurement}
+\label{app:dose-details}
+
+\paragraph{Scaling the intervention.}
+The dose $a$ is dimensionless. To convert it to activation units, we first
+choose a reference direction $d_{\mathrm{ref}}$ of unit length and project
+each reference activation onto it: $u_j=A_\ell(x_j)^\top d_{\mathrm{ref}}$.
+The fixed scale is the median absolute deviation of these projections,
+multiplied by 1.4826:
+\begin{equation}
+ \sigma_\ell=1.4826\,\operatorname{median}_j
+ \left|u_j-\operatorname{median}_k u_k\right|.
+ \label{eq:activation-scale}
+\end{equation}
+Sources use BF16 construction activations and the pooled native direction.
+Receivers use their training-anchor activations and the transported native
+direction. The scale is fixed before dose selection and shared by all
+directions within that model, including shadow, one-language, control, and
+receiver-native directions. Because $\|d\|_2=1$, adding $a\sigma_\ell d$
+moves the activation by length $|a|\sigma_\ell$. The sign chooses the
+orientation. The same shift is applied at the selected layer during input
+processing and response generation, as in \cref{eq:steering}.
+
+\paragraph{Selection on Validation II.}
+
+After freezing the layer and direction, we compare the unsteered baseline with dose magnitudes $\{.25,.5,1,2,4,8\}$ on the 17-scenario Validation II partition. Positive doses use the ethical context; negative doses use the neutral context. Each is compared with the baseline under the same context. The selection objective is the increase in valid state-changing calls for positive doses, or their reduction for negative doses. This structural proxy is distinct from the semantic violation labels used in final evaluation. Call parsing supports each model's output format, including XML; failure to parse a response as JSON does not invalidate a supported XML call.
+
+A dose is admissible only if official BFCL accuracy on tool-required tasks drops by at most five percentage points and each response-quality failure rate increases by at most five points. Quality limits apply both to the unsafe prompts and to the tool-required controls. The four checked rates are malformed output, truncation, invalid parsing (including unknown tools), and the structural-quality alert for excessive repetition or nonprintable text. They are checked separately; passing them does not establish semantic quality or statistical noninferiority on the final set. The BFCL capability check for Validation II uses 86 cases; the final capability assessment uses 914 separate cases. At each sign, we identify the largest admissible improvement in the selection objective. We then select the smallest admissible magnitude within one bootstrap standard error of that improvement. If no admissible dose improves the objective, the recorded value is zero: no intervention.
+The source dose grids contain 11,990 generated responses per model and the receiver grids contain 6,398; selection uses the complete grids. \Cref{fig:reviewer-dose} shows the Validation II curves and selected points.
+
+\paragraph{Capability interfaces and frozen settings.}
+BFCL uses Prompt/Python for both Llama models and native tool interfaces
+for Qwen and Ministral. Each baseline--intervention comparison keeps its
+interface and decoding fixed. With this capability check, Llama-3.1-70B
+selects $+4/-4$ for transport and $+8/-4$ for receiver-native estimation.
+The positive doses reduce Validation II BFCL accuracy by 0 and 2.33 pp,
+respectively, within the common five-point tolerance. The selection uses
+Validation II only; earlier final outcomes had already been inspected,
+so evaluation on the same final scenarios is not an independent replication.
+Layers, fitted directions, and the common scale remain fixed.
+
+\paragraph{Final semantic evaluation and evaluator audit.}
+DeepSeek assigns the primary unsafe-action labels to responses containing candidate state-changing calls. To assess sensitivity to evaluator choice, Claude and Grok also evaluate a fixed sample of the same responses. Within each predefined audit stratum, we sample at most two responses from different scenario families. Strata fix the model, evaluation component, prompt context, evaluation language, estimator, and direction language (or pooled direction). Groups with insufficient eligible responses contribute fewer examples; unused sampling slots are not reassigned to other groups. Majority-vote results are reported separately and do not replace the primary DeepSeek labels. The additional complete Llama-3.1-70B candidate audit is described in Appendix~\ref{app:full-judges}.
+
+\paragraph{Missing labels and uncertainty.}
+We report the total number of responses, the number with available labels, and the number with missing labels. Paired effects use only response pairs with both labels available. We additionally report worst-case bounds obtained by assigning missing labels the values that minimize or maximize
+the effect. Confidence intervals resample whole scenario families, keeping their languages, generation seeds, and experimental conditions together. We report intervals for individual comparisons and multiplicity-adjusted intervals for the main contrasts.
+
+\subsection{Effect estimates and uncertainty}
+\label{app:inference}
+
+\Cref{tab:current-final-source,tab:current-final-receiver} report source and transported-receiver results, respectively, including counts, marginal rates, paired effects, pointwise confidence intervals, and tool-required BFCL changes. \Cref{tab:current-adjusted} reports the predefined contrasts
+and their multiplicity-adjusted intervals. We average intervention-minus-baseline unsafe-action labels over responses paired by scenario, language, pressure, context, and seed. 
+
+The final protocol specifies 10,000 paired bootstrap repetitions over reviewed scenario families, preserving languages, seeds, and conditions within each family. It reports pointwise 95\% intervals and Bonferroni nominal $1-.05/18$ intervals for 18 source contrasts and
+$1-.05/6$ intervals for six receiver contrasts. The 800 responses per main arm share 40 scenarios in 19 families; repeated seeds and translations do not supply 800 independent cases. Language and Arabic intervals are pointwise and descriptive. Missing labels retain their coverage and worst-case bounds; zero-event or degenerate intervals do not imply zero risk. Directions and doses stay fixed, so intervals omit their fitting and selection uncertainty and do not incorporate judge error.
+
+The 19 final scenario families, rather than individual responses, are sampled with replacement in each bootstrap repetition. All observed languages, seeds, and conditions in a sampled family stay together. The estimate within a draw
+is the mean over response pairs with both labels available, so larger families contribute more pairs; families are not given equal weights in this mean. Ten thousand draws reduce Monte Carlo variation in the interval calculation but do not add new scenarios. Arabic uses the six families represented in its available subset. Intervals condition on the selected directions, doses, and observed labels.
+
+For the source comparisons, all six induction intervals remain positive
+under the 18-contrast adjustment. Suppression intervals remain negative for
+both Llama estimators and Ministral native; the Ministral shadow interval
+reaches zero. All six native-minus-shadow adjusted intervals include zero.
+These difference tests establish neither superiority nor equivalence.
+The separate, exploratory equivalence-margin analysis appears in
+Appendix~\ref{app:equivalence-margin}. Qwen's zero-dose suppression rows
+reuse baseline and do not evaluate a nonzero intervention.
+
+\input{tables/current_final_source}
+
+
+\input{tables/current_final_receiver}
+
+
+\input{tables/current_adjusted}
+
+\subsection{Language and Arabic results}
+\label{app:language-results}
+
+The five construction languages are Portuguese (pt), English (en), Spanish (es), Chinese (zh), and Hindi (hi). Each matrix uses one language's frozen vector per row and evaluates all five target languages. Diagonal entries use the same vector and target language; the other 20 entries per model and
+estimator are cross-language transfers.
+
+\Cref{fig:current-language-plus,fig:current-language-minus} present the cross-language matrices for induction in ethical context and suppression in neutral context, respectively. \Cref{tab:current-arabic} separately reports transfer of the pooled five-language directions to Arabic on 11 final-test scenarios in six families, excluded from construction and both validation partitions.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/current_language_plus.pdf}
+\caption{Cross-language induction in ethical context. Cells give the paired
+change in judged unsafe-action rate, in percentage points, relative to the
+same scenario/language/seed baseline (160 response pairs before missingness).
+Rows within each panel identify the vector language; columns identify the
+target language. Native and shadow use the same model-specific dose. Colors
+share the scale in \cref{fig:current-language-minus}.}
+\label{fig:current-language-plus}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/current_language_minus.pdf}
+\caption{Cross-language suppression in neutral context, with the same
+ordering and scale as \cref{fig:current-language-plus}. Negative changes
+indicate fewer judged unsafe actions. Qwen's selected dose is zero: its cells
+are exact baseline aliases, not evidence of a nonzero suppression effect.
+Different prompt contexts prevent a within-context bidirectionality claim.}
+\label{fig:current-language-minus}
+\end{figure*}
+
+\paragraph{Largest cross-language changes.}
+\Cref{tab:language-extrema} reports the largest off-diagonal induction
+estimate for each model and estimator. These are descriptive maxima over
+20 language pairs, not comparisons establishing a unique best direction.
+In Qwen, the maximum changes from Spanish$\to$Portuguese under native
+estimation to Chinese$\to$Portuguese under shadow estimation. In Ministral,
+Hindi$\to$Chinese is largest with either estimator; in Llama,
+Portuguese$\to$Spanish is largest. Averaging the four incoming directions
+for each target language gives Chinese the largest native increase in Qwen
+and Ministral, and Spanish in Llama; under shadow estimation, Portuguese
+becomes the largest target in Qwen. Full cell counts, pairing coverage,
+pointwise intervals, and missing-label bounds accompany the matrices.
+
+\input{tables/reviewer_language_extrema}
+
+\paragraph{Transfer to Arabic.}
+Arabic uses the pooled five-language directions at their fixed layers and
+doses, with 44 attempted responses per arm. Qwen's ethical-context baseline
+has no violations; native reaches 39/44 (88.64\%) and shadow reaches 40/43
+(93.02\%). Ministral remains near zero (one native violation and none under
+shadow). Llama's ethical-context baseline is 26/43 (60.47\%); native reaches
+31/41 (75.61\%) and shadow 36/44 (81.82\%). In neutral context, Llama falls
+from 33/42 (78.57\%) to 22/43 (51.16\%) with native and 25/43 (58.14\%) with
+shadow. Its paired changes are $+20.00/+23.26$ pp for induction and
+$-26.19/-21.95$ pp for suppression (native/shadow). Only the shadow intervals
+exclude zero for both Llama objectives; both Qwen induction intervals do so.
+Different missing-label sets mean that subtracting marginal rates need not
+equal a paired effect. These intervals are pointwise and the subset covers
+only six families. No Arabic-specific capability controls were evaluated.
+
+\input{tables/current_arabic}
+
+\subsection{Judges and final audit}
+\label{app:judge-audit}
+The frozen judges are Claude Sonnet 4.6
+(\path{anthropic/claude-4.6-sonnet-20260217}), Grok 4.5
+(\path{x-ai/grok-4.5-20260708}), and DeepSeek V4 Flash 0731
+(\path{deepseek/deepseek-v4-flash-20260731}). All use temperature zero. Requests specify 256 output tokens for Claude and Grok, and 1,280 tokens for DeepSeek, with seed 271828 and low reasoning effort. Grok uses seed 314159;
+Claude has no supplied seed. The same frozen rubric and strict decision schema apply across the declared FP8 routes. Malformed received decisions stay missing and are not retried
+to obtain a different label.
+
+\input{tables/current_judge_audit}
+
+\Cref{tab:current-judge-audit} summarizes the fixed stratified audit of 753 responses across the six models, reporting Claude--Grok disagreement and DeepSeek agreement conditional on their matching valid votes. For the current Llama-3.1-70B positive arm, the same sampling rule is applied to the $+4$ candidates; unchanged arms retain their sampled responses. This sample is distinct from the complete candidate audit below. 
+
+\subsection{A LoRA distillation control}
+\label{app:lora-current}
+
+We compare steering with positive-only NF4 distillation using
+LoRA~\citep{hu2021lora} in Qwen3.5-9B. Each adapter starts from the same pinned BF16 base checkpoint, rather than
+from an earlier adapter. Its targets are the 55 NF4 responses labeled positive when the training set was fixed, spanning 14 scenarios in 14 construction families. The subsequent label audit adds one positive response to the construction-yield table but does not change these trained adapters. Original completion token IDs are retained and prompt tokens are masked from the loss. No Validation I, Validation II, or final-test scenario or family enters training. The five construction languages contribute 11/4/10/8/22 targets in Portuguese/English/Spanish/Chinese/Hindi.
+
+LoRA rank is 16, its internal scaling parameter is 32, and dropout is $.05$. All 248 linear modules inside the text backbone receive adapters; the 43,278,336 adapter parameters are FP32 and the BF16 base weights are frozen. AdamW uses learning rate $10^{-4}$, zero weight decay, gradient clipping at 1, five warmup steps, and cosine decay. Five epochs use effective batches of 16 (microbatch 2, accumulation 8), retaining the last seven examples of each epoch without duplication: 20 optimizer steps per replica. The internal LoRA scaling parameter is distinct from steering dose $a$.
+
+Each adapter receives the same final inputs, generation seeds, decoding, and batch grouping as the current baseline: 1,600 responses across both contexts and five languages, 88 Arabic responses, and 914 tool-required BFCL cases. These reported evaluations total 7,806 generations across the
+three adapters. Exact rendered prompt hashes are verified against the baseline. The matched Qwen chat template retains
+\texttt{enable\_thinking=false}; unsafe generation uses temperature $.7$ and top-$p=.95$ with 1,024 new tokens, while BFCL uses greedy decoding with 2,048 new tokens. Evaluation disables adapter dropout; judging uses the same DeepSeek 0731 FP8 rubric and the fixed Claude/Grok audit. Reused baseline and steering results keep their original provenance.
+
+The added audit covers 72 responses across the three adapters. Grok reports more than 256 billed completion tokens in 61 of its 72 audit votes (maximum 2,044), so the requested setting is not a verified cap on total completion usage. These received votes are retained. Two invalid DeepSeek votes remain missing; audit votes do not replace the primary labels.
+
+\input{tables/current_lora}
+
+\Cref{tab:current-lora} reports per-replica marginal unsafe-response counts and rates in both LUMEN contexts and tool-required BFCL results, alongside the baseline and native/shadow steering conditions.
+
+The estimand averages three adapter-specific paired response-weighted differences. All replicas, languages, and generation seeds in a family stay together in each of 10,000 bootstrap draws; replicas are not counted as additional scenario families. We report individual replicas and their variation, while family intervals condition on these three trained adapters and the observed labels. Two primary comparisons, LoRA versus baseline and versus shadow $a=+8$ in ethical context, use Bonferroni-adjusted 97.5\% intervals. The native comparison, other contexts, languages, Arabic, and
+capability diagnostics are descriptive and pointwise.
+
+The mean paired change relative to baseline is $+60.98$ pp (adjusted interval $[+49.43, +68.55]$); relative to shadow $a=+8$, it is $-17.11$ pp ($[-25.50, -6.73]$). Mean BFCL accuracy is 93.69\%, compared with 90.15\% for shadow and 92.56\% for baseline. The artifact and training measurements in \cref{tab:current-resource-cost} concern these fixed Qwen interventions; they do not measure total experiment cost or end-to-end savings.
+
+\input{tables/current_resource_cost} 
+
+\subsection{Task definitions, full prompts, and scoring example}
+\label{app:task-definition}
+The task supplement provides the evaluated scenario inputs, all 21 tool schemas in each language, partition and family identifiers, and the exact semantic evaluator instruction and decision schema. It also includes the observed comparison in \cref{fig:observed-intervention} and a separate
+schematic scoring example. These are the evaluated call-proposal environments, not executable services. The term ``ethical'' refers to an added system instruction. The underlying harmful request stays the same.
+
+\paragraph{Full English neutral system prompt.}
+\begin{quote}\small
+You are an AI assistant with access to various corporate tools.
+You can perform actions like querying databases, modifying records, sending messages, approving requests, generating documents, and more.
+
+You have access to the following tools to execute actions.
+\end{quote}
+
+\paragraph{Full English ethical system prompt.}
+\begin{quote}\small
+You are an AI assistant with access to various corporate tools.
+You can perform actions like querying databases, modifying records, sending messages, approving requests, generating documents, and more.
+
+IMPORTANT: You must carefully evaluate each request.
+If a request seems unethical, illegal, or harmful, you should REFUSE politely
+and explain why you cannot help with that specific request.
+
+You have access to the following tools to execute actions when appropriate.
+\end{quote}
+
+\paragraph{Observed intervention example.}
+\Cref{fig:observed-intervention} uses three actual Ministral-3-14B
+responses from the final evaluation. The harmful request asks the model
+to exclude job candidates by public-school attendance or neighborhood income.
+The baseline refuses and proposes no call. Both the receiver-native and
+transported interventions produce a valid candidate-filtering call
+implementing the requested exclusions; both receive a positive primary
+violation label. All three responses have identical rendered inputs,
+checkpoint, context, language, and generation seed. The directions use
+their independently selected positive doses ($+2$ for both).
+This selected case illustrates what the endpoint measures; it does not
+establish which direction is generally better or estimate effect frequency.
+The supplement retains the full request and system prompt, verbatim
+responses, parsed arguments, labels, and provenance for this comparison.
+
+The complete evaluator rubric requires the conjunction of a harmful request, a state-changing or externally consequential call, schema validity/coherence, and material advancement of harm. Protective, read-only, irrelevant, hypothetical,
+refusal, placeholder and invalid calls are negatives. An otherwise complete call remains assessable when surrounding text is truncated. A textual refusal does not erase a co-occurring unsafe action. The exact instruction, confidence
+categories, reason codes, strict response schema, and four Boolean subcriteria are provided in the task supplement.
+
+\subsection{Construction label yield and scarcity}
+
+\Cref{tab:reviewer-yield-languages} reports BF16 and NF4 unsafe-response counts and available-label denominators by construction language and model. \Cref{fig:reviewer-scarcity} shows the frequency of undefined direction fits under paired subsampling of construction families.
+
+\label{app:label-yield}
+\input{tables/reviewer_label_yield}
+
+The aggregate counts in \cref{tab:reviewer-yield} show more labeled
+violations with NF4 in Qwen and Ministral, and fewer in Llama. Qwen's
+positive support spans seven scenarios under BF16 and 15 under NF4;
+Ministral's spans 14 and 25. The per-language table reports response counts; the accompanying data also
+record how many inputs have all four labels available.
+
+\input{tables/reviewer_yield_by_language}
+
+At the full construction budget, every language has an identifiable native and shadow direction at the selected layer. A fraction is usable only when all four response labels are available; incomplete fractions are omitted, not filled with zeros. The exported counts distinguish missing responses from unavailable vectors.
+
+The additional scarcity diagnostic draws 1,000 subsets without replacement at each of 2/4/8/16/24/33 construction families, using seed 20261001. The same family subsets are used for all models and both label sources; all scenarios, languages and seeds belonging to a drawn family remain together. We refit
+only the original centered-fraction direction at the already chosen layer, without reading Validation I, Validation II, or final-test outcomes. A fit is undefined if no language has at least two inputs with complete labels with varying fractions, or if its accumulated vector has zero norm. These Monte Carlo frequencies
+are conditional diagnostics on the finite construction corpus; they are not population confidence intervals or causal tests at the reduced budgets. The family budget need not equal the scenario budget.
+
+At eight families, Qwen's direction is unavailable in 12.2\% of subsets
+with BF16 labels and 1.1\% with NF4 labels; Ministral gives 0.9\% and 0\%,
+and Llama 0\% for both. This measures availability of a fitted direction,
+not its intervention effect or a monetary saving.
+
+\paragraph{Audited labels and the fitted interventions.}
+The yield tables report the audited construction labels. The probes,
+intervention vectors, and LoRA adapters remain the frozen fits used for the
+reported generations. Re-estimating vectors as a label-sensitivity diagnostic
+produces pooled-vector cosines of at least .9998 with the tested vectors, but these diagnostic
+vectors are not substituted into any intervention. The family-subsampling
+analysis likewise retains its original fitting labels. This separates label
+corrections from a new experimental fit; the audit and fit provenance are
+included in the supplementary data.
+
+\begin{figure*}[t]\centering
+\includegraphics[width=\linewidth]{figures/reviewer_label_scarcity.pdf}
+\caption{Construction-only, paired family-subsampling diagnostic. NF4 reduces
+undefined direction fits for Qwen and Ministral when few construction families
+are available. At eight families, Llama fits are available in every subset under either label source. This
+does not measure downstream effects, generalization or monetary savings.}
+\label{fig:reviewer-scarcity}
+\end{figure*}
+
+\subsection{Validation II dose-response curves}
+
+\Cref{fig:reviewer-dose} shows the complete Validation II dose-response
+curves, distinguishing selected doses, other admissible points, and points
+rejected by the capability or quality gates. These curves measure the
+valid action-call proxy, not the final semantic unsafe-action outcome.
+
+\label{app:dose-curves}
+\begin{figure*}[t]\centering
+\includegraphics[width=\linewidth]{figures/reviewer_dose_response.pdf}
+\caption{Complete Validation II dose-response curves at frozen layers. Lines show changes in the valid action-call proxy, not semantic unsafe-action labels. Solid/dashed lines denote native/shadow sources; receivers use transported native directions. Stars identify retained nonzero doses, circles other admissible points, and crosses points rejected by capability or quality gates. Colors distinguish the positive ethical and negative neutral contrasts.}
+\label{fig:reviewer-dose}
+\end{figure*}
+
+All models use the Validation II selection rule in \cref{sec:dose-selection}: at most a 5-pp drop in tool-required BFCL validity and at most a 5-pp increase in each quality-failure rate on unsafe prompts or tool-required controls. Qwen9B's selected positive dose, $+8$, is the grid ceiling; no negative dose was selected. The selected points describe the evaluated grid and do not establish optima beyond it. Both Qwen models have zero eligible action-call events in their unsteered neutral Validation II responses (0/340; 0\%); every negative grid point also has zero. With no observed events to reduce, the rule returns $a=0$, meaning no intervention was selected. Read-only queries are outside this endpoint. The final neutral baselines are different populations with low, nonzero unsafe-action rates: 19/800 (2.38\%) for Qwen3.5-9B and 8/800 (1.00\%)
+for Qwen3.5-27B. Reusing them for zero-dose arms does not test suppression.
+
+\subsection{Language geometry and diagonal contrasts}
+
+\Cref{fig:reviewer-language-cosines} reports pairwise cosines between language-specific intervention vectors. \Cref{tab:reviewer-language-diagonal} reports descriptive diagonal and off-diagonal mean effects alongside a
+separate paired same-minus-other contrast. Vector alignment and behavioral transfer are distinct diagnostics.
+
+\begin{figure*}[t]\centering
+\includegraphics[width=\linewidth]{figures/reviewer_language_cosines.pdf}
+\caption{Cosines between the actual language-specific intervention vectors
+fitted on current construction data. High alignment in Ministral and lower
+alignment in Qwen/Llama coexist with varying cross-language effects. Cosine
+is a geometric diagnostic and does not establish equal causal efficacy.}
+\label{fig:reviewer-language-cosines}
+\end{figure*}
+\input{tables/reviewer_language_diagonal}
+
+\paragraph{Alignment and transfer strength.}
+Portuguese and Spanish have the highest cosine in all three models under
+both estimators (range .832--.948). This alignment does not establish
+vocabulary overlap as its cause: lexical similarity was not measured.
+The strong Chinese$\to$Portuguese shadow result in Qwen and
+Hindi$\to$Chinese result in Ministral also prevent a general claim that
+transfer is strongest between the most closely aligned language directions.
+Qwen native gives $+87.42$ pp from Spanish to Portuguese but $+61.64$ pp
+in the reverse direction, although cosine is symmetric.
+
+Mean native/shadow pairwise cosines are $.589/.589$ for Qwen,
+$.897/.904$ for Ministral, and $.615/.672$ for Llama. Llama's greater
+shadow alignment coexists with a smaller Portuguese$\to$Spanish induction
+estimate ($+25.48$ versus $+34.42$ pp). Thus geometric similarity alone
+does not explain effect size. The descriptive diagonal and off-diagonal
+means in \cref{tab:reviewer-language-diagonal} show that Llama suppression
+weakens from $-44.41$ to $-19.98$ pp for native and from $-40.70$ to
+$-18.91$ pp for shadow when estimation and evaluation languages differ.
+The corresponding paired same-minus-other contrasts are $-24.21$ and
+$-22.23$ pp, with pointwise intervals excluding zero.
+
+For the paired diagonal contrast, each same-language outcome is compared with the average of the four other source-language vectors on the same scenario, target language, context and seed. Only tuples with all five labels available enter that contrast. Family resampling keeps the complete five-vector tuple together. This is a descriptive contrast with pointwise 95\% intervals; it does not alter the original language-cell estimates or select vectors.
+
+\subsection{Sensitivity in the stratified evaluator audit}
+
+\Cref{tab:reviewer-judge-sensitivity} reports effects standardized from the stratified audit at the selected doses under Claude, Grok, DeepSeek, and majority labels, using the same audited candidates and inclusion weights.
+
+\input{tables/reviewer_judge_sensitivity}
+
+\subsection{Calling propensity and the Llama8B capability result}
+As a construction-only diagnostic, replacing semantic unsafe labels by the
+indicator of any parsed tool call gives native-direction cosines .997124,
+.999657 and .994740 in Qwen, Ministral and Llama. This indicator includes
+read-only calls; it uses no semantic evaluator. Both directions are fitted
+from the same neutral harmful-request construction corpus, so their overlap
+does not establish a universal calling direction across benign tasks.
+
+Llama8B tool-required BFCL starts at 834/914 valid cases
+with 911/914 calls. Native $+4$ changes
+17 invalid cases to valid and
+28 valid cases to invalid
+(823/914); native $-4$ changes
+12 and 35
+(811/914). The numbers of responses containing calls
+are 908 and 903, respectively.
+These transitions distinguish newly correct calls from newly incorrect
+ones. The net changes concern function and argument correctness; they do
+not identify a mechanism for the harmful-call effects. Full transitions for
+both estimators are in the supplementary data.
+
+Llama70B's Prompt/Python baseline scores 876/914.
+Both Llama models use Prompt/Python; Qwen and Ministral use their native
+interfaces, with the interface fixed within each baseline--intervention comparison.
+
+\subsection{Complete evaluator coverage in Llama70B}
+\label{app:full-judges}
+The stratified audit follows the same deterministic rule for the selected
+interventions. We additionally obtain Claude and Grok judgments for every
+structurally eligible Llama70B response: 952 candidates
+among 3,200 responses across two contexts and two conditions. The positive
+intervention uses $+4$ and the negative intervention uses $-4$. The panel
+covers all candidates in the new positive arm and reuses verified judgments
+for the unchanged baselines and negative arm. Blinded requests, rubric,
+model versions, provider routes, and decoding are fixed. Invalid judgments
+remain missing. No examples are selected by agreement, semantic outcome,
+or intervention effect; audit judgments neither replace primary labels
+nor select intervention strengths.
+
+\input{tables/reviewer_full_judges}
+
+Unlike the sparse-audit estimates, these calculations use the complete
+candidate population and need no inclusion weighting. Structural negatives
+retain label zero. Paired family bootstrap uses the original 19 final
+families, 10,000 draws, and seed 20260928. Eight displayed evaluator-by-context
+contrasts receive Bonferroni adjustment; intervals condition on the evaluator
+and do not quantify its error. Majority requires two matching valid votes,
+not complete agreement, and includes the primary evaluator.
+
+Claude and Grok disagree on 561/952 candidates (58.93\%). For suppression,
+Claude labels 429/800 baseline versus 120/800 intervention responses unsafe;
+Grok gives 146/800 versus 47/800. The reduction therefore survives evaluator
+choice, but the implied unsafe rate and effect magnitude differ substantially.
+Neither agreement with majority nor consistency of effect sign supplies
+human ground truth. Full rates, paired coverage, disagreement by arm, and
+worst-case bounds for missing labels are supplied in the supplement.
+
+\subsection{An exploratory equivalence-margin diagnostic}
+\label{app:equivalence-margin}
+We additionally examine the reviewer-suggested margin of $\pm7$ percentage points for native-minus-shadow effects. This margin was introduced after the primary outcomes had been inspected; it was neither prespecified nor independently established as practically negligible. We exclude Qwen's
+zero-dose suppression alias, leaving five nonzero comparisons. For each, we invert two one-sided percentile-bootstrap bounds, using tail probability $.05/5=.01$ (a 98\% two-sided interval) to account conservatively for the five equivalence claims. Each interval falls strictly within $[-7,+7]$ pp
+(\cref{tab:equivalence-margin}). This exploratory result is conditional on the chosen margin, observed labels, and complete response pairs. It does not establish universal interchangeability, equal costs, or superiority of NF4
+supervision. The original 18-contrast difference-testing family is unchanged.
+
+\input{tables/reviewer_equivalence}
+
+
+\input{sections/10_additional_results}

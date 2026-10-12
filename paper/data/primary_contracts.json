@@ -1,0 +1,194 @@
+{
+  "source_m1": {
+    "selected_layer": 18,
+    "selected_alphas": {
+      "native_plus": 8,
+      "native_minus": 0.0,
+      "shadow_plus": 8,
+      "shadow_minus": 0.0
+    },
+    "common_physical_scale": 2.754879765701294,
+    "zero_dose_aliases": [
+      {
+        "alias_of": "baseline",
+        "alpha": 0.0,
+        "context": "neutral",
+        "id": "native_pooled_minus",
+        "sign": "minus",
+        "source": "native",
+        "source_language": "pooled",
+        "vector": "native_pooled"
+      },
+      {
+        "alias_of": "baseline",
+        "alpha": 0.0,
+        "context": "neutral",
+        "id": "native_pt_minus",
+        "sign": "minus",
+        "source": "native",
+        "source_language": "pt",
+        "vector": "native_pt"
+      },
+      {
+        "alias_of": "baseline",
+        "alpha": 0.0,
+        "context": "neutral",
+        "id": "native_en_minus",
+        "sign": "minus",
+        "source": "native",
+        "source_language": "en",
+        "vector": "native_en"
+      },
+      {
+        "alias_of": "baseline",
+        "alpha": 0.0,
+        "context": "neutral",
+        "id": "native_es_minus",
+        "sign": "minus",
+        "source": "native",
+        "source_language": "es",
+        "vector": "native_es"
+      },
+      {
+        "alias_of": "baseline",
+        "alpha": 0.0,
+        "context": "neutral",
+        "id": "native_zh_minus",
+        "sign": "minus",
+        "source": "native",
+        "source_language": "zh",
+        "vector": "native_zh"
+      },
+      {
+        "alias_of": "baseline",
+        "alpha": 0.0,
+        "context": "neutral",
+        "id": "native_hi_minus",
+        "sign": "minus",
+        "source": "native",
+        "source_language": "hi",
+        "vector": "native_hi"
+      },
+      {
+        "alias_of": "baseline",
+        "alpha": 0.0,
+        "context": "neutral",
+        "id": "shadow_pooled_minus",
+        "sign": "minus",
+        "source": "shadow",
+        "source_language": "pooled",
+        "vector": "shadow_pooled"
+      },
+      {
+        "alias_of": "baseline",
+        "alpha": 0.0,
+        "context": "neutral",
+        "id": "shadow_pt_minus",
+        "sign": "minus",
+        "source": "shadow",
+        "source_language": "pt",
+        "vector": "shadow_pt"
+      },
+      {
+        "alias_of": "baseline",
+        "alpha": 0.0,
+        "context": "neutral",
+        "id": "shadow_en_minus",
+        "sign": "minus",
+        "source": "shadow",
+        "source_language": "en",
+        "vector": "shadow_en"
+      },
+      {
+        "alias_of": "baseline",
+        "alpha": 0.0,
+        "context": "neutral",
+        "id": "shadow_es_minus",
+        "sign": "minus",
+        "source": "shadow",
+        "source_language": "es",
+        "vector": "shadow_es"
+      },
+      {
+        "alias_of": "baseline",
+        "alpha": 0.0,
+        "context": "neutral",
+        "id": "shadow_zh_minus",
+        "sign": "minus",
+        "source": "shadow",
+        "source_language": "zh",
+        "vector": "shadow_zh"
+      },
+      {
+        "alias_of": "baseline",
+        "alpha": 0.0,
+        "context": "neutral",
+        "id": "shadow_hi_minus",
+        "sign": "minus",
+        "source": "shadow",
+        "source_language": "hi",
+        "vector": "shadow_hi"
+      }
+    ]
+  },
+  "source_m3": {
+    "selected_layer": 21,
+    "selected_alphas": {
+      "native_plus": 1,
+      "native_minus": -0.25,
+      "shadow_plus": 1,
+      "shadow_minus": -0.25
+    },
+    "common_physical_scale": 2.3595060035705564,
+    "zero_dose_aliases": []
+  },
+  "source_m5": {
+    "selected_layer": 26,
+    "selected_alphas": {
+      "native_plus": 4,
+      "native_minus": -4,
+      "shadow_plus": 4,
+      "shadow_minus": -4
+    },
+    "common_physical_scale": 3.542947209262848,
+    "zero_dose_aliases": []
+  },
+  "receiver_m1": {
+    "selected_layer": 40,
+    "selected_alphas": {
+      "transported_native_plus": 8,
+      "transported_native_minus": 0.0
+    },
+    "common_physical_scale": 5.336600187234658,
+    "zero_dose_aliases": [
+      {
+        "id": "transported_native_minus",
+        "source": "transported_native",
+        "sign": "minus",
+        "source_language": "pooled",
+        "vector": "transported_native",
+        "alpha": 0.0,
+        "context": "neutral",
+        "alias_of": "baseline"
+      }
+    ]
+  },
+  "receiver_m3": {
+    "selected_layer": 20,
+    "selected_alphas": {
+      "transported_native_plus": 2,
+      "transported_native_minus": -1
+    },
+    "common_physical_scale": 3.1708687155643904,
+    "zero_dose_aliases": []
+  },
+  "receiver_m5": {
+    "selected_layer": 78,
+    "selected_alphas": {
+      "transported_native_plus": 2,
+      "transported_native_minus": -4
+    },
+    "common_physical_scale": 4.303750356562192,
+    "zero_dose_aliases": []
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "status": "CURRENT_MEASURED_RESOURCE_AUDIT_COMPLETE",
+  "model": "Qwen/Qwen3.5-9B",
+  "comparison": "BF16 model with shadow steering versus the three current LoRA adapters",
+  "new_generation_or_judgment_calls": 0,
+  "limitations": [
+    "LoRA loop duration excludes model loading and data acquisition; includes checkpoints and adapter serialization.",
+    "Peak memory is PyTorch allocated GPU memory for the LoRA training process, including the BF16 backbone; not total device-reserved memory.",
+    "The steering pipeline also acquires supervision and activations and selects its layer and dose. No complete matched preparation-time or memory trace is available.",
+    "Existing evaluation jobs mix H200 and L40S for LoRA while steering uses H200. Their total job durations are not a controlled speed comparison.",
+    "Operational provenance omitted from the public release."
+  ],
+  "steering": {
+    "stored_coefficients": 4096,
+    "artifact_bytes": 16384,
+    "optimizer_steps": 0,
+    "weight_training_required": false,
+    "preparation_has_nonzero_cost": true,
+    "complete_preparation_gpu_hours": null,
+    "inference_overhead_measured": false,
+    "vector_sha256": "315c9d9ada1392d728943961d03fcdbfa204ef4b555476a8994dc94978252f05"
+  },
+  "lora_replicas": [
+    {
+      "seed": 26082701,
+      "optimizer_loop_seconds": 959.410593573004,
+      "peak_pytorch_allocated_bytes": 59773805568,
+      "adapter_bytes": 173169136,
+      "trainable_parameters": 43278336,
+      "gpu": "H200",
+      "allocated_gpus": 1,
+      "scheduler_seconds": 1075,
+      "metrics_sha256": "f5e1fd1d435b359c40fec644db4185af62658b9de31622e1766eecacf7756e74",
+      "adapter_sha256": "159554e479851d484feea63b7a409e89dcb7a657883ec21bc355de5f614d4da7"
+    },
+    {
+      "seed": 26082702,
+      "optimizer_loop_seconds": 974.4571563769132,
+      "peak_pytorch_allocated_bytes": 59773805568,
+      "adapter_bytes": 173169136,
+      "trainable_parameters": 43278336,
+      "gpu": "H200",
+      "allocated_gpus": 1,
+      "scheduler_seconds": 1059,
+      "metrics_sha256": "cce18c901f0ed25fcfc6face057fd64f7602acd22491e453a14a7b287f4d700c",
+      "adapter_sha256": "d130167da2fe586f12bfd3f4aad26bf3de0625813d90463d4d074d3a52f89fbe"
+    },
+    {
+      "seed": 26082703,
+      "optimizer_loop_seconds": 989.7570081651211,
+      "peak_pytorch_allocated_bytes": 59773805568,
+      "adapter_bytes": 173169136,
+      "trainable_parameters": 43278336,
+      "gpu": "H200",
+      "allocated_gpus": 1,
+      "scheduler_seconds": 1075,
+      "metrics_sha256": "8fa40720fbfa9acdd1579242dd40e5e3c5b03499dbdf45334fd01a5d56babbe8",
+      "adapter_sha256": "ff0ebf09cd0a2e77d6e2d2a85c62888194ccd85ed3faaf4ad3a747c1e9e6f579"
+    }
+  ],
+  "shared_supervision": {
+    "nf4_build_responses": 700,
+    "positive_training_targets": 55
+  }
+}

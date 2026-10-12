@@ -1,0 +1,18 @@
+\begin{table}[H]
+\centering\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llrr}
+\toprule
+Model & Context & $\Delta$ (pp) & 98\% interval (pp) \\
+\midrule
+Qwen3.5-9B & ethical & $-1.51$ & $[-4.10, +4.01]$ \\
+Ministral-3-8B & ethical & $-0.75$ & $[-3.37, +0.26]$ \\
+Ministral-3-8B & neutral & $-0.25$ & $[-1.13, +1.12]$ \\
+Llama-3.1-8B & ethical & $+1.64$ & $[-1.30, +3.59]$ \\
+Llama-3.1-8B & neutral & $-1.80$ & $[-5.47, +1.75]$ \\
+\bottomrule
+\end{tabular}
+\caption{Exploratory native-minus-shadow equivalence-margin diagnostic. The reference margin is $[-7,+7]$ pp. The margin was introduced after
+outcomes were inspected and is not an independently established utility
+threshold. Qwen's zero-dose baseline alias is excluded.}
+\label{tab:equivalence-margin}
+\end{table}
