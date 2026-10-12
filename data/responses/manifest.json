@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "endpoint": "proposed_tool_calls",
+  "shards": {
+    "receiver_m1/en": {
+      "file": "data/responses/receiver_m1/en.json.gz",
+      "responses": 640,
+      "bytes": 101862,
+      "sha256": "1bbfbc9fcb281ef74ac80f974e35485901159b44e34490506d0b37eb868653b2"
+    },
+    "receiver_m1/es": {
+      "file": "data/responses/receiver_m1/es.json.gz",
+      "responses": 640,
+      "bytes": 133117,
+      "sha256": "0196c57f1aadd8ef35d35dc4583689a20fdd9ac0124dfef78060de2351fb3e17"
+    },
+    "receiver_m1/hi": {
+      "file": "data/responses/receiver_m1/hi.json.gz",
+      "responses": 640,
+      "bytes": 188513,
+      "sha256": "71ca649a63262c68b8cac3e19a07433f0134c98c451c2aa436f9b2235d37b316"
+    },
+    "receiver_m1/pt": {
+      "file": "data/responses/receiver_m1/pt.json.gz",
+      "responses": 640,
+      "bytes": 133989,
+      "sha256": "75be82933a270333f70148969887c3f48d96994c22359d449790c4c1e664ac44"
+    },
+    "receiver_m1/zh": {
+      "file": "data/responses/receiver_m1/zh.json.gz",
+      "responses": 640,
+      "bytes": 141417,
+      "sha256": "988694e2c78c55257a1bc142fbcb1d56203ce52fb7e60109920ff90ddbb05350"
+    },
+    "receiver_m3/en": {
+      "file": "data/responses/receiver_m3/en.json.gz",
+      "responses": 960,
+      "bytes": 226372,
+      "sha256": "643ec6836e6592d357809ce56088173b4b422078fb1defecdbabf31f2b4a4933"
+    },
+    "receiver_m3/es": {
+      "file": "data/responses/receiver_m3/es.json.gz",
+      "responses": 960,
+      "bytes": 388515,
+      "sha256": "c8a936fe91a8711533b0f693e57242e07c0510763b7a9c734d2d8a80c1618012"
+    },
+    "receiver_m3/hi": {
+      "file": "data/responses/receiver_m3/hi.json.gz",
+      "responses": 960,
+      "bytes": 416891,
+      "sha256": "22f8b6a109bbde7ca72439206136f7e748433da04e852e7098e2768b132c3d7f"
+    },
+    "receiver_m3/pt": {
+      "file": "data/responses/receiver_m3/pt.json.gz",
+      "responses": 960,
+      "bytes": 359673,
+      "sha256": "9fee9d07e4d7d73a0d4fa6970b4dd63b71503564ff54bb91b4388a9bf1c97639"
+    },
+    "receiver_m3/zh": {
+      "file": "data/responses/receiver_m3/zh.json.gz",
+      "responses": 960,
+      "bytes": 422487,
+      "sha256": "b168e1d752a9132e77c38bbacfd31c2f8d325ffdbdbc56333c6fb39bb119ae26"
+    },
+    "receiver_m5/en": {
+      "file": "data/responses/receiver_m5/en.json.gz",
+      "responses": 960,
+      "bytes": 79284,
+      "sha256": "542acf86a0adef4293d8a074f6bb9bdf4a0ff093975edeabeead1b7dfb020419"
+    },
+    "receiver_m5/es": {
+      "file": "data/responses/receiver_m5/es.json.gz",
+      "responses": 960,
+      "bytes": 68984,
+      "sha256": "9b9ff8ff60d91fec6ab36f5c18b8e40d677811795a6bfbedbcc2de6ad6a9328c"
+    },
+    "receiver_m5/hi": {
+      "file": "data/responses/receiver_m5/hi.json.gz",
+      "responses": 960,
+      "bytes": 100300,
+      "sha256": "f84d07dd8bd7f1ae39eebf0ff64baadb6f2e3bdf867881209f8c0f8cf85bd514"
+    },
+    "receiver_m5/pt": {
+      "file": "data/responses/receiver_m5/pt.json.gz",
+      "responses": 960,
+      "bytes": 70842,
+      "sha256": "60fa3e5f9878aef91fefbfcc59a47c3c74e22f37ec8a44dffc9741a70f197002"
+    },
+    "receiver_m5/zh": {
+      "file": "data/responses/receiver_m5/zh.json.gz",
+      "responses": 960,
+      "bytes": 93878,
+      "sha256": "e56fef3f22348140e733611751f2a050f15c19f18c9abacff8be16a53ec45926"
+    },
+    "source_m1/ar": {
+      "file": "data/responses/source_m1/ar.json.gz",
+      "responses": 176,
+      "bytes": 37122,
+      "sha256": "45c635b7cf26f7436eef8dd3fbe3d6a3be339530ed2c2b5518ee8259755a2838"
+    },
+    "source_m1/en": {
+      "file": "data/responses/source_m1/en.json.gz",
+      "responses": 2240,
+      "bytes": 345873,
+      "sha256": "a010fcf74a731fddddffb58a50323b05150c2b2024868cd803706a58626861b1"
+    },
+    "source_m1/es": {
+      "file": "data/responses/source_m1/es.json.gz",
+      "responses": 2240,
+      "bytes": 389709,
+      "sha256": "18f525975487c3e4913a76777685a0e00ef7a7711e4f1a75b36516e193ae3bed"
+    },
+    "source_m1/hi": {
+      "file": "data/responses/source_m1/hi.json.gz",
+      "responses": 2240,
+      "bytes": 452400,
+      "sha256": "dbb1a4730252e7b1e1c374fa18c3b725a8f6b9d2570d571a788c74cd66fdf18e"
+    },
+    "source_m1/pt": {
+      "file": "data/responses/source_m1/pt.json.gz",
+      "responses": 2240,
+      "bytes": 327050,
+      "sha256": "9ba5fae3344e988486e7928b03bb9a55ea1c020526e9acace93d88da6344316b"
+    },
+    "source_m1/zh": {
+      "file": "data/responses/source_m1/zh.json.gz",
+      "responses": 2240,
+      "bytes": 319547,
+      "sha256": "8f877330e9f67932b52861dbf51c8abea35d7a35e8e56a3d150ef2a8f2b909b9"
+    },
+    "source_m3/ar": {
+      "file": "data/responses/source_m3/ar.json.gz",
+      "responses": 264,
+      "bytes": 108436,
+      "sha256": "3a889038bb6c4a0cf8cc762ac6cc4350ca23f08d2ca01f1439b9aadf6c388189"
+    },
+    "source_m3/en": {
+      "file": "data/responses/source_m3/en.json.gz",
+      "responses": 4160,
+      "bytes": 895998,
+      "sha256": "925402c0a8f1b968fdcdee3f0fe8b4e19a32eaef2f24878ca97fa310dbdbfe56"
+    },
+    "source_m3/es": {
+      "file": "data/responses/source_m3/es.json.gz",
+      "responses": 4160,
+      "bytes": 1493721,
+      "sha256": "8b70dca0c10b3e96694ee06eb45d215abe49a95b12dc87b7fc6f4bdc75a7c005"
+    },
+    "source_m3/hi": {
+      "file": "data/responses/source_m3/hi.json.gz",
+      "responses": 4160,
+      "bytes": 1912392,
+      "sha256": "fbf410d03b4e13b853b1e585e2b3cdcdc25a2c08bff1cdba33b961ad1432ea72"
+    },
+    "source_m3/pt": {
+      "file": "data/responses/source_m3/pt.json.gz",
+      "responses": 4160,
+      "bytes": 1393525,
+      "sha256": "b261756a6b0ffbde34ba9ebcd04c44291940247c753118b2430f6c56ef864562"
+    },
+    "source_m3/zh": {
+      "file": "data/responses/source_m3/zh.json.gz",
+      "responses": 4160,
+      "bytes": 1890520,
+      "sha256": "baa84889b9031489ba924ec43ede66d340b5fc4ed552f5e23ff3ad4545e67ebc"
+    },
+    "source_m5/ar": {
+      "file": "data/responses/source_m5/ar.json.gz",
+      "responses": 264,
+      "bytes": 25513,
+      "sha256": "582da83bdbbb6b868a9d853898855cbd1ffdc4232b8d181ccd0e0ff7883e3f3f"
+    },
+    "source_m5/en": {
+      "file": "data/responses/source_m5/en.json.gz",
+      "responses": 4160,
+      "bytes": 301700,
+      "sha256": "192ac03f2f5a718dcf36068ec34db9b53cb3875aa45f17cde4985661649c5219"
+    },
+    "source_m5/es": {
+      "file": "data/responses/source_m5/es.json.gz",
+      "responses": 4160,
+      "bytes": 321910,
+      "sha256": "8ac87b88f0972bb45c02dc0d53fc6c8a13b2820700cffd75f21e447dfb5e1de3"
+    },
+    "source_m5/hi": {
+      "file": "data/responses/source_m5/hi.json.gz",
+      "responses": 4160,
+      "bytes": 338144,
+      "sha256": "e207c2c1b194a202056b7d941e8996b4a1fde6bc6cbe97c01994aebc3fbc0f78"
+    },
+    "source_m5/pt": {
+      "file": "data/responses/source_m5/pt.json.gz",
+      "responses": 4160,
+      "bytes": 348358,
+      "sha256": "dfac3e7c77db8c3404ef02eee14509d670426c5e3c2647f01278cc3ce32a38ca"
+    },
+    "source_m5/zh": {
+      "file": "data/responses/source_m5/zh.json.gz",
+      "responses": 4160,
+      "bytes": 300946,
+      "sha256": "9df45ba6e35a1306edca1b0e336e22a45e49d593537f0bc5126815b34ded85eb"
+    }
+  },
+  "display_redactions": {
+    "responses": 1,
+    "reason": "Generated personal name removed for anonymous review; original response hashes and outcomes retained."
+  }
+}
