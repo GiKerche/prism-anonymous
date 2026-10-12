@@ -38,3 +38,13 @@ external/
 *.soc
 *.bak
 .DS_Store
+
+# Restored byte-identical artifacts; portable parts are tracked instead.
+/paper/data/current_final_results.json
+/reproduction/receiver_m1/map_arrays.npz
+/reproduction/receiver_m3/map_arrays.npz
+/reproduction/receiver_m5/frozen_fits.npz
+/reproduction/receiver_m5/map_arrays.npz
+/reproduction/source_m1/frozen_fits.npz
+/reproduction/source_m3/frozen_fits.npz
+/reproduction/source_m5/frozen_fits.npz

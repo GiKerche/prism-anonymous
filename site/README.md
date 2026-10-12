@@ -70,8 +70,16 @@ Serve only `docs/`, or use the identical static files in the `gh-pages` branch.
 The numerical fitting artifacts in the repository root are not copied into the
 Pages site. A current browser supporting `DecompressionStream('gzip')` is needed
 for response browsing. The PDF remains available without JavaScript.
-On Anonymous GitHub, mirror the `gh-pages` branch and enable **GitHub Pages**.
-Use its **Website** link for the interactive view. After updating the source,
+On Anonymous GitHub, use **two separate mirrors**. The full scientific
+repository must mirror the **`main` branch at its root**, with downloads
+enabled. Its README explains how to restore the larger numerical artifacts
+from parts that respect the host's file-size limit. A mirror of only `docs/`
+or `gh-pages` does not provide the full reproducibility artifact.
+
+For the interactive website, mirror **`gh-pages`** and enable **GitHub Pages**.
+Use its **Website** link for the interactive view; an explicit `index.html`
+path also works when the host does not resolve the directory index.
+After updating the source,
 refresh the mirror snapshot in the owner's dashboard. Keep the `.js` data
 companions when copying the site. On hosts that block file downloads, **Export
 pair** presents the exact JSON for copying instead.

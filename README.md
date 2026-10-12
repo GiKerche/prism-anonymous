@@ -38,7 +38,12 @@ python -m pip install -r requirements.txt
 make reproduce
 ```
 
-For a smaller first check, run `python paper/analysis/reproduce_primary.py`.
+The anonymous host limits individual files to 8 MB. Eight larger artifacts
+are stored as compressed parts below that limit. `make reproduce` restores
+them automatically and checks their original SHA-256 hashes. To run individual
+scripts, first run `python reproduction/restore_artifacts.py`.
+
+For a smaller first check after restoration, run `python paper/analysis/reproduce_primary.py`.
 To refit every construction probe as well, run `make refit`.
 
 The checks cover the main effects, language transfer and Arabic, BFCL capability,
@@ -68,6 +73,17 @@ The Validation II capability tolerance is five percentage points.
 The numerical artifacts make this repository larger than a paper-only release.
 They contain numeric arrays, not base-model checkpoints. Base models and
 external benchmark software retain their upstream access and licensing terms.
+
+## Anonymous repository and website
+
+The full reproducibility artifact is the **`main` branch at the repository
+root**. An anonymous repository mirror must use that branch and include
+`paper/`, `experiments/`, `reproduction/`, and the root documentation.
+Enable downloads so readers can restore the numerical artifacts locally.
+
+The **`gh-pages` branch contains only the interactive website**. Use it for a
+separate website mirror. It does not contain the experimental code or fitting
+artifacts and must not be used as the full reproducibility repository.
 
 ## Build the manuscript
 

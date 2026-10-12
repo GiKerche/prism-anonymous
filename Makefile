@@ -1,10 +1,14 @@
 PYTHON ?= python
+.DEFAULT_GOAL := reproduce
 export OPENBLAS_NUM_THREADS = 1
 export OMP_NUM_THREADS = 1
 
-.PHONY: reproduce refit figures paper verify
+.PHONY: restore reproduce refit figures paper verify
 
-reproduce:
+restore:
+	$(PYTHON) reproduction/restore_artifacts.py
+
+reproduce: restore
 	$(PYTHON) paper/analysis/reproduce_all_endpoints.py
 	$(PYTHON) paper/analysis/reproduce_additional.py
 	$(PYTHON) paper/analysis/reproduce_lora.py
@@ -15,19 +19,19 @@ reproduce:
 	$(PYTHON) reproduction/reproduce_judge_panel.py
 	$(PYTHON) reproduction/reproduce_sensitivity.py
 
-refit:
+refit: restore
 	$(PYTHON) reproduction/reproduce_selection.py --refit-probes
 
-figures:
+figures: restore
 	cd paper && $(PYTHON) make_reviewer_figures.py
 	cd paper && $(PYTHON) make_language_figures.py
 	cd paper && $(PYTHON) make_probe_selection_figure.py
 
-paper:
+paper: restore
 	cd paper && pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error main.tex
 	cd paper && bibtex main
 	cd paper && pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error main.tex
 	cd paper && pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error main.tex
 
-verify:
+verify: restore
 	sha256sum --check SHA256SUMS

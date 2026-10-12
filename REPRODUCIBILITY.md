@@ -19,6 +19,15 @@ the checking scripts.
 
 ## Verification commands
 
+After downloading the repository, run `python reproduction/restore_artifacts.py`
+before invoking individual analysis scripts. Eight files exceed the anonymous
+host's 8 MB per-file limit, so their exact bytes are distributed as gzip streams
+split into parts of at most 7,000,000 bytes. The manifest is
+`reproduction/artifact_parts.json`. Restoration uses only Python's standard
+library, verifies each part and the original file's SHA-256, and refuses to
+replace an existing file with different contents. All `make` targets restore
+the files automatically. No scientific value or fitting artifact is changed.
+
 | Command | Reproduces |
 | --- | --- |
 | `python paper/analysis/reproduce_primary.py` | 24 main paired contrasts, missingness bounds, adjusted intervals and primary BFCL results |

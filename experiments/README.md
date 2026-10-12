@@ -6,6 +6,11 @@ runtime functions used for generation, parsing, steering, judging requests,
 and LoRA training, with portable entry points. Private storage, scheduler,
 credential-routing and accounting code is omitted.
 
+After obtaining the anonymous repository, run
+`python reproduction/restore_artifacts.py` from its root before using the
+frozen numerical artifacts. This restores the larger files from their
+deposited parts and verifies their original hashes, without network access.
+
 ## Models and generation
 
 `models.json` pins all six checkpoint revisions. Obtain those checkpoints
