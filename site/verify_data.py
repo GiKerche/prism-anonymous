@@ -1,11 +1,21 @@
 """Verify browser responses against deposited endpoints and content hashes."""
 from pathlib import Path
 import collections
+import base64
 import gzip
 import hashlib
 import json
 
 ROOT=Path(__file__).resolve().parents[1]
+payloads=0
+for path in sorted((ROOT/'docs/data').rglob('*.json')) + sorted((ROOT/'docs/data').rglob('*.json.gz')):
+    body=path.with_name(path.name+'.js').read_text()
+    prefix='globalThis.PRISM_DATA.register('
+    assert body.startswith(prefix) and body.endswith(');\n'),path
+    key,encoded=json.loads('['+body[len(prefix):-3]+']')
+    assert key==path.relative_to(ROOT/'docs').as_posix(),path
+    assert base64.b64decode(encoded,validate=True)==path.read_bytes(),path
+    payloads+=1
 def gz(path):return json.loads(gzip.decompress(path.read_bytes()))
 manifest=json.loads((ROOT/'docs/data/responses/manifest.json').read_text())
 control_rows=gz(ROOT/'paper/data/response_metrics/receiver_controls.json.gz')
@@ -54,5 +64,6 @@ for key,rows in models.items():
         assert sum(r['semantic_unsafe']==1 for r in selected)==rate['positive']
         assert sum(r['semantic_unsafe'] is not None for r in selected)==rate['resolved']
 print(json.dumps({'responses_verified':checked,'models':len(models),'shards':len(manifest['shards']),
+                  'browser_payloads_verified':payloads,
                   'primary_rates_match':True,'display_hashes_match':True,
                   'documented_display_redactions':manifest.get('display_redactions',{}).get('responses',0)}))

@@ -29,6 +29,14 @@ transported receiver interventions, and independently selected receiver-native
 comparators. Each response retains its content hash. The shard manifest contains
 file hashes that are checked by the browser before decompression.
 
+Each JSON or gzip data file also has a generated `.js` companion. These static
+payloads preserve its exact bytes in base64 and load as classic scripts. This
+supports anonymous hosts that assign pages an opaque origin and block module
+scripts and `fetch`. No data request leaves the hosting mirror. Regenerate the
+companions with `python site/build_browser_payloads.py` after changing any data
+file; `build_data.py` also runs this step. `verify_data.py` checks every companion
+against its underlying file before checking the scientific endpoints.
+
 One generated personal name in one response was replaced for anonymous review.
 That record explicitly marks the display change, retains the original response
 hash, and adds a separate display hash. Its labels, condition and statistics are
@@ -62,6 +70,11 @@ Serve only `docs/`, or use the identical static files in the `gh-pages` branch.
 The numerical fitting artifacts in the repository root are not copied into the
 Pages site. A current browser supporting `DecompressionStream('gzip')` is needed
 for response browsing. The PDF remains available without JavaScript.
+On Anonymous GitHub, mirror the `gh-pages` branch and enable **GitHub Pages**.
+Use its **Website** link for the interactive view. After updating the source,
+refresh the mirror snapshot in the owner's dashboard. Keep the `.js` data
+companions when copying the site. On hosts that block file downloads, **Export
+pair** presents the exact JSON for copying instead.
 
 The deposited HTML, data, PDF, citation file and new Git history omit author
 identity. A hosting account or repository URL may itself reveal ownership;

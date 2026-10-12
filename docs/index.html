@@ -10,7 +10,7 @@
   <title>PRISM — Same request. A different action.</title>
   <link rel="icon" href="assets/prism.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
-  <script type="module" src="app.js"></script>
+  <script defer src="app.js"></script>
 </head>
 <body data-view="responses">
   <a class="skip" href="#main">Skip to explorer</a>
@@ -51,7 +51,7 @@
       </div>
 
       <section class="lab" id="response-lab" aria-labelledby="lab-title">
-        <div class="section-top"><div><p class="eyebrow">01 / THE BEHAVIOR</p><h2 id="lab-title">Follow the tool call.</h2></div><div class="actions"><button id="share" class="button quiet">Copy link <span aria-hidden="true">↗</span></button><button id="download" class="button quiet">Download pair ↓</button></div></div>
+        <div class="section-top"><div><p class="eyebrow">01 / THE BEHAVIOR</p><h2 id="lab-title">Follow the tool call.</h2></div><div class="actions"><button id="share" class="button quiet">Copy link <span aria-hidden="true">↗</span></button><button id="download" class="button quiet">Export pair ↓</button></div></div>
         <div class="experiment-controls">
           <label>Model<select id="model"></select></label>
           <label>Direction<select id="estimator"></select></label>
@@ -111,6 +111,12 @@
   </main>
   <footer class="site-footer"><a class="brand" href="#"><img src="assets/prism.svg" width="28" height="28" alt="">PRISM</a><p>Transfer and Limits of Activation Interventions<br>in Tool-Calling Language Models</p><span>Anonymous research artifact<br>Recorded data · browser-only explorer</span><a href="assets/paper.pdf">Paper & appendix ↗</a></footer>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="export-dialog" aria-labelledby="export-title">
+    <h2 id="export-title">Export this response pair.</h2>
+    <p>Copy the JSON below to save the responses, their labels, and the intervention settings.</p>
+    <textarea id="export-json" readonly aria-label="Response pair as JSON" spellcheck="false"></textarea>
+    <div class="actions"><button id="export-copy" class="button primary">Copy JSON</button><button id="export-close" class="button quiet">Close</button></div>
+  </dialog>
   <noscript><div class="error-box">This interactive explorer needs JavaScript. The <a href="assets/paper.pdf">anonymous paper</a> is available without it.</div></noscript>
 </body>
 </html>

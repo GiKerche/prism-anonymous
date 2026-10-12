@@ -8,6 +8,7 @@ import csv
 import json
 import shutil
 import numpy as np
+from build_browser_payloads import build_payloads
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'paper/data'
@@ -98,3 +99,4 @@ shutil.copyfile(ROOT/'paper/task/tools_by_language.json',OUT/'tools.json')
 (ROOT/'docs/assets').mkdir(exist_ok=True)
 shutil.copyfile(ROOT/'paper/main.pdf',ROOT/'docs/assets/paper.pdf')
 print(f'Built catalog for {len(names)} models, {len(cases)} prompts, and {len(catalog["language_cells"])} language cells.')
+build_payloads()
