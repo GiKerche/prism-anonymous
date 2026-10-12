@@ -23,7 +23,7 @@ python -m http.server 8765 --bind 127.0.0.1 --directory docs
 ```
 
 Open `http://127.0.0.1:8765` in a current browser. GitHub Pages serves the same
-files from the `gh-pages` branch. See [`site/README.md`](site/README.md) for
+files from **`main:/docs`**. See [`site/README.md`](site/README.md) for
 data provenance, integrity checks, and rebuilding the browser catalog.
 
 ## Reproduce the published results
@@ -81,9 +81,12 @@ root**. An anonymous repository mirror must use that branch and include
 `paper/`, `experiments/`, `reproduction/`, and the root documentation.
 Enable downloads so readers can restore the numerical artifacts locally.
 
-The **`gh-pages` branch contains only the interactive website**. Use it for a
-separate website mirror. It does not contain the experimental code or fitting
-artifacts and must not be used as the full reproducibility repository.
+GitHub Pages publishes **`/docs` from the same `main` branch**. On Anonymous
+GitHub, mirror `main` at the repository root and enable **GitHub Pages** to
+provide both the full repository and its interactive **Website** from one
+snapshot. After a source update, refresh the snapshot in the owner's dashboard.
+The older `gh-pages` branch contains only the website and is no longer the
+Pages source.
 
 ## Build the manuscript
 

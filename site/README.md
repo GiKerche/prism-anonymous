@@ -66,21 +66,22 @@ checks zero-dose aliases and the independently selected receiver comparators.
 
 ## Hosting
 
-Serve only `docs/`, or use the identical static files in the `gh-pages` branch.
-The numerical fitting artifacts in the repository root are not copied into the
-Pages site. A current browser supporting `DecompressionStream('gzip')` is needed
-for response browsing. The PDF remains available without JavaScript.
-On Anonymous GitHub, use **two separate mirrors**. The full scientific
-repository must mirror the **`main` branch at its root**, with downloads
-enabled. Its README explains how to restore the larger numerical artifacts
-from parts that respect the host's file-size limit. A mirror of only `docs/`
-or `gh-pages` does not provide the full reproducibility artifact.
+GitHub Pages uses **`main` and `/docs`**. A local static server should serve
+`docs/`. The numerical fitting artifacts in the repository root are not copied
+into the Pages site. A current browser supporting `DecompressionStream('gzip')`
+is needed for response browsing. The PDF remains available without JavaScript.
 
-For the interactive website, mirror **`gh-pages`** and enable **GitHub Pages**.
-Use its **Website** link for the interactive view; an explicit `index.html`
-path also works when the host does not resolve the directory index.
-After updating the source,
-refresh the mirror snapshot in the owner's dashboard. Keep the `.js` data
+On Anonymous GitHub, mirror the **`main` branch at its root** and enable
+**GitHub Pages**, images, PDFs, and downloads. The repository view then contains
+the complete scientific artifact, while its **Website** link opens the explorer
+from `docs/` in the same snapshot. The README explains how to restore larger
+numerical artifacts from parts that respect the host's file-size limit.
+Mirroring only `docs/` or the older `gh-pages` branch omits those artifacts.
+
+Use an explicit `index.html` path when the host does not resolve the website's
+directory index. After updating the source or switching from `gh-pages`, select
+`main` in the mirror settings, keep **GitHub Pages** enabled, save, and refresh
+the snapshot in the owner's dashboard. Keep the `.js` data
 companions when copying the site. On hosts that block file downloads, **Export
 pair** presents the exact JSON for copying instead.
 
