@@ -1,3 +1,5 @@
+(async () => {
+'use strict';
 const $ = (id) => document.getElementById(id);
 const LANGS = {en:'English',pt:'Portuguese',es:'Spanish',zh:'Chinese',hi:'Hindi',ar:'Arabic'};
 const SHORT = {en:'EN',pt:'PT',es:'ES',zh:'ZH',hi:'HI',ar:'AR'};
@@ -20,7 +22,36 @@ const pretty = (s) => s.replace(/_/g,' ').replace(/\b\w/g,c=>c.toUpperCase());
 function option(select,value,text){ const e=document.createElement('option');e.value=value;e.textContent=text;select.append(e); }
 function options(id,items,value){const e=$(id);e.replaceChildren();items.forEach(([v,t])=>option(e,v,t));e.value=value;}
 function toast(message){$('toast').textContent=message;$('toast').classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('toast').classList.remove('show'),3500);}
-async function json(url){const r=await fetch(url);if(!r.ok)throw Error(`Could not load ${url} (${r.status}).`);return r.json();}
+// Anonymous mirrors isolate pages with an opaque origin. Classic scripts work
+// there without relaxing the sandbox or contacting an identifying data host.
+const pendingData = new Map();
+globalThis.PRISM_DATA = Object.freeze({register(key,encoded){
+  const request=pendingData.get(key);if(request)request.encoded=encoded;
+}});
+function payload(url){
+  if(!/^data\/[a-zA-Z0-9_./-]+$/.test(url)||url.includes('..'))return Promise.reject(Error('Invalid data path.'));
+  if(pendingData.has(url))return pendingData.get(url).promise;
+  const request={},script=document.createElement('script');
+  request.promise=new Promise((resolve,reject)=>{
+    const finish=(error)=>{
+      clearTimeout(timer);script.remove();pendingData.delete(url);
+      if(error){reject(error);return;}
+      try{
+        if(typeof request.encoded!=='string')throw Error('No recorded data was returned.');
+        resolve(Uint8Array.from(atob(request.encoded),c=>c.charCodeAt(0)));
+      }catch(error){reject(error);}
+      request.encoded=null;
+    };
+    const timer=setTimeout(()=>finish(Error('Loading recorded data timed out. Please reload the page.')),60000);
+    script.onload=()=>finish();
+    script.onerror=()=>finish(Error(`Could not load ${url}. Please refresh the artifact mirror and reload.`));
+    script.src=url+'.js';
+  });
+  pendingData.set(url,request);document.head.append(script);
+  return request.promise;
+}
+async function json(url){return JSON.parse(new TextDecoder().decode(await payload(url)));}
+let savedHash='';
 function readURL(){
   const p=new URLSearchParams(location.hash.slice(1));
   for(const k of ['view','model','estimator','vector','language','sign','scenario'])if(p.has(k))state[k]=p.get(k);
@@ -33,7 +64,8 @@ function readURL(){
 }
 function saveURL(){
   const p=new URLSearchParams();for(const k of ['view','model','estimator','vector','language','sign','scenario','seed'])p.set(k,state[k]);
-  history.replaceState(null,'','#'+p.toString());
+  savedHash='#'+p.toString();if(location.hash===savedHash)return;
+  try{history.replaceState(null,'',savedHash);}catch{location.replace(savedHash);}
 }
 function showView(view,scroll=true){
   state.view=view;document.body.dataset.view=view;
@@ -99,8 +131,7 @@ async function responseShard(model,language){
   if(cache.has(key))return cache.get(key);
   const entry=manifest.shards[key];if(!entry)throw Error('This model/language combination was not evaluated.');
   const task=(async()=>{
-    const r=await fetch(entry.file);if(!r.ok)throw Error('Recorded response data could not be loaded.');
-    const bytes=await r.arrayBuffer();
+    const bytes=await payload(entry.file);
     if(crypto.subtle){const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),b=>b.toString(16).padStart(2,'0')).join('');if(hash!==entry.sha256)throw Error('The response file failed its integrity check.');}
     if(!globalThis.DecompressionStream)throw Error('Please use a current browser with gzip decompression support to explore the recorded responses.');
     const stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
@@ -237,17 +268,22 @@ function bind(){
   $('previous').onclick=()=>movePair(-1);$('next').onclick=()=>movePair(1);$('shuffle').onclick=()=>{const n=visiblePairs().length;if(n)movePair(1+Math.floor(Math.random()*Math.max(1,n-1)));};
   document.querySelectorAll('[data-output]').forEach(b=>b.onclick=()=>{state.output=b.dataset.output;drawResponses();});
   $('show-tools').onclick=async()=>{try{if(!$('tools').textContent){const tools=await json('data/tools.json');$('tools').textContent=JSON.stringify(tools[state.language],null,2);}$('tools').hidden=!$('tools').hidden;$('show-tools').textContent=$('tools').hidden?'Show available tools':'Hide available tools';}catch(e){toast(e.message);}};
-  $('download').onclick=()=>{if(!selectedPair)return;const data={model:modelInfo().name,model_revision:modelInfo().model_revision,layer:modelInfo().layer,direction:state.estimator,vector_language:state.vector,dose:alpha(),activation_scale:modelInfo().sigma,endpoint:'proposed_tool_calls',...selectedPair};const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`prism-${state.model}-${state.language}-${state.seed}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+  $('download').onclick=()=>{if(!selectedPair)return;const data={model:modelInfo().name,model_revision:modelInfo().model_revision,layer:modelInfo().layer,direction:state.estimator,vector_language:state.vector,dose:alpha(),activation_scale:modelInfo().sigma,endpoint:'proposed_tool_calls',...selectedPair};const text=JSON.stringify(data,null,2);
+    if(globalThis.origin==='null'){$('export-json').value=text;$('export-dialog').showModal();$('export-json').focus();$('export-json').select();return;}
+    const blob=new Blob([text],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`prism-${state.model}-${state.language}-${state.seed}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+  $('export-close').onclick=()=>$('export-dialog').close();
+  $('export-copy').onclick=()=>{$('export-json').focus();$('export-json').select();try{if(document.execCommand('copy')){toast('Response pair copied as JSON.');return;}}catch{}toast('The JSON is selected. Use your browser’s Copy command to save it.');};
   $('share').onclick=async()=>{saveURL();try{await navigator.clipboard.writeText(location.href);toast('Link copied. It opens this model, direction, and response.');}catch{toast('This selection is saved in the address bar. Copy the URL to share it.');}};
   $('open-dose').onclick=()=>{dose.model=state.model;dose.estimator=state.estimator==='receiver_native'?'transported_native':state.estimator;dose.sign=state.sign;dose.index=DOSES.indexOf(Math.abs(selectedDose()));if(dose.index<0)dose.index=0;showView('dose');if(state.estimator==='receiver_native')toast('This dose grid is for the transported direction. Receiver-native comparisons use independently selected doses.');};
   for(const [id,key] of [['transfer-model','model'],['transfer-estimator','estimator'],['transfer-sign','sign']])$(id).onchange=()=>{transfer[key]=$(id).value;renderTransfer();};
   $('open-cell').onclick=()=>openResponse({model:transfer.model,estimator:transfer.estimator,vector:transfer.source,language:transfer.target,sign:transfer.sign});$('open-arabic').onclick=()=>openResponse({model:transfer.model,estimator:transfer.estimator,vector:'pooled',language:'ar',sign:transfer.sign});
   for(const [id,key] of [['dose-model','model'],['dose-estimator','estimator'],['dose-sign','sign']])$(id).onchange=()=>{dose[key]=$(id).value;renderDose();};$('dose-slider').oninput=()=>{dose.index=Number($('dose-slider').value);renderDose();};$('selected-dose').onclick=()=>{dose.index=DOSES.indexOf(Math.abs(selectedDose()));renderDose();};
   document.querySelectorAll('[data-method]').forEach(b=>b.onclick=()=>{const shadow=b.dataset.method==='shadow';document.querySelectorAll('[data-method]').forEach(x=>{x.classList.toggle('selected',x===b);x.setAttribute('aria-pressed',x===b);});$('method-label-title').textContent=shadow?'The NF4 copy answers.':'The BF16 model answers.';$('method-label-copy').textContent=`For each input, four ${shadow?'NF4':'BF16'} responses give a fraction of violations, ${shadow?'zᴺᶠ⁴':'zᴮᶠ¹⁶'}. The fraction is available only when all four labels are resolved.`;$('method-direction-copy').textContent=shadow?'The shadow direction associates the same BF16 pre-response activations with the NF4 copy’s violation fractions. NF4 activations are not used.':'The native direction associates BF16 pre-response activations with the BF16 model’s own violation fractions.';});
-  window.addEventListener('hashchange',()=>{if(location.hash==='#response-lab')return;readURL();showView(state.view,false);loadResponses();});
+  window.addEventListener('hashchange',()=>{if(location.hash==='#response-lab'||location.hash===savedHash)return;readURL();showView(state.view,false);loadResponses();});
 }
 
 try{
   [catalog,prompts,manifest]=await Promise.all([json('data/catalog.json'),json('data/prompts.json'),json('data/responses/manifest.json')]);
   readURL();bind();showView(state.view,false);await loadResponses();
 }catch(err){$('load-error').hidden=false;$('load-error').textContent=`The explorer could not start. ${err.message}`;$('response-panels').setAttribute('aria-busy','false');}
+})();
